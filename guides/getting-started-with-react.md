@@ -1,0 +1,106 @@
+<!--- Disclaimer: This file was written mostly by ChatGPT, based on certain guidelines & goals --->
+# Getting Started with React
+
+Welcome to the Icarus Dev Team! This guide is designed to help new developers get started with React, one of the most popular JavaScript libraries for building user interfaces. If you're new to web development, or just React, this guide will provide a structured path to learning the basics and beyond.
+
+## Introduction to React
+
+React is a powerful JavaScript libr# Getting Started with React
+
+Welcome to the Icarus Dev Team! This guide is designed to help new developers get started with React, one of the most popular JavaScript libraries for building user interfaces. If you're new to web development, or just React, this guide will provide a structured path to learning the basics and beyond.
+
+## Introduction to React
+
+React is a powerful JavaScript library for building user interfaces, particularly single-page applications where data changes over time. Developed by Facebook, React allows developers to create large web applications that can update and render efficiently in response to data changes. Some key features of React include:
+
+- **Component-Based**: Build encapsulated components that manage their own state and compose them to make complex UIs.
+- **Declarative**: Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+- **Learn Once, Write Anywhere**: You can use React to develop new features in your existing code without rewriting your existing code.
+
+## Where to Begin
+
+For those new to React and web development, here’s a recommended learning path:
+
+### 1. Basic JavaScript, HTML, and CSS
+Start with the basics of JavaScript, HTML, and CSS. These foundational skills are necessary before diving into React. A great resource to learn these is [W3Schools](https://www.w3schools.com/).
+
+### 2. Introduction to React
+Once comfortable with the basics, start learning React with the [W3Schools React Tutorial](https://www.w3schools.com/react/). This tutorial will introduce you to the core concepts of React and help you get started with building simple components.
+
+### 3. React Tic-Tac-Toe Tutorial
+Follow the official [React Tic-Tac-Toe tutorial](https://reactjs.org/tutorial/tutorial.html). This tutorial is excellent for understanding the basics of React by building a simple game. It covers important concepts such as components, state, and props.
+
+### 4. React Tutorials on TutorialsPoint
+For more in-depth tutorials, explore [TutorialsPoint](https://www.tutorialspoint.com/reactjs/index.htm). TutorialsPoint offers comprehensive guides and examples to deepen your understanding of React.
+
+### 5. Material-UI (MUI)
+To enhance the styling and design of your React applications, familiarize yourself with Material-UI. Start with the [GeeksforGeeks MUI Tutorial](https://www.geeksforgeeks.org/). Material-UI is a popular React UI framework that provides pre-designed components for faster development.
+
+### 6. Open Source Projects
+Look at open-source projects for inspiration. You can learn a lot by exploring how others structure their projects and solve problems. I have an older project that can show you how I coded things (though it is a bit outdated). I also have newer private projects that are better references for current best practices. I will provide links to these projects soon.
+
+## Learn by Building
+
+- **Learn by Building, Not Just Reading**: The best way to learn React (or any programming language) is by building projects. As you read tutorials and guides, try to implement the concepts in small projects.
+- **Experiment and Fix**: If you get confused or stuck, don't be afraid to experiment. Try different approaches, and learn from any mistakes you make. This hands-on experience is invaluable for solidifying your understanding.
+
+## Video Guides
+
+While there are many video guides available for learning React, they are not recommended as the primary resource. Video tutorials can be slow, and it is often more efficient to learn from written guides and documentation. However, if you prefer video content, here are a few resources:
+
+- **Traversy Media** on YouTube: Offers comprehensive React tutorials and project-based learning.
+- **Academind** on YouTube: Provides in-depth React courses covering various topics.
+
+> **Note**: While videos can be helpful, we strongly recommend using the web resources listed above for a faster and more comprehensive learning experience.
+
+## Conclusion
+
+By following this learning path, you'll gain a solid foundation in React and be well-prepared to contribute to our projects. Remember, practice is key, and don't hesitate to ask questions and seek help when needed. Welcome aboard, and happy coding!ary for building user interfaces, particularly single-page applications where data changes over time. Developed by Facebook, React allows developers to create large web applications that can update and render efficiently in response to data changes. Some key features of React include:
+
+- **Component-Based**: Build encapsulated components that manage their own state and compose them to make complex UIs.
+- **Declarative**: Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+- **Learn Once, Write Anywhere**: You can use React to develop new features in your existing code without rewriting your existing code.
+
+## Where to Begin
+
+For those new to React and web development, here’s a recommended learning path:
+
+### 1. Basic JavaScript, HTML, and CSS
+Start with the basics of JavaScript, HTML, and CSS. These foundational skills are necessary before diving into React. A great resource to learn these is [W3Schools](https://www.w3schools.com/).
+
+### 2. Introduction to React
+Once comfortable with the basics, start learning React with the [W3Schools React Tutorial](https://www.w3schools.com/react/). This tutorial will introduce you to the core concepts of React and help you get started with building simple components.
+
+### 3. React Tic-Tac-Toe Tutorial
+Follow the official [React Tic-Tac-Toe tutorial](https://reactjs.org/tutorial/tutorial.html). This tutorial is excellent for understanding the basics of React by building a simple game. It covers important concepts such as components, state, and props.
+
+### 4. React Tutorials on TutorialsPoint
+For more in-depth tutorials, explore [TutorialsPoint](https://www.tutorialspoint.com/reactjs/index.htm). TutorialsPoint offers comprehensive guides and examples to deepen your understanding of React.
+
+### 5. Material-UI (MUI)
+To enhance the styling and design of your React applications, familiarize yourself with Material-UI. Start with the [GeeksforGeeks MUI Tutorial](https://www.geeksforgeeks.org/). Material-UI is a popular React UI framework that provides pre-designed components for faster development.
+
+### 6. Open Source Projects
+Look at open-source projects for inspiration. You can learn a lot by exploring how others structure their projects and solve problems. I have an older project that can show you how I coded things (though it is a bit outdated). I also have newer private projects that are better references for current best practices. I will provide links to these projects soon.
+
+## Learn by Building
+
+- **Learn by Building, Not Just Reading**: The best way to learn React (or any programming language) is by building projects. As you read tutorials and guides, try to implement the concepts in small projects.
+- **Experiment and Fix**: If you get confused or stuck, don't be afraid to experiment. Try different approaches, and learn from any mistakes you make. This hands-on experience is invaluable for solidifying your understanding.
+
+## Video Guides
+
+While there are many video guides available for learning React, they are not recommended as the primary resource. Video tutorials can be slow, and it is often more efficient to learn from written guides and documentation. However, if you prefer video content, here are a few resources:
+
+- **Traversy Media** on YouTube: Offers comprehensive React tutorials and project-based learning.
+- **Academind** on YouTube: Provides in-depth React courses covering various topics.
+
+> **Note**: While videos can be helpful, we strongly recommend using the web resources listed above for a faster and more comprehensive learning experience.
+
+## Using ChatGPT and Stack Overflow
+- Using resources like ChatGPT and Stack Overflow is perfectly fine as long as the solutions you find fit the coding criteria, and you genuinely understand what is going on. Do not copy-paste code blindly, as sometimes the code generated by these tools can break the project. Always ensure you comprehend the solution and test it thoroughly.
+- Do not, however, build a reliance on those tools and only use them as a supplement. We still need you to know how to code lol.
+
+## Conclusion
+
+By following this learning path, you'll gain a solid foundation in React and be well-prepared to contribute to our projects. Remember, practice is key, and don't hesitate to ask questions and seek help when needed. Welcome aboard, and happy coding!
