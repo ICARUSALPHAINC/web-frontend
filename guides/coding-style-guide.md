@@ -21,6 +21,10 @@ since many of us are new to React.
   ```sh
   npm install <package-name>
   ```
+- **Install any missing packages from package.json**:
+  ```sh
+  npm install
+  ```
 - **Set up `.gitignore`**: Create a `.gitignore` file to specify files and directories that should not be tracked by Git.
 - **When to add a file to `.gitignore`**: Add files that are environment-specific, build artifacts, or dependencies (e.g., `node_modules`, `.env`).
 
@@ -130,7 +134,7 @@ Here is a detailed explanation of our project structure:
 
 - **Proper Documentation**: Provide doc comments for clarity.
 
-  **Example**:
+  **Example jsx wrappers**:
   ```jsx
   // useContextExample for a global dialogue context in the app.
 
@@ -159,7 +163,7 @@ Here is a detailed explanation of our project structure:
   };
   ```
 
-  **Example Service File**:
+  **Example Service Files**:
   ```jsx
   // createPost function in the services directory as postService.js
 
@@ -200,7 +204,7 @@ Here is a detailed explanation of our project structure:
   }
   ```
 
-- **Component Comments**: At the top of each file, add a comment explaining the file's purpose.
+- **Component Comments**: At the top of each file, add a comment explaining the file's purpose, doc comments for the functions itself are optional for components but still recommended.
 
   **Example**:
   ```jsx
@@ -224,17 +228,17 @@ Here is a detailed explanation of our project structure:
 - **Hooks and States**: 
   - Use hooks and states for anything that can change during rendering.
 - **useContext**: 
-  - Wrap the app in the useContext inside `index.js`. Avoid other coding in `index.js` (exceptions for themes controlled with `useEffect`).
+  - Wrap the app in the useContext inside `index.js`. Avoid other coding in `index.js` (exceptions for themes and components controlled / altered with `useEffect` or other functions which will be wrapped inside App.js instead).
 - **App Component**: 
   - Wrap with the theme provider in `App.js`. Use `App.js` primarily for routing; functions and `useEffect` hooks can be added as necessary.
 - **Copy Style**: 
-  - When in doubt, copy the coding style from other files in the project.
-- **Routes and Configs**: 
+  - If the coding style for certain coding practices isn't mentioned in this document then - when in doubt, copy the coding style from other files in the project.
+- **Routes and other Configs**: 
   - Located in `/configs`.
 - **Default Theme**: 
   - Provided via a theme provider in the app.
 - **Material UI**: 
-<!--- TODO: add better examples here --->
+    <!--- TODO: add better examples here --->
   - Use Material UI components instead of standard HTML JSX or CSS. Use the `sx` prop for inline styles. Use `<Box>` instead of `<div>` for wrappers.
   - SX Prop is similar to CSS with the difference being name styles are inside json objects with key's written in camelCase instead of kebab-style, but with their strings being in CSS kebab-style.
   - Don't return any written material that is not wrapped under typography or a part of another component (texts inside buttons / other elements are acceptable exceptions).
@@ -242,9 +246,9 @@ Here is a detailed explanation of our project structure:
   - If any component has color that is used in multiple places, add the theme to `primaryTheme` and use the color name inherited from theme provider.
   - > **Important:** For CSS/SX font sizes always use `rem` instead of `px`.
 
-    **Material UI Theme Provider Example**:
-    For each example below, the component is wrapped inside a theme provider
-  - Example theme
+  **Material UI Theme Provider Example**:
+  - For each example below, the component is wrapped inside a theme provider
+  - Example theme:
   - ```jsx
     import { createTheme, responsiveFontSizes } from "@mui/material";
     
@@ -257,7 +261,7 @@ Here is a detailed explanation of our project structure:
             lg: 1280,  // Large devices (large desktops)
             xl: 1920,  // Extra-large devices (very large screens)
         },
-    },
+    }, // end of breakpoints
     
     palette: {
         mode: 'default',
@@ -269,7 +273,7 @@ Here is a detailed explanation of our project structure:
             contrastText: '#ffffff',
         },
     
-    // Secondary, background, text, etc. themes
+        // Secondary, background, text, etc. themes
         
         myRandomTheme: {
             myColor: '#hex-code-here',
@@ -279,28 +283,38 @@ Here is a detailed explanation of our project structure:
             background: 'linear-gradient(to right, #ff5aa7, #f7a059)',
         },
         
-    },
+    }, // End of pallete
     
     typography: {
-    fontFamily: 'fontname, alternative-font',
-    h1: {
-        fontFamily: 'fontname',
-        fontWeight: 100,
-        fontSize: '2rem',
-        background: '#color-hex-code',
-        // Other css properties
+        fontFamily: 'fontname, alternative-font',
+        h1: {
+            fontFamily: 'fontname',
+            fontWeight: 100,
+            fontSize: '2rem',
+            background: '#color-hex-code',
+            // Other css properties
+        },
+        // Other typographies
     },
-    // Other typographies
-    }
-    });
+    }); // end of typographies
     
     theme = responsiveFontSizes(theme);
     
     export {theme};
     ```
-    - Theme Provider example
+    - Theme Provider wrapper example
     ```jsx
+    import {CssBaseline, ThemeProvider} from "@mui/material";
     
+    function App() {
+    return (
+        // Provide theme
+        <ThemeProvider theme={theme}>
+            <CssBaseline/>
+            {/* App Content goes here */}
+        </ThemeProvider>
+    );
+    }   
     ```
 
     - Usage
