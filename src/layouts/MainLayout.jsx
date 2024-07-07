@@ -1,5 +1,8 @@
 import {theme} from "../themes/primaryTheme";
 import {Box, useMediaQuery} from "@mui/material";
+import TopNavBarDesktop from "../components/layout/TopNavBarDesktop";
+import Footer from "../components/layout/Footer";
+import TopNavBarMobile from "../components/layout/TopNavBarMobile";
 
 /**
  * Wraps the children screens under relevant layouts based on viewport width.
@@ -7,21 +10,29 @@ import {Box, useMediaQuery} from "@mui/material";
  * @constructor
  */
 function MainLayout({ children }) {
-    const mobileView = useMediaQuery(theme.breakpoints.down('md'));
+    const mobileView = useMediaQuery(theme.breakpoints.down('sm'));
 
     return(<>
 
         <Box sx={{
             display: 'grid',
-            gridTemplateColumns: mobileView? '1fr' : 'auto 1fr auto',
-            gridTemplateRows: mobileView ? 'auto 1fr auto' : 'auto',
+            gridTemplateColumns: 'auto',
+            gridTemplateRows: 'auto 1fr',
             overflowX: 'auto',
             width: '100vw',
         }}>
             {mobileView?
-            <>{children}</>
+            <>
+                <TopNavBarMobile/>
+                {children}
+                <Footer/>
+            </>
             :
-             <>{children}</>
+             <>
+                 <TopNavBarDesktop/>
+                 {children}
+                 <Footer/>
+             </>
             }
 
         </Box>

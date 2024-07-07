@@ -15,8 +15,6 @@ let theme = createTheme({
     },
 
     palette: {
-        mode: 'default',
-
         primary: {
             main: '#ff5aa7', // From --title-gradient start
             light: '#f7a059', // From --title-gradient end

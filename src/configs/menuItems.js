@@ -20,7 +20,7 @@ import AttachEmailIcon from '@mui/icons-material/AttachEmail';
  */
 export const menuItems = [
     {text: 'Home', icon: <HomeIcon/>, route: routes.home, },
-    {text: 'Team', icon: <GroupsIcon/>, route: routes.team, },
     {text: 'Projects', icon: <HighlightIcon/>, route: routes.projects, },
+    {text: 'Team', icon: <GroupsIcon/>, route: routes.team, },
     {text: 'Contact', icon: <AttachEmailIcon/>, route: routes.contact, },
 ];

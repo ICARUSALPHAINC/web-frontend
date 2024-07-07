@@ -51,35 +51,21 @@ REACT_APP_API_SECRET=your-api-secret
 > **Note**: Ensure that sensitive information such as API keys and secrets are removed from the `.env-sample`
 > file and replaced with placeholders to prevent accidental exposure.
 
+> **Important:** There is an envConfig.js file where all environment variables from .env
+> are loaded into objects. These should be imported from envConfig.js in your components.
+
 ## Project Structure
 
 Here is a detailed explanation of our project structure:
 
 - **/src**
     - **assets**
-        - Main file: `assets.js`, which imports assets from an object.
-          ```jsx
-          // assets.js
-          import logo from './logo/logo.png';
-    
-          export const logo = {
-              png: {
-              16: './logo/favicon-16x16.png',
-              32: './logo/favicon-32x32.png',
-              192: './logo/192.png',
-              512: './logo/logo512.png',
-              },
-            };
-          ```
-          > **Note:** logo.png.16 doesn't work due to numeric conventions, so use logo.png[16] instead.
+        - Contains assets needed for the project
         
-          > **Important:** There is an envConfig.js file where all environment variables from .env 
-          > are loaded into objects. These should be imported from envConfig.js in your components.
         - Subdirectories for asset types (e.g., `logo/`).
           ```
           src/
           └── assets/
-              ├── assets.js
               └── logo/
                   └── logo.png
           ```
