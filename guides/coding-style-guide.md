@@ -101,9 +101,18 @@ Here is a detailed explanation of our project structure:
           ```
           src/
           └── contexts/
-              ├── AuthProvider.js
-              └── ThemeProvider.js
+              ├── AuthProvider.jsx
+              └── ThemeProvider.jsx
           ```
+    - **layouts**
+      - App layout wrappers
+        ```
+        src/
+          └── contexts/
+              ├── MainLayout.jsx
+              ├── DesktopLayout.jsx
+              └── MobileLayout.js
+        ```
     - **screens**
         - Similar to pages on a website.
           ```
@@ -225,26 +234,118 @@ Here is a detailed explanation of our project structure:
 - **Default Theme**: 
   - Provided via a theme provider in the app.
 - **Material UI**: 
+<!--- TODO: add better examples here --->
   - Use Material UI components instead of standard HTML JSX or CSS. Use the `sx` prop for inline styles. Use `<Box>` instead of `<div>` for wrappers.
   - SX Prop is similar to CSS with the difference being name styles are inside json objects with key's written in camelCase instead of kebab-style, but with their strings being in CSS kebab-style.
+  - Don't return any written material that is not wrapped under typography or a part of another component (texts inside buttons / other elements are acceptable exceptions).
+  - For typography components, use `body1` or `body2` for the variant, don't leave variant blank.
+  - If any component has color that is used in multiple places, add the theme to `primaryTheme` and use the color name inherited from theme provider.
   - > **Important:** For CSS/SX font sizes always use `rem` instead of `px`.
 
-    **Example with Theme Provider**:
-    ```jsx
-    import { Box } from '@mui/material';
-    import { useTheme } from '@mui/system';
-
-    const ExampleComponent = () => {
-        const theme = useTheme();
-        return (
-            <Box sx={{ 
-                color: 'primary.main' 
-            }}>
-                This text uses the primary color from the theme!
-            </Box>
-        );
-    };
+    **Material UI Theme Provider Example**:
+    For each example below, the component is wrapped inside a theme provider
+  - Example theme
+  - ```jsx
+    import { createTheme, responsiveFontSizes } from "@mui/material";
+    
+    let theme= createTheme({
+    breakpoints:{
+        values: {
+            xs: 0,     // Extra-small devices (phones)
+            sm: 750,   // Small devices (tablets)
+            md: 1200,  // Medium devices (desktops)
+            lg: 1280,  // Large devices (large desktops)
+            xl: 1920,  // Extra-large devices (very large screens)
+        },
+    },
+    
+    palette: {
+        mode: 'default',
+    
+        primary: {
+            main: '#ff5aa7', // From --title-gradient start
+            light: '#f7a059', // From --title-gradient end
+            dark: '#ff5aa7',
+            contrastText: '#ffffff',
+        },
+    
+    // Secondary, background, text, etc. themes
+        
+        myRandomTheme: {
+            myColor: '#hex-code-here',
+        },
+    
+        appBar: {
+            background: 'linear-gradient(to right, #ff5aa7, #f7a059)',
+        },
+        
+    },
+    
+    typography: {
+    fontFamily: 'fontname, alternative-font',
+    h1: {
+        fontFamily: 'fontname',
+        fontWeight: 100,
+        fontSize: '2rem',
+        background: '#color-hex-code',
+        // Other css properties
+    },
+    // Other typographies
+    }
+    });
+    
+    theme = responsiveFontSizes(theme);
+    
+    export {theme};
     ```
+    - Theme Provider example
+    ```jsx
+    
+    ```
+
+    - Usage
+
+      - Regular usage
+      ```jsx
+      import { Box, Typography } from '@mui/material';
+      const ExampleComponent = () => {
+          return (<>
+              <Box sx={{ 
+                  background: 'primary.main' 
+              }}>
+                  This Box's background uses the primary color from the theme!
+              </Box>
+              <Typography variant='h2' component='h1'>
+                 This text is rendered with default settings of a h2 component
+                 but has the h1 HTML tag so that screen readers recognize this as a h1.
+              </Typography>
+              <Box sx={{
+                  background: 'myRandomTheme.MyColor',
+                }}>
+                This box's background uses the custom color I created!
+              </Box>
+          </>);
+      };
+      ```
+      - When regular usage practices don't work, how to use it like a variable prop.
+      ```jsx 
+      import { Box } from '@mui/material';
+      import { useTheme } from '@mui/system';
+
+      const ExampleComponent = () => {
+          const theme = useTheme();
+          return (
+              <AppBar position="static" sx={{
+              background: `${theme.palette.appBar.background}`,
+          }}>
+            Components in this app bar use the complex gradient 
+            but since it can't be inherited normally using the theme, 
+            it calls it as a string variable and places it here so 
+            it can be called in a way similar to a variable.
+          </AppBar>
+          );
+      };
+      ```
 
 - **No Hardcoding**: Do not hardcode colors, routes, or similar items. Import them from the relevant directories for easy updates.
 
