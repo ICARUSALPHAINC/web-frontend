@@ -1,6 +1,7 @@
 <!--- Disclaimer: This file was written mostly by ChatGPT, based on certain guidelines & goals --->
 
 # Icarus, Web Development Team README
+<img width="825" alt="image" src="https://github.com/ICARUSALPHAINC/web-frontend/assets/82555472/53671d0d-8fd7-4142-a688-5802c7fae29a">
 
 Welcome to the Icarus, Web Development ! This main README page provides an overview of our project's structure,
 guidelines, and resources. Here, you'll find links to other important documents, contact information, and communication
