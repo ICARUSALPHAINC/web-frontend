@@ -10,7 +10,7 @@ import TopNavBarMobile from "../components/layout/TopNavBarMobile";
  * @constructor
  */
 function MainLayout({ children }) {
-    const mobileView = useMediaQuery(theme.breakpoints.down('sm'));
+    const mobileView = useMediaQuery(theme.breakpoints.down('md'));
 
     return(<>
 
