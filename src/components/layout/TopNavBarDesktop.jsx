@@ -57,12 +57,13 @@ function TopNavBarDesktop() {
                          alt="Icarus Logo"
                          sx={{
                              height: 'auto', // Changed to 100% of parent container's height
-                             maxHeight: '5rem',
+                             maxHeight: '3rem',
                              width: 'auto', // Keep aspect ratio of the logo
                          }}
                     />
 
-                    <Typography variant='h2' component='h1' sx={{
+                    <Typography variant='h2' component='h1' color='primary.contrastText' sx={{
+                        marginLeft: '1rem',
                         display: 'flex',
                         alignItems: 'center',
                     }}>
