@@ -20,7 +20,7 @@ function TopMenuItems(item, index) {
                 display: 'flex',
                 flexDirection: 'row',
                 justifyContent: 'center',
-                backgroundColor: 'mobileAppBarBurgerMenu.background',
+                backgroundColor: 'mobileAppBarBurgerMenu.listBackground',
                 color: 'primary.contrastText',
             }}
         >
@@ -44,7 +44,7 @@ function BottomMenuItems(item, index) {
                 display: 'flex',
                 flexDirection: 'row',
                 justifyContent: 'center',
-                backgroundColor: 'mobileAppBarBurgerMenu.background',
+                backgroundColor: 'mobileAppBarBurgerMenu.listBackground',
                 color: 'primary.contrastText',
             }}
         >
@@ -66,14 +66,14 @@ function TopNavBarMobile() {
                      flexDirection: 'column',
                      justifyContent: 'space-between',
                      height: '100%',
+                     backgroundColor: 'mobileAppBarBurgerMenu.background',
                  }}
             >
                 {/* Items at the top */}
                 <Box sx={{
-                    marginTop: '2rem',
-
+                    marginTop: '5rem',
                     '& > *': {
-                        margin: '1rem',
+                        padding: '1rem 0rem',
                     }
                 }}>
                     {topMenuItems.map((item, index) => TopMenuItems(item, index))}

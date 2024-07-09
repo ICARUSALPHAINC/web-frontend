@@ -41,7 +41,8 @@ let theme = createTheme({
         },
 
         mobileAppBarBurgerMenu: {
-            background: '#232323',
+            background: '#1f1f1f',
+            listBackground: '#2b2b2b',
             iconColor: '#fff',
         }
     },
