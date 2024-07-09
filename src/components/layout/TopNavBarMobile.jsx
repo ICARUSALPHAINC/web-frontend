@@ -36,8 +36,10 @@ function BottomMenuItems(item, index) {
         <ListItemButton
             // Make it a link if it's a route, otherwise make it a button with onClickFunction. Render is still button for both.
             key={index}
-            component={item.route ? Link : 'button'}
-            to={item.route ? item.route : undefined}
+            component={item.route ? 'a' : 'button'} // Not using links and using 'a' instead so component can open in a new tab instead of current tab
+            href={item.route ? item.route : undefined}
+            target={item.route ? "_blank" : undefined} // Item opens in new tab instead of current tab
+            rel={item.route ? "noopener noreferrer" : undefined} // Item opens in new tab instead of current tab
             onClick={(item.onClickFunction && !item.route) ? item.onClickFunction : undefined} // onClick if route doesn't exist and onClickFunction exists
             color="inherit"
             sx={{
@@ -49,7 +51,8 @@ function BottomMenuItems(item, index) {
             }}
         >
             {item.icon}
-        </ListItemButton>);
+        </ListItemButton>
+    );
 }
 
 
