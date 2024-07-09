@@ -3,13 +3,14 @@ import {bottomMenuItems, topMenuItems} from "../../configs/menuConfig";
 import {AppBar, Box, Button, Toolbar, Typography, useTheme} from "@mui/material";
 import logo from "../../assets/logo/logo192.png";
 import {Link} from "react-router-dom";
+import {useState} from "react";
 
-// Item icons are for mobile mode only for now
-function frontItemButton(item, index) {
-    return (<>
-
+// Menu items that show up in the front of the menu bar
+function FrontMenuItems(item, index) {
+    return (
         <Button
             // Make it a link if it's a route, otherwise make it a button with onClickFunction. Render is still button for both.
+            key={index}
             component={item.route ? Link : 'button'}
             to={item.route ? item.route : undefined}
             onClick={(item.onClickFunction && !item.route) ? item.onClickFunction : undefined} // onClick if route doesn't exist and onClickFunction exists
@@ -22,17 +23,15 @@ function frontItemButton(item, index) {
             <Typography variant="h3" color='primary.contrastText'>
                 {item.text}
             </Typography>
-        </Button>
-
-    </>);
+        </Button>);
 }
 
 // Item icons are for mobile mode only for now
-function endMenuItems(item, index) {
-    return (<>
-
+function EndMenuItems(item, index) {
+    return (
         <Button
             // Make it a link if it's a route, otherwise make it a button with onClickFunction. Render is still button for both.
+            key={index}
             component={item.route ? Link : 'button'}
             to={item.route ? item.route : undefined}
             onClick={(item.onClickFunction && !item.route) ? item.onClickFunction : undefined} // onClick if route doesn't exist and onClickFunction exists
@@ -43,9 +42,7 @@ function endMenuItems(item, index) {
             }}
         >
             {item.icon}
-        </Button>
-
-    </>);
+        </Button>);
 }
 
 function TopNavBarDesktop() {
@@ -98,7 +95,7 @@ function TopNavBarDesktop() {
                         justifyContent: 'center',
                         gap: '1rem',
                     }}>
-                        {topMenuItems.map((item, index) => frontItemButton(item, index))}
+                        {topMenuItems.map((item, index) => FrontMenuItems(item, index))}
                     </Box>
                 </Box>
 
@@ -109,7 +106,7 @@ function TopNavBarDesktop() {
                     flexDirection: 'row',
                     gap: '0.125rem',
                 }}>
-                    {bottomMenuItems.map((item, index) => endMenuItems(item, index))}
+                    {bottomMenuItems.map((item, index) => EndMenuItems(item, index))}
                 </Box>
 
             </Toolbar>

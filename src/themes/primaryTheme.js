@@ -6,10 +6,10 @@ import { createTheme, responsiveFontSizes } from "@mui/material";
 let theme = createTheme({
     breakpoints: {
         values: {
-            xs: 0,     // Extra-small devices (phones)
-            sm: 750,   // Small devices (tablets)
-            md: 1200,  // Medium devices (desktops)
-            lg: 1280,  // Large devices (large desktops)
+            xs: 0,     // Extra-small devices (small phones)
+            sm: 750,   // Small devices (mobiles)
+            md: 1050,  // Medium devices (tablets)
+            lg: 1280,  // Large devices (desktops)
             xl: 1920,  // Extra-large devices (very large screens)
         },
     },
@@ -38,6 +38,11 @@ let theme = createTheme({
 
         appBar: {
             background: 'linear-gradient(to right, #ff5aa7, #f7a059)',
+        },
+
+        mobileAppBarBurgerMenu: {
+            background: '#232323',
+            iconColor: '#fff',
         }
     },
     typography: {

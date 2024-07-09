@@ -11,7 +11,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 /*
  * Array of objects to be parsed into the menu displays, displays at the start / top of menu's
  *
- * NecessaryFields: text, icon, route || onClickFunction
+ * NecessaryFields: text, route || onClickFunction
  * Optional fields: noMobile, sx
  *
  * text - displayed text for menu
@@ -34,7 +34,6 @@ export const topMenuItems = [
  * NecessaryFields: icon, route || onClickFunction
  * Optional fields: noMobile, sx
  *
- * text - displayed text for menu
  * icon - menu's icon
  * route - where to route when clicked
  * onClickFunction (only if no route) - what to do when clicked
