@@ -7,7 +7,8 @@ import {Container} from "@mui/material";
 
 function HomePage() {
 
-    return (<Container size='lg'>
+    return (
+    <Container size='lg' sx={{padding: 0}}>
 
     </Container>);
 }

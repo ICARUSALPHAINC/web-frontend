@@ -35,8 +35,9 @@ function TopNavBarDesktop() {
             width: '100vw',
         }}>
             <Toolbar sx={{
-                display: 'grid',
-                gridTemplateColumns: 'auto 1fr auto',
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-between',
             }}>
 
                 {/* Icarus logo & text */}
@@ -82,7 +83,7 @@ function TopNavBarDesktop() {
                 </Box>
 
                 {/* Placeholder Box for Right Side Alignment */}
-                <Box sx={{width: '10rem'}}></Box>
+                <Box></Box>
 
             </Toolbar>
         </AppBar>
