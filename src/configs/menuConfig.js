@@ -1,5 +1,6 @@
 import {contactRoutes, routes} from "./routesConfig";
 
+
 // Icon imports only
 import HomeIcon from '@mui/icons-material/Home';
 import GroupsIcon from '@mui/icons-material/Groups';
@@ -7,6 +8,7 @@ import HighlightIcon from '@mui/icons-material/Highlight';
 import AttachEmailIcon from '@mui/icons-material/AttachEmail';
 import MailIcon from '@mui/icons-material/Mail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import XIcon from '@mui/icons-material/X';
 
 /*
  * Array of objects to be parsed into the menu displays, displays at the start / top of menu's
@@ -41,6 +43,7 @@ export const topMenuItems = [
  * sx - sx prop to style the text
  */
 export const bottomMenuItems = [
+    {icon: <XIcon/>, route: contactRoutes.twitter,},
     {icon: <LinkedInIcon/>, route: contactRoutes.linkedIn,},
     {icon: <MailIcon/>, route: contactRoutes.email,},
 ];

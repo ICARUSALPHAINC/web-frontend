@@ -10,6 +10,6 @@ export const routes = {
 export const contactRoutes = {
     email: 'mailto:info@icarusdevteam.com',
     linkedIn: 'https://www.linkedin.com/company/icarus-development/',
+    twitter: 'https://x.com/ICARUSALPHAINC',
     instagram: '',
-    twitter: '',
 };
