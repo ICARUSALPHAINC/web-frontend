@@ -8,9 +8,9 @@ import Home from "../components/layout/Home"
 function HomePage() {
 
     return (
-    <Container size='xl'>
+    
         <Home />
-    </Container>);
+    );
 }
 
 export default HomePage;

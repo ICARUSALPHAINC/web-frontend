@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Box, Button, Typography, Paper, Link,  } from '@mui/material';
+import { Container, Box, Button, Typography, Paper, Link } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -10,14 +10,13 @@ const ContactPage = () => {
     <Container
       sx={{
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: { xs: 'column', md: 'row' },
         alignItems: 'center',
         justifyContent: 'center',
         background: 'linear-gradient(45deg, #444 30%, #FF8E53 90%)',
         color: '#fff',
         minHeight: '80vh',
         padding: '0 !important',
-        height: '50ch',
         width: '100%',
         marginTop: '2rem',
         marginBottom: '2rem', 
@@ -29,20 +28,21 @@ const ContactPage = () => {
           boxSizing: 'initial',
           borderRadius: '10px',
           padding: '2rem',
-          width: '50ch',
+          width: { xs: '80%', md: '50ch' },
           textAlign: 'center',
-          height: '50ch',
+          height: 'auto',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          marginRight: '10ch'
+          marginRight: { md: '10ch' },
+          marginBottom: { xs: '2rem', md: '0' },
         }}
       >
         <Typography variant="h1" gutterBottom>
-          Talk to a Human
+          Contact Us
         </Typography>
-        <Typography sx={{ margin: '1rem 0' }}>
-          Ask how can we help you
+        <Typography variant = "h6" sx={{ margin: '1rem 0' }}>
+          We invite you to join us on this exciting adventure. We are always looking for talented and driven individuals who are passionate about doing things differently. Together, we are shaping the future, one idea at a time.
         </Typography>
       </Box>
       <Paper
@@ -50,25 +50,23 @@ const ContactPage = () => {
           background: 'linear-gradient(45deg, #333 30%, #555 90%)',
           borderRadius: '20px',
           padding: '2rem',
-          width: '50ch',
           textAlign: 'center',
-          height: '50ch',
+          height: 'auto',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
-          alignItems: 'center', // Centering the content horizontally
+          alignItems: 'center',
           borderLeft: 1,
-          borderTop: 1
+          borderTop: 1,
+          width: { xs: '80%', md: '40%' }, // Adjusted width for responsiveness
+          minHeight: '50ch', // Adjusted minimum height for content
         }}
       >
-        <Typography variant="h1" gutterBottom>
-          Contact Us
-        </Typography>
-        <Typography sx={{ margin: '1rem 0' }}>
+        <Typography variant = "h5" sx={{ margin: '1rem 0' }}>
           Based in Davis, California
-        </Typography>
-        <Typography sx={{ margin: '1rem 0' }}>
-          Email: Something@something
+          <br />
+          <br />
+          Email: contact@company.com
         </Typography>
         <Box
           sx={{
@@ -77,16 +75,16 @@ const ContactPage = () => {
             margin: '1rem 0'
           }}
         >
-          <Link href="https://www.facebook.com" target="_blank" sx={{ margin: '0 1rem', fontSize: 40, color: '#fff', transition: 'scale 0.5s', '&:hover': { scale: '1.2' } }}>
+          <Link href="https://www.facebook.com" target="_blank" sx={{ margin: '0 0.5rem', fontSize: 40, color: '#fff', transition: 'scale 0.5s', '&:hover': { scale: '1.2' } }}>
             <FacebookIcon />
           </Link>
-          <Link href="https://www.instagram.com" target="_blank" sx={{ margin: '0 1rem', fontSize: 40, color: '#fff', transition: 'scale 0.5s','&:hover': { scale: '1.2' } }}>
+          <Link href="https://www.instagram.com" target="_blank" sx={{ margin: '0 0.5rem', fontSize: 40, color: '#fff', transition: 'scale 0.5s','&:hover': { scale: '1.2' } }}>
             <InstagramIcon />
           </Link>
-          <Link href="https://www.twitter.com" target="_blank" sx={{ margin: '0 1rem', fontSize: 40, color: '#fff', transition: 'scale 0.5s', '&:hover': { scale: '1.2' } }}>
+          <Link href="https://www.twitter.com" target="_blank" sx={{ margin: '0 0.5rem', fontSize: 40, color: '#fff', transition: 'scale 0.5s', '&:hover': { scale: '1.2' } }}>
             <TwitterIcon />
           </Link>
-          <Link href="https://www.linkedin.com" target="_blank" sx={{ margin: '0 1rem', fontSize: 40, color: '#fff', transition: 'scale 0.5s', '&:hover': { scale: '1.2' } }}>
+          <Link href="https://www.linkedin.com" target="_blank" sx={{ margin: '0 0.5rem', fontSize: 40, color: '#fff', transition: 'scale 0.5s', '&:hover': { scale: '1.2' } }}>
             <LinkedInIcon fontSize="medium" />
           </Link>
         </Box>
@@ -111,7 +109,6 @@ const ContactPage = () => {
             width: '20ch',
             marginTop: '1rem',
             background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-            
             transition: "opacity 0.5s",
             '&:hover': {
               opacity: 0.5,

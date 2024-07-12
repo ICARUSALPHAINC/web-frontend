@@ -6,7 +6,7 @@ function ContactUsPage() {
     
     // TODO: add details on how to reach us.
    
-    return(<Container maxWidth = "lg" sx = {{padding: '0 !important'}}>
+    return(<Container maxWidth = "lg">
         <ContactPage />
     </Container>)
 }

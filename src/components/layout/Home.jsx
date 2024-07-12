@@ -1,6 +1,5 @@
-// src/Home.js
-import React, { useRef } from 'react';
-import { Box, Typography, Container, IconButton, Grid } from '@mui/material';
+import React, { useRef, useState, useEffect } from 'react';
+import { Box, Typography, Container, IconButton, Grid, AppBar, Toolbar, useTheme } from '@mui/material';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import { keyframes } from '@emotion/react';
 import bg from '../../assets/clouds/clouds3.jpg';
@@ -19,29 +18,53 @@ const bounce = keyframes`
 `;
 
 // Animation for the text
-const fadeIn = keyframes`
-  from {
+const fadeInOut = keyframes`
+  0% {
     opacity: 0;
   }
-  to {
+  10% {
     opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 `;
 
 const Home = () => {
   const descriptionRef = useRef(null);
+  const theme = useTheme(); // Get the MUI theme
 
   const scrollToDescription = () => {
     descriptionRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const slogans = [
+    "Shaping Ideas into Reality",
+    "Empowering Innovation, Together",
+    "Innovating the Future",
+    "Transforming Concepts into Success",
+  ];
+
+  const [sloganIndex, setSloganIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setSloganIndex((prevIndex) => (prevIndex + 1) % slogans.length);
+    }, 4000); // Change slogan every 4 seconds
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
-    <div>
+   
+    <container>
       {/* Cover Section */}
       <Box
         sx={{
-          height: '80ch',
-          
+          height: `92vh`, // Adjust height based on AppBar
           backgroundImage: `url(${bg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -60,12 +83,26 @@ const Home = () => {
           gutterBottom
           sx={{
             zIndex: 1,
-            
-            animation: `${fadeIn} 2s ease-in-out`,
+            animation: `${fadeInOut} 4s`,
           }}
         >
           Welcome to Icarus Development
         </Typography>
+        
+        <Typography
+          variant="h5"
+          component="h2"
+          gutterBottom
+          key={sloganIndex} // Use key to trigger re-render
+          sx={{
+            zIndex: 1,
+            color: 'red',
+            animation: `${fadeInOut} 4s`,
+          }}
+        >
+          {slogans[sloganIndex]}
+        </Typography>
+
         <IconButton
           color="primary"
           onClick={scrollToDescription}
@@ -84,20 +121,25 @@ const Home = () => {
       {/* Description and Projects Section */}
       <Container ref={descriptionRef} sx={{ py: 9 }}>
         {/* Company Description with Trapezoid Image */}
-        <Grid container spacing={0} sx={{ mb: 5 }}>
-          <Grid item xs={12} md={6} sx={{ pr: 2 }}>
+        <Grid container spacing={0} sx={{ mb: 5, display: 'flex', alignItems: 'stretch' }}>
+          <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column' }}>
             <Typography variant="h4" component="h2" gutterBottom>
               About Us
             </Typography>
             <Typography variant="body1" paragraph>
-              Somedescription  Somedescription Somedescription Somedescription Somedescription Somedescription Somedescription Somedescription Somedescription Somedescription Somedescription Somedescription Somedescription Somedescription Somedescription.
+              Welcome to Icarus Development, the nexus of cutting-edge innovation and collaboration. We are dedicated to projects that push the limits of technology. 
+              By refusing to fly low to the ground, we break free from the corporate status quo. This fearless drive to innovate and succeed empowers us to push boundaries and reach new heights.
+              <br />
+              <br />
+              At Icarus Development, we believe in the power of collective creativity. Each team member brings unique skills and perspectives, allowing us to tackle complex challenges and develop forward-thinking solutions. Our projects span various industries, all aiming to make a meaningful impact.
+              We invite you to join us on this exciting adventure. Together, we are shaping the future, one idea at a time.
             </Typography>
           </Grid>
-          <Grid item xs={12} md={2}>
+          <Grid item xs={12} md={6} sx={{ display: 'flex', alignItems: 'center' }}>
             <Box
               sx={{
-                width: '80vh',
-                height: '50ch',
+                width: '100%',
+                height: '100%',
                 backgroundImage: `url(${bg})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
@@ -120,7 +162,7 @@ const Home = () => {
           <li>Project C - Description of project C.</li>
         </ul>
       </Container>
-    </div>
+    </container>
   );
 };
 
