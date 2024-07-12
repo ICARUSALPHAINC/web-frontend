@@ -15,6 +15,7 @@ export function getProjectData(){
     //  Title, logo, and link must always be rendered, other objects must only be rendered if they exist, if not skip them.
 
     return [
+        THIS IS A SHITTY THING THAT BREAKS THIS CODE RAHHHHH
         {
             title: 'A cool project',
             // Random image of a pumpkin for now, ensure it is wrapped in a MUI avatar
