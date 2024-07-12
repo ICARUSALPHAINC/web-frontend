@@ -9,6 +9,8 @@ import AttachEmailIcon from '@mui/icons-material/AttachEmail';
 import MailIcon from '@mui/icons-material/Mail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 /*
  * Array of objects to be parsed into the menu displays, displays at the start / top of menu's
@@ -44,6 +46,8 @@ export const topMenuItems = [
  */
 export const bottomMenuItems = [
     {icon: <XIcon/>, route: contactRoutes.twitter,},
+    {icon: <InstagramIcon/>, route: contactRoutes.instagram,},
+    {icon: <FacebookIcon/>, route: contactRoutes.facebook,},
     {icon: <LinkedInIcon/>, route: contactRoutes.linkedIn,},
     {icon: <MailIcon/>, route: contactRoutes.email,},
 ];
