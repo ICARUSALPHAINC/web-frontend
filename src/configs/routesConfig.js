@@ -8,9 +8,8 @@ export const routes = {
 
 // URLs to all contact information
 export const contactRoutes = {
-    email: '',
-    linkedIn: '',
+    email: 'mailto:info@icarusdevteam.com',
+    linkedIn: 'https://www.linkedin.com/company/icarus-development/',
+    twitter: 'https://x.com/ICARUSALPHAINC',
     instagram: '',
-    twitter: '',
-    
 };
