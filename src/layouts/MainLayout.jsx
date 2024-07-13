@@ -20,6 +20,7 @@ function MainLayout({ children }) {
             gridTemplateColumns: 'auto',
             gridTemplateRows: 'auto 1fr',
             overflowX: 'auto',
+            height: '100vh',
             width: '100vw',
         }}>
             {mobileView?
@@ -32,7 +33,11 @@ function MainLayout({ children }) {
              <>
                  <TopNavBarDesktop/>
                  {children}
+                 <Box sx={{
+                     marginTop: 'auto'
+                 }}>
                  <Footer/>
+                 </Box>
              </>
             }
 

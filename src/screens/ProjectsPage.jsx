@@ -1,130 +1,100 @@
-import React, { useEffect, useState } from 'react';
-import { Card, CardContent, Typography, Grid, CircularProgress, CardMedia, Pagination, Box } from '@mui/material';
-import { styled } from '@mui/system';
-import { Typewriter } from 'react-simple-typewriter';
-import { getProjectData } from '../services/projectDataService'; 
+import React, {useEffect, useState} from 'react';
+import {Card, CardContent, Typography, Grid, CircularProgress, CardMedia, Pagination, Box, Alert} from '@mui/material';
+import {getProjectData} from '../services/projectDataService';
+import {Typewriter} from "react-simple-typewriter";
 
-// Styled components for Card and Link
-const StyledCard = styled(Card)(({ theme }) => ({
-  maxWidth: '100%',
-  width: '100%',
-  transition: '0.3s',
-  borderRadius: 10,
-  boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
-  '&:hover': {
-    transform: 'scale(1.05)',
-  },
-}));
+// ProjectsPage Component: Displays a list of projects with pagination
+function ProjectsPage() {
+    const [projects, setProjects] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 6;
 
-const StyledLink = styled('a')(({ theme }) => ({
-  textDecoration: 'none',
-  color: theme.palette.primary.main,
-  '&:hover': {
-    textDecoration: 'underline',
-  },
-}));
+    // Load project data / error on component mount
+    useEffect(() => {
+        const fetchProjects = async () => {
+            const data = await getProjectData();
+            setProjects(data);
+            if ((data[0]).error) {
+                setError(`Error Loading Projects: ${(data[0]).error}`);
+            }
+            setLoading(false);
+        };
+        fetchProjects();
+    }, []);
 
+    const handlePageChange = (event, value) => {
+        setCurrentPage(value);
+    };
 
-// Styled component for the pagination container
-const PaginationContainer = styled('div')(({ theme }) => ({
-  display: 'flex',
-  justifyContent: 'center',
-  marginTop: theme.spacing(4),
-}));
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const paginatedProjects = projects.slice(startIndex, startIndex + itemsPerPage);
 
-
-const ProjectsPage = () => {
-  // State for projects data, loading state, error state, and current page
-  const [projects, setProjects] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 6; // Number of projects per page
-
-// Fetch projects data on component mount
-useEffect(() => {
-  const fetchProjects = async () => {
-    try {
-      const data = getProjectData();
-      setProjects(data);
-    } catch (err) {
-      setError('Failed to fetch projects');
-    } finally {
-      setLoading(false);
+    if (loading) {
+        return <CircularProgress/>;
     }
-  };
-  fetchProjects();
-}, []);
 
-const handlePageChange = (event, value) => {
-  setCurrentPage(value);
-};
+    if (error) {
+        return <Box sx={{mt: '1rem', padding: '1rem'}}><Alert severity="error"> {error} </Alert></Box>
+    }
 
-// Calculate pagination
-const startIndex = (currentPage - 1) * itemsPerPage;
-const paginatedProjects = projects.slice(startIndex, startIndex + itemsPerPage);
+    return (
+        <Box sx={{textAlign: 'center', m: 4}}>
+            <Typography variant="h2" gutterBottom>
+                Innovative Projects
+            </Typography>
 
-// Show loading spinner while data is being fetched
-if (loading) {
-  return <CircularProgress />;
+            <Typography variant="h6" component="h2" color="textSecondary" sx={{mb: '1rem'}}>
+                <Typewriter
+                    words={['Discover what we\'re building and explore our latest endeavors!', 'Dive into what our team is creating!']}
+                    loop={3}
+                    cursor
+                    cursorStyle=""
+                    typeSpeed={50}
+                    deleteSpeed={50}
+                    delaySpeed={300}
+                />
+            </Typography>
+
+            <Grid container spacing={4} justifyContent="center">
+                {paginatedProjects.map((project, index) => (
+                    <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+                        <Card sx={{maxWidth: '100%', transition: '0.3s', '&:hover': {transform: 'scale(1.05)'}}}>
+                            <CardMedia
+                                component="img"
+                                height="140"
+                                image={project.logo}
+                                alt={project.title}
+                            />
+                            <CardContent>
+                                <Typography variant="h5">{project.title}</Typography>
+                                <Typography variant="body2" color="textSecondary">
+                                    {project.description}
+                                </Typography>
+                                <Typography component="a" href={project.link} target="_blank" rel="noopener noreferrer"
+                                            sx={{
+                                                textDecoration: 'none',
+                                                color: 'primary.main',
+                                                '&:hover': {textDecoration: 'underline'}
+                                            }}>
+                                    Learn More
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                ))}
+            </Grid>
+            <Box sx={{display: 'flex', justifyContent: 'center', mt: 4}}>
+                <Pagination
+                    count={Math.ceil(projects.length / itemsPerPage)}
+                    page={currentPage}
+                    onChange={handlePageChange}
+                    color="primary"
+                />
+            </Box>
+        </Box>
+    );
 }
-
-// Show error message if data fetching fails
-if (error) {
-  return <Typography variant="h6" color="error">{error}</Typography>;
-}
-
-return (
-  <div>
-    <Box textAlign="center" mb={4} mt={4}>
-      <Typography variant="h2" component="h1" gutterBottom>
-          Innovative Projects
-      </Typography>
-      <Typography variant="h6" component="h2" color="textSecondary">
-          D<Typewriter
-              words={['iscover what we\'re building and explore our latest endeavors!', 'ive into what our team is creating!']}
-              loop={3}
-              cursor
-              cursorStyle=""
-              typeSpeed={50}
-              deleteSpeed={50}
-              delaySpeed={300}
-          />
-      </Typography>
-    </Box>
-    <Grid container spacing={4} justifyContent="center" style={{ padding: '20px' }}>
-      {paginatedProjects.map((project, index) => (
-        <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-          <StyledCard>
-            <CardMedia
-              component="img"
-              height="140"
-              image={project.logo}
-              alt={project.title}
-            />
-            <CardContent>
-              <Typography variant="h5" component="div">
-                {project.title}
-              </Typography>
-              <Typography variant="body2" color="textSecondary">
-                {project.description}
-              </Typography>
-              <StyledLink href={project.link} target="_blank" rel="noopener noreferrer">Learn More</StyledLink>
-            </CardContent>
-          </StyledCard>
-        </Grid>
-      ))}
-    </Grid>
-    <PaginationContainer>
-      <Pagination
-        count={Math.ceil(projects.length / itemsPerPage)}
-        page={currentPage}
-        onChange={handlePageChange}
-        color="primary"
-      />
-    </PaginationContainer>
-  </div>
-);
-};
 
 export default ProjectsPage;

@@ -3,6 +3,12 @@
 
 import { createTheme, responsiveFontSizes } from "@mui/material";
 
+import '@fontsource/inter'; // Defaults to weight 400
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '@fontsource/inter/700.css';
+
 let theme = createTheme({
     breakpoints: {
         values: {
@@ -49,7 +55,7 @@ let theme = createTheme({
     typography: {
         fontFamily: 'Arial, sans-serif',
         h1: {
-            fontFamily: 'Arial, sans-serif',
+            fontFamily: 'Inter, Arial, sans-serif',
             fontWeight: 700,
             fontSize: '2.95rem',
             background: 'linear-gradient(to right, #ff5aa7, #f7a059)',
@@ -58,7 +64,7 @@ let theme = createTheme({
             color: 'transparent',
         },
         h2: {
-            fontFamily: 'Arial, sans-serif',
+            fontFamily: 'Inter, Arial, sans-serif',
             fontWeight: 600,
             fontSize: '2.45rem',
             background: 'linear-gradient(to right, #4cb6fd, #4bff93)',
@@ -67,7 +73,7 @@ let theme = createTheme({
             color: 'transparent',
         },
         h3: {
-            fontFamily: 'Arial, sans-serif',
+            fontFamily: 'Inter, Arial, sans-serif',
             fontWeight: 500,
             fontSize: '1.75rem',
             background: 'linear-gradient(to right, #38f4d8, #2ebac6)',
@@ -76,26 +82,30 @@ let theme = createTheme({
             color: 'transparent',
         },
         h4: {
-            fontFamily: 'Arial, sans-serif',
+            fontFamily: 'Inter, Arial, sans-serif',
+            color: '#38f4d8',
             fontWeight: 400,
             fontSize: '1.75rem',
         },
         h5: {
-            fontFamily: 'Arial, sans-serif',
+            fontFamily: 'Inter, Arial, sans-serif',
+            color: '#2ebac6',
             fontWeight: 400,
             fontSize: '1.5rem',
         },
         h6: {
-            fontFamily: 'Arial, sans-serif',
+            fontFamily: 'Inter, Arial, sans-serif',
+            color: '#2ebac6',
             fontWeight: 400,
             fontSize: '1.25rem',
         },
         body1: {
             fontFamily: 'Arial, sans-serif',
-            fontSize: '1em',
+            fontSize: '1.12rem',
         },
         body2: {
             fontFamily: 'Arial, sans-serif',
+            fontSize: '1.12rem',
         },
     },
     components: {

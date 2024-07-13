@@ -11,6 +11,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import React from "react";
 
 /*
  * Array of objects to be parsed into the menu displays, displays at the start / top of menu's
@@ -46,9 +47,19 @@ export const topMenuItems = [
  */
 export const bottomMenuItems = [
     {icon: <XIcon/>, route: contactRoutes.twitter,},
-    {icon: <InstagramIcon/>, route: contactRoutes.instagram,},
-    {icon: <FacebookIcon/>, route: contactRoutes.facebook,},
     {icon: <LinkedInIcon/>, route: contactRoutes.linkedIn,},
     {icon: <MailIcon/>, route: contactRoutes.email,},
 ];
 
+/*
+ * Array of objects to be parsed into list of social media contacts wherever needed.
+ *
+ * Fields: icon, link
+ */
+export const socialIconsList = [
+    {icon: <InstagramIcon/>, link: contactRoutes.instagram},
+    {icon: <FacebookIcon/>, link: contactRoutes.facebook},
+    {icon: <XIcon/>, link: contactRoutes.twitter},
+    {icon: <LinkedInIcon/>, link: contactRoutes.linkedIn},
+    {icon: <MailIcon/>, route: contactRoutes.email},
+];
