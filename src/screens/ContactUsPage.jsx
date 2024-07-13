@@ -1,31 +1,9 @@
 import React from 'react';
-import {Container, Box, Button, Typography, Paper, Link} from '@mui/material';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import {Container, Box, Button, Typography, Paper} from '@mui/material';
 import {contactRoutes} from "../configs/routesConfig";
+import {socialIconsList} from "../configs/menuConfig";
+import SocialIcon from "../components/SocialIcon";
 
-const socialIconsList = [
-    {icon: <FacebookIcon/>, link: contactRoutes.facebook},
-    {icon: <TwitterIcon/>, link: contactRoutes.twitter},
-    {icon: <InstagramIcon/>, link: contactRoutes.instagram},
-    {icon: <LinkedInIcon/>, link: contactRoutes.linkedIn},
-];
-
-// Item has item.link, item.icon
-function socialIcon(item) {
-    return (
-        <Link href={item.link} target="_blank" sx={{
-            margin: '0 0.5rem',
-            fontSize: 40,
-            color: '#fff',
-            transition: 'scale 0.5s',
-            '&:hover': {scale: '1.2'}
-        }}>
-            {item.icon}
-        </Link>);
-}
 
 function ContactUsPage() {
 
@@ -89,9 +67,6 @@ function ContactUsPage() {
             >
                 <Typography variant="h5" sx={{margin: '1rem 0'}}>
                     Based in Davis, California
-                    <br/>
-                    <br/>
-                    Email: {contactRoutes.email.split(':')[1]}
                 </Typography>
                 <Box
                     sx={{
@@ -100,7 +75,7 @@ function ContactUsPage() {
                         margin: '1rem 0'
                     }}
                 >
-                    {socialIconsList.map((item) => socialIcon(item))}
+                    {socialIconsList.map((item) => SocialIcon(item))}
                 </Box>
                 <Button
                     variant="contained"

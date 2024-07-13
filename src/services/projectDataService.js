@@ -8,7 +8,7 @@
  * - `description` (string, sometimes present)
  * @returns {Array<Object>} If error: Array with the first object containing an `error` field with the error description.
  */
-export function getProjectData(){
+export async function getProjectData(){
 
     //  Temporarily we have created an array of objects to represent projects
     //  Eventually this will be replaced with a backend api call. The object is just here to give you a structure

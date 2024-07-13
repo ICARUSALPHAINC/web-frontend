@@ -34,9 +34,8 @@ const fadeInOut = keyframes`
   }
 `;
 
-const Home = () => {
+function HomePage(){
     const descriptionRef = useRef(null);
-    const theme = useTheme(); // Get the MUI theme
 
     const scrollToDescription = () => {
         descriptionRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -60,8 +59,7 @@ const Home = () => {
     }, []);
 
     return (
-
-        <container>
+        <>
             {/* Cover Section */}
             <Box
                 sx={{
@@ -131,7 +129,7 @@ const Home = () => {
 
                 <Grid container spacing={0} sx={{ mb: 5, display: 'flex', alignItems: 'stretch' }}>
                     <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column' }}>
-                        <Typography variant="body1" paragraph>
+                        <Typography variant="body1">
                             Welcome to Icarus Development, the nexus of cutting-edge innovation and collaboration. We are dedicated to projects that push the limits of technology.
                             By refusing to fly low to the ground, we break free from the corporate status quo. This fearless drive to innovate and succeed empowers us to push boundaries and reach new heights.
                             <br />
@@ -154,15 +152,13 @@ const Home = () => {
                     </Grid>
                 </Grid>
 
-                {/* On going projects */}
-                <Box>
-                    <ProjectsPage/>
-                </Box>
+                {/* Ongoing projects view */}
+                <ProjectsPage/>
 
 
             </Container>
-        </container>
+        </>
     );
-};
+}
 
-export default Home;
+export default HomePage;

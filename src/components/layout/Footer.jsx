@@ -1,10 +1,9 @@
 // Footer.js
 import React from 'react';
 import { Box, Link, Typography } from '@mui/material';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import {socialIconsList} from "../../configs/menuConfig";
+import SocialIcon from "../SocialIcon";
+import {contactRoutes, routes} from "../../configs/routesConfig";
 
 const Footer = () => {
   return (
@@ -32,23 +31,14 @@ const Footer = () => {
         <Typography variant="body2">
           &copy; {new Date().getFullYear()} Icarus Development. All rights reserved.
         </Typography>
+
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
           <Typography variant="body2" sx={{ marginRight: '2rem' }}>
-            Email: contact@company.com
+            {contactRoutes.email.split(':')[1]}
           </Typography>
-          <Link href="https://www.facebook.com" target="_blank" sx={{ margin: '0 0.5rem', color: '#fff', '&:hover': { color: '#3b5998' } }}>
-            <FacebookIcon fontSize="medium" />
-          </Link>
-          <Link href="https://www.instagram.com" target="_blank" sx={{ margin: '0 0.5rem', color: '#fff', '&:hover': { color: '#E4405F' } }}>
-            <InstagramIcon fontSize="medium" />
-          </Link>
-          <Link href="https://www.twitter.com" target="_blank" sx={{ margin: '0 0.5rem', color: '#fff', '&:hover': { color: '#1DA1F2' } }}>
-            <TwitterIcon fontSize="medium" />
-          </Link>
-          <Link href="https://www.linkedin.com" target="_blank" sx={{ margin: '0 0.5rem', color: '#fff', '&:hover': { color: '#0077b5' } }}>
-            <LinkedInIcon fontSize="medium" />
-          </Link>
+            {socialIconsList.map((item) => SocialIcon(item))}
         </Box>
+
       </Box>
     </footer>
   );
