@@ -1,13 +1,13 @@
 import {theme} from "./themes/primaryTheme";
 import {CssBaseline, ThemeProvider} from "@mui/material";
 import {Route, Routes} from "react-router-dom";
-import HomePage from "./screens/HomePage";
 import MainLayout from "./layouts/MainLayout";
 import {routes} from "./configs/routesConfig";
 import ProjectsPage from "./screens/ProjectsPage";
 import TeamPage from "./screens/TeamPage";
 import ContactUsPage from "./screens/ContactUsPage";
 import NoPage from "./screens/NoPage";
+import HomePage from "./screens/HomePage";
 
 /**
  * Main app, wrapped inside other JSX & React components in index.js.

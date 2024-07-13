@@ -52,7 +52,6 @@ function TopNavBarDesktop() {
         <AppBar position="static" sx={{
             background: `${theme.palette.appBar.background}`,
             width: '100vw',
-            height: '8vh'
         }}>
             <Toolbar sx={{
                 display: 'flex',

@@ -77,25 +77,29 @@ let theme = createTheme({
         },
         h4: {
             fontFamily: 'Arial, sans-serif',
+            color: '#38f4d8',
             fontWeight: 400,
             fontSize: '1.75rem',
         },
         h5: {
             fontFamily: 'Arial, sans-serif',
+            color: '#2ebac6',
             fontWeight: 400,
             fontSize: '1.5rem',
         },
         h6: {
             fontFamily: 'Arial, sans-serif',
+            color: '#2ebac6',
             fontWeight: 400,
             fontSize: '1.25rem',
         },
         body1: {
             fontFamily: 'Arial, sans-serif',
-            fontSize: '1em',
+            fontSize: '1.12rem',
         },
         body2: {
             fontFamily: 'Arial, sans-serif',
+            fontSize: '1.12rem',
         },
     },
     components: {
