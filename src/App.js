@@ -2,7 +2,6 @@ import {theme} from "./themes/primaryTheme";
 import {CssBaseline, ThemeProvider} from "@mui/material";
 import {Route, Routes} from "react-router-dom";
 import HomePage from "./screens/HomePage";
-import TopNavBarDesktop from "./components/layout/TopNavBarDesktop";
 import MainLayout from "./layouts/MainLayout";
 import {routes} from "./configs/routesConfig";
 import ProjectsPage from "./screens/ProjectsPage";
