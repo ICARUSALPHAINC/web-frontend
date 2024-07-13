@@ -46,8 +46,6 @@ export const topMenuItems = [
  */
 export const bottomMenuItems = [
     {icon: <XIcon/>, route: contactRoutes.twitter,},
-    {icon: <InstagramIcon/>, route: contactRoutes.instagram,},
-    {icon: <FacebookIcon/>, route: contactRoutes.facebook,},
     {icon: <LinkedInIcon/>, route: contactRoutes.linkedIn,},
     {icon: <MailIcon/>, route: contactRoutes.email,},
 ];

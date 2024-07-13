@@ -122,11 +122,15 @@ const Home = () => {
             {/* Description and Projects Section */}
             <Container ref={descriptionRef} sx={{ py: 9 }}>
                 {/* Company Description with Trapezoid Image */}
+
+                <Typography variant="h2" component="h1" gutterBottom sx={{
+                    textAlign: 'center',
+                }}>
+                    About Us
+                </Typography>
+
                 <Grid container spacing={0} sx={{ mb: 5, display: 'flex', alignItems: 'stretch' }}>
                     <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column' }}>
-                        <Typography variant="h4" component="h2" gutterBottom>
-                            About Us
-                        </Typography>
                         <Typography variant="body1" paragraph>
                             Welcome to Icarus Development, the nexus of cutting-edge innovation and collaboration. We are dedicated to projects that push the limits of technology.
                             By refusing to fly low to the ground, we break free from the corporate status quo. This fearless drive to innovate and succeed empowers us to push boundaries and reach new heights.
