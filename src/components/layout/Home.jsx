@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Box, Typography, Container, IconButton, Grid, AppBar, Toolbar, useTheme } from '@mui/material';
+import { Box, Typography, Container, IconButton, Grid, useTheme } from '@mui/material';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import { keyframes } from '@emotion/react';
 import bg from '../../assets/clouds/clouds3.jpg';
@@ -33,6 +33,15 @@ const fadeInOut = keyframes`
   }
 `;
 
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
+
 const Home = () => {
   const descriptionRef = useRef(null);
   const theme = useTheme(); // Get the MUI theme
@@ -44,22 +53,27 @@ const Home = () => {
   const slogans = [
     "Shaping Ideas into Reality",
     "Empowering Innovation, Together",
-    "Innovating the Future",
-    "Transforming Concepts into Success",
   ];
 
   const [sloganIndex, setSloganIndex] = useState(0);
+  const [finalSlogan, setFinalSlogan] = useState(false);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setSloganIndex((prevIndex) => (prevIndex + 1) % slogans.length);
+      setSloganIndex((prevIndex) => {
+        const newIndex = prevIndex + 1;
+        if (newIndex === slogans.length - 1) {
+          setFinalSlogan(true);
+          clearInterval(intervalId);
+        }
+        return newIndex;
+      });
     }, 4000); // Change slogan every 4 seconds
-
+    
     return () => clearInterval(intervalId);
   }, []);
 
   return (
-   
     <container>
       {/* Cover Section */}
       <Box
@@ -83,7 +97,7 @@ const Home = () => {
           gutterBottom
           sx={{
             zIndex: 1,
-            animation: `${fadeInOut} 4s`,
+            animation: `${fadeIn} 4s`,
           }}
         >
           Welcome to Icarus Development
@@ -97,7 +111,7 @@ const Home = () => {
           sx={{
             zIndex: 1,
             color: 'red',
-            animation: `${fadeInOut} 4s`,
+            animation: finalSlogan ? `${fadeIn} 4s` : `${fadeInOut} 4s`,
           }}
         >
           {slogans[sloganIndex]}

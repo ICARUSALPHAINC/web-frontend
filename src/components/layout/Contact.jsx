@@ -1,9 +1,6 @@
 import React from 'react';
-import { Container, Box, Button, Typography, Paper, Link } from '@mui/material';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { Container, Box, Button, Typography, Paper, IconButton} from '@mui/material';
+import { bottomMenuItems } from "../../configs/menuConfig";
 
 const ContactPage = () => {
   return (
@@ -75,18 +72,16 @@ const ContactPage = () => {
             margin: '1rem 0'
           }}
         >
-          <Link href="https://www.facebook.com" target="_blank" sx={{ margin: '0 0.5rem', fontSize: 40, color: '#fff', transition: 'scale 0.5s', '&:hover': { scale: '1.2' } }}>
-            <FacebookIcon />
-          </Link>
-          <Link href="https://www.instagram.com" target="_blank" sx={{ margin: '0 0.5rem', fontSize: 40, color: '#fff', transition: 'scale 0.5s','&:hover': { scale: '1.2' } }}>
-            <InstagramIcon />
-          </Link>
-          <Link href="https://www.twitter.com" target="_blank" sx={{ margin: '0 0.5rem', fontSize: 40, color: '#fff', transition: 'scale 0.5s', '&:hover': { scale: '1.2' } }}>
-            <TwitterIcon />
-          </Link>
-          <Link href="https://www.linkedin.com" target="_blank" sx={{ margin: '0 0.5rem', fontSize: 40, color: '#fff', transition: 'scale 0.5s', '&:hover': { scale: '1.2' } }}>
-            <LinkedInIcon fontSize="medium" />
-          </Link>
+          {bottomMenuItems.map((item, index) => (
+            <IconButton
+              key={index}
+              href={item.route}
+              color="inherit"
+              sx={{ marginLeft: '0.5rem' }}
+            >
+              {item.icon}
+            </IconButton>
+          ))}
         </Box>
         <Button
           variant="contained"

@@ -51,3 +51,4 @@ export const bottomMenuItems = [
     {icon: <LinkedInIcon/>, route: contactRoutes.linkedIn,},
     {icon: <MailIcon/>, route: contactRoutes.email,},
 ];
+
