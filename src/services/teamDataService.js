@@ -34,6 +34,62 @@ export async function getTeamMemberData(){
             profileLink: 'https://just-an-example-url-two.icarusdevteam.com', // This can be linked in or any other link we choose
             bio: 'About the team member 2',
         },
+        {
+            name: 'Team Member 2',
+            role: 'designer',
+            // Random image for now, this is a good test to ensure it is wrapped in a MUI avatar and ensure and it is rendered with a proper width and height removing extra background!
+            profileImage: 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg',
+            profileLink: 'https://just-an-example-url-two.icarusdevteam.com', // This can be linked in or any other link we choose
+            bio: 'About the team member 2',
+        },
+        {
+            name: 'Team Member 2',
+            role: 'designer',
+            // Random image for now, this is a good test to ensure it is wrapped in a MUI avatar and ensure and it is rendered with a proper width and height removing extra background!
+            profileImage: 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg',
+            profileLink: 'https://just-an-example-url-two.icarusdevteam.com', // This can be linked in or any other link we choose
+            bio: 'About the team member 2',
+        },
+        {
+            name: 'Team Member 2',
+            role: 'designer',
+            // Random image for now, this is a good test to ensure it is wrapped in a MUI avatar and ensure and it is rendered with a proper width and height removing extra background!
+            profileImage: 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg',
+            profileLink: 'https://just-an-example-url-two.icarusdevteam.com', // This can be linked in or any other link we choose
+            bio: 'About the team member 2',
+        },
+        {
+            name: 'Team Member 2',
+            role: 'designer',
+            // Random image for now, this is a good test to ensure it is wrapped in a MUI avatar and ensure and it is rendered with a proper width and height removing extra background!
+            profileImage: 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg',
+            profileLink: 'https://just-an-example-url-two.icarusdevteam.com', // This can be linked in or any other link we choose
+            bio: 'About the team member 2',
+        },
+        {
+            name: 'Team Member 2',
+            role: 'designer',
+            // Random image for now, this is a good test to ensure it is wrapped in a MUI avatar and ensure and it is rendered with a proper width and height removing extra background!
+            profileImage: 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg',
+            profileLink: 'https://just-an-example-url-two.icarusdevteam.com', // This can be linked in or any other link we choose
+            bio: 'About the team member 2',
+        },
+        {
+            name: 'Team Member 2',
+            role: 'designer',
+            // Random image for now, this is a good test to ensure it is wrapped in a MUI avatar and ensure and it is rendered with a proper width and height removing extra background!
+            profileImage: 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg',
+            profileLink: 'https://just-an-example-url-two.icarusdevteam.com', // This can be linked in or any other link we choose
+            bio: 'About the team member 2',
+        },
+        {
+            name: 'Team Member 2',
+            role: 'designer',
+            // Random image for now, this is a good test to ensure it is wrapped in a MUI avatar and ensure and it is rendered with a proper width and height removing extra background!
+            profileImage: 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg',
+            profileLink: 'https://just-an-example-url-two.icarusdevteam.com', // This can be linked in or any other link we choose
+            bio: 'About the team member 2',
+        },
 
     ];
 }
