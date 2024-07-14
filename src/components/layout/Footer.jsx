@@ -1,9 +1,9 @@
 // Footer.js
 import React, { useState } from 'react';
-import {Box, Link, Typography, useMediaQuery, Snackbar} from '@mui/material';
+import {Box, Typography, useMediaQuery, Snackbar} from '@mui/material';
 import {socialIconsList} from "../../configs/menuConfig";
 import SocialIcon from "../SocialIcon";
-import {contactRoutes, routes} from "../../configs/routesConfig";
+import {contactRoutes} from "../../configs/routesConfig";
 import {theme} from "../../themes/primaryTheme";
 
 function Footer() {
@@ -51,7 +51,7 @@ function Footer() {
                     <Typography variant="body2" sx={{marginRight: '2rem'}} onClick={handleCopyEmail}>
                         {contactRoutes.email.split(':')[1]}
                     </Typography>
-                    {socialIconsList.map((item) => SocialIcon(item))}
+                    {socialIconsList.slice(0, 4).map((item) => SocialIcon(item))}
                 </Box>
 
             </Box>
