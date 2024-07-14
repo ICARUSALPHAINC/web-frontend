@@ -11,8 +11,10 @@
  * - `bio` (string, sometimes present)
  * @returns {Array<Object>} If error: Array with the first object containing an `error` field with the error description.
  */
-export function getTeamMemberData(){
+export async function getTeamMemberData(){
+
     return [
+
         {
             name: 'Team Member 1',
             role: 'developer',
@@ -23,6 +25,7 @@ export function getTeamMemberData(){
             profileLink: 'https://just-an-example-url.icarusdevteam.com', // This can be linked in or any other link we choose
             bio: 'About the team member',
         },
+
         {
             name: 'Team Member 2',
             role: 'designer',
