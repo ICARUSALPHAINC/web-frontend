@@ -46,7 +46,8 @@ function ProjectsPage() {
             </Typography>
 
             <Typography variant="h6" component="h2" color="textSecondary" sx={{mb: '1rem'}}>
-                <Typewriter
+                {/*Invisible character placed before typewriter to preserve layout on typewriter delete animation. */}
+                ‎ <Typewriter
                     words={['Discover what we\'re building and explore our latest endeavors!', 'Dive into what our team is creating!']}
                     loop={3}
                     cursor
