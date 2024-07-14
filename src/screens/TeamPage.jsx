@@ -1,10 +1,9 @@
-import React, {useEffect, useState} from "react";
-import {getTeamMemberData} from "../services/teamDataService";
-import {Alert, Avatar, Box, Card, CircularProgress, Container, Grid, Link, Typography} from "@mui/material";
-import {Typewriter} from "react-simple-typewriter";
+import React, { useEffect, useState } from "react";
+import { getTeamMemberData } from "../services/teamDataService";
+import { Alert, Avatar, Box, Card, CircularProgress, Container, Grid, Link, Typography, Pagination } from "@mui/material";
+import { Typewriter } from "react-simple-typewriter";
 
 // Default color for team member background color
-// TODO: MOVE THIS INTO PRIMARY THEMES
 const defaultTeamMemberBackgroundColor = {
     backgroundColor: '#232323',
     bioColor: '#181818',
@@ -12,18 +11,8 @@ const defaultTeamMemberBackgroundColor = {
 
 // MemberData must be <object> containing name, role, profileImage, bio, profileLink
 function TeamMember(memberData, index, backgroundColor = defaultTeamMemberBackgroundColor) {
-    // <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-    //     <Card component={Link} href={member.profileLink} target="_blank" rel="noopener noreferrer" sx={{
-    //         display: 'flex', flexDirection: 'column', alignItems: 'center', p: 2,
-    //         textDecoration: 'none', '&:hover': { transform: 'scale(1.05)' }
-    //     }}>
-    //         <Avatar alt={member.name} src={member.profileImage} sx={{ width: 56, height: 56, mb: 2 }} />
-    //         <Typography variant="h6">{member.name}</Typography>
-    //         {member.role && <Typography color="textSecondary">{member.role}</Typography>}
-    //     </Card>
-    // </Grid>
     return (
-        <Grid item xs={12} sm={6} md={4} lg={3} key={index} sx={{height: '25rem',}}>
+        <Grid item xs={12} sm={6} md={4} lg={3} key={index} sx={{ height: '25rem' }}>
             <Card component={Link}
                   href={memberData.profileLink} target={"_blank"} rel="noopener noreferrer"
                   sx={{
@@ -35,13 +24,13 @@ function TeamMember(memberData, index, backgroundColor = defaultTeamMemberBackgr
                       alignText: 'center',
                       height: '20rem',
                       transition: '0.3s',
-                      '&:hover': {transform: 'scale(1.05)'},
+                      '&:hover': { transform: 'scale(1.05)' },
                       background: backgroundColor.backgroundColor,
                       borderRadius: '1rem',
                       padding: '1rem',
                       textDecoration: 'none', // Remove underline
                   }}>
-                <Avatar alt={memberData.name} src={memberData.profileImage} sx={{width: '7rem', height: '7rem',}}/>
+                <Avatar alt={memberData.name} src={memberData.profileImage} sx={{ width: '7rem', height: '7rem' }} />
 
                 <Typography variant='h5' component='body1'>
                     <b>{memberData.name}</b>
@@ -55,7 +44,7 @@ function TeamMember(memberData, index, backgroundColor = defaultTeamMemberBackgr
 
                 {memberData.bio && (
                     <Box bgcolor={backgroundColor.bioColor}
-                         sx={{padding: '1rem', marginTop: '1rem', borderRadius: '2rem',}}>
+                         sx={{ padding: '1rem', marginTop: '1rem', borderRadius: '2rem' }}>
                         <Typography variant={"body2"}>
                             {memberData.bio}
                         </Typography>
@@ -69,6 +58,8 @@ function TeamPage() {
     const [teamData, setTeamData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 8;  // Number of items to display per page
 
     useEffect(() => {
         const fetchTeamData = async () => {
@@ -83,15 +74,21 @@ function TeamPage() {
         fetchTeamData();
     }, []);
 
-    if (loading) return <CircularProgress/>;
+    const handlePageChange = (event, value) => {
+        setCurrentPage(value);
+    };
+
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const paginatedTeamData = teamData.slice(startIndex, startIndex + itemsPerPage);
+
+    if (loading) return <CircularProgress />;
     if (error) return <Alert severity="error">{error}</Alert>;
 
     return (
         <Container maxWidth="lg">
-            <Box sx={{mt: 4, textAlign: 'center'}}>
+            <Box sx={{ mt: 4, textAlign: 'center' }}>
                 <Typography variant="h2" gutterBottom>Meet the Team</Typography>
                 <Typography variant="h6" color="textSecondary" mb={4}>
-                    {/*Invisible character placed before typewriter to preserve layout on typewriter delete animation. */}
                     ‎<Typewriter
                     words={['Get to know the people behind our projects', 'Meet the brains of our projects']}
                     loop={3}
@@ -103,8 +100,16 @@ function TeamPage() {
                 />
                 </Typography>
                 <Grid container spacing={4}>
-                    {teamData.map((member, index) => TeamMember(member, index))}
+                    {paginatedTeamData.map((member, index) => TeamMember(member, index))}
                 </Grid>
+                <Box sx={{ display: 'flex', justifyContent: 'center', mt: '1rem', mb: '1rem', }}>
+                    <Pagination
+                        count={Math.ceil(teamData.length / itemsPerPage)}
+                        page={currentPage}
+                        onChange={handlePageChange}
+                        color="primary"
+                    />
+                </Box>
             </Box>
         </Container>
     );
