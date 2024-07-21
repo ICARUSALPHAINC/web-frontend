@@ -10,10 +10,10 @@ import TopNavBarMobile from "../components/layout/TopNavBarMobile";
  * @param children children to be returned inside the wrapped
  * @constructor
  */
-function MainLayout({ children }) {
+function MainLayout({children}) {
     const mobileView = useMediaQuery(theme.breakpoints.down('md'));
 
-    return(<>
+    return (<>
 
         <Box sx={{
             display: 'grid',
@@ -23,27 +23,37 @@ function MainLayout({ children }) {
             height: '100vh',
             width: '100vw',
         }}>
-            {mobileView?
-            <>
-                <TopNavBarMobile/>
-                {children}
-                <Footer/>
-            </>
-            :
-             <>
-                 <TopNavBarDesktop/>
-                 {children}
-                 <Box sx={{
-                     marginTop: 'auto'
-                 }}>
-                 <Footer/>
-                 </Box>
-             </>
+            {mobileView ?
+                <>
+                    <Box sx={{
+                        position: 'sticky',
+                        width: '100%',
+                    }}>
+                        <TopNavBarMobile/>
+                    </Box>
+                    {children}
+                    <Footer/>
+                </>
+                :
+                <>
+                    <Box sx={{
+                        position: 'sticky',
+                        width: '100%',
+                    }}>
+                        <TopNavBarDesktop/>
+                    </Box>
+                    {children}
+                    <Box sx={{
+                        marginTop: 'auto'
+                    }}>
+                        <Footer/>
+                    </Box>
+                </>
             }
 
         </Box>
 
-        </>);
+    </>);
 }
 
 export default MainLayout;
