@@ -34,6 +34,16 @@ const fadeInOut = keyframes`
   }
 `;
 
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
+
+
 function HomePage(){
     const descriptionRef = useRef(null);
 
@@ -44,17 +54,23 @@ function HomePage(){
     const slogans = [
         "Shaping Ideas into Reality",
         "Empowering Innovation, Together",
-        "Innovating the Future",
-        "Transforming Concepts into Success",
     ];
 
     const [sloganIndex, setSloganIndex] = useState(0);
+    const [finalSlogan, setFinalSlogan] = useState(false);
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-            setSloganIndex((prevIndex) => (prevIndex + 1) % slogans.length);
+          setSloganIndex((prevIndex) => {
+            const newIndex = prevIndex + 1;
+            if (newIndex === slogans.length - 1) {
+              setFinalSlogan(true);
+              clearInterval(intervalId);
+            }
+            return newIndex;
+          });
         }, 4000); // Change slogan every 4 seconds
-
+        
         return () => clearInterval(intervalId);
     }, []);
 
@@ -82,7 +98,7 @@ function HomePage(){
                     gutterBottom
                     sx={{
                         zIndex: 1,
-                        animation: `${fadeInOut} 4s`,
+                        animation: `${fadeIn} 4s`,
                     }}
                 >
                     Welcome to Icarus Development
@@ -96,7 +112,7 @@ function HomePage(){
                     sx={{
                         zIndex: 1,
                         color: 'red',
-                        animation: `${fadeInOut} 4s`,
+                        animation: finalSlogan ? `${fadeIn} 4s` : `${fadeInOut} 4s`,
                     }}
                 >
                     {slogans[sloganIndex]}

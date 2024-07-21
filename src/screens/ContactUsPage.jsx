@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Box, Button, Typography, Paper} from '@mui/material';
 import {contactRoutes} from "../configs/routesConfig";
-import {socialIconsList} from "../configs/menuConfig";
+import {socialIconsList, bottomMenuItems} from "../configs/menuConfig";
 import SocialIcon from "../components/SocialIcon";
 
 
@@ -72,13 +72,15 @@ function ContactUsPage() {
                     sx={{
                         display: 'flex',
                         justifyContent: 'center',
-                        margin: '1rem 0'
+                        margin: '1rem 0',
+                        cursor: 'pointer'
                     }}
                 >
                     {socialIconsList.map((item) => SocialIcon(item))}
                 </Box>
                 <Button
                     variant="contained"
+                    href = {contactRoutes.apply}
                     sx={{
                         width: '20ch',
                         marginTop: '1rem',
@@ -91,21 +93,7 @@ function ContactUsPage() {
                 >
                     Apply
                 </Button>
-                <Button
-                    variant="contained"
-                    href={contactRoutes.email}
-                    sx={{
-                        width: '20ch',
-                        marginTop: '1rem',
-                        background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-                        transition: "opacity 0.5s",
-                        '&:hover': {
-                            opacity: 0.5,
-                        },
-                    }}
-                >
-                    Email Us
-                </Button>
+                
             </Paper>
         </Container>
     </Container>)
