@@ -62,5 +62,4 @@ export const socialIconsList = [
     {icon: <XIcon/>, link: contactRoutes.twitter},
     {icon: <LinkedInIcon/>, link: contactRoutes.linkedIn},
     {icon: <MailIcon/>, link: contactRoutes.email},
-
 ];
