@@ -27,7 +27,9 @@ function MainLayout({children}) {
                 <>
                     <Box sx={{
                         position: 'sticky',
+                        top: 0,
                         width: '100%',
+                        zIndex: 1100 // Higher value to ensure it stays on top
                     }}>
                         <TopNavBarMobile/>
                     </Box>
@@ -38,7 +40,9 @@ function MainLayout({children}) {
                 <>
                     <Box sx={{
                         position: 'sticky',
+                        top: 0,
                         width: '100%',
+                        zIndex: 1100 // Higher value to ensure it stays on top
                     }}>
                         <TopNavBarDesktop/>
                     </Box>
