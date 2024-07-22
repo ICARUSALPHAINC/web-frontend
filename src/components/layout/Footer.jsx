@@ -1,10 +1,29 @@
 // Footer.js
 import React, { useState } from 'react';
-import {Box, Typography, useMediaQuery, Snackbar} from '@mui/material';
+import {Box, Typography, useMediaQuery, Snackbar, Button} from '@mui/material';
 import {socialIconsList} from "../../configs/menuConfig";
-import SocialIcon from "../SocialIcon";
 import {contactRoutes} from "../../configs/routesConfig";
 import {theme} from "../../themes/primaryTheme";
+
+
+function FooterItems(item, index) {
+    return (
+        <Button
+            key={index}
+            component={item.route ? 'a' : 'button'} // Not using links and using 'a' instead so component can open in a new tab instead of current tab
+            href={item.route ? item.route : undefined}
+            target={item.route ? "_blank" : undefined} // Item opens in new tab instead of current tab
+            rel={item.route ? "noopener noreferrer" : undefined} // Item opens in new tab instead of current tab
+            onClick={(item.onClickFunction && !item.route) ? item.onClickFunction : undefined}
+            color="inherit"
+            sx={{
+                textDecoration: 'none', // Remove underline
+                color: 'inherit', // Inherit color from parent
+            }}
+        >
+            {item.icon}
+        </Button>);
+}
 
 function Footer() {
 
@@ -51,7 +70,7 @@ function Footer() {
                     <Typography variant="body2" sx={{marginRight: '2rem'}} onClick={handleCopyEmail}>
                         {contactRoutes.email.split(':')[1]}
                     </Typography>
-                    {socialIconsList.slice(0, 4).map((item) => SocialIcon(item))}
+                    {socialIconsList.slice(0, 4).map((item, index) => FooterItems(item, index))}
                 </Box>
 
             </Box>

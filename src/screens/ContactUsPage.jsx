@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Box, Button, Typography, Paper} from '@mui/material';
 import {contactRoutes} from "../configs/routesConfig";
-import {socialIconsList, bottomMenuItems} from "../configs/menuConfig";
+import {socialIconsList} from "../configs/menuConfig";
 import SocialIcon from "../components/SocialIcon";
 
 
@@ -81,6 +81,8 @@ function ContactUsPage() {
                 <Button
                     variant="contained"
                     href = {contactRoutes.apply}
+                    rel="noopener noreferrer"
+                    target="_blank"
                     sx={{
                         width: '20ch',
                         marginTop: '1rem',
@@ -89,6 +91,7 @@ function ContactUsPage() {
                         '&:hover': {
                             opacity: 0.5,
                         },
+                        
                     }}
                 >
                     Apply
