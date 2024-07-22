@@ -22,6 +22,7 @@ function MainLayout({children}) {
             overflowX: 'auto',
             height: '100vh',
             width: '100vw',
+            overflow: 'auto', // scroll the entire layout not just child containers
         }}>
             {mobileView ?
                 <>
