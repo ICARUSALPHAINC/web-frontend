@@ -49,6 +49,7 @@ function Footer() {
                 padding: '1rem 0',
                 backgroundColor: '#333',
                 color: '#fff',
+                overflow: 'hidden',
             }}
         >
             <Box
