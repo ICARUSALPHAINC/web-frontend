@@ -131,7 +131,7 @@ function HomePage() {
                     sx={{
                         zIndex: 1,
                         position: 'absolute',
-                        bottom: '5rem',
+                        bottom: '10rem',
                         animation: `${bounce} 2s infinite`,
                         opacity: 0.7,
                     }}

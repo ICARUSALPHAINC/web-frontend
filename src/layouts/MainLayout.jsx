@@ -35,13 +35,8 @@ function MainLayout({ children }) {
                     }}>
                         <TopNavBarMobile />
                     </Box>
-                    <Box sx={{
-                        marginTop: 'auto',
-                        overflowY: 'auto',
-                    }}>
-                        {children}
-                        <Footer />
-                    </Box>
+                    {children}
+                    <Footer sx={{mt: 'auto'}}/>
                 </>
                 :
                 <>
@@ -54,13 +49,8 @@ function MainLayout({ children }) {
                     }}>
                         <TopNavBarDesktop />
                     </Box>
-                    <Box sx={{
-                        marginTop: 'auto',
-                        overflowY: 'auto',
-                    }}>
-                        {children}
-                        <Footer />
-                    </Box>
+                    {children}
+                    <Footer sx={{mt: 'auto'}}/>
                 </>
             }
 
