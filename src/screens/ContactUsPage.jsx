@@ -17,7 +17,6 @@ function ContactUsPage() {
                 background: 'linear-gradient(45deg, #444 30%, #FF8E53 90%)',
                 color: '#fff',
                 minHeight: '80vh',
-                padding: '0 !important',
                 width: '100%',
                 marginTop: '2rem',
                 marginBottom: '2rem',
@@ -54,7 +53,6 @@ function ContactUsPage() {
                     borderRadius: '20px',
                     padding: '2rem',
                     textAlign: 'center',
-                    height: 'auto',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
@@ -62,7 +60,8 @@ function ContactUsPage() {
                     borderLeft: 1,
                     borderTop: 1,
                     width: {xs: '80%', md: '40%'}, // Adjusted width for responsiveness
-                    minHeight: '50ch', // Adjusted minimum height for content
+                    height: {xs: 'auto', md: '50ch'}, // Adjusted minimum height for content
+                    marginBottom: '1rem'
                 }}
             >
                 <Typography variant="h5" sx={{margin: '1rem 0'}}>

@@ -1,44 +1,74 @@
-// Footer.js
 import React, { useState } from 'react';
-import {Box, Typography, useMediaQuery, Snackbar, Button} from '@mui/material';
-import {socialIconsList} from "../../configs/menuConfig";
-import {contactRoutes} from "../../configs/routesConfig";
-import {theme} from "../../themes/primaryTheme";
-
+import { Box, Typography, useMediaQuery, Snackbar, Button } from '@mui/material';
+import { socialIconsList } from "../../configs/menuConfig";
+import { contactRoutes } from "../../configs/routesConfig";
+import { theme } from "../../themes/primaryTheme";
 
 function FooterItems(item, index) {
     return (
         <Button
             key={index}
-            component={item.route ? 'a' : 'button'} // Not using links and using 'a' instead so component can open in a new tab instead of current tab
+            component={item.route ? 'a' : 'button'}
             href={item.route ? item.route : undefined}
-            target={item.route ? "_blank" : undefined} // Item opens in new tab instead of current tab
-            rel={item.route ? "noopener noreferrer" : undefined} // Item opens in new tab instead of current tab
+            target={item.route ? "_blank" : undefined}
+            rel={item.route ? "noopener noreferrer" : undefined}
             onClick={(item.onClickFunction && !item.route) ? item.onClickFunction : undefined}
             color="inherit"
             sx={{
-                textDecoration: 'none', // Remove underline
-                color: 'inherit', // Inherit color from parent
+                textDecoration: 'none',
+                color: 'inherit',
+                fontSize: '1.5vw',
+                [theme.breakpoints.down('sm')]: {
+                    fontSize: '3vw',
+                },
+                '& svg': { // Targeting the icon size within the button
+                    fontSize: '1.5vw',
+                    [theme.breakpoints.down('sm')]: {
+                        fontSize: '3vw',
+                    },
+                }
             }}
         >
             {item.icon}
-        </Button>);
+        </Button>
+    );
 }
 
 function Footer() {
-
     const mobileView = useMediaQuery(theme.breakpoints.down('md'));
     const [openSnackbar, setOpenSnackbar] = useState(false);
+    const [snackbarMessage, setSnackbarMessage] = useState("");
 
     const handleCopyEmail = () => {
         const email = contactRoutes.email.split(':')[1];
-        navigator.clipboard.writeText(email).then(() => {
-          setOpenSnackbar(true);
-        });
-      };
-    
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(email).then(() => {
+                setSnackbarMessage("Email address copied to clipboard!");
+                setOpenSnackbar(true);
+            }).catch(() => {
+                setSnackbarMessage("Failed to copy email address.");
+                setOpenSnackbar(true);
+            });
+        } else {
+            // Fallback method
+            const textArea = document.createElement("textarea");
+            textArea.value = email;
+            document.body.appendChild(textArea);
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                setSnackbarMessage("Email address copied to clipboard!");
+                setOpenSnackbar(true);
+            } catch (err) {
+                setSnackbarMessage("Failed to copy email address.");
+                setOpenSnackbar(true);
+            }
+            document.body.removeChild(textArea);
+        }
+    };
+
     const handleCloseSnackbar = () => {
-    setOpenSnackbar(false);
+        setOpenSnackbar(false);
     };
 
     return (
@@ -55,7 +85,7 @@ function Footer() {
             <Box
                 sx={{
                     display: 'flex',
-                    flexDirection: mobileView? 'column' : 'row',
+                    flexDirection: mobileView ? 'column' : 'row',
                     alignItems: 'center',
                     justifyContent: mobileView ? 'flex-start' : 'space-evenly',
                     width: '100vw',
@@ -63,35 +93,50 @@ function Footer() {
                     textAlign: 'center',
                 }}
             >
-                <Typography variant="body2">
+                <Typography
+                    variant="body2"
+                    sx={{
+                        fontSize: '1.5vw',
+                        [theme.breakpoints.down('sm')]: {
+                            fontSize: '3vw',
+                        },
+                    }}
+                >
                     &copy; {new Date().getFullYear()} Icarus Development. All rights reserved.
                 </Typography>
-
-                <Box sx={{display: 'flex', alignItems: 'center', cursor: 'pointer'}}>
-                    <Typography variant="body2" sx={{marginRight: '2rem'}} onClick={handleCopyEmail}>
-                        {contactRoutes.email.split(':')[1]}
-                    </Typography>
+                <Typography
+                    variant="body2"
+                    sx={{
+                        cursor: 'pointer',
+                        fontSize: '1.5vw',
+                        [theme.breakpoints.down('sm')]: {
+                            fontSize: '3vw',
+                        },
+                    }}
+                    onClick={handleCopyEmail}
+                >
+                    {contactRoutes.email.split(':')[1]}
+                </Typography>
+                <Box sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
                     {socialIconsList.slice(0, 4).map((item, index) => FooterItems(item, index))}
                 </Box>
-
             </Box>
             <Snackbar
                 open={openSnackbar}
-                autoHideDuration={3000} // Snackbar will disappear after 3 seconds
+                autoHideDuration={3000}
                 onClose={handleCloseSnackbar}
-                message="Email address copied to clipboard!"
+                message={snackbarMessage}
                 anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
                 sx={{
-                     // Adjust as needed to position above the email address
                     '& .MuiSnackbarContent-root': {
-                      backgroundColor: theme.palette.primary.main,
-                      opacity: '0.85 !important',
-                      color: theme.palette.common.white,
-                      textAlign: 'center',
-                      justifyContent: 'center', 
-                      width: '100px',
-                      fontSize: '0.8rem', // Smaller font size
-                      borderRadius: '4px',
+                        backgroundColor: theme.palette.primary.main,
+                        opacity: '0.85 !important',
+                        color: theme.palette.common.white,
+                        textAlign: 'center',
+                        justifyContent: 'center',
+                        width: '100px',
+                        fontSize: '0.8rem',
+                        borderRadius: '4px',
                     },
                 }}
             />
