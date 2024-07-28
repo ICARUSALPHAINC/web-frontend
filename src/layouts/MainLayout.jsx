@@ -1,5 +1,5 @@
-import { theme } from "../themes/primaryTheme";
-import { Box, useMediaQuery } from "@mui/material";
+import {theme} from "../themes/primaryTheme";
+import {Box, useMediaQuery} from "@mui/material";
 import TopNavBarDesktop from "../components/layout/TopNavBarDesktop";
 import Footer from "../components/layout/Footer";
 import TopNavBarMobile from "../components/layout/TopNavBarMobile";
@@ -10,53 +10,34 @@ import TopNavBarMobile from "../components/layout/TopNavBarMobile";
  * @param children children to be returned inside the wrapped
  * @constructor
  */
-function MainLayout({ children }) {
+function MainLayout({children}) {
     const mobileView = useMediaQuery(theme.breakpoints.down('md'));
 
-    return (<>
-
+    return (
         <Box sx={{
-            display: 'grid',
-            gridTemplateColumns: 'auto',
-            gridTemplateRows: 'auto 1fr',
-            overflowX: 'auto',
-            height: '100vh',
+            display: 'flex',
+            flexDirection: 'column',
+            minHeight: '100vh',
             width: '100vw',
-            overflow: 'auto', // scroll the entire layout not just child containers
+            overflow: 'auto',
         }}>
-            {mobileView ?
-                <>
-                    <Box sx={{
-                        position: 'sticky',
-                        top: 0,
-                        overflow: 'hidden',
-                        width: '100%',
-                        zIndex: 1100 // Higher value to ensure it stays on top
-                    }}>
-                        <TopNavBarMobile />
-                    </Box>
-                    {children}
-                    <Footer sx={{mt: 'auto'}}/>
-                </>
-                :
-                <>
-                    <Box sx={{
-                        position: 'sticky',
-                        top: 0,
-                        overflow: 'hidden',
-                        width: '100%',
-                        zIndex: 1100 // Higher value to ensure it stays on top
-                    }}>
-                        <TopNavBarDesktop />
-                    </Box>
-                    {children}
-                    <Footer sx={{mt: 'auto'}}/>
-                </>
-            }
-
+            <Box sx={{
+                position: 'sticky',
+                top: 0,
+                width: '100%',
+                zIndex: 1100,
+            }}>
+                {mobileView ? <TopNavBarMobile/> : <TopNavBarDesktop/>}
+            </Box>
+            <Box sx={{
+                flex: 1,
+                overflowY: 'auto',
+            }}>
+                {children}
+            </Box>
+            <Footer sx={{width: '100%'}}/>
         </Box>
-
-    </>);
+    );
 }
 
 export default MainLayout;
