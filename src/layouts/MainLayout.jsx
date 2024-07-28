@@ -1,5 +1,5 @@
-import {theme} from "../themes/primaryTheme";
-import {Box, useMediaQuery} from "@mui/material";
+import { theme } from "../themes/primaryTheme";
+import { Box, useMediaQuery } from "@mui/material";
 import TopNavBarDesktop from "../components/layout/TopNavBarDesktop";
 import Footer from "../components/layout/Footer";
 import TopNavBarMobile from "../components/layout/TopNavBarMobile";
@@ -10,7 +10,7 @@ import TopNavBarMobile from "../components/layout/TopNavBarMobile";
  * @param children children to be returned inside the wrapped
  * @constructor
  */
-function MainLayout({children}) {
+function MainLayout({ children }) {
     const mobileView = useMediaQuery(theme.breakpoints.down('md'));
 
     return (<>
@@ -22,36 +22,35 @@ function MainLayout({children}) {
             overflowX: 'auto',
             height: '100vh',
             width: '100vw',
+            overflow: 'auto', // scroll the entire layout not just child containers
         }}>
             {mobileView ?
                 <>
                     <Box sx={{
                         position: 'sticky',
                         top: 0,
+                        overflow: 'hidden',
                         width: '100%',
                         zIndex: 1100 // Higher value to ensure it stays on top
                     }}>
-                        <TopNavBarMobile/>
+                        <TopNavBarMobile />
                     </Box>
                     {children}
-                    <Footer/>
+                    <Footer sx={{mt: 'auto'}}/>
                 </>
                 :
                 <>
                     <Box sx={{
                         position: 'sticky',
                         top: 0,
+                        overflow: 'hidden',
                         width: '100%',
                         zIndex: 1100 // Higher value to ensure it stays on top
                     }}>
-                        <TopNavBarDesktop/>
+                        <TopNavBarDesktop />
                     </Box>
                     {children}
-                    <Box sx={{
-                        marginTop: 'auto'
-                    }}>
-                        <Footer/>
-                    </Box>
+                    <Footer sx={{mt: 'auto'}}/>
                 </>
             }
 

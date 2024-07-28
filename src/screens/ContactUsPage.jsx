@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Box, Button, Typography, Paper} from '@mui/material';
 import {contactRoutes} from "../configs/routesConfig";
-import {socialIconsList, bottomMenuItems} from "../configs/menuConfig";
+import {socialIconsList} from "../configs/menuConfig";
 import SocialIcon from "../components/SocialIcon";
 
 
@@ -17,7 +17,6 @@ function ContactUsPage() {
                 background: 'linear-gradient(45deg, #444 30%, #FF8E53 90%)',
                 color: '#fff',
                 minHeight: '80vh',
-                padding: '0 !important',
                 width: '100%',
                 marginTop: '2rem',
                 marginBottom: '2rem',
@@ -54,7 +53,6 @@ function ContactUsPage() {
                     borderRadius: '20px',
                     padding: '2rem',
                     textAlign: 'center',
-                    height: 'auto',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
@@ -62,7 +60,8 @@ function ContactUsPage() {
                     borderLeft: 1,
                     borderTop: 1,
                     width: {xs: '80%', md: '40%'}, // Adjusted width for responsiveness
-                    minHeight: '50ch', // Adjusted minimum height for content
+                    height: {xs: 'auto', md: '50ch'}, // Adjusted minimum height for content
+                    marginBottom: '1rem'
                 }}
             >
                 <Typography variant="h5" sx={{margin: '1rem 0'}}>
@@ -81,6 +80,8 @@ function ContactUsPage() {
                 <Button
                     variant="contained"
                     href = {contactRoutes.apply}
+                    rel="noopener noreferrer"
+                    target="_blank"
                     sx={{
                         width: '20ch',
                         marginTop: '1rem',
@@ -89,6 +90,7 @@ function ContactUsPage() {
                         '&:hover': {
                             opacity: 0.5,
                         },
+                        
                     }}
                 >
                     Apply
