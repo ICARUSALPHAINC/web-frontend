@@ -16,19 +16,18 @@ export async function getProjectData(){
 
     return [
         {
-            title: 'A cool project',
+            title: 'Coming Soon',
             // Random image of a pumpkin for now, ensure it is wrapped in a MUI avatar
-            logo: 'https://preview.redd.it/i-got-bored-so-i-decided-to-draw-a-random-image-on-the-v0-4ig97vv85vjb1.png?width=640&crop=smart&auto=webp&s=22ed6cc79cba3013b84967f32726d087e539b699',
-            link: 'https://just-an-example-url.icarusdevteam.com',
-            description: 'About of the cool project',
+            logo: 'https://www.creativefabrica.com/wp-content/uploads/2022/03/30/Building-Construction-Graphics-28094997-1.png',
+            link: '/',
+            description: 'Project details coming soon!',
         },
         {
-            title: '2 A cool project',
+            title: 'Coming Soon',
             // Random image of a pumpkin for now, ensure it is wrapped in a MUI avatar
-            logo: 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg',
-            link: 'https://just-an-example-url-two.icarusdevteam.com',
-            description: '2 About of the cool project',
+            logo: 'https://www.creativefabrica.com/wp-content/uploads/2022/03/30/Building-Construction-Graphics-28094997-1.png',
+            link: '/',
+            description: 'Project details coming soon!',
         },
-
     ];
 }
