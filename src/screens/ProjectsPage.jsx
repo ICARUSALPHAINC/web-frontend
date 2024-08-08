@@ -73,14 +73,14 @@ function ProjectsPage() {
                                 <Typography variant="body2" color="textSecondary">
                                     {project.description}
                                 </Typography>
-                                <Typography component="a" href={project.link} target="_blank" rel="noopener noreferrer"
-                                            sx={{
-                                                textDecoration: 'none',
-                                                color: 'primary.main',
-                                                '&:hover': {textDecoration: 'underline'}
-                                            }}>
-                                    Learn More
-                                </Typography>
+                                {/*<Typography component="a" href={project.link} target="_blank" rel="noopener noreferrer"*/}
+                                {/*            sx={{*/}
+                                {/*                textDecoration: 'none',*/}
+                                {/*                color: 'primary.main',*/}
+                                {/*                '&:hover': {textDecoration: 'underline'}*/}
+                                {/*            }}>*/}
+                                {/*    Learn More*/}
+                                {/*</Typography>*/}
                             </CardContent>
                         </Card>
                     </Grid>
