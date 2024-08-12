@@ -1,3 +1,5 @@
+import { env } from "../configs/envConfig";
+
 /**
  * Fetches the team member data.
  *
@@ -54,4 +56,33 @@ export async function getProjectData() {
             link: `/`,
         },
     ];
+}
+
+/**
+ * Fetches the project data.
+ *
+ * @returns {Array<Object>} If successful: Array of objects where each object has the following fields:
+ * - `title` (string, always present)
+ * - `logo` (url string, always present)
+ * - `link` (url string, always present)
+ * - `description` (string, sometimes present)
+ * @returns {Array<Object>} If error: Array with the first object containing an `error` field with the error description.
+ */
+export async function getProjectDataNew(){
+    try{
+        const fetchedData = Axios.get(`${env.backendUrl}/api/projects`);
+        let translatedProjectData = []; // {Array<Object>}
+
+        fetchedData.array.forEach(element => {
+            const title = fetchedData.title;
+            const logo = fetchedData.logo;
+            const link = fetchedData.link;
+            const description = fetchedData.description;
+            translatedProjectData.push({title: title, logo: logo, link: link, descrption: description});
+        });
+
+        return fetchedData; 
+    } catch(error){
+        return [{error: 'Error fetching data, please try again later'}];
+    }
 }
