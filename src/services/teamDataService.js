@@ -80,3 +80,30 @@ export async function getTeamMemberDataNew(){
         return [{error: 'Error fetching data, please try again later'}];
     }
 }
+
+/**
+ * Create an array of objects, of all the team members from the team member directory.
+ * Example of an individual object:
+ * ```js
+ * {
+ * name: `Vijit Dua`,
+ * profilePicture: `${process.env.PUBLIC_URL}/profile-images/vijit-dua.png`,
+ * linkedIn: `https://linkedin.com/in/vijitdua`,
+ * website: `https://vijitdua.com/socials`,
+ * },
+ * ```
+ *
+ * name and profile picture are required
+ *
+ * linkedIn and website are optional, so put them for members that have them and not for the ones that don't.
+ *
+ * Get data from the google drive assets folder and upload profile-images with the format firstname-lastname.extension
+ * to the profile/images directory in the public folder.
+ *
+ * Appropriately link them using the public_url process.env as shown above
+ *
+ * Then add the names too ofcourse.
+ */
+export const teamMembers = [
+
+];
