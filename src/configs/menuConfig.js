@@ -57,9 +57,9 @@ export const bottomMenuItems = [
  * Fields: icon, link
  */
 export const socialIconsList = [
-    {icon: <InstagramIcon/>, link: contactRoutes.instagram},
-    {icon: <FacebookIcon/>, link: contactRoutes.facebook},
-    {icon: <XIcon/>, link: contactRoutes.twitter},
-    {icon: <LinkedInIcon/>, link: contactRoutes.linkedIn},
-    {icon: <MailIcon/>, link: contactRoutes.email},
+    {icon: <InstagramIcon/>, route: contactRoutes.instagram},
+    {icon: <FacebookIcon/>, route: contactRoutes.facebook},
+    {icon: <XIcon/>, route: contactRoutes.twitter},
+    {icon: <LinkedInIcon/>, route: contactRoutes.linkedIn},
+    {icon: <MailIcon/>, route: contactRoutes.email},
 ];
