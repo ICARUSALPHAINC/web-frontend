@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Card, CardContent, Typography, Grid, CircularProgress, CardMedia, Pagination, Box, Alert} from '@mui/material';
 import {getProjectData} from '../services/projectDataService';
 import {Typewriter} from "react-simple-typewriter";
+import ExpandableText from '../components/ExpandableText';
 
 // ProjectsPage Component: Displays a list of projects with pagination
 function ProjectsPage() {
@@ -70,17 +71,7 @@ function ProjectsPage() {
                             />
                             <CardContent>
                                 <Typography variant="h5">{project.title}</Typography>
-                                <Typography variant="body2" color="textSecondary">
-                                    {project.description}
-                                </Typography>
-                                {/*<Typography component="a" href={project.link} target="_blank" rel="noopener noreferrer"*/}
-                                {/*            sx={{*/}
-                                {/*                textDecoration: 'none',*/}
-                                {/*                color: 'primary.main',*/}
-                                {/*                '&:hover': {textDecoration: 'underline'}*/}
-                                {/*            }}>*/}
-                                {/*    Learn More*/}
-                                {/*</Typography>*/}
+                                <ExpandableText lines="3">{project.description}</ExpandableText>
                             </CardContent>
                         </Card>
                     </Grid>
