@@ -1,4 +1,5 @@
 import { env } from "../configs/envConfig";
+import {Axios} from "axios";
 
 /**
  * Fetches the team member data.
