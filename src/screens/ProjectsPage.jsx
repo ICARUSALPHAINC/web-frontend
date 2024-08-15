@@ -1,5 +1,16 @@
 import React, {useEffect, useState} from 'react';
-import {Card, CardContent, Typography, Grid, CircularProgress, CardMedia, Pagination, Box, Alert} from '@mui/material';
+import {
+    Card,
+    CardContent,
+    Typography,
+    Grid,
+    CircularProgress,
+    CardMedia,
+    Pagination,
+    Box,
+    Alert,
+    Container
+} from '@mui/material';
 import {getProjectData} from '../services/projectDataService';
 import {Typewriter} from "react-simple-typewriter";
 import ExpandableText from '../components/ExpandableText';
@@ -41,14 +52,15 @@ function ProjectsPage() {
     }
 
     return (
-        <Box sx={{textAlign: 'center', m: 4}}>
-            <Typography variant="h2" gutterBottom>
-                Innovative Projects
-            </Typography>
+        <Container maxWidth="lg">
+            <Box sx={{textAlign: 'center', m: 4}}>
+                <Typography variant="h2" gutterBottom>
+                    Innovative Projects
+                </Typography>
 
-            <Typography variant="h6" component="h2" color="textSecondary" sx={{mb: '1rem'}}>
-                {/*Invisible character placed before typewriter to preserve layout on typewriter delete animation. */}
-                ‎ <Typewriter
+                <Typography variant="h6" component="h2" color="textSecondary" sx={{mb: '1rem'}}>
+                    {/*Invisible character placed before typewriter to preserve layout on typewriter delete animation. */}
+                    ‎ <Typewriter
                     words={['Discover what we\'re building and explore our latest endeavors!', 'Dive into what our team is creating!']}
                     loop={3}
                     cursor
@@ -57,35 +69,36 @@ function ProjectsPage() {
                     deleteSpeed={50}
                     delaySpeed={300}
                 />
-            </Typography>
+                </Typography>
 
-            <Grid container spacing={4} justifyContent="center">
-                {paginatedProjects.map((project, index) => (
-                    <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-                        <Card sx={{maxWidth: '100%', transition: '0.3s', '&:hover': {transform: 'scale(1.05)'}}}>
-                            <CardMedia
-                                component="img"
-                                height="140"
-                                image={project.logo}
-                                alt={project.title}
-                            />
-                            <CardContent>
-                                <Typography variant="h5">{project.title}</Typography>
-                                <ExpandableText lines="3">{project.description}</ExpandableText>
-                            </CardContent>
-                        </Card>
-                    </Grid>
-                ))}
-            </Grid>
-            <Box sx={{display: 'flex', justifyContent: 'center', mt: 4}}>
-                <Pagination
-                    count={Math.ceil(projects.length / itemsPerPage)}
-                    page={currentPage}
-                    onChange={handlePageChange}
-                    color="primary"
-                />
+                <Grid container spacing={4} justifyContent="center">
+                    {paginatedProjects.map((project, index) => (
+                        <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+                            <Card sx={{maxWidth: '100%', transition: '0.3s', '&:hover': {transform: 'scale(1.05)'}}}>
+                                <CardMedia
+                                    component="img"
+                                    height="140"
+                                    image={project.logo}
+                                    alt={project.title}
+                                />
+                                <CardContent>
+                                    <Typography variant="h5">{project.title}</Typography>
+                                    <ExpandableText lines="3">{project.description}</ExpandableText>
+                                </CardContent>
+                            </Card>
+                        </Grid>
+                    ))}
+                </Grid>
+                <Box sx={{display: 'flex', justifyContent: 'center', mt: 4}}>
+                    <Pagination
+                        count={Math.ceil(projects.length / itemsPerPage)}
+                        page={currentPage}
+                        onChange={handlePageChange}
+                        color="primary"
+                    />
+                </Box>
             </Box>
-        </Box>
+        </Container>
     );
 }
 
