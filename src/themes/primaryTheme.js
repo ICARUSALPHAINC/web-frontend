@@ -128,6 +128,13 @@ let theme = createTheme({
                 containedSecondary: {
                     background: 'linear-gradient(to right, #ff9a76, #ffcd56)',
                 },
+                link: { // a button styled to look like a link
+                    '&:hover': {
+                        backgroundColor: "transparent",
+                    }, 
+                    padding: 0, 
+                    color: "#2ebac6",
+                }
             },
         },
     },
