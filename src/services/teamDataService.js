@@ -404,7 +404,7 @@ export const teamMembers = [
     },
     {
         name: `Robert Ehteshamzadeh`,
-        role: 'Project Lead - Web Development',
+        role: 'Project Lead - Web Development and CalShare',
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/robert-ehteshamzadeh-2.jpg`,
         linkedIn: `https://www.linkedin.com/in/rje4242/`,
         website: `https://github.com/rje4242`,
@@ -460,14 +460,14 @@ export const teamMembers = [
     },
     {
         name: `Vijit Dua`,
-        role: 'Project Lead - Web Development',
+        role: 'Project Lead - Web Development and Davis Dot',
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/vijit-dua-1.jpg`,
         linkedIn: `https://linkedin.com/in/vijitdua`,
         website: `https://vijitdua.com/socials`,
     },
     {
         name: `Vinh Nguyen`,
-        role: 'Project Lead - Start-Up App',
+        role: 'Project Lead - Start-Up App, Developer',
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/vinh-nguyen-1.jpg`,
         linkedIn: `http://linkedin.com/in/npvin`,
         website: null,
