@@ -107,20 +107,7 @@ export async function getTeamMemberDataNew(){
  */
 
 export const teamMembers = [
-    {
-        name: `Aaron Danen`,
-        role: 'Developer',
-        profilePicture: null,
-        linkedIn: `https://www.linkedin.com/in/aaron-danen-176922270/`,
-        website: null,
-    },
-    {
-        name: `Adam Yosef`,
-        role: 'Sound Designer',
-        profilePicture: null,
-        linkedIn: `https://www.linkedin.com/in/adam-yosef-a102611b8/`,
-        website: `https://www.yosefaudio.com/`,
-    },
+
     {
         name: `Aida Yuan`,
         role: 'Designer',
@@ -141,13 +128,6 @@ export const teamMembers = [
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/alex-jr-chau-2.jpg`,
         linkedIn: `https://www.linkedin.com/in/alex-jr-chau-a4bb931ba/`,
         website: `https://alexjrchau.notion.site/Portfolio-37043d752d864df7a00cd7ebe9a82cd1`,
-    },
-    {
-        name: `Alex Yuang Chen`,
-        role: 'Developer',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/alex-yuang-chen-2.jpg`,
-        linkedIn: `https://www.linkedin.com/in/yuang-chen-b28b2830b/`,
-        website: null,
     },
     {
         name: `Alex Miller`,
@@ -176,20 +156,6 @@ export const teamMembers = [
         profilePicture: null,
         linkedIn: `https://www.linkedin.com/in/anthony-martos/`,
         website: `https://anthonymartossound.com/`,
-    },
-    {
-        name: `Arthur Moreira`,
-        role: 'Finance',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/arthur-moreira-2.jpg`,
-        linkedIn: `https://www.linkedin.com/in/arthur-m-moreira/`,
-        website: null,
-    },
-    {
-        name: `Axel Luis Gomez Servin`,
-        role: 'Sound Designer',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/Axel-Gomez-Servin.png`,
-        linkedIn: `https://www.linkedin.com/in/axel-luis-gomez-servin-9979a5220/`,
-        website: `https://axelgomezservinaudio.weebly.com/`,
     },
     {
         name: `Benjamin Nelson`,
@@ -260,20 +226,6 @@ export const teamMembers = [
         profilePicture: null,
         linkedIn: `https://www.linkedin.com/in/evan-schneiderman-061340141/`,
         website: null,
-    },
-    {
-        name: `Garmonwohn Caphart`,
-        role: 'Sound Designer',
-        profilePicture: null,
-        linkedIn: `https://www.linkedin.com/in/garmonwohn-caphart-156307204/`,
-        website: `http://www.gcaphartaudio.com`,
-    },
-    {
-        name: `Guo Tan`,
-        role: 'Designer',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/guo-tan-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/guo-tan-97634b309/`,
-        website: `https://pixso.cn/app/editor/RSv9phaHTDapwNaUXtmv-g?page-id=0%3A1&item-id=108%3A90`,
     },
     {
         name: `Harpreet Singh`,
@@ -351,13 +303,6 @@ export const teamMembers = [
         profilePicture: null,
         linkedIn: `https://www.linkedin.com/in/kyle-dundas/`,
         website: `https://kdundas2025.wixsite.com/kyle-dundas`,
-    },
-    {
-        name: `Leo Constantinides`,
-        role: 'Narrative Designer',
-        profilePicture: null,
-        linkedIn: `https://www.linkedin.com/in/leo-constantinides-257a94221/`,
-        website: `https://zerotohero149.wixsite.com/eportfolio`,
     },
     {
         name: `Maanit Shah`,
@@ -512,13 +457,6 @@ export const teamMembers = [
         profilePicture: null,
         linkedIn: `https://linkedin.com/in/veronica-duquez`,
         website: `https://vduquez01.wixsite.com/veronica-duquez`,
-    },
-    {
-        name: `Vicky Valtierra`,
-        role: 'Finance',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/vicky-valtierra-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/vicky-valtierra-13a8a1262/`,
-        website: null,
     },
     {
         name: `Vijit Dua`,

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { getTeamMemberData } from "../services/teamDataService";
+import {getTeamMemberData, teamMembers} from "../services/teamDataService";
 import { Alert, Avatar, Box, Card, CircularProgress, Container, Grid, Link, Typography, Pagination } from "@mui/material";
 import { Typewriter } from "react-simple-typewriter";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import WebIcon from '@mui/icons-material/Web';
+import LanguageIcon from '@mui/icons-material/Language';
 
 // Default color for team member background color
 const defaultTeamMemberBackgroundColor = {
@@ -62,7 +62,7 @@ function TeamMember(memberData, index, backgroundColor = defaultTeamMemberBackgr
                         )}
                         {memberData.website && (
                             <Link href={memberData.website} target="_blank" rel="noopener noreferrer">
-                                <WebIcon sx={{ fontSize: 40 }}/>
+                                <LanguageIcon sx={{ fontSize: 40 }}/>
                             </Link>
                         )}
                     </Box>
@@ -76,12 +76,12 @@ function TeamPage() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 8;  // Number of items to display per page
+    const itemsPerPage = 12;  // Number of items to display per page
 
     useEffect(() => {
         const fetchTeamData = async () => {
             try {
-                const data = await getTeamMemberData();
+                const data = teamMembers.sort((a, b) => a.name.localeCompare(b.name)); // Alphabetical sort based on name.
                 setTeamData(data);
             } catch (e) {
                 setError("Failed to load team data");
