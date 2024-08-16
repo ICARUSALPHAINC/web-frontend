@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { getTeamMemberData } from "../services/teamDataService";
 import { Alert, Avatar, Box, Card, CircularProgress, Container, Grid, Link, Typography, Pagination } from "@mui/material";
 import { Typewriter } from "react-simple-typewriter";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import WebIcon from '@mui/icons-material/Web';
 
 // Default color for team member background color
 const defaultTeamMemberBackgroundColor = {
@@ -30,15 +32,15 @@ function TeamMember(memberData, index, backgroundColor = defaultTeamMemberBackgr
                       padding: '1rem',
                       textDecoration: 'none', // Remove underline
                   }}>
-                <Avatar alt={memberData.name} src={memberData.profileImage} sx={{ width: '7rem', height: '7rem' }} />
+                <Avatar alt={memberData.name} src={memberData.profilePicture} sx={{ width: '7rem', height: '7rem' }} />
 
                 <Typography variant='h5' component='body1'>
                     <b>{memberData.name}</b>
                 </Typography>
 
-                {memberData?.specificRole &&
+                {memberData?.role &&
                     <Typography variant='body1'>
-                        <b>{memberData.specificRole}</b>
+                        <b>{memberData.role}</b>
                     </Typography>
                 }
 
@@ -50,6 +52,21 @@ function TeamMember(memberData, index, backgroundColor = defaultTeamMemberBackgr
                         </Typography>
                     </Box>
                 )}
+
+                {memberData.linkedIn || memberData.website ? (
+                    <Box sx={{ display: 'flex', gap: 1, mt: 1 }}>
+                        {memberData.linkedIn && (
+                            <Link href={memberData.linkedIn} target="_blank" rel="noopener noreferrer">
+                                <LinkedInIcon sx={{ fontSize: 40 }}/>
+                            </Link>
+                        )}
+                        {memberData.website && (
+                            <Link href={memberData.website} target="_blank" rel="noopener noreferrer">
+                                <WebIcon sx={{ fontSize: 40 }}/>
+                            </Link>
+                        )}
+                    </Box>
+                ) : null}
             </Card>
         </Grid>);
 }
