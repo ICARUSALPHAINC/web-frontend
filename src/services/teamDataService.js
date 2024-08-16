@@ -108,6 +108,13 @@ export async function getTeamMemberDataNew(){
 
 export const teamMembers = [
     {
+        name: `Aaron Danen`,
+        role: 'Developer',
+        profilePicture: null,
+        linkedIn: `https://www.linkedin.com/in/aaron-danen-176922270/`,
+        website: null,
+    },
+    {
         name: `Adam Yosef`,
         role: 'Sound Designer',
         profilePicture: null,
