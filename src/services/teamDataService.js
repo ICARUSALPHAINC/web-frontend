@@ -139,7 +139,7 @@ export const teamMembers = [
     {
         name: `Andrea Salonga`,
         role: 'Designer',
-        profilePicture: null,
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/andrea-salonga-2.jpg`,
         linkedIn: `https://www.linkedin.com/in/andrea-salonga-4a9a1b161/`,
         website: `https://sites.google.com/view/andreasalonga-portfolio/home?authuser=1`,
     },
@@ -153,14 +153,21 @@ export const teamMembers = [
     {
         name: `Anthony Martos`,
         role: 'Project Lead - Audio Division',
-        profilePicture: null,
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/anthony-martos-2.jpg`,
         linkedIn: `https://www.linkedin.com/in/anthony-martos/`,
         website: `https://anthonymartossound.com/`,
     },
     {
+        name: `Axel Luis Servin`,
+        role: 'Sound Designer',
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/Axel-Gomez-Servin.png`,
+        linkedIn: `https://www.linkedin.com/in/axel-luis-gomez-servin-9979a5220/`,
+        website: `https://axelgomezservinaudio.weebly.com/`,
+    },
+    {
         name: `Benjamin Nelson`,
         role: 'Developer',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/ben-nelson-2.jpg`,
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/ben-nelson-3.jpg`,
         linkedIn: `https://www.linkedin.com/in/benjamin-nelson-77883618b/`,
         website: `https://github.com/bnelson1324/`,
     },
@@ -200,18 +207,18 @@ export const teamMembers = [
         website: null,
     },
     {
-        name: `Dylan Wheeler`,
-        role: 'Character Animator',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/dylan-wheeler-2.jpg`,
-        linkedIn: `https://www.linkedin.com/in/dylan-wheeler-43931b204/`,
-        website: `https://artism31.wixsite.com/dylan-wheeler-animat`,
-    },
-    {
         name: `Dorothy Le`,
         role: 'Developer',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/dorothy-le-2.jpg`,
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/dorothy-le-3.jpg`,
         linkedIn: `https://www.linkedin.com/in/dorothykle/`,
         website: null,
+    },
+    {
+        name: `Dylan Wheeler`,
+        role: 'Character Animator',
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/dylan-wheeler-4.jpg`,
+        linkedIn: `https://www.linkedin.com/in/dylan-wheeler-43931b204/`,
+        website: `https://artism31.wixsite.com/dylan-wheeler-animat`,
     },
     {
         name: `Evan Schneiderman`,
@@ -226,6 +233,20 @@ export const teamMembers = [
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/evan-wanamaker-1.jpg`,
         linkedIn: `https://www.linkedin.com/in/evanwanamaker/`,
         website: null,
+    },
+    {
+        name: `Garmonwohn Caphart`,
+        role: 'Sound Designer',
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/garmonwohn-caphart-2.jpg`,
+        linkedIn: `https://www.linkedin.com/in/garmonwohn-caphart-156307204/`,
+        website: `http://www.gcaphartaudio.com`,
+    },
+    {
+        name: `Guo Tan`,
+        role: 'Designer',
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/guo-tan-1.jpg`,
+        linkedIn: `https://www.linkedin.com/in/guo-tan-97634b309/`,
+        website: `https://pixso.cn/app/editor/RSv9phaHTDapwNaUXtmv-g?page-id=0%3A1&item-id=108%3A90`,
     },
     {
         name: `Harpreet Singh`,
@@ -258,7 +279,7 @@ export const teamMembers = [
     {
         name: `Johanna Moreno`,
         role: 'Designer',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/johanna-moreno-2.jpg`,
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/johanna-moreno-3.jpg`,
         linkedIn: `https://www.linkedin.com/in/johannacmoreno/`,
         website: `https://johannamorenodesign.com/`,
     },
@@ -272,7 +293,7 @@ export const teamMembers = [
     {
         name: `Joyel Joseph`,
         role: 'Project Lead - Davis Dot',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/joyel-joseph-1.jpg`,
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/joyel-joseph-3.jpg`,
         linkedIn: `https://www.linkedin.com/in/joyel-joseph-7772252b6/`,
         website: `https://joejoseph6.wixsite.com/joyel`,
     },
@@ -405,7 +426,7 @@ export const teamMembers = [
     {
         name: `Robert Ehteshamzadeh`,
         role: 'Project Lead - Web Development and CalShare',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/robert-ehteshamzadeh-3.jpg`,
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/robert-ehteshamzadeh-4.png`,
         linkedIn: `https://www.linkedin.com/in/rje4242/`,
         website: `https://github.com/rje4242`,
     },
