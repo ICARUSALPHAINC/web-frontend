@@ -405,7 +405,7 @@ export const teamMembers = [
     {
         name: `Nithin Senthil`,
         role: 'Developer',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/nithin-senthil-1.jpg`,
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/nithin-senthil-2.jpg`,
         linkedIn: `http://www.linkedin.com/in/nithin-senthil`,
         website: `https://github.com/nithinsenthil`,
     },
