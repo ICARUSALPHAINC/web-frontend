@@ -473,7 +473,7 @@ export const teamMembers = [
         website: `https://trungvo.info`,
     },
     {
-        name: `Veronica Dequez`,
+        name: `Veronica Duquez`,
         role: 'Sound Designer',
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/veronica-duquez-3.jpg`,
         linkedIn: `https://linkedin.com/in/veronica-duquez`,
