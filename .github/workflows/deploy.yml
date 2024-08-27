@@ -12,14 +12,14 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
-    
-    - name: Create temporary directory for rsync
+
+    - name: Remove existing files from the Web Frontend directory
       run: |
-        sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "mkdir -p /home/${{ secrets.SSH_USERNAME }}/tmp"
+        sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "rm -rf /home/vijit/Web\ Frontend/*"
     
-    - name: Copy files to SSH machine
+    - name: Copy new files to SSH machine
       run: |
-        sshpass -p "${{ secrets.SSH_PASSWORD }}" rsync -avz --no-perms --omit-dir-times --temp-dir=/home/${{ secrets.SSH_USERNAME }}/tmp -e "ssh -o StrictHostKeyChecking=no" . ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USERNAME }}/Web\ Frontend
+        sshpass -p "${{ secrets.SSH_PASSWORD }}" rsync -avz --no-perms --omit-dir-times -e "ssh -o StrictHostKeyChecking=no" . ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/vijit/Web\ Frontend
 
     - name: Build Docker image
       run: |
