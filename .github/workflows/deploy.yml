@@ -15,7 +15,7 @@ jobs:
     
     - name: Copy files to SSH machine
       run: |
-        sshpass -p "${{ secrets.SSH_PASSWORD }}" rsync -avz --no-perms --omit-dir-times -e "ssh -o StrictHostKeyChecking=no" . ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/vijit/Web\ Frontend
+        sshpass -p "${{ secrets.SSH_PASSWORD }}" rsync -avz --no-perms --omit-dir-times --temp-dir=/home/vijit/tmp -e "ssh -o StrictHostKeyChecking=no" . ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/vijit/Web\ Frontend
 
     - name: Build Docker image
       run: |
