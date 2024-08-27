@@ -108,14 +108,21 @@ function TeamPage() {
                 <Typography variant="h6" color="textSecondary" mb={4}>
                     ‎<Typewriter
                     words={['Get to know the people behind our projects', 'Meet the brains of our projects']}
-                    loop={3}
                     cursor
+                    loop={0}
                     cursorStyle=""
                     typeSpeed={50}
                     deleteSpeed={50}
                     delaySpeed={300}
                 />
                 </Typography>
+
+                <Typography variant="body1" sx={{m: '1rem'}}>
+                    Our team is our greatest asset. Each member brings unique skills and perspectives, contributing to
+                    our collective creativity. Our diversity allows us to overcome challenges and develop advanced solutions.
+                    With a fearless drive to innovate, we redefine the boundaries of what’s possible.
+                </Typography>
+
                 <Grid container spacing={4}>
                     {paginatedTeamData.map((member, index) => TeamMember(member, index))}
                 </Grid>
