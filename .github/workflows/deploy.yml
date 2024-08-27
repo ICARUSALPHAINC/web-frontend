@@ -3,7 +3,7 @@ name: Deploy to SSH Machine
 on:
   push:
     branches:
-      - production  # or any branch you want to trigger the deployment
+      - production
 
 jobs:
   deploy:

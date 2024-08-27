@@ -68,18 +68,12 @@ function HomePage() {
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-            setSloganIndex((prevIndex) => {
-                const newIndex = prevIndex + 1;
-                if (newIndex === slogans.length - 1) {
-                    setFinalSlogan(true);
-                    clearInterval(intervalId);
-                }
-                return newIndex;
-            });
-        }, 4000); // Change slogan every 4 seconds
+            setSloganIndex((prevIndex) => (prevIndex + 1) % slogans.length);
+        }, 5000); // Change slogan every 5
 
         return () => clearInterval(intervalId);
-    }, []);
+    }, [slogans.length]);
+
 
     return (
         <>

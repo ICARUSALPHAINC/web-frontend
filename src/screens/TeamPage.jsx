@@ -1,6 +1,18 @@
 import React, { useEffect, useState } from "react";
 import {getTeamMemberData, teamMembers} from "../services/teamDataService";
-import { Alert, Avatar, Box, Card, CircularProgress, Container, Grid, Link, Typography, Pagination } from "@mui/material";
+import {
+    Alert,
+    Avatar,
+    Box,
+    Card,
+    CircularProgress,
+    Container,
+    Grid,
+    Link,
+    Typography,
+    Pagination,
+    Skeleton
+} from "@mui/material";
 import { Typewriter } from "react-simple-typewriter";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import LanguageIcon from '@mui/icons-material/Language';
@@ -13,6 +25,39 @@ const defaultTeamMemberBackgroundColor = {
 
 // MemberData must be <object> containing name, role, profileImage, bio, profileLink
 function TeamMember(memberData, index, backgroundColor = defaultTeamMemberBackgroundColor) {
+    if (!memberData) {
+        return (
+            <Grid item xs={12} sm={6} md={4} lg={3} key={index} sx={{ height: '25rem' }}>
+                <Card
+                    sx={{
+                        display: 'grid',
+                        gridTemplateColumns: 'auto',
+                        justifyContent: 'center',
+                        justifyItems: 'center',
+                        alignItems: 'center',
+                        alignText: 'center',
+                        height: '20rem',
+                        transition: '0.3s',
+                        '&:hover': { transform: 'scale(1.05)' },
+                        background: backgroundColor.backgroundColor,
+                        borderRadius: '1rem',
+                        padding: '1rem',
+                        textDecoration: 'none', // Remove underline
+                    }}
+                >
+                    <Skeleton variant="circular" width={'7rem'} height={'7rem'} />
+                    <Skeleton variant="text" width="60%" height={'1rem'} sx={{ mt: 2 }} />
+                    <Skeleton variant="text" width="40%" height={'1rem'} sx={{ mt: 1 }} />
+                    <Skeleton variant="rectangular" width="80%" height={60} sx={{ mt: 2, borderRadius: '1rem' }} />
+                    <Box sx={{ display: 'flex', gap: 1, mt: 2 }}>
+                        <Skeleton variant="circular" width={40} height={40} />
+                        <Skeleton variant="circular" width={40} height={40} />
+                    </Box>
+                </Card>
+            </Grid>
+        );
+    }
+
     return (
         <Grid item xs={12} sm={6} md={4} lg={3} key={index} sx={{ height: '25rem' }}>
             <Card component={Link}
@@ -80,20 +125,30 @@ function TeamPage() {
 
     useEffect(() => {
         const fetchTeamData = async () => {
+            setLoading(true);
             try {
-                const data = teamMembers.sort((a, b) => a.name.localeCompare(b.name)); // Alphabetical sort based on name.
+                const data = teamMembers.sort((a, b) => a.name.localeCompare(b.name));
                 setTeamData(data);
             } catch (e) {
                 setError("Failed to load team data");
             }
             setLoading(false);
         };
+
         fetchTeamData();
-    }, []);
+    }, [currentPage]); // Re-fetch data whenever currentPage changes
+
 
     const handlePageChange = (event, value) => {
-        setCurrentPage(value);
+        // Set the team data to an empty array to clear the current members
+        setTeamData(Array(itemsPerPage).fill(null));
+
+        // Delay the loading of new data
+        setTimeout(() => {
+            setCurrentPage(value);
+        }, 200); // Adjust the de lay time as needed
     };
+
 
     const startIndex = (currentPage - 1) * itemsPerPage;
     const paginatedTeamData = teamData.slice(startIndex, startIndex + itemsPerPage);
@@ -108,14 +163,21 @@ function TeamPage() {
                 <Typography variant="h6" color="textSecondary" mb={4}>
                     ‎<Typewriter
                     words={['Get to know the people behind our projects', 'Meet the brains of our projects']}
-                    loop={3}
                     cursor
+                    loop={0}
                     cursorStyle=""
                     typeSpeed={50}
                     deleteSpeed={50}
                     delaySpeed={300}
                 />
                 </Typography>
+
+                <Typography variant="body1" sx={{m: '1rem'}}>
+                    Our team is our greatest asset. Each member brings unique skills and perspectives, contributing to
+                    our collective creativity. Our diversity allows us to overcome challenges and develop advanced solutions.
+                    With a fearless drive to innovate, we redefine the boundaries of what’s possible.
+                </Typography>
+
                 <Grid container spacing={4}>
                     {paginatedTeamData.map((member, index) => TeamMember(member, index))}
                 </Grid>

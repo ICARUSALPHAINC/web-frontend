@@ -62,13 +62,19 @@ function ProjectsPage() {
                     {/*Invisible character placed before typewriter to preserve layout on typewriter delete animation. */}
                     ‎ <Typewriter
                     words={['Discover what we\'re building and explore our latest endeavors!', 'Dive into what our team is creating!']}
-                    loop={3}
+                    loop={0}
                     cursor
                     cursorStyle=""
                     typeSpeed={50}
                     deleteSpeed={50}
                     delaySpeed={300}
                 />
+                </Typography>
+
+                <Typography variant="body1" sx={{m: '1rem'}}>
+                    Our projects span various industries, from AI and gaming to social media and productivity tools.
+                    At Icarus Development, we tackle complex challenges and develop forward-thinking solutions that make
+                    a meaningful impact. We are committed to pushing technological boundaries and creating groundbreaking advancements.
                 </Typography>
 
                 <Grid container spacing={4} justifyContent="center">

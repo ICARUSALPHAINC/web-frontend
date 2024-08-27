@@ -405,7 +405,7 @@ export const teamMembers = [
     {
         name: `Nithin Senthil`,
         role: 'Developer',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/nithin-senthil-1.jpg`,
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/nithin-senthil-2.jpg`,
         linkedIn: `http://www.linkedin.com/in/nithin-senthil`,
         website: `https://github.com/nithinsenthil`,
     },
@@ -473,7 +473,7 @@ export const teamMembers = [
         website: `https://trungvo.info`,
     },
     {
-        name: `Veronica Dequez`,
+        name: `Veronica Duquez`,
         role: 'Sound Designer',
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/veronica-duquez-3.jpg`,
         linkedIn: `https://linkedin.com/in/veronica-duquez`,
