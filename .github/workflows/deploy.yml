@@ -1,0 +1,44 @@
+name: Deploy to SSH Machine
+
+on:
+  push:
+    branches:
+      - production  # or any branch you want to trigger the deployment
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup SSH
+      uses: webfactory/ssh-agent@v0.8.1
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+    - name: Copy files to SSH machine
+      run: |
+        rsync -avz -e "ssh -o StrictHostKeyChecking=no" . ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/home/vijit/Web\ Frontend
+
+    - name: Build Docker image
+      run: |
+        sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "
+          cd /home/vijit/Web\ Frontend && sudo docker build . -t web-frontend
+        "
+
+    - name: Stop existing container (if running)
+      run: |
+        sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "
+          CONTAINER_ID=\$(sudo docker ps -q --filter ancestor=web-frontend)
+          if [ ! -z \$CONTAINER_ID ]; then
+            sudo docker stop \$CONTAINER_ID && sudo docker rm \$CONTAINER_ID;
+          fi
+        "
+
+    - name: Run new Docker container
+      run: |
+        sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "
+          cd /home/vijit/Web\ Frontend && sudo docker run -d -p 5002:3000 --restart=always --name web-frontend-container web-frontend
+        "
