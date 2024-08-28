@@ -130,6 +130,13 @@ export const teamMembers = [
         website: `https://alexjrchau.notion.site/Portfolio-37043d752d864df7a00cd7ebe9a82cd1`,
     },
     {
+        name: `Alex Yuang Chen`,
+        role: 'Developer',
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/alex-yuang-chen-2.jpg`,
+        linkedIn: `https://www.linkedin.com/in/yuang-chen-b28b2830b`,
+        website: null,
+    },
+    {
         name: `Alex Miller`,
         role: 'Project Lead - Indie Games Division',
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/alex-miller-1.jpg`,
