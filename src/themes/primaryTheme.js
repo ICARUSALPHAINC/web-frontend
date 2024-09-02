@@ -9,6 +9,7 @@ import '@fontsource/inter/500.css';
 import '@fontsource/inter/600.css';
 import '@fontsource/inter/700.css';
 
+
 let theme = createTheme({
     breakpoints: {
         values: {
@@ -21,6 +22,11 @@ let theme = createTheme({
     },
 
     palette: {
+        hero: {
+            main: '#951470',
+            light: '#CA5803',
+            contrastText: '#ffffff',
+        },
         primary: {
             main: '#ff5aa7', // From --title-gradient start
             light: '#f7a059', // From --title-gradient end
@@ -43,7 +49,7 @@ let theme = createTheme({
         },
 
         appBar: {
-            background: 'linear-gradient(to right, #ff5aa7, #f7a059)',
+            background: 'linear-gradient(to right, #951470, #CA5803)',
         },
 
         mobileAppBarBurgerMenu: {
@@ -54,6 +60,15 @@ let theme = createTheme({
     },
     typography: {
         fontFamily: 'Arial, sans-serif',
+        hero: {
+            fontFamily: 'Inter, Arial, sans-serif',
+            fontWeight: 700,
+            fontSize: '4rem',
+            background: 'linear-gradient(to right, #951470, #CA5803)',
+            WebkitBackgroundClip: 'text',
+            backgroundClip: 'text',
+            color: 'transparent',
+        },
         h1: {
             fontFamily: 'Inter, Arial, sans-serif',
             fontWeight: 700,
