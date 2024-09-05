@@ -1,5 +1,5 @@
 import React, {useRef, useState, useEffect} from 'react';
-import {Box, Typography, Container, IconButton, Grid, AppBar, Toolbar, useTheme} from '@mui/material';
+import {Box, Typography, Container, IconButton, Grid, AppBar, Toolbar} from '@mui/material';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import {keyframes} from '@emotion/react';
 import bg from '../assets/clouds/clouds_light.jpg';
@@ -76,9 +76,6 @@ function HomePage() {
         return () => clearInterval(intervalId);
     }, [slogans.length, sloganChangeTime]);
 
-    const theme = useTheme();
-
-
     return (
         <>
             {/* Cover Section */}
@@ -110,13 +107,12 @@ function HomePage() {
                 </Typography>
 
                 <Typography
-                    variant="h4"
+                    variant="heroSubtitle"
                     component="h2"
                     gutterBottom
                     key={sloganIndex} // Use key to trigger re-render
                     sx={{
                         zIndex: 1,
-                        color: theme.palette.hero.main,
                         animation: finalSlogan ? `${fadeIn} ${sloganChangeTime}s` : `${fadeInOut} ${sloganChangeTime}s`,
                     }}
                 >
@@ -124,7 +120,7 @@ function HomePage() {
                 </Typography>
 
                 <IconButton
-                    color='hero'
+                    color='hero1'
                     onClick={scrollToDescription}
                     sx={{
                         zIndex: 1,

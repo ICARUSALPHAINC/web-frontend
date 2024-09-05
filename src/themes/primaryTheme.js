@@ -22,9 +22,12 @@ let theme = createTheme({
     },
 
     palette: {
-        hero: {
+        hero1: {
             main: '#951470',
-            light: '#CA5803',
+            contrastText: '#ffffff',
+        },
+        hero2: {
+            main: '#CA5803',
             contrastText: '#ffffff',
         },
         primary: {
@@ -68,6 +71,12 @@ let theme = createTheme({
             WebkitBackgroundClip: 'text',
             backgroundClip: 'text',
             color: 'transparent',
+        },
+        heroSubtitle: {
+            fontFamily: 'Inter, Arial, sans-serif',
+            color: '#951470',
+            fontWeight: 400,
+            fontSize: '1.75rem',
         },
         h1: {
             fontFamily: 'Inter, Arial, sans-serif',
