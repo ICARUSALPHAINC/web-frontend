@@ -1,8 +1,8 @@
 import React, {useRef, useState, useEffect} from 'react';
-import {Box, Typography, Container, IconButton, Grid, AppBar, Toolbar, useTheme} from '@mui/material';
+import {Box, Typography, Container, IconButton, Grid, AppBar, Toolbar} from '@mui/material';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import {keyframes} from '@emotion/react';
-import bg from '../assets/clouds/clouds3.jpg';
+import bg from '../assets/clouds/clouds_light.jpg';
 import Divider from '@mui/material/Divider';
 import ProjectsPage from "./ProjectsPage";
 import TeamPage from "./TeamPage";
@@ -66,14 +66,15 @@ function HomePage() {
     const [sloganIndex, setSloganIndex] = useState(0);
     const [finalSlogan, setFinalSlogan] = useState(false);
 
+    const sloganChangeTime = 3; // time between slogan changes, in seconds
+
     useEffect(() => {
         const intervalId = setInterval(() => {
             setSloganIndex((prevIndex) => (prevIndex + 1) % slogans.length);
-        }, 5000); // Change slogan every 5
+        }, sloganChangeTime * 1000); // Change slogan every 3 seconds
 
         return () => clearInterval(intervalId);
-    }, [slogans.length]);
-
+    }, [slogans.length, sloganChangeTime]);
 
     return (
         <>
@@ -94,33 +95,32 @@ function HomePage() {
                 }}
             >
                 <Typography
-                    variant="h1"
+                    variant="hero"
                     component="h1"
                     gutterBottom
                     sx={{
                         zIndex: 1,
-                        animation: `${fadeIn} 4s`,
+                        animation: `${fadeIn} 1s`,
                     }}
                 >
                     Welcome to Icarus Development
                 </Typography>
 
                 <Typography
-                    variant="h5"
+                    variant="heroSubtitle"
                     component="h2"
                     gutterBottom
                     key={sloganIndex} // Use key to trigger re-render
                     sx={{
                         zIndex: 1,
-                        color: 'red',
-                        animation: finalSlogan ? `${fadeIn} 4s` : `${fadeInOut} 4s`,
+                        animation: finalSlogan ? `${fadeIn} ${sloganChangeTime}s` : `${fadeInOut} ${sloganChangeTime}s`,
                     }}
                 >
                     {slogans[sloganIndex]}
                 </Typography>
 
                 <IconButton
-                    color="primary"
+                    color='hero1'
                     onClick={scrollToDescription}
                     sx={{
                         zIndex: 1,
