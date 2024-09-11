@@ -1,6 +1,6 @@
 import {routes} from "../../configs/routesConfig";
 import {bottomMenuItems, topMenuItems} from "../../configs/menuConfig";
-import {AppBar, Box, Button, Drawer, ListItemButton, ListItemIcon, Toolbar, Typography, useTheme} from "@mui/material";
+import {AppBar, Box, Button, Drawer, ListItemButton, Toolbar, Typography, useTheme} from "@mui/material";
 import logo from "../../assets/logo/logo192.png";
 import {Link} from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';

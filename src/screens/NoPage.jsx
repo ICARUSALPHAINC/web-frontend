@@ -1,6 +1,6 @@
 import {Box, Button, Container, Typography} from "@mui/material";
 import {routes} from "../configs/routesConfig";
-import clouds from "../assets/clouds/clouds3.jpg";
+import clouds from "../assets/clouds-compressed/20.webp";
 
 function NoPage(){
 
@@ -12,6 +12,11 @@ function NoPage(){
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
+                backgroundImage: `url(${clouds})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundAttachment: 'fixed',
+                
                 // marginTop: '15vh',  // (DISABLED) xx% below the top of the viewport
                 // height: '85vh' // (DISABLED) ensure view port height is not exceeded.
             }}
@@ -39,7 +44,7 @@ function NoPage(){
                         },
                     }}
                 >
-                    <img src={clouds} alt="Icarus Cloudy Banner" />
+                    
                 </Box>
                 <Typography variant="h1" element="h1"> The page you are looking for does not exist. </Typography>
                 <Button
