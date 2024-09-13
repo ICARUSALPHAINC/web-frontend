@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import {getTeamMemberData, teamMembers} from "../services/teamDataService";
 import {
@@ -59,10 +60,11 @@ function TeamMember(memberData, index, backgroundColor = defaultTeamMemberBackgr
     }
 
     return (
-        <Grid item xs={12} sm={6} md={4} lg={3} key={index} sx={{ height: '25rem' }}>
+        <Grid item xs={6} sm={6} md={4} lg={3} key={index}>
             <Card component={Link}
                   href={memberData.profileLink} target={"_blank"} rel="noopener noreferrer"
                   sx={{
+                      width: 'auto',
                       display: 'grid',
                       gridTemplateColumns: 'auto',
                       justifyContent: 'center',
@@ -161,14 +163,15 @@ function TeamPage() {
             <Box sx={{ mt: 4, textAlign: 'center' }}>
                 <Typography variant="h2" gutterBottom>Meet the Team</Typography>
                 <Typography variant="h6" color="textSecondary" mb={4}>
+                    Get to know the people behind our
                     ‎<Typewriter
-                    words={['Get to know the people behind our projects', 'Meet the brains of our projects']}
+                    words={['code', 'ideas', 'stories', 'designs']}
                     cursor
                     loop={0}
-                    cursorStyle=""
-                    typeSpeed={50}
-                    deleteSpeed={50}
-                    delaySpeed={300}
+                    cursorStyle="_"
+                    typeSpeed={100}
+                    deleteSpeed={100}
+                    delaySpeed={2000}
                 />
                 </Typography>
 
