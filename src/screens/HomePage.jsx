@@ -1,11 +1,13 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Box, Typography, Container, IconButton, Grid, Divider, Paper } from '@mui/material';
+import { Box, Typography, Container, IconButton, Grid, Divider, Paper, Slide } from '@mui/material';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import { keyframes } from '@emotion/react';
 
 
 import ProjectsPage from "./ProjectsPage";
 import TeamPage from "./TeamPage";
+import { Typewriter } from 'react-simple-typewriter';
+import AutoCarousel from '../components/AutoCarousel';
 
 // Animation for the arrow button
 const bounce = keyframes`
@@ -213,7 +215,27 @@ function HomePage() {
             <Container ref={descriptionRef} sx={{ py: 9 }}>
 
                 {/* remove next line when redo the project section  */}
-                <ProjectsPage />
+                <Container>
+                    <Typography variant="h2" gutterBottom>
+                        Current Projects
+                    </Typography>
+                    <Typography variant="h6" component="h2" color="textSecondary" sx={{mb: '1rem'}}>
+                        {/*Invisible character placed before typewriter to preserve layout on typewriter delete animation. */}
+                        ‎ <Typewriter
+                        words={['Discover what our teams are building!', 'Check out our projects in development!']}
+                        loop={0}
+                        cursor
+                        cursorStyle="_"
+                        typeSpeed={50}
+                        deleteSpeed={50}
+                        delaySpeed={1000}
+                    />
+                    </Typography>
+                    <Typography variant="body1">
+                        Our projects span various industries, from AI and gaming to social media and productivity tools. At Icarus Development, we tackle complex challenges and develop forward-thinking solutions that make a meaningful impact. We are committed to pushing technological boundaries and creating groundbreaking advancements.
+                    </Typography>
+                    <AutoCarousel></AutoCarousel>
+                </Container>
 
                 <CustomDivider />
                 
