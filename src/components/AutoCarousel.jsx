@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import {Box, CircularProgress} from "@mui/material";
+import {Container, CircularProgress, Alert} from "@mui/material";
 import {getProjectData} from '../services/projectDataService';
 
 export default function AutoCarousel() {
@@ -38,16 +38,21 @@ export default function AutoCarousel() {
         return <CircularProgress></CircularProgress>
     }
 
+    if (error) {
+        return <Container sx={{mt: '1rem', padding: '1rem'}}><Alert severity="error"> {error} </Alert></Container>
+    }
+
     /**
      * todo: layout
      */
     return (
-        <Box sx={{
-            height: '300px',
-            width: '300px',
+        <Container sx={{
             // border: '1px solid red',
-            background: `url(${projects[projectIdx].logo}) no-repeat center`,
+            flex: 1,
+            aspectRatio: 1,
+            maxWidth: '50%',
+            background: `center / contain no-repeat url(${projects[projectIdx].logo})`,
         }} alt="alt text">
-        </Box>
+        </Container>
     );
 }

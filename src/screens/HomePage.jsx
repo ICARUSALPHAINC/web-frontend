@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Box, Typography, Container, IconButton, Grid, Divider, Paper, Slide } from '@mui/material';
+import { Box, Typography, Container, IconButton, Grid, Divider, Paper, useTheme } from '@mui/material';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import { keyframes } from '@emotion/react';
 
@@ -89,6 +89,7 @@ function HomePage() {
     const [finalSlogan, setFinalSlogan] = useState(false);
 
     const sloganChangeTime = 4; // Time between slogan changes, in seconds
+    const theme = useTheme();
 
     // Slogan change effect, keep the slogan after the second one
     useEffect(() => {
@@ -213,8 +214,6 @@ function HomePage() {
 
             {/* Description and Projects Section */}
             <Container ref={descriptionRef} sx={{ py: 9 }}>
-
-                {/* remove next line when redo the project section  */}
                 <Container>
                     <Typography variant="h2" gutterBottom>
                         Current Projects
@@ -231,10 +230,22 @@ function HomePage() {
                         delaySpeed={1000}
                     />
                     </Typography>
-                    <Typography variant="body1">
-                        Our projects span various industries, from AI and gaming to social media and productivity tools. At Icarus Development, we tackle complex challenges and develop forward-thinking solutions that make a meaningful impact. We are committed to pushing technological boundaries and creating groundbreaking advancements.
-                    </Typography>
-                    <AutoCarousel></AutoCarousel>
+                    <Container sx={{
+                        display: 'flex',
+                        gap: 'calc(max(10%, 20px))',
+                        alignItems: 'center',
+                        [theme.breakpoints.down('sm')]: {
+                            flexDirection: 'column',
+                            alignItems: 'stretch',
+                        }
+                    }}>
+                        <Typography variant="body1" sx={{
+                            flex: 2,
+                        }}>
+                            Our projects span various industries, from AI and gaming to social media and productivity tools. At Icarus Development, we tackle complex challenges and develop forward-thinking solutions that make a meaningful impact. We are committed to pushing technological boundaries and creating groundbreaking advancements.
+                        </Typography>
+                        <AutoCarousel></AutoCarousel>
+                    </Container>
                 </Container>
 
                 <CustomDivider />
