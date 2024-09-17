@@ -254,7 +254,8 @@ function HomePage() {
                         </Grid>
                         <Grid item sx={{
                             flex: 1,
-                            maxWidth: '20rem',
+                            minWidth: '20rem',
+                            maxWidth: '35%',
                             [theme.breakpoints.down('sm')]: {
                                 maxWidth: '28rem',
                             }
