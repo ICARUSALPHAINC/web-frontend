@@ -218,7 +218,7 @@ function HomePage() {
                     <Typography variant="h2" gutterBottom>
                         Current Projects
                     </Typography>
-                    <Typography variant="h6" component="h2" color="textSecondary" sx={{mb: '1rem'}}>
+                    <Typography variant="h6" component="h2" gutterBottom color="textSecondary" sx={{mb: '1rem'}}>
                         {/*Invisible character placed before typewriter to preserve layout on typewriter delete animation. */}
                         ‎ <Typewriter
                         words={['Discover what our teams are building!', 'Check out our projects in development!']}
@@ -230,22 +230,32 @@ function HomePage() {
                         delaySpeed={1000}
                     />
                     </Typography>
-                    <Container sx={{
-                        display: 'flex',
-                        gap: 'calc(max(10%, 20px))',
+                    <Grid container columnSpacing={8} rowSpacing={4} sx={{
+                        justifyContent: 'center',
                         alignItems: 'center',
-                        [theme.breakpoints.down('sm')]: {
-                            flexDirection: 'column',
-                            alignItems: 'stretch',
-                        }
                     }}>
-                        <Typography variant="body1" sx={{
-                            flex: 2,
+                        <Grid item size={1} sx={{
+                            maxWidth: '40%',
+                            [theme.breakpoints.down('sm')]: {
+                                maxWidth: 'none',
+                            }
                         }}>
-                            Our projects span various industries, from AI and gaming to social media and productivity tools. At Icarus Development, we tackle complex challenges and develop forward-thinking solutions that make a meaningful impact. We are committed to pushing technological boundaries and creating groundbreaking advancements.
-                        </Typography>
-                        <AutoCarousel></AutoCarousel>
-                    </Container>
+                            <Typography variant="body1" sx={{
+                                flex: 1,
+                            }}>
+                                Our projects span various industries, from AI and gaming to social media and productivity tools. At Icarus Development, we tackle complex challenges and develop forward-thinking solutions that make a meaningful impact. We are committed to pushing technological boundaries and creating groundbreaking advancements.
+                            </Typography>
+                        </Grid>
+                        <Grid item sx={{
+                            flex: 1,
+                            maxWidth: '20rem',
+                            [theme.breakpoints.down('sm')]: {
+                                maxWidth: '28rem',
+                            }
+                        }}>
+                            <AutoCarousel></AutoCarousel>
+                        </Grid>
+                    </Grid>
                 </Container>
 
                 <CustomDivider />
