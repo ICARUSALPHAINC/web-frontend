@@ -51,6 +51,8 @@ export default function AutoCarousel() {
             aspectRatio: 1,
             background: `center / contain no-repeat url(${projects[projectIdx].logo})`,
             borderRadius: '1rem',
+            transition: '0.3s', 
+            '&:hover': {transform: 'scale(1.05)'}
         }} alt="alt text">
         </Container>
     );

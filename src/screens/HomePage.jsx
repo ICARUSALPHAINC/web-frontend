@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { Box, Typography, Container, IconButton, Grid, Divider, Paper, useTheme } from '@mui/material';
+import { Box, Typography, Container, IconButton, Grid, Divider, Paper, useTheme, Link } from '@mui/material';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import { keyframes } from '@emotion/react';
 
@@ -213,10 +213,16 @@ function HomePage() {
             </Box>
 
             {/* Description and Projects Section */}
-            <Container ref={descriptionRef} sx={{ py: 9 }}>
+            <Container ref={descriptionRef} sx={{ py: 9, }}>
                 <Container>
                     <Typography variant="h2" gutterBottom>
-                        Current Projects
+                        <Link href="/projects" sx={{
+                            background: 'linear-gradient(to right, #4cb6fd, #4bff93)',
+                            WebkitBackgroundClip: 'text',
+                            backgroundClip: 'text',
+                            color: 'transparent',
+                            '&:hover': {textDecorationColor: theme.palette.text.secondary}
+                        }}>Current Projects</Link>
                     </Typography>
                     <Typography variant="h6" component="h2" gutterBottom color="textSecondary" sx={{mb: '1rem'}}>
                         {/*Invisible character placed before typewriter to preserve layout on typewriter delete animation. */}
@@ -253,7 +259,9 @@ function HomePage() {
                                 maxWidth: '28rem',
                             }
                         }}>
-                            <AutoCarousel></AutoCarousel>
+                            <Link href="/projects">
+                                <AutoCarousel></AutoCarousel>
+                            </Link>
                         </Grid>
                     </Grid>
                 </Container>
