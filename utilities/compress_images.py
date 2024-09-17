@@ -18,7 +18,7 @@ def compress_images_in_public(size_threshold_kb=500, quality=85):
         None
     """
     # Define the root directory (public folder)
-    public_dir = '../src/assets/clouds'  # Adjust this path if needed
+    public_dir = 'src/assets/clouds'  # Adjust this path if needed
 
     # Supported image formats
     supported_formats = ('.jpg', '.jpeg', '.png')
