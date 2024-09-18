@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import {Container, CircularProgress, Alert} from "@mui/material";
+import {Container, CircularProgress, Alert, useTheme} from "@mui/material";
 import {getProjectData} from '../services/projectDataService';
 
 export default function AutoCarousel() {
@@ -47,11 +47,12 @@ export default function AutoCarousel() {
      */
     return (
         <Container sx={{
-            // border: '1px solid red',
             flex: 1,
             aspectRatio: 1,
-            maxWidth: '50%',
             background: `center / contain no-repeat url(${projects[projectIdx].logo})`,
+            borderRadius: '1rem',
+            transition: '0.3s', 
+            '&:hover': {transform: 'scale(1.05)'}
         }} alt="alt text">
         </Container>
     );
