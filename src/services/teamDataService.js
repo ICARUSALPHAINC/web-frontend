@@ -274,7 +274,7 @@ export const teamMembers = [
         role: 'Project Lead - Web Development',
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/jaden-yang-2.jpg`,
         linkedIn: `https://www.linkedin.com/in/jaden-yang-8a75ab222/`,
-        website: null,
+        website: 'https://jadenyang.com/',
     },
     {
         name: `Jake Connors`,

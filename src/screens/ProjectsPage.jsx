@@ -61,13 +61,13 @@ function ProjectsPage() {
                 <Typography variant="h6" component="h2" color="textSecondary" sx={{mb: '1rem'}}>
                     {/*Invisible character placed before typewriter to preserve layout on typewriter delete animation. */}
                     ‎ <Typewriter
-                    words={['Discover what we\'re building and explore our latest endeavors!', 'Dive into what our team is creating!']}
+                    words={['See what we\'re working on!', 'Discover what we\'re building!']}
                     loop={0}
                     cursor
-                    cursorStyle=""
+                    cursorStyle="_"
                     typeSpeed={50}
                     deleteSpeed={50}
-                    delaySpeed={300}
+                    delaySpeed={1000}
                 />
                 </Typography>
 

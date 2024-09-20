@@ -3,7 +3,7 @@ import {bottomMenuItems, topMenuItems} from "../../configs/menuConfig";
 import {AppBar, Box, Button, Toolbar, Typography, useTheme} from "@mui/material";
 import logo from "../../assets/logo/logo192.png";
 import {Link} from "react-router-dom";
-import {useState} from "react";
+
 
 // Menu items that show up in the front of the menu bar
 function FrontMenuItems(item, index) {
