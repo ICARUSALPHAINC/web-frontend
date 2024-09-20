@@ -2,10 +2,6 @@ import React, { useRef, useState, useEffect } from 'react';
 import { Box, Typography, Container, IconButton, Grid, Divider, Paper, useTheme, Link, Button } from '@mui/material';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import { keyframes } from '@emotion/react';
-
-
-import ProjectsPage from "./ProjectsPage";
-import TeamPage from "./TeamPage";
 import { Typewriter } from 'react-simple-typewriter';
 import AutoCarousel from '../components/AutoCarousel';
 
@@ -74,6 +70,7 @@ const bgImages = importAndSortImages(require.context('../assets/clouds-compresse
 function HomePage() {
     const descriptionRef = useRef(null);
     const [bgImage, setBgImage] = useState(bgImages[0]); // Initial background image
+    const [showButton, setShowButton] = useState(true);
    
 
     const scrollToDescription = () => {
@@ -108,6 +105,11 @@ function HomePage() {
     }, [slogans.length]);
 
     useEffect(() => {
+        bgImages.forEach((imgSrc) => {
+            const img = new Image();
+            img.src = imgSrc;
+        });
+
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
             const totalHeight = document.body.scrollHeight - window.innerHeight; // Total scrollable height
@@ -120,6 +122,13 @@ function HomePage() {
             // Math.min ensures the index does not exceed the last image in the array (prevents out-of-bounds errors)
 
             setBgImage(bgImages[index]);    
+
+            // Handle the scroll down button, make it disappear after certain scroll height
+            if (scrollPosition > 100) {
+                setShowButton(false);
+            } else {
+                setShowButton(true);
+            }
         };
 
 
@@ -195,26 +204,45 @@ function HomePage() {
                     {slogans[sloganIndex]}
                 </Typography>
 
-                <IconButton
-                    color="primary"
-                    onClick={scrollToDescription}
-                    sx={{
-                        zIndex: 1,
-                        position: 'absolute', 
-                        bottom: '1rem',
-                        left: '50%',
-                        transform: 'translateX(-50%)',
-                        animation: `${bounce} 2s infinite`,
-                        opacity: 0.7,
-                    }}
-                >
-                    <KeyboardDoubleArrowDownIcon fontSize="large" />
-                </IconButton>
+                {showButton && (
+                    <IconButton
+                        color="primary"
+                        onClick={scrollToDescription}
+                        sx={{
+                            zIndex: 1,
+                            position: 'absolute', 
+                            bottom: '1rem',
+                            left: '50%',
+                            transform: 'translateX(-50%)',
+                            animation: `${bounce} 2s infinite`,
+                            opacity: 0.7,
+                        }}
+                    >
+                        <KeyboardDoubleArrowDownIcon fontSize="large" />
+                    </IconButton>
+                )}
             </Box>
 
             {/* Description and Projects Section */}
             <Container ref={descriptionRef} sx={{ py: 9, }}>
-                <Container>
+                <Paper
+                    elevation={10} // Adds a shadow effect for a raised look
+                    sx={{
+                        padding: '2rem',
+                        background: 'linear-gradient(45deg, #333 30%, #555 60%)', 
+                        backdropFilter: 'blur(10px)', // Optional: Adds a blur effect for better contrast
+                        borderRadius: '10px', // Rounded corners for the paper
+                        display: 'flex', // Enables flexbox
+                        flexDirection: 'column', // Align items in a column
+                        justifyContent: 'center', // Center items vertically
+                        alignItems: 'center', // Center items horizontally
+                        textAlign: 'center', // Center the text within the paper
+                        width: '100%', // Full width to ensure centering
+                        maxWidth: '90%', // Limit maximum width for better readability
+                        margin: '0 auto', // Center the paper horizontally
+                        opacity: '0.85', // Add opacity 
+                    }}
+                >
                     <Typography variant="h2" gutterBottom>
                         <Link href="/projects" sx={{
                             background: 'linear-gradient(to right, #4cb6fd, #4bff93)',
@@ -241,7 +269,7 @@ function HomePage() {
                         alignItems: 'center',
                     }}>
                         <Grid item size={1} sx={{
-                            maxWidth: '40%',
+                            maxWidth: '50%',
                             [theme.breakpoints.down('sm')]: {
                                 maxWidth: 'none',
                             }
@@ -256,21 +284,48 @@ function HomePage() {
                             flex: 1,
                             minWidth: '20rem',
                             maxWidth: '35%',
+                            height: 'auto',
                             [theme.breakpoints.down('sm')]: {
                                 maxWidth: '28rem',
                             }
                         }}>
-                            <Link href="/projects">
-                                <AutoCarousel></AutoCarousel>
-                            </Link>
+                            {/* <Link href="/projects"> */}
+                            
+                            <Box sx={{ width: '100%', height: '100%' }}>  {/* Ensure the Box wraps full size */}
+                                <AutoCarousel />
+                            </Box>
+                            
+                            {/* </Link> */}
                         </Grid>
                     </Grid>
-                </Container>
+                </Paper> 
 
                 <CustomDivider />
                 
-                {/* remove next line when redo the team section  */}
-                <Box sx={{ mt: 4, textAlign: 'center' }}>
+                <Box 
+                sx={{ 
+                    display: 'flex', 
+                    justifyContent: 'center', // Center horizontally
+                    alignItems: 'center',     // Center vertically
+                    mt: 4 
+                }}>
+                    <Paper
+                    elevation={10} // Adds a shadow effect for a raised look
+                    sx={{
+                        padding: '2rem',
+                        background: 'linear-gradient(45deg, #333 30%, #555 60%)', 
+                        backdropFilter: 'blur(10px)', // Optional: Adds a blur effect for better contrast
+                        borderRadius: '10px', // Rounded corners for the paper
+                        display: 'flex', // Enables flexbox
+                        flexDirection: 'column', // Align items in a column
+                        justifyContent: 'center', // Center items vertically
+                        alignItems: 'center', // Center items horizontally
+                        textAlign: 'center', // Center the text within the paper
+                        width: '100%', // Full width to ensure centering
+                        maxWidth: '90%', // Limit maximum width for better readability
+                        opacity: '0.85', // Add opacity 
+                    }}
+                    >
                     <Typography variant="h2" gutterBottom>Team Members</Typography>
                     <Typography variant="h6" component="h2" gutterBottom color="textSecondary" sx={{mb: '1rem'}}>
                         {/*Invisible character placed before typewriter to preserve layout on typewriter delete animation. */}
@@ -285,11 +340,14 @@ function HomePage() {
                     />
                     </Typography>
 
-                    <Typography variant="body1" sx={{m: '1rem'}}>
+                    <Typography variant="body1" 
+                        sx={{
+                            m: '1rem',
+                        }}>
                         Our team is our greatest asset. 
                         Each member brings unique skills and perspectives, contributing to our collective creativity. 
                         Our diversity allows us to overcome challenges and develop advanced solutions. 
-                        With a fearless drive to innovate, we redefine the boundaries of what’s possible.
+                        With a fearless drive to innovate, we redefine the boundaries of what's possible.
                     </Typography>
                     <Link href="/team">
                         <Button variant="containedPrimary" sx={{
@@ -299,7 +357,7 @@ function HomePage() {
                             '&:hover': {background: theme.palette.secondary.main}
                         }}>Visit All The Members</Button>
                     </Link>
-
+                    </Paper>
                 </Box>
 
                 <CustomDivider />
@@ -316,10 +374,9 @@ function HomePage() {
                 }}
                 >
                 <Paper
-                elevation={3} // Adds a shadow effect for a raised look
+                elevation={20} // Adds a shadow effect for a raised look
                 sx={{
                     padding: '2rem',
-                    
                     background: 'linear-gradient(45deg, #333 30%, #555 60%)', 
                     backdropFilter: 'blur(10px)', // Optional: Adds a blur effect for better contrast
                     borderRadius: '10px', // Rounded corners for the paper
@@ -329,27 +386,28 @@ function HomePage() {
                     alignItems: 'center', // Center items horizontally
                     textAlign: 'center', // Center the text within the paper
                     width: '100%', // Full width to ensure centering
-                    maxWidth: '800px', // Limit maximum width for better readability
+                    maxWidth: '90%', // Limit maximum width for better readability
+                    opacity: '0.85', // Add opacity 
                 }}
-            >
-                <Typography
-                    variant="h2"
-                    component="h1"
-                    gutterBottom
                 >
-                    About Us
-                </Typography>
+                    <Typography
+                        variant="h2"
+                        component="h1"
+                        gutterBottom
+                    >
+                        About Us
+                    </Typography>
 
-                <Grid container spacing={0} sx={{ mb: '2rem', display: 'flex',  alignItems: 'center' }}>
-                    <Grid item xs={12}>
-                        <Typography variant="body1">
-                        Welcome to Icarus Development, the nexus of cutting-edge innovation and collaboration. 
-                        We are dedicated to projects that push the limits of technology. 
-                        By refusing to fly low to the ground, we break free from the typical corporate mindset. 
-                        This fearless drive to innovate and succeed empowers us to push boundaries and reach new heights. 
-                        </Typography>
+                    <Grid container spacing={0} sx={{ mb: '2rem', display: 'flex',  alignItems: 'center' }}>
+                        <Grid item xs={12}>
+                            <Typography variant="body1">
+                            Welcome to Icarus Development, the nexus of cutting-edge innovation and collaboration. 
+                            We are dedicated to projects that push the limits of technology. 
+                            By refusing to fly low to the ground, we break free from the typical corporate mindset. 
+                            This fearless drive to innovate and succeed empowers us to push boundaries and reach new heights. 
+                            </Typography>
+                        </Grid>
                     </Grid>
-                </Grid>
             </Paper>
             </Container>
             </Container>
