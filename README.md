@@ -7,6 +7,7 @@ Welcome to the Icarus, Web Development ! This main README page provides an overv
 guidelines, and resources. Here, you'll find links to other important documents, contact information, and communication
 protocols.
 
+
 ## Table of Contents
 
 1. [Coding Style Guide](#coding-style-guide)
