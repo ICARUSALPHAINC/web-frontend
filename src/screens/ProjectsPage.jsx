@@ -35,6 +35,7 @@ function ProjectsPage() {
         };
         fetchProjects();
     }, []);
+    //
 
     const handlePageChange = (event, value) => {
         setCurrentPage(value);
