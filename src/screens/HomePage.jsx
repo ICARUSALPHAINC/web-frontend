@@ -103,7 +103,7 @@ function HomePage() {
 
         return () => clearInterval(intervalId);
     }, [slogans.length]);
-
+//
     useEffect(() => {
         bgImages.forEach((imgSrc) => {
             const img = new Image();
