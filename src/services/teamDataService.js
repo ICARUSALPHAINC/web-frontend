@@ -538,8 +538,8 @@ export const teamMembers = [
         name: `Maritzell Martinez`,
         role: 'Designer',
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/maritzell-martinez-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/spachum/`,
-        website: `https://www.artstation.com/spachum`,
+        linkedIn: `	https://www.linkedin.com/in/maritzell-martinez-67b268181`,
+        website: `https://maritzellm.carrd.co/`,
     },
     {
         name: `Michael Hernandez`,
