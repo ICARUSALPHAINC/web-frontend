@@ -530,7 +530,14 @@ export const teamMembers = [
     {
         name: `Maria Vittoria de Martis`,
         role: '2D Artist',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/maria-vittoria-de-martis-1.jpg`,
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/maritzell-martinez-1.jpg`,
+        linkedIn: `https://www.linkedin.com/in/maritzell-martinez-67b268181`,
+        website: `https://maritzellm.carrd.co/`,
+    },
+    {
+        name: `Maritzell Martinez`,
+        role: 'Designer',
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/maritzell-martinez-1.jpg`,
         linkedIn: `https://www.linkedin.com/in/spachum/`,
         website: `https://www.artstation.com/spachum`,
     },
