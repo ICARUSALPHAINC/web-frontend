@@ -49,7 +49,7 @@ function ContactUsPage() {
             </Box>
             <Paper
                 sx={{
-                    background: 'linear-gradient(45deg, #333 30%, #555 90%)',
+                    background: 'linear-gradient(45deg, #888 30%, #555 90%)',
                     borderRadius: '20px',
                     padding: '2rem',
                     textAlign: 'center',
@@ -61,12 +61,9 @@ function ContactUsPage() {
                     borderTop: 1,
                     width: {xs: '80%', md: '40%'}, // Adjusted width for responsiveness
                     height: {xs: 'auto', md: '50ch'}, // Adjusted minimum height for content
-                    marginBottom: '1rem'
+                   
                 }}
             >
-                <Typography variant="h5" sx={{margin: '1rem 0'}}>
-                    Based in Davis, California
-                </Typography>
                 <Box
                     sx={{
                         display: 'flex',
@@ -95,7 +92,30 @@ function ContactUsPage() {
                 >
                     Apply
                 </Button>
-                
+                <Box
+                    component = "img"
+                    src = "/contant-images/CollegeofEngineeringLogoTransparent.png"
+                    alt = "AveE"
+                    sx = {{
+                        marginTop: 8, 
+                        width: "100%", 
+                        maxWidth: "80%", 
+                        borderRadius: 2, 
+                        opacity:1
+                    }}
+                />
+                <Box
+                    component = "img"
+                    src = "/contant-images/AveE_Chevron_Horizontal-Color.png"
+                    alt = "AveE"
+                    sx = {{
+                        marginTop: 2, 
+                        width: "100%", 
+                        maxWidth: "80%", 
+                        borderRadius: 2, 
+                        opacity:1
+                    }}
+                />
             </Paper>
         </Container>
     </Container>)

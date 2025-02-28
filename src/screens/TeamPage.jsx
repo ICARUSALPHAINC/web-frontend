@@ -175,12 +175,6 @@ function TeamPage() {
                 />
                 </Typography>
 
-                <Typography variant="body1" sx={{m: '1rem'}}>
-                    Our team is our greatest asset. Each member brings unique skills and perspectives, contributing to
-                    our collective creativity. Our diversity allows us to overcome challenges and develop advanced solutions.
-                    With a fearless drive to innovate, we redefine the boundaries of what’s possible.
-                </Typography>
-
                 <Grid container spacing={4}>
                     {paginatedTeamData.map((member, index) => TeamMember(member, index))}
                 </Grid>
