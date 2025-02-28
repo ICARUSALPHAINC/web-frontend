@@ -33,12 +33,6 @@ export async function getProjectData() {
             link: `/`,
         },
         {
-            title: 'CalShare',
-            logo: `${process.env.PUBLIC_URL}/projects/CalShare.jpg`,
-            description: `An open source calendar sharing app designed to sync seamlessly with Google and Apple calendars, allowing users to share and manage schedules efficiently.`,
-            link: `/`,
-        },
-        {
             title: `Indie Games Division`,
             logo: `${process.env.PUBLIC_URL}/projects/IndieGames.png`,
             description: `The Indie Games Division will develop games for Windows to be sold on Steam. Our first game we are working on will be a maze/puzzle game with randomly generated maps.`,
@@ -48,12 +42,6 @@ export async function getProjectData() {
             title: `Mobile Games Division`,
             logo: `${process.env.PUBLIC_URL}/projects/MobileGames.jpg`,
             description: `We are working on two games right now, the first being a multiplayer hero-based RPG strategy game that will be a long term project. The second game is a single player life sim game called “The Come-Up” which will be developed primarily`,
-            link: `/`,
-        },
-        {
-            title: `Start-Up App`,
-            logo: `${process.env.PUBLIC_URL}/projects/Start-UpApp.png`,
-            description: `An app to facilitate and manage start-ups by allowing users to invest money, time, or ideas in exchange for equity. Key features include equity management and investment opportunities.`,
             link: `/`,
         },
     ];
