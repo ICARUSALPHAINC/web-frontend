@@ -4,10 +4,10 @@ on:
   push:
     branches:
       - production
+
   pull_request:
     branches:
       - production
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
