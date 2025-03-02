@@ -50,6 +50,16 @@ jobs:
             echo 'No process found using port 5002.'
           fi
         "
+    
+    - name: Clean up Docker resources
+      run: |
+        sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "
+          echo 'Removing unused Docker containers, images, and volumes...'
+          sudo docker system prune -af
+          sudo docker volume prune -f
+          sudo rm -rf /home/vijit/Web\ Frontend/*
+        "
+
 
     - name: Build Docker image
       run: |
