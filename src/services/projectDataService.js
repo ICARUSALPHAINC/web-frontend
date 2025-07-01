@@ -27,7 +27,7 @@ export async function getProjectData() {
         {
             title: `Indie Games Division`,
             logo: `${process.env.PUBLIC_URL}/projects/Aescension.png`,
-            description: `The Indie Games Division will develop games for Windows to be sold on Steam. Our first game we are working on will be a maze/puzzle game with randomly generated maps.`,
+            description: `The Indie Games Division will develop games for Windows to be sold on Steam. Our first game we are working on is a spy and stealth game.`,
             link: `/`,
         },
         {
