@@ -20,19 +20,19 @@ export async function getProjectData() {
     return [
         {
             title: 'Davis Dot',
-            logo: `${process.env.PUBLIC_URL}/projects/Icarus.png`,
+            logo: `${process.env.PUBLIC_URL}/projects/Davis.png`,
             description: `A social connection platform that unites users over deep, personalized interests that they share and uses it to establish healthy social relationships inside and outside the app. Will have well being resources, tips on communication, personality profiles, and other social/wellness content.`,
             link: `/`,
         },
         {
             title: `Indie Games Division`,
-            logo: `${process.env.PUBLIC_URL}/projects/Icarus.png`,
-            description: `The Indie Games Division will develop games for Windows to be sold on Steam. Our first game we are working on will be a maze/puzzle game with randomly generated maps.`,
+            logo: `${process.env.PUBLIC_URL}/projects/Aescension.png`,
+            description: `The Indie Games Division will develop games for Windows to be sold on Steam. Our first game we are working on is a spy and stealth game.`,
             link: `/`,
         },
         {
             title: `Mobile Games Division`,
-            logo: `${process.env.PUBLIC_URL}/projects/Icarus.png`,
+            logo: `${process.env.PUBLIC_URL}/projects/Mobile.png`,
             description: `We are working on two games right now, the first being a multiplayer hero-based RPG strategy game that will be a long term project. The second game is a single player life sim game called “The Come-Up” which will be developed primarily`,
             link: `/`,
         },
