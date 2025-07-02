@@ -108,13 +108,6 @@ export async function getTeamMemberDataNew(){
 
 export const teamMembers = [
     {
-        name: `Aadil Sharif`,
-        role: '3D Artist - Mobile Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/aadil-sharif-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/aadil-sharif-a2a67a213/`,
-        website: `https://www.artstation.com/aadil`,
-    },
-    {
         name: `Adit Khandelwal`,
         role: 'Developer - Davis Dot',
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/adit-khandelwal-1.jpg`,
@@ -134,13 +127,6 @@ export const teamMembers = [
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/agathe-riopel-1.jpg`,
         linkedIn: `https://www.linkedin.com/in/agathe-riopel-6a8100204/`,
         website: `https://www.agatheriopel.com/`,
-    },
-    {
-        name: `Agnes Chan`,
-        role: 'Rigging Artist - Mobile Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/agnes-chan-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/agneschanwny/`,
-        website: `https://vimeo.com/1021817509`,
     },
     {
         name: `Akilan Babu`,
@@ -164,13 +150,6 @@ export const teamMembers = [
         website: 'https://drive.google.com/file/d/1DcV_TPrIaIrWVix81YS6HWFTT0SqoFAc/view?usp=sharing',
     },
     {
-        name: `Alex Miller`,
-        role: 'Developer - Indie Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/alex-miller-1.jpg`,
-        linkedIn: `http://www.linkedin.com/in/alex-miller-cslin/`,
-        website: `https://github.com/alxmiller0451`,
-    },
-    {
         name: `Alexis Lydon`,
         role: 'Developer - Davis Dot',
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/alexis-lydon-1.jpg`,
@@ -178,25 +157,11 @@ export const teamMembers = [
         website: `https://github.com/alexisbl14`,
     },
     {
-        name: `Alice Liu`,
-        role: 'Developer - Stenostudy',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/alice-liu-1.jpg`,
-        linkedIn: `https://linkedin.com/in/alice-liu-21b2a4268`,
-        website: null,
-    },
-    {
         name: `Alina Staten`,
         role: 'Writer - Mobile Games Division',
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/alina-staten-1.jpg`,
         linkedIn: `https://www.linkedin.com/in/alina-staten/`,
         website: 'https://docs.google.com/document/d/1wg8qzIePFrUDrC6iPM9SIRRrrp6IHzzYjSst-IHAG18/edit?tab=t.uqm7zdcrik38#heading=h.kicqualget1j',
-    },
-    {
-        name: `Andrea Salonga`,
-        role: 'Concept Artist - Mobile Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/andrea-salonga-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/andrea-salonga-4a9a1b161/`,
-        website: `https://sites.google.com/view/andreasalonga-portfolio/home?authuser=1`,
     },
     {
         name: `Andrea Baldi`,
@@ -215,16 +180,9 @@ export const teamMembers = [
     {
         name: `Andre-Jon Albino`,
         role: 'Videographer - Media Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/andre-jon-albino-1.jpg`,
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/aandre-jon-albino-1.jpg`,
         linkedIn: `https://www.linkedin.com/in/andr%C3%A9-jon-albino-1834b4163/`,
         website: `https://andre-albino.digital/video-projects`,
-    },
-    {
-        name: `Andres Galban`,
-        role: 'Developer - Media Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/andres-galban-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/andr%C3%A9s-galb%C3%A1n-m%C3%A9ndez/`,
-        website: `https://www.artstation.com/andresgalbanmendez`,
     },
     {
         name: `Andrew Davidson`,
@@ -239,13 +197,6 @@ export const teamMembers = [
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/anna-alekseeva-1.jpg`,
         linkedIn: `https://www.linkedin.com/in/anna-alekseeva-959542238/`,
         website: `https://www.artstation.com/annamilad`,
-    },
-    {
-        name: `Arthur Liono`,
-        role: '2D Animator - Mobile Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/arthur-liono-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/arthur-t-liono-a85aaa218/`,
-        website: `https://arthurtimothyliono.wixsite.com/portfolio`,
     },
     {
         name: `Ashley Caroll`,
@@ -290,13 +241,6 @@ export const teamMembers = [
         website: `https://www.azbanguis.com/`,
     },
     {
-        name: `Benjamin Nelson`,
-        role: 'Developer - Stenostudy',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/ben-nelson-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/benjamin-nelson-77883618b/`,
-        website: `https://github.com/bnelson1324/`,
-    },
-    {
         name: `Bilal Memon`,
         role: 'Developer - Web Development',
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/bilal-memon-1.jpg`,
@@ -311,11 +255,11 @@ export const teamMembers = [
         website: `https://blasesportfolio.wordpress.com/`,
     },
     {
-        name: `Bledine Ngunte`,
-        role: 'Developer - Stenostudy',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/bledine-ngunte-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/bledine-messa/`,
-        website: null,
+        name: `Brian Kwon`,
+        role: 'Developer - Web Development',
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/brian-kwon-1.jpg`,
+        linkedIn: `https://www.linkedin.com/in/blase-henry-510935137/`,
+        website: `https://blasesportfolio.wordpress.com/`,
     },
     {
         name: `Brittany Lamont`,
@@ -332,6 +276,13 @@ export const teamMembers = [
         website: `https://www.artstation.com/bcachola`,
     },
     {
+        name: `Caio Simonetta`,
+        role: 'Operational Manager',
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/caio-simonetta-1.jpg`,
+        linkedIn: `https://www.linkedin.com/in/caio-simonetta-474a29270/`,
+        website: `https://muse.io/csimonetta`,
+    },
+    {
         name: `Caleigh Gorcoff`,
         role: 'Concept Artist - Indie Games Division',
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/caleigh-gorcoff-1.jpg`,
@@ -344,13 +295,6 @@ export const teamMembers = [
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/calvin-kim-1.jpg`,
         linkedIn: `https://www.linkedin.com/in/calvinkim010896/`,
         website: `https://www.artstation.com/calvinkimart`,
-    },
-    {
-        name: `Carlos Redondo Rubio`,
-        role: 'Developer - Stenostudy',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/carlos-redondo-1.jpg`,
-        linkedIn: `http://www.linkedin.com/in/carlos-redondo-7732b5166`,
-        website: null,
     },
     {
         name: `Cass Hammond`,
@@ -409,13 +353,6 @@ export const teamMembers = [
         website: `https://www.artstation.com/danielheranz`,
     },
     {
-        name: `Derek Simpson`,
-        role: 'Developer - Mobile Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/derek-simpson-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/d-simpson0422/`,
-        website: `https://github.com/Articunolies`,
-    },
-    {
         name: `Dillon Heeke`,
         role: '3D Artist - Mobile Games Division',
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/dillon-heeke-1.jpg`,
@@ -428,13 +365,6 @@ export const teamMembers = [
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/dongqing-zheng-1.jpg`,
         linkedIn: `https://www.linkedin.com/in/sunnyzheng0920/`,
         website: `https://sunnyzhengart.artstation.com/albums/10768936`,
-    },
-    {
-        name: `Dylan Wheeler`,
-        role: '3D Animator - Mobile Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/dylan-wheeler-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/dylan-wheeler-43931b204/`,
-        website: `https://artism31.wixsite.com/dylan-wheeler-animat`,
     },
     {
         name: `Dziana Vasilevich`,
@@ -463,27 +393,6 @@ export const teamMembers = [
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/galo-domaica-1.jpg`,
         linkedIn: `https://www.linkedin.com/in/galo-domaica-6681ba14a/`,
         website: `https://watermelon-saxophone-zc2g.squarespace.com/`,
-    },
-    {
-        name: `Ganesh Alla`,
-        role: 'Developer - Mobile Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/ganesh-alla-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/ganesh-alla-79951318b/`,
-        website: `https://allaganesh339.wixsite.com/allaganeshportfolio`,
-    },
-    {
-        name: `Gareth Aguilar`,
-        role: 'Developer - Mobile Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/gareth-aguilar-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/gareth-aguilar/`,
-        website: `https://github.com/Ji-Rath`,
-    },
-    {
-        name: `Garmonwohn Caphart`,
-        role: 'Sound Designer - Audio Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/garmonwohn-caphart-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/garmonwohn-caphart-156307204/`,
-        website: `http://www.gcaphartaudio.com`,
     },
     {
         name: `Griffin Beverlin`,
@@ -540,13 +449,6 @@ export const teamMembers = [
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/ilya-shchipanov-1.jpg`,
         linkedIn: `https://www.linkedin.com/in/ilya-shchipanov-887777285/`,
         website: `https://github.com/LiTasTime`,
-    },
-    {
-        name: `Jaden Yang`,
-        role: 'Project Lead - Web Development',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/jaden-yang-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/jaden-yang-8a75ab222/`,
-        website: 'https://jadenyang.com/',
     },
     {
         name: `Janelle Pereyda`,
@@ -631,13 +533,6 @@ export const teamMembers = [
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/jordan-garcia-1.jpg`,
         linkedIn: `https://www.linkedin.com/in/jordan-garcia-587ab41b6/`,
         website: `https://www.artstation.com/jordan_garcia33`,
-    },
-    {
-        name: `Joseph Kozubowski`,
-        role: '2D Concept Artist - Mobile Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/joseph-kozubowski-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/joseph-kozubowski-8b031a1b4/`,
-        website: `https://joseph-kozubowski.com/`,
     },
     {
         name: `Joyel Joseph`,
@@ -780,13 +675,6 @@ export const teamMembers = [
         website: `https://open.spotify.com/artist/5FcRF2Cx18l7I3jGwc3LA1?si=c-kBiqKQRxqlnI9ucWboAQ&nd=1&dlsi=9f9fcb80846349bb`,
     },
     {
-        name: `Maanit Shah`,
-        role: 'Developer - Strenostudy',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/maanit-shah-1.jpg`,
-        linkedIn: `http://www.linkedin.com/in/maanit-shah`,
-        website: `https://github.com/maanitshah25`,
-    },
-    {
         name: `Madison Trembley`,
         role: 'Writer - Mobile Games Division',
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/madison-trembley-1.jpg`,
@@ -848,20 +736,6 @@ export const teamMembers = [
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/maritzell-martinez-1.jpg`,
         linkedIn: `https://www.linkedin.com/in/maritzell-martinez-67b268181`,
         website: `https://maritzellm.carrd.co/`,
-    },
-    {
-        name: `Mark John Humilde`,
-        role: 'Developer - Mobile Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/mark-john-humilde-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/markjohnhumilde/`,
-        website: `https://github.com/xmark12`,
-    },
-    {
-        name: `Maryna Sinelnykova`,
-        role: '3D Artist - Mobile Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/maryna-sinelnykova-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/maryna-sinelnykova-322904246/`,
-        website: `https://www.artstation.com/k_myata`,
     },
     {
         name: `Mason Lacey`,
@@ -962,27 +836,6 @@ export const teamMembers = [
         website: `https://www.artstation.com/natwska`,
     },
     {
-        name: `Nathan Yu`,
-        role: 'Developer - Mobile Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/nathan-yu-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/yunathan/`,
-        website: null,
-    },
-    {
-        name: `Nicolas Araya`,
-        role: 'Graphic Designer - Mobile Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/nicolas-araya-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/nicolasarayadesign/`,
-        website: `https://nicolasaraya.design/`,
-    },
-    {
-        name: `Nicolas Holasek`,
-        role: 'Developer - Indie Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/nicolas-holasek-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/nicolas-holasek/`,
-        website: `https://github.com/nholasek`,
-    },
-    {
         name: `Nisha Kabra`,
         role: 'Graphic Designer - Mobile Games Division',
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/nisha-kabra-1.jpg`,
@@ -995,13 +848,6 @@ export const teamMembers = [
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/nithin-dhananjayan-1.jpg`,
         linkedIn: `https://www.linkedin.com/in/nithin-dhananjayan-2729853/`,
         website: null,
-    },
-    {
-        name: `Nithin Senthil`,
-        role: 'Developer - Stenostudy',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/nithin-senthil-1.jpg`,
-        linkedIn: `http://www.linkedin.com/in/nithin-senthil`,
-        website: `https://github.com/nithinsenthil`,
     },
     {
         name: `Noah King`,
@@ -1018,6 +864,13 @@ export const teamMembers = [
         website: `https://www.artstation.com/noemiponciroli`,
     },
     {
+        name: `Nolan Krames`,
+        role: 'Operational Manager',
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/nolan-krames-1.jpg`,
+        linkedIn: `https://www.linkedin.com/in/nolan-krames/`,
+        website: `https://www.nolankrames.com/`,
+    },
+    {
         name: `Oleksandr Reznykov`,
         role: '3D Artist - Mobile Games Division',
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/oleksandr-reznykov-1.jpg`,
@@ -1032,25 +885,11 @@ export const teamMembers = [
         website: `https://www.artstation.com/ochenart`,
     },
     {
-        name: `Parker Boyer`,
-        role: 'Developer - Mobile Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/parker-boyer-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/parker-boyer-801743250/`,
-        website: `https://github.com/ParkerBoyer`,
-    },
-    {
         name: `Parker Lee`,
         role: '3D Artist - Mobile Games Division',
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/parker-lee-1.jpg`,
         linkedIn: `https://www.linkedin.com/in/parker-lee-910549278/`,
         website: `https://www.artstation.com/parkerlee3`,
-    },
-    {
-        name: `Parteek Singh`,
-        role: 'Developer - Stenostudy',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/parteek-singh-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/prtsingh/`,
-        website: `https://github.com/parteeksingh24`,
     },
     {
         name: `Pedro Cosme`,
@@ -1072,20 +911,6 @@ export const teamMembers = [
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/rama-bit-1.jpg`,
         linkedIn: `https://www.linkedin.com/in/rama-bit-236126186/`,
         website: `https://www.artstation.com/sonicfanx1`,
-    },
-    {
-        name: `Rebekah Sutton`,
-        role: '2D Concept Artist - Mobile Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/rebekah-sutton-1.png`,
-        linkedIn: `	https://www.linkedin.com/in/rebekah-sutton-19a91863/`,
-        website: `https://www.artstation.com/veras`,
-    },
-    {
-        name: `Revan Arfian`,
-        role: '2D Concept Artist - Mobile Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/revan-arfian-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/revan-arfian-a824b81b8/`,
-        website: `https://www.artstation.com/revanatic`,
     },
     {
         name: `Rex Kovacs`,
@@ -1144,13 +969,6 @@ export const teamMembers = [
         website: `https://hortonryan579.wixsite.com/my-site-1`,
     },
     {
-        name: `Ryan Nguyen`,
-        role: 'Sound Designer - Audio Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/ryan-nguyen-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/ryan-nguyen-481419268`,
-        website: `https://www.enaudiospace.com/`,
-    },
-    {
         name: `Ryle Sammut`,
         role: '3D Artist - Mobile Games Division',
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/ryle-sammut-1.jpg`,
@@ -1163,13 +981,6 @@ export const teamMembers = [
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/sarish-chavan-1.jpg`,
         linkedIn: `https://www.linkedin.com/in/sarishrchavan/`,
         website: `https://www.sarishchavan.com/`,
-    },
-    {
-        name: `Scott Wodowski`,
-        role: '3D Artist - Mobile Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/scott-wodowski-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/scott-wodowski-jr-295574302/`,
-        website: `https://www.artstation.com/scottjr181`,
     },
     {
         name: `Shad Wilde`,
@@ -1200,20 +1011,6 @@ export const teamMembers = [
         website: `https://www.artstation.com/sounak`,
     },
     {
-        name: `Syon Bhavsar`,
-        role: 'Developer - Indie Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/syon-bhavsar-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/syon-b-48b904141`,
-        website: `https://www.syonbhavsar.com/`,
-    },
-    {
-        name: `Thiago Santos`,
-        role: 'UI/UX Designer - Mobile Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/thiago-santos-1.jpg`,
-        linkedIn: `https://www.linkedin.com/in/thiagojsilvas/`,
-        website: `https://thagoart.com/`,
-    },
-    {
         name: `Thomy Alifonso`,
         role: '3D Artist - Mobile Games Division',
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/thomy-alifonso-1.jpg`,
@@ -1223,7 +1020,7 @@ export const teamMembers = [
     {
         name: `Trevor Bates`,
         role: '3D Animator - Mobile Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/trevor-bates-1.png`,
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/trevor-bates-1.jpg`,
         linkedIn: `https://www.linkedin.com/in/trevor-bates-26548a223/`,
         website: `https://www.trevorbatesanimation.com/`,
     },
@@ -1312,13 +1109,6 @@ export const teamMembers = [
         website: `https://github.com/Tanuki3017`,
     },
     {
-        name: `Zhijun Zeng`,
-        role: 'UI/UX Designer - Mobile Games Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/zhijun-zeng-1.jpg`,
-        linkedIn: `www.linkedin.com/in/zhijunzeng`,
-        website: `https://zhijunzeng.com`,
-    },
-    {
         name: `Zoe Benn`,
         role: '3D Artist - Mobile Games Division',
         profilePicture: `${process.env.PUBLIC_URL}/profile-images/zoe-benn-1.jpg`,
@@ -1333,4 +1123,3 @@ export const teamMembers = [
         website: `https://www.artstation.com/zofiapz`,
     },
 ];
-
