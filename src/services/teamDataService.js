@@ -180,7 +180,7 @@ export const teamMembers = [
     {
         name: `Andre-Jon Albino`,
         role: 'Videographer - Media Division',
-        profilePicture: `${process.env.PUBLIC_URL}/profile-images/aandre-jon-albino-1.jpg`,
+        profilePicture: `${process.env.PUBLIC_URL}/profile-images/andre-jon-albino-1.jpg`,
         linkedIn: `https://www.linkedin.com/in/andr%C3%A9-jon-albino-1834b4163/`,
         website: `https://andre-albino.digital/video-projects`,
     },
