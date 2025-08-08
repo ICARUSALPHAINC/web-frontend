@@ -78,7 +78,7 @@ function ProjectsPage() {
                             <Card sx={{maxWidth: '100%', transition: '0.3s', '&:hover': {transform: 'scale(1.05)'}}}>
                                 <CardMedia
                                     component="img"
-                                    height="140"
+                                   height="140"
                                     image={project.logo}
                                     alt={project.title}
                                 />

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Typography, useMediaQuery, Snackbar, Button } from '@mui/material';
+import { Box, Typography, useMediaQuery, Snackbar, Button, List, ListItem, ListItemButton, ListItemText } from '@mui/material';
 import { socialIconsList } from "../../configs/menuConfig";
 import { contactRoutes } from "../../configs/routesConfig";
 import { theme } from "../../themes/primaryTheme";
@@ -76,7 +76,7 @@ function Footer() {
             style={{
                 display: 'flex',
                 justifyContent: 'center',
-                padding: '1rem 0',
+                padding: '5rem 0',
                 backgroundColor: '#333',
                 color: '#fff',
                 overflow: 'hidden',
@@ -93,17 +93,46 @@ function Footer() {
                     textAlign: 'center',
                 }}
             >
-                <Typography
-                    variant="body2"
-                    sx={{
-                        fontSize: '1.5vw',
-                        [theme.breakpoints.down('sm')]: {
-                            fontSize: '3vw',
-                        },
-                    }}
-                >
-                    &copy; {new Date().getFullYear()} Icarus Development. All rights reserved.
-                </Typography>
+                <Box>
+                    <List sx = {{ marginBottom : '1rem' }}>
+                        <ListItem disablePadding >
+                        <ListItemButton component="a" href="/">
+                          <ListItemText primary="Home" />
+                        </ListItemButton>
+                      </ListItem>
+                      <ListItem disablePadding >
+                        <ListItemButton component="a" href="/about">
+                          <ListItemText primary="About Us" />
+                        </ListItemButton>
+                      </ListItem>
+                      <ListItem disablePadding>
+                        <ListItemButton component="a" href="/projects">
+                          <ListItemText primary="Projects" />
+                        </ListItemButton>
+                      </ListItem>
+                      <ListItem disablePadding>
+                        <ListItemButton component="a" href="/team">
+                          <ListItemText primary="Team" />
+                        </ListItemButton>
+                      </ListItem>
+                      <ListItem disablePadding>
+                        <ListItemButton component="a" href="/contact">
+                          <ListItemText primary="Careers" />
+                        </ListItemButton>
+                      </ListItem>
+                    </List>
+                    <Typography
+                        variant="body2"
+                        sx={{
+                            fontSize: '1.5vw',
+                            [theme.breakpoints.down('sm')]: {
+                                fontSize: '3vw',
+                            },
+                        }}
+                    >
+                        &copy; {new Date().getFullYear()} Icarus Development. All rights reserved.
+                    </Typography>
+                </Box>
                 <Typography
                     variant="body2"
                     sx={{

@@ -3,6 +3,7 @@ import {CssBaseline, ThemeProvider} from "@mui/material";
 import {Route, Routes} from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import {routes} from "./configs/routesConfig";
+import AboutPage from "./screens/AboutUsPage";
 import ProjectsPage from "./screens/ProjectsPage";
 import TeamPage from "./screens/TeamPage";
 import ContactUsPage from "./screens/ContactUsPage";
@@ -26,6 +27,7 @@ function App() {
                 {/* Primary routes */}
                 <Route path = "/">
                     <Route index element={<MainLayout> <HomePage/> </MainLayout>}/>
+                    <Route path={routes.about} element={<MainLayout> <AboutPage/> </MainLayout>}/>
                     <Route path={routes.projects} element={<MainLayout> <ProjectsPage/> </MainLayout>}/>
                     <Route path={routes.team} element={<MainLayout> <TeamPage/> </MainLayout>}/>
                     <Route path={routes.contact} element={<MainLayout> <ContactUsPage/> </MainLayout>}/>
