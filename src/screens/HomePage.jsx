@@ -277,7 +277,7 @@ function HomePage() {
                             <Typography variant="body1" sx={{
                                 flex: 1,
                             }}>
-                                Our projects span various industries, from AI and gaming to social media and
+                                Our projects span various industries, from gaming to social media and
                                 productivity tools. At Icarus Development, we tackle complex challenges and develop
                                 forward-thinking solutions that make a meaningful impact. We are committed to pushing
                                 technological boundaries and creating groundbreaking advancements.

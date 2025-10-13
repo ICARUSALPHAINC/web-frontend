@@ -6,6 +6,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import GroupsIcon from '@mui/icons-material/Groups';
 import HighlightIcon from '@mui/icons-material/Highlight';
 import AttachEmailIcon from '@mui/icons-material/AttachEmail';
+import InfoIcon from '@mui/icons-material/Info';
 import MailIcon from '@mui/icons-material/Mail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
@@ -28,9 +29,10 @@ import React from "react";
  */
 export const topMenuItems = [
     {text: 'Home', icon: <HomeIcon/>, route: routes.home, },
+    {text: 'About Us', icon:<InfoIcon/>, route: routes.about, },
     {text: 'Projects', icon: <HighlightIcon/>, route: routes.projects, },
     {text: 'Team', icon: <GroupsIcon/>, route: routes.team, },
-    {text: 'Contact', icon: <AttachEmailIcon/>, route: routes.contact, },
+    {text: 'Careers', icon: <AttachEmailIcon/>, route: routes.contact, },
 ];
 
 /*
