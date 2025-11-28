@@ -1,6 +1,7 @@
 // URLs to project routes
 export const routes = {
     home: '/',
+    about:'/about',
     team: '/team',
     projects: '/projects',
     contact: '/contact',
