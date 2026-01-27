@@ -1,17 +1,11 @@
 import {contactRoutes, routes} from "./routesConfig";
 
-
 // Icon imports only
-import HomeIcon from '@mui/icons-material/Home';
-import GroupsIcon from '@mui/icons-material/Groups';
-import HighlightIcon from '@mui/icons-material/Highlight';
-import AttachEmailIcon from '@mui/icons-material/AttachEmail';
-import InfoIcon from '@mui/icons-material/Info';
-import MailIcon from '@mui/icons-material/Mail';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import XIcon from '@mui/icons-material/X';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
+import MailIcon from "@mui/icons-material/Mail";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import XIcon from "@mui/icons-material/X";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
 import React from "react";
 
 /*
@@ -28,29 +22,13 @@ import React from "react";
  * sx - sx prop to style the text
  */
 export const topMenuItems = [
-    {text: 'Home', icon: <HomeIcon/>, route: routes.home, },
-    {text: 'About Us', icon:<InfoIcon/>, route: routes.about, },
-    {text: 'Projects', icon: <HighlightIcon/>, route: routes.projects, },
-    {text: 'Team', icon: <GroupsIcon/>, route: routes.team, },
-    {text: 'Careers', icon: <AttachEmailIcon/>, route: routes.contact, },
-];
-
-/*
- * Array of objects to be parsed at the bottom of the menu displays, displays at the end / bottom of menu's
- *
- * NecessaryFields: icon, route || onClickFunction
- * Optional fields: noMobile, sx
- *
- * icon - menu's icon
- * route - where to route when clicked
- * onClickFunction (only if no route) - what to do when clicked
- * noMobile - if true, don't render this component in mobile view
- * sx - sx prop to style the text
- */
-export const bottomMenuItems = [
-    {icon: <XIcon/>, route: contactRoutes.twitter,},
-    {icon: <LinkedInIcon/>, route: contactRoutes.linkedIn,},
-    {icon: <MailIcon/>, route: contactRoutes.email,},
+  //{text: 'Home', icon: <HomeIcon/>, route: routes.home, },
+  { text: "About Us", route: routes.about },
+  { text: "Games", route: routes.projects },
+  { text: "Careers", route: routes.contact },
+  { text: "Team", route: routes.team },
+  { text: "Community", route: routes.community },
+  { text: "Store", route: routes.store },
 ];
 
 /*

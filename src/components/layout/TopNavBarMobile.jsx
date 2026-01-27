@@ -1,5 +1,5 @@
 import {routes} from "../../configs/routesConfig";
-import {bottomMenuItems, topMenuItems} from "../../configs/menuConfig";
+import {topMenuItems} from "../../configs/menuConfig";
 import {AppBar, Box, Button, Drawer, ListItemButton, Toolbar, Typography, useTheme} from "@mui/material";
 import logo from "../../assets/logo/logo192.png";
 import {Link} from "react-router-dom";
@@ -30,31 +30,6 @@ function TopMenuItems(item, index) {
         </ListItemButton>);
 }
 
-// Menu items that show up at the end of the opened menu burger
-function BottomMenuItems(item, index) {
-    return (
-        <ListItemButton
-            // Make it a link if it's a route, otherwise make it a button with onClickFunction. Render is still button for both.
-            key={index}
-            component={item.route ? 'a' : 'button'} // Not using links and using 'a' instead so component can open in a new tab instead of current tab
-            href={item.route ? item.route : undefined}
-            target={item.route ? "_blank" : undefined} // Item opens in new tab instead of current tab
-            rel={item.route ? "noopener noreferrer" : undefined} // Item opens in new tab instead of current tab
-            onClick={(item.onClickFunction && !item.route) ? item.onClickFunction : undefined} // onClick if route doesn't exist and onClickFunction exists
-            color="inherit"
-            sx={{
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'center',
-                backgroundColor: 'mobileAppBarBurgerMenu.listBackground',
-                color: 'primary.contrastText',
-            }}
-        >
-            {item.icon}
-        </ListItemButton>
-    );
-}
-
 
 function TopNavBarMobile() {
     const theme = useTheme();
@@ -80,16 +55,6 @@ function TopNavBarMobile() {
                     }
                 }}>
                     {topMenuItems.map((item, index) => TopMenuItems(item, index))}
-                </Box>
-
-                {/* Items at the bottom */}
-                <Box sx={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    justifyContent: 'space-between',
-                    marginBottom: '2rem',
-                }}>
-                    {bottomMenuItems.map((item, index) => BottomMenuItems(item, index))}
                 </Box>
             </Box>);
     }

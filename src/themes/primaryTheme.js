@@ -22,10 +22,10 @@ let theme = createTheme({
 
     palette: {
         primary: {
-            main: '#ff5aa7', // From --title-gradient start
+            main: "#202020", // From --title-gradient start
             light: '#f7a059', // From --title-gradient end
-            dark: '#ff5aa7',
-            contrastText: '#ffffff',
+            dark: "#202020",
+      contrastText: '#ffffff',
         },
         secondary: {
             main: '#4cb6fd', // From --team-header-gradient start
@@ -42,9 +42,9 @@ let theme = createTheme({
             secondary: '#88cded', // From --p-color
         },
 
-        appBar: {
-            background: 'linear-gradient(to right, #ff5aa7, #f7a059)',
-        },
+    appBar: {
+      background: 'linear-gradient(to right, #202020, #000000)',
+    },
 
         mobileAppBarBurgerMenu: {
             background: '#1f1f1f',
