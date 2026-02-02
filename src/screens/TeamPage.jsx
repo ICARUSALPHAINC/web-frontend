@@ -161,7 +161,7 @@ function TeamPage() {
     return (
         <Container maxWidth="lg">
             <Box sx={{ mt: 4, textAlign: 'center' }}>
-                <Typography variant="h2" gutterBottom>Meet the Team</Typography>
+                <Typography paddingTop={2} variant="h1" gutterBottom sx={{}}>Meet the Team</Typography>
                 <Typography variant="h6" color="textSecondary" mb={4}>
                     Get to know the people behind our
                     ‎<Typewriter

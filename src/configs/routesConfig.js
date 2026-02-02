@@ -7,6 +7,10 @@ export const routes = {
   contact: "/contact",
   community: "/community",
   store: "/store",
+  // Added specific game routes
+  gameComeUp: "/games/the-come-up",
+  gameAescension: "/games/aescension",
+  gameMimicry: "/games/mimicry",
 };
 
 // URLs to all contact information

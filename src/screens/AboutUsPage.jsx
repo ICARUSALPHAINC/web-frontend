@@ -4,7 +4,7 @@ function AboutUsPage() {
 
     const divStyle = {
         margin: '0 auto', 
-        padding: '0 16px', 
+        padding: '2rem 16px', 
         backgroundImage: 'url(/about-images/temp-about-background.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',

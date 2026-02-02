@@ -1,39 +1,87 @@
+import React, {useState} from "react";
 import {routes} from "../../configs/routesConfig";
 import {topMenuItems} from "../../configs/menuConfig";
-import {AppBar, Box, Button, Toolbar, Typography} from "@mui/material";
+import {AppBar, Box, Button, Toolbar, Typography, Menu, Fade, MenuItem} from "@mui/material";
 import logo from "../../assets/logo/logo192.png";
 import {Link} from "react-router-dom";
 
 
 // Menu items that show up in the front of the menu bar
 function FrontMenuItems(item, index) {
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
+
+  const handleClick = (event) => {
+    if (item.subMenu) {
+      setAnchorEl(event.currentTarget);
+    }
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
-    <Button
-      // Make it a link if it's a route, otherwise make it a button with onClickFunction. Render is still button for both.
-      key={index}
-      component={item.route ? Link : 'button'}
-      to={item.route ? item.route : undefined}
-      onClick={item.onClickFunction && !item.route ? item.onClickFunction : undefined} // onClick if route doesn't exist and onClickFunction exists
-      color='inherit'
-      sx={{
-        textDecoration: 'none', // Remove underline
-        color: 'inherit', // Inherit color from parent
-      }}
-    >
-      <Typography variant='h3' color='primary.contrastText'>
-        {item.text}
-      </Typography>
-    </Button>
+    <Box key={index}>
+      <Button
+        component={item.route ? Link : 'button'}
+        to={item.route || undefined}
+        onClick={handleClick}
+        color='inherit'
+        sx={{ textDecoration: 'none', color: 'inherit' }}
+      >
+        <Typography variant='h3' color='primary.contrastText'>
+          {item.text}
+        </Typography>
+      </Button>
+
+      {item.subMenu && (
+        <Menu
+          anchorEl={anchorEl}
+          open={open}
+          onClose={handleClose}
+          TransitionComponent={Fade}
+          sx={{
+            '& .MuiPaper-root': {
+              backgroundColor: '#1a1a1a', // Match your dark theme
+              color: 'white',
+              minWidth: '150px',
+            }
+          }}
+        >
+          {item.subMenu.map((sub, subIdx) => (
+            <MenuItem 
+              key={subIdx} 
+              onClick={handleClose}
+              component={sub.route ? Link : 'div'}
+              to={sub.route}
+              disabled={sub.disabled}
+              sx={{
+                '&.Mui-disabled': { opacity: 0.5, color: 'gray' },
+                fontSize: '0.9rem',
+                fontFamily: 'inherit'
+              }}
+            >
+              {sub.text}
+            </MenuItem>
+          ))}
+        </Menu>
+      )}
+    </Box>
   );
 }
 
 function TopNavBarDesktop() {
   return (
     <AppBar
-      position='static'
+      position='absolute'
+      elevation={0}
       sx={{
         background: 'transparent',
         width: '100%',
+        top: 0,
+        left: 0,
+        border: 'none',
       }}
     >
       <Toolbar
@@ -41,6 +89,9 @@ function TopNavBarDesktop() {
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
+          backgroundColor: 'transparent',
+          userSelect: 'none',       // Prevents the typing cursor/text highlighting
+          WebkitUserSelect: 'none', // Safari/Chrome support
         }}
       >
         {/* Left: Logo */}

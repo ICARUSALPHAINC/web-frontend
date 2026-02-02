@@ -24,11 +24,25 @@ import React from "react";
 export const topMenuItems = [
   //{text: 'Home', icon: <HomeIcon/>, route: routes.home, },
   { text: "About Us", route: routes.about },
-  { text: "Games", route: routes.projects },
-  { text: "Careers", route: routes.contact },
+  { 
+    text: "Games", 
+    subMenu: [
+      { text: "The Come-Up", route: routes.gameComeUp },
+      { text: "Aescension", route: routes.gameAescension },
+      { text: "Mimicry", route: routes.gameMimicry }
+    ] 
+  },
+  // Careers usually links to the application form
+  { text: "Careers", route: routes.contact }, 
   { text: "Team", route: routes.team },
-  { text: "Community", route: routes.community },
-  { text: "Store", route: routes.store },
+  { 
+    text: "Community", 
+    subMenu: [{ text: "Coming Soon", disabled: true }] 
+  },
+  { 
+    text: "Store", 
+    subMenu: [{ text: "Coming Soon", disabled: true }] 
+  },
 ];
 
 /*
