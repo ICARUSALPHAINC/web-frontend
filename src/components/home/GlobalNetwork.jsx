@@ -2,7 +2,7 @@ import React from 'react';
 import { Box } from '@mui/material';
 
 // Ensure this path matches where you put the map image
-const mapAsset = require('../assets/global-network.png');
+const mapAsset = require('../../assets/global-network.png');
 
 const GlobalNetwork = () => {
     return (

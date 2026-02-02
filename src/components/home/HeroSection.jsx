@@ -4,9 +4,9 @@ import { Box, Container, Grid, Typography, Divider } from '@mui/material';
 const HeroSection = () => {
     
     const assets = {
-        bg: require('../assets/hero-section/background.png'),      
-        blue: require('../assets/hero-section/blue.png'),
-        char: require('../assets/hero-section/character.png'), 
+        bg: require('../../assets/hero-section/background.png'),      
+        blue: require('../../assets/hero-section/blue.png'),
+        char: require('../../assets/hero-section/character.png'), 
     };
 
     return (
@@ -30,8 +30,8 @@ const HeroSection = () => {
                 <Grid container spacing={4} alignItems="center">
                     
                     {/* --- LEFT COLUMN: TEXT CONTENT --- */}
-                    <Grid item xs={12} md={6} sx={{ zIndex: 2 }}>
-                        <Box sx={{ textAlign: 'left', maxWidth: '650px' }}>
+                    <Grid item xs={12} md={6} sx={{ zIndex: 3 }}>
+                        <Box sx={{ textAlign: 'left', paddingLeft: { xs: '0', md: '4rem' } }}>
                             <Typography 
                                 variant="h3" 
                                 component="div" 
@@ -40,7 +40,7 @@ const HeroSection = () => {
                                     fontWeight: '700', 
                                     textTransform: 'uppercase',
                                     lineHeight: 1,
-                                    fontSize: { xs: '2.5rem', md: '3.5rem' } 
+                                    fontSize: { xs: '3rem', md: '4rem' } 
                                 }}
                             >
                                 We Ain't
@@ -53,7 +53,7 @@ const HeroSection = () => {
                                     fontWeight: '900', 
                                     textTransform: 'uppercase', 
                                     color: '#ff4081', // The hot pink color
-                                    fontSize: { xs: '4rem', md: '7rem' }, // Responsive sizing
+                                    fontSize: { xs: '5rem', md: '8rem' }, // Responsive sizing
                                     lineHeight: 1,
                                     marginBottom: '1rem'
                                 }}
@@ -63,24 +63,25 @@ const HeroSection = () => {
 
                             <Divider 
                                 sx={{ 
+                                    borderRadius: 1, // rounded edges
                                     backgroundColor: '#fff', 
-                                    height: '3px', 
-                                    width: '40vw', 
+                                    height: '6px', 
+                                    width: '49vw', 
                                     marginBottom: '2rem' 
                                 }} 
                             />
 
-                            <Typography variant="h6" sx={{ color: '#ffffff', marginBottom: '1.5rem', lineHeight: 1.4 }}>
+                            <Typography variant="h6" sx={{ color: '#ffffff', marginBottom: '1.5rem', lineHeight: 1.4, fontSize: { xs: '1rem', md: '1.5rem' } }}>
                                 Icarus Alpha is a next-gen gaming studio uniting elite creatives 
                                 to redefine gaming and interactive storytelling.
                             </Typography>
 
-                            <Typography variant="body1" sx={{ color: '#ffffff', marginBottom: '1.5rem', lineHeight: 1.4 }}>
+                            <Typography variant="h6" sx={{ color: '#ffffff', marginBottom: '1.5rem', lineHeight: 1.4, fontSize: { xs: '1rem', md: '1.5rem' } }}>
                                 Our studio is focused entirely on developing original IPs, 
                                 built independently without external ownership or influence.
                             </Typography>
 
-                            <Typography variant="body1" sx={{ color: '#ffffff', marginBottom: '1.5rem', lineHeight: 1.4 }}>
+                            <Typography variant="h6" sx={{ color: '#ffffff', marginBottom: '1.5rem', lineHeight: 1.4, fontSize: { xs: '1rem', md: '1.5rem' } }}>
                                 We are beholden to no one – and the industry is about to take notice.
                             </Typography>
                         </Box>

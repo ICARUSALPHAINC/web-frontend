@@ -2,9 +2,9 @@ import React from 'react';
 import { Box } from '@mui/material';
 
 // --- Import Components ---
-import HeroSection from '../components/HeroSection';
-import FeaturedProjects from '../components/FeaturedProjects';
-import GlobalNetwork from '../components/GlobalNetwork'; // <--- Final Import
+import HeroSection from '../components/home/HeroSection';
+import FeaturedProjects from '../components/home/FeaturedProjects';
+import GlobalNetwork from '../components/home/GlobalNetwork'; // <--- Final Import
 
 function HomePage() {
     return (
