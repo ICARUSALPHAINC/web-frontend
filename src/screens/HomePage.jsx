@@ -15,6 +15,8 @@ function HomePage() {
                 display: 'flex',
                 flexDirection: 'column',
                 overflowX: 'hidden', // Prevent horizontal scrollbars(Featured Projects)
+                userSelect: 'none',       // Prevents the typing cursor/text highlighting
+                WebkitUserSelect: 'none', // Safari/Chrome support
             }}
         >
             {/* =========================================

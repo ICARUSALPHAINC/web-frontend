@@ -122,13 +122,8 @@ const FeaturedProjects = () => {
                                 onClick={() => handleCardClick(index)}
                                 sx={{
                                     height: '100%', // Match the parent height (60vh)
-                                    flexShrink: 0,  // NEVER squash the image
-                                    
-                                    // We remove fixed widths. 
-                                    // 'width: auto' is the default for divs, but strictly speaking,
-                                    // the width of this Box will be determined by its child <img>.
+                                    flexShrink: 0,  // NEVER squeeze/compress the image
                                     width: 'auto',
-
                                     cursor: 'pointer',
                                     position: 'relative',
                                     borderRadius: '16px',
