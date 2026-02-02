@@ -1,6 +1,6 @@
 import {routes} from "../../configs/routesConfig";
-import {bottomMenuItems, topMenuItems} from "../../configs/menuConfig";
-import {AppBar, Box, Button, Toolbar, Typography, useTheme} from "@mui/material";
+import {topMenuItems} from "../../configs/menuConfig";
+import {AppBar, Box, Button, Toolbar, Typography} from "@mui/material";
 import logo from "../../assets/logo/logo192.png";
 import {Link} from "react-router-dom";
 
@@ -28,12 +28,11 @@ function FrontMenuItems(item, index) {
 }
 
 function TopNavBarDesktop() {
-  const theme = useTheme();
   return (
     <AppBar
       position='static'
       sx={{
-        background: `${theme.palette.appBar.background}`,
+        background: 'transparent',
         width: '100%',
       }}
     >
