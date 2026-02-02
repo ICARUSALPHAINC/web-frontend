@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Container, Typography, IconButton, useMediaQuery, useTheme } from '@mui/material';
+import { Box, Typography, IconButton} from '@mui/material';
 
 // --- ASSET IMPORTS ---
 const arrowAsset = require('../assets/featured-projects/arrow.png');
@@ -32,8 +32,6 @@ const projectData = [
 ];
 
 const FeaturedProjects = () => {
-    const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
     const [activeIndex, setActiveIndex] = useState(0);
 
     // --- CAROUSEL LOGIC ---
