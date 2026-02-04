@@ -57,9 +57,9 @@ function ContactUsPage() {
                 alignItems: 'center',
                 justifyContent: 'center',
                 color: '#fff',
-                minHeight: '80vh',
+                // minHeight: '80vh',
                 width: '100%',
-                // marginTop: '2rem',
+                marginTop: '2rem',
                 // marginBottom: '2rem',
                 borderRadius: '20px',
             }}
@@ -85,7 +85,7 @@ function ContactUsPage() {
                 </Typography>
             </Box>
 
-            <Container // Benefits row 1
+            <Container // Benefits row 1, switch to map function for rows 1 and 2 possibly
                 sx={{
                 display: 'flex',
                 alignItems: 'center',
