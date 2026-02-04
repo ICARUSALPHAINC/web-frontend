@@ -8,10 +8,16 @@ import MuiAccordion from '../components/MuiAccordion';
 
 function ContactUsPage() {
     const items = [
-        {role: "gamer", desc:"you shall game"},
-        {role: "drawer", desc:"you shall draw"},
-        {role: "gooner", desc:"you shall goon"},
-        {role: "programmer", desc:"you shall never receive employment or happiness for years to come"},
+        {role: "Developers", desc:"you shall develop stuffs"},
+        {role: "Designers", desc:"you shall design stuffs"},
+        {role: "Artists", desc:"you shall draw art and stuffs"},
+        {role: "Animation/Rigging", desc:"you shall animate and rig models and stuffs"},
+        {role: "Audio", desc:"you shall make cool sounds and stuffs"},
+        {role: "Media", desc:"you shall create media and video stuffs"},
+        {role: "Marketing", desc:"you shall market us on social media stuffs"},
+        {role: "Production", desc:"you shall produce stuffs"},
+        {role: "Finance", desc:"you shall handle our finances and money stuffs"},
+        {role: "Operations", desc:"you shall organize our operations"}
     ];
     return (<Container maxWidth="lg">
         <Container
