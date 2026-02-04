@@ -19,19 +19,48 @@ function ContactUsPage() {
         {role: "Finance", desc:"you shall handle our finances and money stuffs"},
         {role: "Operations", desc:"you shall organize our operations"}
     ];
-    return (<Container maxWidth="lg">
-        <Container
+    return (
+        <Container maxWidth="lg"
             sx={{
                 display: 'flex',
-                flexDirection: {xs: 'column', md: 'row'},
+                flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
-                background: 'linear-gradient(45deg, #444 30%, #FF8E53 90%)',
+            }}
+        >
+            <Box
+                component="img"
+                src=""
+                alt="IcarusAlphaSplashArt"
+                sx={{
+                    width: "100%",
+                    height: 200,
+                    objectFit: "cover",
+                    borderRadius: 2,
+                }}
+            />
+            <Typography variant='h1'
+                sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    margin: '20px',
+                }}
+            >
+                Open Positions
+            </Typography>
+            <MuiAccordion items={items}/>
+        <Container // Benefits
+            sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
                 color: '#fff',
                 minHeight: '80vh',
                 width: '100%',
-                marginTop: '2rem',
-                marginBottom: '2rem',
+                // marginTop: '2rem',
+                // marginBottom: '2rem',
                 borderRadius: '20px',
             }}
         >
@@ -46,94 +75,192 @@ function ContactUsPage() {
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
-                    marginRight: {md: '10ch'},
+                    // marginRight: {md: '10ch'},
                     marginBottom: {xs: '2rem', md: '0'},
+                    background: 'linear-gradient(45deg, #444 30%, #FF8E53 90%)',
                 }}
             >
-                <Typography variant="h1" gutterBottom>
-                    Contact Us
-                </Typography>
-                <Typography variant="h6" sx={{margin: '1rem 0'}}>
-                    We invite you to join us on this exciting adventure. We are always looking for talented and driven
-                    individuals who are passionate about doing things differently. Together, we are shaping the future,
-                    one idea at a time.
+                <Typography variant="h1" sx={{margin: '1rem 0'}}>
+                    Why Work With Us?
                 </Typography>
             </Box>
-            <Paper
+
+            <Container // Benefits row 1
                 sx={{
-                    background: 'linear-gradient(45deg, #888 30%, #555 90%)',
-                    borderRadius: '20px',
-                    padding: '2rem',
-                    textAlign: 'center',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    borderLeft: 1,
-                    borderTop: 1,
-                    width: {xs: '80%', md: '40%'}, // Adjusted width for responsiveness
-                    height: {xs: 'auto', md: '50ch'}, // Adjusted minimum height for content
-                   
-                }}
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: 0.5,
+                color: '#fff',
+                width: '100%',
+                // marginTop: '2rem',
+                // marginBottom: '2rem',
+                borderRadius: '20px',
+            }}
             >
-                <Box
-                    sx={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        margin: '1rem 0',
-                        cursor: 'pointer'
-                    }}
-                >
-                    {socialIconsList.map((item) => SocialIcon(item))}
-                </Box>
-                <Button
-                    variant="contained"
-                    href = {contactRoutes.apply}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    sx={{
-                        width: '20ch',
-                        marginTop: '1rem',
-                        background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-                        transition: "opacity 0.5s",
-                        '&:hover': {
-                            opacity: 0.5,
-                        },
-                        
-                    }}
-                >
-                    Apply
-                </Button>
-                <Box
-                    component = "img"
-                    src = "/contant-images/CollegeofEngineeringLogoTransparent.png"
-                    alt = "AveE"
-                    sx = {{
-                        marginTop: 8, 
-                        width: "100%", 
-                        maxWidth: "80%", 
-                        borderRadius: 2, 
-                        opacity:1
-                    }}
-                />
-                <Box
-                    component = "img"
-                    src = "/contant-images/AveE_Chevron_Horizontal-Color.png"
-                    alt = "AveE"
-                    sx = {{
-                        marginTop: 2, 
-                        width: "100%", 
-                        maxWidth: "80%", 
-                        borderRadius: 2, 
-                        opacity:1
-                    }}
-                />
-            </Paper>
+                <Box sx={{
+                background: '#333333',
+                borderRadius: '10px',
+                padding: '2rem',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                width: {xs: '80%', md: '40%'}, // Adjusted width for responsiveness
+                // height: {xs: 'auto', md: '50ch'}, // Adjusted minimum height for content
+                marginTop: '2rem',
+                
+            }}
+                >Chill</Box>
+                <Box sx={{
+                background: '#333333',
+                borderRadius: '10px',
+                padding: '2rem',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                width: {xs: '80%', md: '40%'}, // Adjusted width for responsiveness
+                // height: {xs: 'auto', md: '50ch'}, // Adjusted minimum height for content
+                marginTop: '2rem',
+                
+            }}
+                >Fun</Box>
+                <Box sx={{
+                background: '#333333',
+                borderRadius: '10px',
+                padding: '2rem',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                width: {xs: '80%', md: '40%'}, // Adjusted width for responsiveness
+                // height: {xs: 'auto', md: '50ch'}, // Adjusted minimum height for content
+                marginTop: '2rem',
+                
+            }}
+                >Vibes</Box>
+            </Container>
+
+            <Container // Benefits row 2
+                sx={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: 0.5,
+                color: '#fff',
+                width: '100%',
+                // marginTop: '2rem',
+                // marginBottom: '2rem',
+                borderRadius: '20px',
+            }}
+            >
+                <Box sx={{
+                background: '#333333',
+                borderRadius: '10px',
+                padding: '2rem',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                width: {xs: '80%', md: '40%'}, // Adjusted width for responsiveness
+                // height: {xs: 'auto', md: '50ch'}, // Adjusted minimum height for content
+                marginTop: '0.25rem',
+                
+            }}
+                >I</Box>
+                <Box sx={{
+                background: '#333333',
+                borderRadius: '10px',
+                padding: '2rem',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                width: {xs: '80%', md: '40%'}, // Adjusted width for responsiveness
+                // height: {xs: 'auto', md: '50ch'}, // Adjusted minimum height for content
+                marginTop: '0.25rem',
+                
+            }}
+                >Love</Box>
+                <Box sx={{
+                background: '#333333',
+                borderRadius: '10px',
+                padding: '2rem',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                width: {xs: '80%', md: '40%'}, // Adjusted width for responsiveness
+                // height: {xs: 'auto', md: '50ch'}, // Adjusted minimum height for content
+                marginTop: '0.25rem',
+                
+            }}
+                >Horses</Box>
+            </Container>
+            
         </Container>
-        <MuiAccordion items={items}/>
+
+        <Button
+            variant="contained"
+            href = {contactRoutes.apply}
+            rel="noopener noreferrer"
+            target="_blank"
+            sx={{
+                width: '20ch',
+                marginTop: '1rem',
+                background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+                transition: "opacity 0.5s",
+                '&:hover': {
+                    opacity: 0.5,
+                },
+                marginBottom: '1rem'
+                
+            }}
+        >
+            Apply Now!
+        </Button>
+        <Paper
+            sx={{
+                background: 'linear-gradient(45deg, #888 30%, #555 90%)',
+                borderRadius: '20px',
+                padding: '2rem',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                width: {xs: '80%', md: '40%'}, // Adjusted width for responsiveness
+                // height: {xs: 'auto', md: '50ch'}, // Adjusted minimum height for content
+                marginTop: '2rem',
+                marginBottom: '2rem'
+                
+            }}
+        >
+            <Box
+                component = "img"
+                src = "/contant-images/CollegeofEngineeringLogoTransparent.png"
+                alt = "AveE"
+                sx = {{
+                    marginTop: 2, 
+                    width: "100%", 
+                    maxWidth: "80%", 
+                    borderRadius: 2, 
+                    opacity:1,
+                    transition: 'scale 0.5s',
+                    '&:hover': {scale: '1.2'}
+                }}
+            />
+            <Box
+                component = "img"
+                src = "/contant-images/AveE_Chevron_Horizontal-Color.png"
+                alt = "AveE"
+                sx = {{
+                    marginTop: 2, 
+                    width: "100%", 
+                    maxWidth: "80%", 
+                    borderRadius: 2, 
+                    opacity:1,
+                    transition: 'scale 0.5s',
+                    '&:hover': {scale: '1.2'}
+                }}
+            />
+        </Paper>
+        
     </Container>
-       
-)
+    )
 }
 
 export default ContactUsPage;
