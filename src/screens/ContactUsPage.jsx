@@ -3,11 +3,16 @@ import {Container, Box, Button, Typography, Paper} from '@mui/material';
 import {contactRoutes} from "../configs/routesConfig";
 import {socialIconsList} from "../configs/menuConfig";
 import SocialIcon from "../components/SocialIcon";
-import Accordion from '../components/Accordion';
+import MuiAccordion from '../components/MuiAccordion';
 
 
 function ContactUsPage() {
-    const items = [{role: "gamer", desc:"you shall game"}];
+    const items = [
+        {role: "gamer", desc:"you shall game"},
+        {role: "drawer", desc:"you shall draw"},
+        {role: "gooner", desc:"you shall goon"},
+        {role: "programmer", desc:"you shall never receive employment or happiness for years to come"},
+    ];
     return (<Container maxWidth="lg">
         <Container
             sx={{
@@ -119,7 +124,7 @@ function ContactUsPage() {
                 />
             </Paper>
         </Container>
-        <Accordion items={items}></Accordion> 
+        <MuiAccordion items={items}/>
     </Container>
        
 )
