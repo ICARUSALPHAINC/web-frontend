@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Typography, IconButton} from '@mui/material';
+import { Box, Typography, IconButton, useMediaQuery, useTheme } from '@mui/material';
 
 // --- ASSET IMPORTS ---
 const arrowAsset = require('../../assets/featured-projects/arrow.png');
@@ -16,23 +16,23 @@ const projectData = [
     {
         id: 2,
         title: "Aescension",
-        // Large banner with logos
         imgLarge: require('../../assets/featured-projects/aescension-lg.png'),
-        // Portrait group view
         imgSmall: require('../../assets/featured-projects/aescension-sm.png'),
     },
     {
         id: 3,
         title: "Mimicry",
-        // Large banner with logos
         imgLarge: require('../../assets/featured-projects/mimicry-lg.png'),
-        // Portrait creature view
         imgSmall: require('../../assets/featured-projects/mimicry-sm.png'),
     },
 ];
 
 const FeaturedProjects = () => {
     const [activeIndex, setActiveIndex] = useState(0);
+    
+    // Hooks for responsive adjustments
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
     // --- CAROUSEL LOGIC ---
     // Cycle handler for arrows
@@ -46,29 +46,79 @@ const FeaturedProjects = () => {
         setActiveIndex((prev) => (prev === 0 ? projectData.length - 1 : prev - 1));
     };
 
-    // Handler for clicking directly on a project card
     const handleCardClick = (index) => {
         setActiveIndex(index);
     };
 
+    // --- POSITIONAL LOGIC ---
+    const getCardStyle = (index) => {
+        const total = projectData.length;
+        const prevIndex = (activeIndex - 1 + total) % total;
+        const nextIndex = (activeIndex + 1) % total;
+
+        let style = {
+            left: '50%',
+            opacity: 0,
+            zIndex: 0,
+            scale: 0.5,
+            pointerEvents: 'none'
+        };
+
+        // 1. ACTIVE CARD (Center)
+        if (index === activeIndex) {
+            style = {
+                left: '50%',
+                opacity: 1,
+                zIndex: 10,
+                scale: 1,
+                pointerEvents: 'auto'
+            };
+        } 
+        // 2. PREVIOUS CARD (Far Left)
+        else if (index === prevIndex) {
+            style = {
+                // On mobile, 0% puts the center of the image on the edge
+                // On desktop, 15% keeps it visible but separated from the middle
+                left: isMobile ? '0%' : '15%', 
+                opacity: 0.5, // Lower opacity to push it visually to background
+                zIndex: 5,
+                scale: 0.7,   // Smaller scale to reduce overlap
+                pointerEvents: 'auto'
+            };
+        } 
+        // 3. NEXT CARD (Far Right)
+        else if (index === nextIndex) {
+            style = {
+                // On mobile, 100% puts the center of the image on the right edge
+                // On desktop, 85% keeps it visible but separated
+                left: isMobile ? '100%' : '85%', 
+                opacity: 0.5,
+                zIndex: 5,
+                scale: 0.7,
+                pointerEvents: 'auto'
+            };
+        }
+
+        return style;
+    };
+
     return (
-        <Box sx={{ 
-            backgroundColor: '#0a0a0a', 
-            paddingTop: '3rem', 
+        <Box sx={{
+            backgroundColor: '#0a0a0a',
+            paddingTop: '3rem',
             paddingBottom: '5rem',
             width: '100%',
-            overflowX: 'hidden', 
+            overflowX: 'hidden',
             display: 'flex',
             flexDirection: 'column',
-            position: 'relative' 
+            position: 'relative'
         }}>
-            
-            <Typography 
-                variant="h3" 
-                sx={{ 
-                    fontWeight: '900', 
-                    textTransform: 'uppercase', 
-                    color: '#ff4081', 
+            <Typography
+                variant="h3"
+                sx={{
+                    fontWeight: '900',
+                    textTransform: 'uppercase',
+                    color: '#ff4081',
                     marginBottom: '2rem',
                     paddingLeft: { xs: '2rem', xl: 'calc((100vw - 1200px) / 2)' },
                     fontSize: { xs: '2rem', md: '3rem' },
@@ -79,31 +129,28 @@ const FeaturedProjects = () => {
             </Typography>
 
             {/* --- CAROUSEL TRACK --- */}
-            <Box sx={{ 
-                display: 'flex', 
-                alignItems: 'center', 
-                justifyContent: 'center', 
+            <Box sx={{
                 position: 'relative',
                 width: '100%',
-                // This controls the vertical size of the whole strip. 
-                // All images will match this height exactly.
-                height: { xs: '40vh', md: '60vh' }, 
+                height: { xs: '40vh', md: '60vh' },
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
             }}>
-                
                 {/* --- FLOATING LEFT ARROW --- */}
-                <IconButton 
+                <IconButton
                     onClick={handlePrev}
-                    sx={{ 
+                    sx={{
                         position: 'absolute',
-                        left: { xs: '10px', md: '5%' }, 
-                        zIndex: 20, 
+                        left: { xs: '10px', md: '5%' },
+                        zIndex: 20,
                         padding: 0,
                         filter: 'drop-shadow(0px 0px 10px rgba(0,0,0,0.8))', // Added shadow so it pops over images
                         '&:hover': { opacity: 0.8, transform: 'scale(1.1)' },
                         transition: 'transform 0.2s'
                     }}
                 >
-                     <Box component="img" src={arrowAsset} alt="Previous" sx={{ width: { xs: '30px', md: '50px' } }} />
+                    <Box component="img" src={arrowAsset} alt="Previous" sx={{ width: { xs: '30px', md: '50px' } }} />
                 </IconButton>
 
                 {/* --- IMAGE CONTAINER --- */}
@@ -114,25 +161,31 @@ const FeaturedProjects = () => {
                     height: '100%',
                 }}>
                     {projectData.map((project, index) => {
+                        const { left, opacity, zIndex, scale, pointerEvents } = getCardStyle(index);
                         const isActive = index === activeIndex;
 
                         return (
-                            <Box 
+                            <Box
                                 key={project.id}
                                 onClick={() => handleCardClick(index)}
                                 sx={{
-                                    height: '100%', // Match the parent height (60vh)
-                                    flexShrink: 0,  // NEVER squeeze/compress the image
+                                    position: 'absolute',
+                                    top: '50%',
+                                    // Centers the element on its 'left' coordinate
+                                    transform: `translate(-50%, -50%) scale(${scale})`,
+                                    left: left,
+                                    zIndex: zIndex,
+                                    opacity: opacity,
+                                    pointerEvents: pointerEvents,
+                                    
+                                    // Smooth Transition
+                                    transition: 'left 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.6s ease',
+                                    
+                                    height: '100%',
                                     width: 'auto',
                                     cursor: 'pointer',
-                                    position: 'relative',
                                     borderRadius: '16px',
-                                    overflow: 'hidden', // Ensures rounded corners work
-                                    
-                                    // Visual States
-                                    opacity: isActive ? 1 : 0.5,
-                                    transform: isActive ? 'scale(1)' : 'scale(0.95)',
-                                    transition: 'transform 0.4s ease, opacity 0.4s ease', // Smooth scale/fade, but strict width
+                                    overflow: 'hidden',
                                     
                                     '&:hover': {
                                         opacity: isActive ? 1 : 0.8,
@@ -144,36 +197,33 @@ const FeaturedProjects = () => {
                                     src={isActive ? project.imgLarge : project.imgSmall}
                                     alt={project.title}
                                     sx={{
-                                        display: 'block', // Removes annoying bottom whitespace in standard img tags
-                                        height: '100%',   // Force height to fill the 60vh container
-                                        width: 'auto',    // Allow width to adjust naturally based on aspect ratio
-                                        maxWidth: 'none', // Prevent any max-width constraints
-                                        
-                                        // This ensures NO stretching happens. 
-                                        // The image renders at its natural pixel ratio for this height.
-                                        objectFit: 'contain', 
+                                        display: 'block',
+                                        height: '100%',
+                                        width: 'auto',
+                                        maxWidth: 'none',
+                                        objectFit: 'contain',
+                                        transition: 'filter 0.3s ease',
                                     }}
                                 />
                             </Box>
                         );
                     })}
                 </Box>
-                
                 {/* --- FLOATING RIGHT ARROW --- */}
-                <IconButton 
+                <IconButton
                     onClick={handleNext}
-                    sx={{ 
+                    sx={{
                         position: 'absolute',
-                        right: { xs: '10px', md: '5%' }, 
+                        right: { xs: '10px', md: '5%' },
                         zIndex: 20,
-                        transform: 'rotate(180deg)', 
+                        transform: 'rotate(180deg)',
                         padding: 0,
                         filter: 'drop-shadow(0px 0px 10px rgba(0,0,0,0.8))',
                         '&:hover': { opacity: 0.8, transform: 'rotate(180deg) scale(1.1)' },
                         transition: 'transform 0.2s'
                     }}
                 >
-                     <Box component="img" src={arrowAsset} alt="Next" sx={{ width: { xs: '30px', md: '50px' } }} />
+                    <Box component="img" src={arrowAsset} alt="Next" sx={{ width: { xs: '30px', md: '50px' } }} />
                 </IconButton>
 
             </Box>

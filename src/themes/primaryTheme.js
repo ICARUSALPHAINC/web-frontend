@@ -3,13 +3,6 @@
 
 import { createTheme, responsiveFontSizes } from "@mui/material";
 
-import "@fontsource/m-plus-rounded-1c/300.css";
-import "@fontsource/m-plus-rounded-1c/400.css";
-import "@fontsource/m-plus-rounded-1c/500.css";
-import "@fontsource/m-plus-rounded-1c/700.css";
-import "@fontsource/m-plus-rounded-1c/800.css";
-import "@fontsource/m-plus-rounded-1c/900.css";
-
 let theme = createTheme({
   breakpoints: {
     values: {
@@ -54,10 +47,11 @@ let theme = createTheme({
     },
   },
   typography: {
-    fontFamily: '"M PLUS Rounded 1c", Arial, sans-serif',
+    fontFamily: '"myriad-pro", "myriad-pro-condensed", Arial, sans-serif',
 
     h1: {
-      fontWeight: 900,
+      fontFamily: '"myriad-pro-condensed", sans-serif',
+      fontWeight: 700,
       fontSize: "2.95rem",
       background: "linear-gradient(to right, #ff5aa7, #f7a059)",
       WebkitBackgroundClip: "text",
@@ -66,7 +60,8 @@ let theme = createTheme({
     },
 
     h2: {
-      fontWeight: 800,
+      fontFamily: '"myriad-pro-condensed", sans-serif',
+      fontWeight: 700,
       fontSize: "2.45rem",
       background: "linear-gradient(to right, #4cb6fd, #4bff93)",
       WebkitBackgroundClip: "text",
@@ -75,6 +70,7 @@ let theme = createTheme({
     },
 
     h3: {
+      fontFamily: '"myriad-pro", sans-serif',
       fontWeight: 700,
       fontSize: "1.75rem",
       background: "linear-gradient(to right, #38f4d8, #2ebac6)",
@@ -84,29 +80,34 @@ let theme = createTheme({
     },
 
     h4: {
+      fontFamily: '"myriad-pro", sans-serif',
       color: "#38f4d8",
       fontWeight: 600,
       fontSize: "1.75rem",
     },
 
     h5: {
+      fontFamily: '"myriad-pro", sans-serif',
       color: "#2ebac6",
       fontWeight: 500,
       fontSize: "1.5rem",
     },
 
     h6: {
+      fontFamily: '"myriad-pro", sans-serif',
       color: "#2ebac6",
       fontWeight: 500,
       fontSize: "1.25rem",
     },
 
     body1: {
+      fontFamily: '"myriad-pro", sans-serif',
       fontSize: "1.12rem",
       fontWeight: 400,
     },
 
     body2: {
+      fontFamily: '"myriad-pro", sans-serif',
       fontSize: "1.12rem",
       fontWeight: 400,
     },
