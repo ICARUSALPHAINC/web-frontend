@@ -4,7 +4,8 @@ import { Box } from '@mui/material';
 // --- Import Components ---
 import HeroSection from '../components/home/HeroSection';
 import FeaturedProjects from '../components/home/FeaturedProjects';
-import GlobalNetwork from '../components/home/GlobalNetwork'; // <--- Final Import
+import GlobalNetwork from '../components/home/GlobalNetwork';
+import AboutUs from '../components/home/AboutUs';
 
 function HomePage() {
     return (
@@ -34,6 +35,10 @@ function HomePage() {
                ========================================= */}
             <GlobalNetwork />
 
+            {/* =========================================
+                PART 4: About Us
+               ========================================= */}
+            <AboutUs/>
         </Box>
     );
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box, Typography, IconButton, useMediaQuery, useTheme } from '@mui/material';
 
 // --- ASSET IMPORTS ---
@@ -34,6 +34,16 @@ const FeaturedProjects = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
+    // Runs once during initial load of page; forces browser to fetch + cache all images immediately.
+    // Reduces latency when switching between projects since images are already cached.
+    useEffect(() => {
+        projectData.forEach((project) => {
+            const imgL = new Image();
+            imgL.src = project.imgLarge;
+            const imgS = new Image();
+            imgS.src = project.imgSmall;
+        });
+    }, []);
     // --- CAROUSEL LOGIC ---
     // Cycle handler for arrows
     const handleNext = (e) => {
@@ -105,8 +115,6 @@ const FeaturedProjects = () => {
     return (
         <Box sx={{
             backgroundColor: '#0a0a0a',
-            paddingTop: '3rem',
-            paddingBottom: '5rem',
             width: '100%',
             overflowX: 'hidden',
             display: 'flex',
@@ -119,6 +127,7 @@ const FeaturedProjects = () => {
                     fontWeight: '900',
                     textTransform: 'uppercase',
                     color: '#ff4081',
+                    marginTop: '2rem',
                     marginBottom: '2rem',
                     paddingLeft: { xs: '2rem', xl: 'calc((100vw - 1200px) / 2)' },
                     fontSize: { xs: '2rem', md: '3rem' },
@@ -136,6 +145,7 @@ const FeaturedProjects = () => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
+                marginBottom: '2rem',
             }}>
                 {/* --- FLOATING LEFT ARROW --- */}
                 <IconButton
