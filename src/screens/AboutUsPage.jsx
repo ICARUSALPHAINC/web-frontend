@@ -54,7 +54,44 @@ function AboutUsPage() {
                     // marginBottom: {xs: '2rem', md: '0'},
                 }}
             >
-                
+                <Typography 
+                    sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '50%',
+                    width: '50%',
+                    // boxSizing: 'initial',
+                    // borderRadius: '10px',
+                    // padding: '2rem',
+                    // width: {xs: '80%', md: '50ch'},
+                    // textAlign: 'center',
+                    // height: 'auto',
+                    // display: 'flex',
+                    // flexDirection: 'column',
+                    // justifyContent: 'center',
+                    // marginRight: {md: '10ch'},
+                    // marginBottom: {xs: '2rem', md: '0'},
+                    }}
+                >
+                    About Icarus Development
+                    Icarus Alpha is a next-generation creative studio dedicated to building groundbreaking digital experiences.
+                    We specialize in game development and interactive media, uniting a world-class team of developers, artists, and visionaries under one mission: to redefine what's possible for the future.
+                    <br/>
+                    <br/>
+                    Our gaming division is focused on delivering expansive projects that combine creativity and technical innovation at the highest level.
+                    By pushing the limits of storytelling and world-building, we aim to create unforgettable experiences that elevate the future of play.
+                    <br/>
+                    <br/>
+                    We are also developing a new social media platform designed to reshape how people connect and share in the digital age, where meaningful connections grow naturally from shared interests and creativity.
+                    With an emphasis on authenticity and collaboration, it reflects our vision of building digital spaces that matter.
+                    <br/>
+                    <br/>
+                    At Icarus Alpha, our greatest strength is our team—creators, innovators, and leaders who push each other to achieve more.
+                    We are building something big, and the opportunity to be a part of it is open to all who share our vision.
+                    Together, we are shaping ideas into reality.
+
+                </Typography>
             </Box>
         </Box>
     )
