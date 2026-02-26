@@ -40,11 +40,10 @@ function AboutUsPage() {
                     backgroundPosition: 'center',
                     height: '70%',
                     width: '70%',
-                    // padding: '2rem',
-                    // marginRight: {md: '10ch'},
-                    // marginBottom: {xs: '2rem', md: '0'},
-                    border: '2px solid red',
-                    borderRadius: '10px',
+                    padding: '2rem',
+                    margin: '2rem',
+                    // border: '2px solid red',
+                    // borderRadius: '10px',
                     
                 }}
             >
@@ -55,11 +54,10 @@ function AboutUsPage() {
                     alignItems: 'center',
                     height: '50%',
                     width: '50%',
-                    // padding: '2rem',
-                    // marginRight: {md: '10ch'},
-                    // marginBottom: {xs: '2rem', md: '0'},
-                    border: '2px solid red',
-                    borderRadius: '10px',
+                    padding: '2rem',
+                    margin: '2rem',
+                    // border: '2px solid red',
+                    // borderRadius: '10px',
                     }}
                 >
                     About Icarus Development
