@@ -1,10 +1,16 @@
 // URLs to project routes
 export const routes = {
-    home: '/',
-    about:'/about',
-    team: '/team',
-    projects: '/projects',
-    contact: '/contact',
+  home: "/",
+  about: "/about",
+  team: "/team",
+  projects: "/projects",
+  contact: "/contact",
+  community: "/community",
+  store: "/store",
+  // Added specific game routes
+  gameComeUp: "/games/the-come-up",
+  gameAescension: "/games/aescension",
+  gameMimicry: "/games/mimicry",
 };
 
 // URLs to all contact information
