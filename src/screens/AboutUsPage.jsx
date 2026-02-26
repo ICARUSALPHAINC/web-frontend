@@ -50,17 +50,25 @@ function AboutUsPage() {
                 <Typography variant='h5'
                     sx={{
                     display: 'flex',
+                    flexDirection: 'column',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    height: '50%',
+                    height: '60%',
+                    maxHeight: '100%',
                     width: '50%',
-                    padding: '2rem',
+                    // padding: '2rem',
                     margin: '2rem',
+                    fontSize: 'clamp(8px, 1vw, 24px)',
+                    // overflow: 'hidden',
+                    textAlign: 'center',
+                    wordBreak: 'break-word',
                     // border: '2px solid red',
                     // borderRadius: '10px',
                     }}
                 >
                     About Icarus Development
+                    <br/>
+                    <br/>
                     Icarus Alpha is a next-generation creative studio dedicated to building groundbreaking digital experiences.
                     We specialize in game development and interactive media, uniting a world-class team of developers, artists, and visionaries under one mission: to redefine what's possible for the future.
                     <br/>
