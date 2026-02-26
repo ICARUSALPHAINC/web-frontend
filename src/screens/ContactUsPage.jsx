@@ -18,7 +18,7 @@ function ContactUsPage() {
                 color: '#fff',
                 minHeight: '80vh',
                 width: '100%',
-                marginTop: '2rem',
+                marginTop: '4rem',
                 marginBottom: '2rem',
                 borderRadius: '20px',
             }}

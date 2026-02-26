@@ -73,7 +73,7 @@ export async function getTeamMemberDataNew(){
             const linkedIn = fetchedData.linkedIn;
             const website = fetchedData.website;
             const bio = fetchedData?.bio || null;
-            translatedMemberData.push({name: name, role: role, profilePicture: profilePicture, profileLink: profileLink, bio: bio, linkedIn: linkedIn});
+            translatedMemberData.push({name: name, role: role, profilePicture: profilePicture, profileLink: profileLink, bio: bio, linkedIn: linkedIn, website: website});
         });
 
         return fetchedData; 

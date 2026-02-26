@@ -1,153 +1,206 @@
-import {routes} from "../../configs/routesConfig";
-import {bottomMenuItems, topMenuItems} from "../../configs/menuConfig";
-import {AppBar, Box, Button, Drawer, ListItemButton, Toolbar, Typography, useTheme} from "@mui/material";
+import React, { useState } from "react";
+import { routes } from "../../configs/routesConfig";
+import { topMenuItems } from "../../configs/menuConfig";
+import {
+  AppBar,
+  Box,
+  Toolbar,
+  Typography,
+  IconButton,
+  Menu,
+  MenuItem,
+  Fade,
+} from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 import logo from "../../assets/logo/logo192.png";
-import {Link} from "react-router-dom";
-import MenuIcon from '@mui/icons-material/Menu';
-import {useState} from "react";
-
-// Menu items that show up at the top of the opened menu burger
-function TopMenuItems(item, index) {
-    return (
-        <ListItemButton
-            // Make it a link if it's a route, otherwise make it a button with onClickFunction. Render is still button for both.
-            key={index}
-            component={item.route ? Link : 'button'}
-            to={item.route ? item.route : undefined}
-            onClick={(item.onClickFunction && !item.route) ? item.onClickFunction : undefined} // onClick if route doesn't exist and onClickFunction exists
-            color="inherit"
-            sx={{
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'center',
-                backgroundColor: 'mobileAppBarBurgerMenu.listBackground',
-                color: 'primary.contrastText',
-            }}
-        >
-            <Typography variant="h3" color='primary.contrastText'>
-                {item.text}
-            </Typography>
-        </ListItemButton>);
-}
-
-// Menu items that show up at the end of the opened menu burger
-function BottomMenuItems(item, index) {
-    return (
-        <ListItemButton
-            // Make it a link if it's a route, otherwise make it a button with onClickFunction. Render is still button for both.
-            key={index}
-            component={item.route ? 'a' : 'button'} // Not using links and using 'a' instead so component can open in a new tab instead of current tab
-            href={item.route ? item.route : undefined}
-            target={item.route ? "_blank" : undefined} // Item opens in new tab instead of current tab
-            rel={item.route ? "noopener noreferrer" : undefined} // Item opens in new tab instead of current tab
-            onClick={(item.onClickFunction && !item.route) ? item.onClickFunction : undefined} // onClick if route doesn't exist and onClickFunction exists
-            color="inherit"
-            sx={{
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'center',
-                backgroundColor: 'mobileAppBarBurgerMenu.listBackground',
-                color: 'primary.contrastText',
-            }}
-        >
-            {item.icon}
-        </ListItemButton>
-    );
-}
+import { Link } from "react-router-dom";
 
 
 function TopNavBarMobile() {
-    const theme = useTheme();
-    const [menuOpen, setMenuOpen] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [subAnchor, setSubAnchor] = useState(null);
+  const [activeSubMenu, setActiveSubMenu] = useState(null);
 
-    function MenuBurger() {
-        return (
-            <Box role="presentation" onClick={() => setMenuOpen(false)}
-                 sx={{
-                     width: '15rem',
-                     display: 'flex',
-                     flexDirection: 'column',
-                     justifyContent: 'space-between',
-                     height: '100%',
-                     backgroundColor: 'mobileAppBarBurgerMenu.background',
-                 }}
-            >
-                {/* Items at the top */}
-                <Box sx={{
-                    marginTop: '5rem',
-                    '& > *': {
-                        padding: '1rem 0rem',
-                    }
-                }}>
-                    {topMenuItems.map((item, index) => TopMenuItems(item, index))}
-                </Box>
+  const menuOpen = Boolean(anchorEl);
+  const subOpen = Boolean(subAnchor);
 
-                {/* Items at the bottom */}
-                <Box sx={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    justifyContent: 'space-between',
-                    marginBottom: '2rem',
-                }}>
-                    {bottomMenuItems.map((item, index) => BottomMenuItems(item, index))}
-                </Box>
-            </Box>);
+  /* Main menu handlers */
+  const handleMenuOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+    setSubAnchor(null);
+    setActiveSubMenu(null);
+  };
+
+  /* Submenu handlers */
+  const handleSubOpen = (event, item) => {
+    if (item.subMenu) {
+      setSubAnchor(event.currentTarget);
+      setActiveSubMenu(item);
+    } else {
+      handleMenuClose();
     }
+  };
 
-    return (
-        <AppBar position="static" sx={{
-            background: `${theme.palette.appBar.background}`,
-            width: '100vw',
-        }}>
-            <Toolbar sx={{
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-            }}>
+  const handleSubClose = () => {
+    setSubAnchor(null);
+    setActiveSubMenu(null);
+  };
 
-                {/* Nav bar left components */}
-                <Box
-                    component={Link}
-                    to={routes.home}
-                    sx={{
-                        display: 'flex',
-                        flexDirection: 'row',
-                        textDecoration: 'none',  // Remove underline from link
-                        color: 'inherit',  // Inherit color from parent
-                    }}
-                >
 
-                    <Box component='img'
-                         src={logo}
-                         alt="Icarus Logo"
-                         sx={{
-                             height: 'auto', // Changed to 100% of parent container's height
-                             maxHeight: '3.5rem',
-                             width: 'auto', // Keep aspect ratio of the logo
-                             marginRight: '1rem',
-                         }}
-                    />
+  return (
+    <AppBar
+      position="absolute"
+      elevation={0}
+      sx={{
+        background: "transparent",
+        width: "100%",
+        top: 0,
+        left: 0,
+        border: "none",
+      }}
+    >
+      <Toolbar
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          backgroundColor: "transparent",
+          userSelect: "none",
+          WebkitUserSelect: "none",
+        }}
+      >
 
-                    <Typography variant='h2' component='h1' color='primary.contrastText' sx={{
-                        display: 'flex',
-                        alignItems: 'center',
-                    }}>
-                        Icarus
-                    </Typography>
-                </Box>
+        {/* Left: Hamburger */}
+        <IconButton
+          edge="start"
+          color="inherit"
+          onClick={handleMenuOpen}
+          aria-label="menu"
+        >
+          <MenuIcon fontSize="large" />
+        </IconButton>
 
-                {/* Nav Bar right burger menu */}
-                <Button variant='null' onClick={() => {
-                    setMenuOpen(true);
-                }}>
-                    <MenuIcon/>
-                </Button>
-            </Toolbar>
-            <Drawer anchor='right' open={menuOpen} onClose={() => setMenuOpen(false)}>
-                <MenuBurger/>
-            </Drawer>
-        </AppBar>
-    );
+
+        {/* Center: Logo */}
+        <Box
+          component={Link}
+          to={routes.home}
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            textDecoration: "none",
+            color: "inherit",
+          }}
+        >
+          <Box
+            component="img"
+            src={logo}
+            alt="Icarus Logo"
+            sx={{
+              maxHeight: "3rem",
+              width: "auto",
+            }}
+          />
+        </Box>
+
+
+        {/* Right: Spacer */}
+        <Box sx={{ width: "48px" }} />
+
+
+        {/* Main Menu */}
+        <Menu
+          anchorEl={anchorEl}
+          open={menuOpen}
+          onClose={handleMenuClose}
+          TransitionComponent={Fade}
+          anchorOrigin={{
+            vertical: "bottom",
+            horizontal: "left",
+          }}
+          transformOrigin={{
+            vertical: "top",
+            horizontal: "left",
+          }}
+          sx={{
+            "& .MuiPaper-root": {
+              backgroundColor: "#1a1a1a",
+              color: "white",
+              minWidth: "220px",
+            },
+          }}
+        >
+          {topMenuItems.map((item, index) => (
+            <MenuItem
+              key={index}
+              component={item.route ? Link : "div"}
+              to={item.route}
+              onClick={(e) => handleSubOpen(e, item)}
+              sx={{
+                fontSize: "1rem",
+                fontFamily: "inherit",
+              }}
+            >
+              <Typography variant="h6" color="primary.contrastText">
+                {item.text}
+              </Typography>
+            </MenuItem>
+          ))}
+        </Menu>
+
+
+        {/* Sub Menu */}
+        {activeSubMenu?.subMenu && (
+          <Menu
+            anchorEl={subAnchor}
+            open={subOpen}
+            onClose={handleSubClose}
+            TransitionComponent={Fade}
+            anchorOrigin={{
+              vertical: "top",
+              horizontal: "right",
+            }}
+            transformOrigin={{
+              vertical: "top",
+              horizontal: "left",
+            }}
+            sx={{
+              "& .MuiPaper-root": {
+                backgroundColor: "#1a1a1a",
+                color: "white",
+                minWidth: "200px",
+              },
+            }}
+          >
+            {activeSubMenu.subMenu.map((sub, subIdx) => (
+              <MenuItem
+                key={subIdx}
+                component={sub.route ? Link : "div"}
+                to={sub.route}
+                disabled={sub.disabled}
+                onClick={handleMenuClose}
+                sx={{
+                  "&.Mui-disabled": {
+                    opacity: 0.5,
+                    color: "gray",
+                  },
+                  fontSize: "0.9rem",
+                  fontFamily: "inherit",
+                }}
+              >
+                {sub.text}
+              </MenuItem>
+            ))}
+          </Menu>
+        )}
+
+      </Toolbar>
+    </AppBar>
+  );
 }
 
 export default TopNavBarMobile;
