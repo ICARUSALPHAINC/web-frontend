@@ -29,7 +29,33 @@ function AboutUsPage() {
                 justifyContent: 'center'
             }}
         >
-            
+            <Box 
+                sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    backgroundImage: 'url(/about-images/about-us-block.webp)',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'contain',
+                    backgroundPosition: 'center',
+                    height: '70%',
+                    width: '70%',
+                    // border: '2px solid red'
+                    // boxSizing: 'initial',
+                    // borderRadius: '10px',
+                    // padding: '2rem',
+                    // width: {xs: '80%', md: '50ch'},
+                    // textAlign: 'center',
+                    // height: 'auto',
+                    // display: 'flex',
+                    // flexDirection: 'column',
+                    // justifyContent: 'center',
+                    // marginRight: {md: '10ch'},
+                    // marginBottom: {xs: '2rem', md: '0'},
+                }}
+            >
+                
+            </Box>
         </Box>
     )
 }
