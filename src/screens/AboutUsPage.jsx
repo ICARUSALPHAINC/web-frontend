@@ -29,8 +29,8 @@ function AboutUsPage() {
             display: "block",
             width: "min(800px, 70vw)",
             height: "min(800px, 70vh)",
-            border: "2px solid green",
-            borderRadius: "10px",
+            // border: "2px solid green",
+            // borderRadius: "10px",
           }}
         />
 
@@ -41,8 +41,8 @@ function AboutUsPage() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            border: "2px solid blue",
-            borderRadius: "10px",
+            // border: "2px solid blue",
+            // borderRadius: "10px",
           }}
         >
           <Typography
@@ -53,8 +53,8 @@ function AboutUsPage() {
               wordBreak: "break-word",
               maxHeight: "100%",
               maxWidth: "90%",
-              border: "2px solid red",
-              borderRadius: "10px",
+              // border: "2px solid red",
+              // borderRadius: "10px",
             }}
           >
             Redefining the Future of Play
