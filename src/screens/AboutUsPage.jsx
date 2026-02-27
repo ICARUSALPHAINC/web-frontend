@@ -48,7 +48,7 @@ function AboutUsPage() {
           <Typography
             variant="h5"
             sx={{
-              fontSize: "clamp(1vw, 12px, 2vw)",
+              fontSize: "clamp(14px, 2vw, 18px)",
               textAlign: "center",
               wordBreak: "break-word",
               maxHeight: "80%",
