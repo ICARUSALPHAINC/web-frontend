@@ -29,8 +29,8 @@ function AboutUsPage() {
           width: "70%",
           padding: "2rem",
           margin: "2rem",
-          // border: '2px solid red',
-          // borderRadius: '10px',
+          border: '2px solid red',
+          borderRadius: '10px',
         }}
       >
         <Typography
@@ -49,25 +49,27 @@ function AboutUsPage() {
             // overflow: 'hidden',
             textAlign: "center",
             wordBreak: "break-word",
-            // border: '2px solid red',
-            // borderRadius: '10px',
+            border: '2px solid red',
+            borderRadius: '10px',
           }}
         >
-          About Icarus Development
-          <br />
-          <br />
-          Icarus Alpha is a next-generation creative studio dedicated to building groundbreaking digital experiences. We specialize in game development and interactive media, uniting a world-class team of developers, artists, and visionaries under one mission: to redefine what's possible for the
-          future.
-          <br />
-          <br />
-          Our gaming division is focused on delivering expansive projects that combine creativity and technical innovation at the highest level. By pushing the limits of storytelling and world-building, we aim to create unforgettable experiences that elevate the future of play.
-          <br />
-          <br />
-          We are also developing a new social media platform designed to reshape how people connect and share in the digital age, where meaningful connections grow naturally from shared interests and creativity. With an emphasis on authenticity and collaboration, it reflects our vision of building
-          digital spaces that matter.
-          <br />
-          <br />
-          At Icarus Alpha, our greatest strength is our team—creators, innovators, and leaders who push each other to achieve more. We are building something big, and the opportunity to be a part of it is open to all who share our vision. Together, we are shaping ideas into reality.
+          Redefining the Future of Play
+          <br/>
+          <br/>
+          Icarus Alpha is a next-generation game studio dedicated to building groundbreaking digital experiences.
+          We unite a world-class team of developers, artists, and visionaries under one mission: to redefine what’s possible for interactive entertainment.
+          <br/>
+          <br/>
+          Our studio focuses on delivering projects that combine creativity and technical innovation at the highest level.
+          By pushing the limits of storytelling and world-building, we aim to create unforgettable experiences that elevate the future of play.
+          <br/>
+          <br/>
+          At Icarus Alpha, our greatest strength is our team – creators, innovators, and leaders who challenge each other to achieve more.
+          We are building something big, and the opportunity is open to all who share our vision.
+          <br/>
+          <br/>
+          Together, we are shaping ideas into reality.
+
         </Typography>
       </Box>
     </Box>
