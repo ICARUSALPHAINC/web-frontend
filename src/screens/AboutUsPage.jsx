@@ -27,8 +27,8 @@ function AboutUsPage() {
           src="/about-images/about-us-block.webp"
           sx={{
             display: "block",
-            width: "min(800px, 80vw)",
-            height: "auto",
+            width: "min(800px, 70vw)",
+            height: "min(800px, 70vh)",
             border: "2px solid green",
             borderRadius: "10px",
           }}
@@ -48,11 +48,11 @@ function AboutUsPage() {
           <Typography
             variant="h5"
             sx={{
-              fontSize: "clamp(14px, 2vw, 18px)",
+              fontSize: "clamp(14px, 1vw, 24px)",
               textAlign: "center",
               wordBreak: "break-word",
-              maxHeight: "80%",
-              maxWidth: "80%",
+              maxHeight: "100%",
+              maxWidth: "90%",
               border: "2px solid red",
               borderRadius: "10px",
             }}
