@@ -379,7 +379,7 @@ function ContactUsPage() {
                     backgroundColor: '#000', // fallback so the bar is always dark
                 }}
             >
-                <Container maxWidth="lg" sx={{ paddingTop: '4rem', paddingBottom: '4rem' }}>
+                <Container maxWidth="lg" sx={{ paddingTop: '4rem', paddingBottom: 0 }}>
                     <Box
                         sx={{
                             display: 'flex',
