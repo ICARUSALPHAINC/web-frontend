@@ -6,6 +6,7 @@ import HeroSection from '../components/home/HeroSection';
 import FeaturedProjects from '../components/home/FeaturedProjects';
 import GlobalNetwork from '../components/home/GlobalNetwork';
 import AboutUs from '../components/home/AboutUs';
+import JoinUs from '../components/home/JoinUs';
 
 function HomePage() {
     return (
@@ -39,6 +40,12 @@ function HomePage() {
                 PART 4: About Us
                ========================================= */}
             <AboutUs/>
+
+            {/* =========================================
+                PART 5: Join Us (CAREERS)
+               ========================================= */}
+            <JoinUs/>
+
         </Box>
     );
 }
