@@ -5,6 +5,7 @@ export const routes = {
   team: "/team",
   projects: "/projects",
   contact: "/contact",
+  career: "/careers",
   community: "/community",
   store: "/store",
   // Added specific game routes
