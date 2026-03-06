@@ -152,7 +152,8 @@ function JoinUs() {
                 width: "100%",
                 height: "auto",
                 display: "block",
-                visibility: "hidden", 
+                opacity: 0,             /* CHANGED from visibility: "hidden" */
+                pointerEvents: "none",  /* ADDED so it doesn't block taps */
               }}
             />
 
@@ -168,11 +169,33 @@ function JoinUs() {
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
                 animation: `${glitchSequence} 4s infinite linear`,
+                transform: "translateZ(0)",       /* ADDED for iOS GPU acceleration */
+                willChange: "background-image",   /* ADDED to warn browser of changes */
               }}
             />
           </Box>
         </Box>
       </Container>
+      {/* 3. THE WEBKIT PRELOADER */}
+      {/* Forces iOS to cache these images in memory so the animation loop doesn't blank out */}
+      <Box
+        sx={{
+          position: "absolute",
+          width: 0,
+          height: 0,
+          overflow: "hidden",
+          visibility: "hidden",
+          zIndex: -1,
+        }}
+      >
+        <img src={doorBase} alt="" />
+        <img src={doorGlitch1} alt="" />
+        <img src={doorGlitchRect1} alt="" />
+        <img src={doorGlitch2} alt="" />
+        <img src={doorGlitchRect2} alt="" />
+        <img src={doorGlitch3} alt="" />
+        <img src={doorGlitchRect3} alt="" />
+      </Box>
     </Box>
   );
 }
