@@ -17,35 +17,18 @@ import doorGlitchRect3 from "../../assets/join-us/glitch_door_rect3.png";
 
 // --- Glitch Animation Keyframes ---
 const glitchSequence = keyframes`
-  /* Start with a brief hold on White Door */
   0%, 10% { background-image: url('${whiteDoor}'); }
-  
-  /* First rapid glitch */
   11%, 13% { background-image: url('${doorGlitch1}'); }
   14%, 16% { background-image: url('${doorGlitchRect1}'); }
-  
-  /* Settle on Colored Door */
   17%, 35% { background-image: url('${doorBase}'); }
-  
-  /* Second glitch burst */
   36%, 38% { background-image: url('${doorGlitch2}'); }
   39%, 41% { background-image: url('${doorGlitchRect2}'); }
-  
-  /* Flash back to White */
   42%, 55% { background-image: url('${whiteDoor}'); }
-  
-  /* Third chaotic stutter */
   56%, 58% { background-image: url('${doorGlitch3}'); }
   59%, 61% { background-image: url('${doorGlitchRect3}'); }
-  
-  /* Settle on Colored Door again */
   62%, 80% { background-image: url('${doorBase}'); }
-  
-  /* Final glitch before loop resets */
   81%, 83% { background-image: url('${doorGlitch1}'); }
   84%, 86% { background-image: url('${doorGlitchRect2}'); }
-  
-  /* Resolve to White Door just in time for the 0% reset */
   87%, 100% { background-image: url('${whiteDoor}'); }
 `;
 
@@ -78,28 +61,40 @@ function JoinUs() {
       />
 
       {/* 2. CONTENT LAYER */}
-      <Container maxWidth="lg" sx={{ position: "relative", zIndex: 1 }}>
+      <Container maxWidth="xl" sx={{ position: "relative", zIndex: 1 }}>
         <Box
           sx={{
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
             alignItems: "center",
-            justifyContent: "space-between",
-            gap: 6,
+            // Changed from space-between to center to pull elements inward
+            justifyContent: "center", 
+            // Controlled gap ensures they don't overlap when pulled to the center
+            gap: { xs: 6, md: 8, lg: 12 }, 
           }}
         >
           {/* LEFT SIDE: Text and Button */}
-          <Box sx={{ flex: 1, maxWidth: { md: "600px" } }}>
-            {/* Removed the extra Typography component that was duplicating "UNLOCK YOUR" */}
+          <Box 
+            sx={{ 
+              width: "100%", 
+              // Removed flex: 1. Uses explicit maxWidths so it doesn't push to edges
+              maxWidth: { xs: "100%", md: "600px", lg: "650px" }, 
+              display: "flex",
+              flexDirection: "column",
+              // Centers text visually on mobile, aligns left on desktop
+              alignItems: { xs: "center", md: "flex-start" }, 
+              textAlign: { xs: "center", md: "left" }
+            }}
+          >
             <Box
               component="img"
               src={titleCyan}
               alt="UNLOCK YOUR POTENTIAL"
               sx={{
                 width: "100%",
-                maxWidth: "500px",
+                maxWidth: "650px",
                 display: "block",
-                mb: 3,
+                mb: 4,
               }}
             />
 
@@ -107,8 +102,8 @@ function JoinUs() {
               variant="body1"
               sx={{
                 color: "#FFFFFF",
-                mb: 5,
-                fontSize: "1.1rem",
+                mb: 6,
+                fontSize: { xs: "1.2rem", md: "1.6rem" },
                 lineHeight: 1.6,
                 textShadow: "0px 2px 4px rgba(0,0,0,0.8)",
               }}
@@ -116,34 +111,39 @@ function JoinUs() {
               We are looking for the next generation of creators who want to build something incredible. While the industry locks out new voices and lets senior talent wither, our door is open to everyone.
             </Typography>
 
-            <Box
-              component="img"
-              src={btnGraphic}
-              alt="View Open Roles"
-              sx={{
-                height: { xs: "50px", md: "60px" },
-                cursor: "pointer",
-                transition: "transform 0.2s ease-in-out, filter 0.2s ease",
-                "&:hover": {
-                  transform: "scale(1.05)",
-                  filter: "drop-shadow(0 0 8px rgba(255, 0, 255, 0.6))",
-                },
-              }}
-            />
+            {/* View Open Roles Button */}
+            <Box sx={{ display: "flex", justifyContent: "center", width: "100%" }}>
+              <Box
+                component="img"
+                src={btnGraphic}
+                alt="View Open Roles"
+                sx={{
+                  width: "100%",
+                  maxWidth: "350px",
+                  height: "auto", 
+                  cursor: "pointer",
+                  transition: "transform 0.2s ease-in-out, filter 0.2s ease",
+                  "&:hover": {
+                    transform: "scale(1.05)",
+                    filter: "drop-shadow(0 0 8px rgba(255, 0, 255, 0.6))",
+                  },
+                }}
+              />
+            </Box>
           </Box>
 
           {/* RIGHT SIDE: Animated Glitch Door */}
           <Box
             sx={{
-              flex: 1,
+              width: "100%",
+              // Slightly adjusted bounds to ensure they sit nicely in the middle
+              maxWidth: { xs: "350px", md: "450px", lg: "550px" }, 
               display: "flex",
               justifyContent: "center",
               position: "relative",
-              width: "100%",
-              maxWidth: "400px",
             }}
           >
-            {/* Invisible Spacer: Keeps the container sized correctly */}
+            {/* Invisible Spacer */}
             <Box
               component="img"
               src={whiteDoor} 
