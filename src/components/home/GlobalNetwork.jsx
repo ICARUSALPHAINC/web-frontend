@@ -227,9 +227,20 @@ const GlobalNetwork = () => {
       <style>
         {`
           @keyframes pulseLights {
-            0% { opacity: 0.3; }
-            50% { opacity: 1; }
-            100% { opacity: 0.3; }
+            0%, 100% { 
+              opacity: 0.1; 
+              filter: brightness(0.8);
+            }
+            50% { 
+              opacity: 1; 
+              filter: brightness(1.8); /* Overdrives the brightness for a flaring glow */
+            }
+          }
+
+          /* Optional: A secondary twinkle animation for a more organic feel */
+          @keyframes twinkle {
+            0%, 100% { opacity: 0; transform: scale(0.98); }
+            50% { opacity: 1; transform: scale(1.02); filter: brightness(1.5); }
           }
         `}
       </style>
