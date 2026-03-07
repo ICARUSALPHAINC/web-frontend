@@ -126,7 +126,7 @@ const FeaturedProjects = () => {
                 sx={{
                     fontWeight: '900',
                     textTransform: 'uppercase',
-                    color: '#ff4081',
+                    color: '#ffffff',
                     marginTop: '2rem',
                     marginBottom: '2rem',
                     paddingLeft: { xs: '2rem', xl: 'calc((100vw - 1200px) / 2)' },

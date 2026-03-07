@@ -69,9 +69,8 @@ const AboutUs = () => {
             width: "100%",
             maxWidth: "600px",
             mb: 4, // Margin bottom
-            // Blending mode to remove white background if the jpg has one,
-            // or use mix-blend-mode: 'screen' if it has a black background.
-            // If it's a clean PNG, you don't need this.
+            paddingY: { xs: 2, md: 0 },
+            pl: {xs: 3, md: 0},
             mixBlendMode: "screen",
           }}
         />
@@ -85,7 +84,7 @@ const AboutUs = () => {
             fontFamily: '"myriad-pro", sans-serif',
             fontSize: { xs: "1rem", md: "1.5rem" },
             lineHeight: 1.6,
-            // Removed paddingX: { xs: "2rem", md: "4rem" }
+            paddingX: { xs: "2rem", md: "4rem" },
             mb: 3,
             fontWeight: 600,
             textShadow: "0px 2px 4px rgba(0,0,0,0.8)",
@@ -105,7 +104,7 @@ const AboutUs = () => {
             fontFamily: '"myriad-pro", sans-serif',
             fontSize: { xs: "1rem", md: "1.5rem" },
             lineHeight: 1.6,
-            // Removed paddingX: { xs: "2rem", md: "4rem" }
+            paddingX: { xs: "2rem", md: "4rem" },
             mb: 5,
             fontWeight: 600,
             textShadow: "0px 2px 4px rgba(0,0,0,0.8)",

@@ -1,6 +1,6 @@
 import {theme} from "./themes/primaryTheme";
 import {CssBaseline, ThemeProvider} from "@mui/material";
-import {Route, Routes} from "react-router-dom";
+import {Route, Routes, Navigate} from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import {routes} from "./configs/routesConfig";
 import AboutPage from "./screens/AboutUsPage";
@@ -34,7 +34,14 @@ function App() {
                     {/* <Route path="games/mimicry" element={<MainLayout><MimicryPage/></MainLayout>}/> */}
 
                     <Route path={routes.team} element={<MainLayout><TeamPage/></MainLayout>}/>
-                    <Route path={routes.contact} element={<MainLayout><ContactUsPage/></MainLayout>}/>
+
+                    {/* 1. THE ACTUAL PAGE: Now lives at /career */}
+                    <Route path={routes.career} element={<MainLayout><ContactUsPage/></MainLayout>}/>
+                    
+                    {/* 2. THE REDIRECTS: Catches both /contact and /contacts */}
+                    <Route path={routes.contact} element={<Navigate to={routes.career} replace />}/>
+                    <Route path="/contacts" element={<Navigate to={routes.career} replace />}/>
+
                     <Route path='*' element={<NoPage/>}/>
                 </Route>
 
