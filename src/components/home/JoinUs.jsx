@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Typography, Container } from "@mui/material";
+import { Box, Typography, Container} from "@mui/material";
+import {Link} from "react-router-dom";
 import { keyframes } from "@mui/system";
 
 // --- Asset Imports ---
@@ -114,21 +115,32 @@ function JoinUs() {
             {/* View Open Roles Button */}
             <Box sx={{ display: "flex", justifyContent: "center", width: "100%" }}>
               <Box
+                component={Link}
+                to="/careers"
+                sx={{
+                display: "block", // Ensure the link behaves like a container
+                width: "100%",
+                maxWidth: "350px",
+                textDecoration: "none", // Remove default link styling
+                transition: "transform 0.2s ease-in-out, filter 0.2s ease",
+                "&:hover": {
+                    transform: "scale(1.05)",
+                    filter: "drop-shadow(0 0 8px rgba(255, 0, 255, 0.6))",
+                },
+                }}
+              >
+                <Box
                 component="img"
                 src={btnGraphic}
                 alt="View Open Roles"
                 sx={{
-                  width: "100%",
-                  maxWidth: "350px",
-                  height: "auto", 
-                  cursor: "pointer",
-                  transition: "transform 0.2s ease-in-out, filter 0.2s ease",
-                  "&:hover": {
-                    transform: "scale(1.05)",
-                    filter: "drop-shadow(0 0 8px rgba(255, 0, 255, 0.6))",
-                  },
+                    width: "100%",
+                    height: "auto",
+                    display: "block",
+                    cursor: "pointer",
                 }}
-              />
+                />
+              </Box>
             </Box>
           </Box>
 
