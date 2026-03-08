@@ -8,6 +8,7 @@ import TeamPage from "./screens/TeamPage";
 import ContactUsPage from "./screens/ContactUsPage";
 import NoPage from "./screens/NoPage";
 import HomePage from "./screens/HomePage";
+import ScrollToTop from "./ScrollToTop";
 
 /**
  * Main app, wrapped inside other JSX & React components in index.js.
@@ -20,27 +21,29 @@ function App() {
         <ThemeProvider theme={theme}>
             <CssBaseline/>
 
+            <ScrollToTop />
+
             {/* Begin browser routes */}
             <Routes>
 
                 {/* Primary routes */}
-                <Route path = "/">
-                    <Route index element={<MainLayout><HomePage/></MainLayout>}/>
-                    <Route path={routes.about} element={<MainLayout><AboutPage/></MainLayout>}/>
+                <Route path="/" element={<MainLayout />}>
+                    <Route index element={<HomePage />} />
+                    <Route path={routes.about} element={<AboutPage />} />
                     
                     {/* New Game Routes */}
-                    {/* <Route path="games/the-come-up" element={<MainLayout><TheComeUpPage/></MainLayout>}/> */}
-                    {/* <Route path="games/aescension" element={<MainLayout><AescensionPage/></MainLayout>}/> */}
-                    {/* <Route path="games/mimicry" element={<MainLayout><MimicryPage/></MainLayout>}/> */}
+                    {/* <Route path="games/the-come-up" element={<TheComeUpPage />} /> */}
+                    {/* <Route path="games/aescension" element={<AescensionPage />} /> */}
+                    {/* <Route path="games/mimicry" element={<MimicryPage />} /> */}
 
-                    <Route path={routes.team} element={<MainLayout><TeamPage/></MainLayout>}/>
+                    <Route path={routes.team} element={<TeamPage />} />
 
                     {/* 1. THE ACTUAL PAGE: Now lives at /career */}
-                    <Route path={routes.career} element={<MainLayout><ContactUsPage/></MainLayout>}/>
+                    <Route path={routes.career} element={<ContactUsPage />} />
                     
                     {/* 2. THE REDIRECTS: Catches both /contact and /contacts */}
-                    <Route path={routes.contact} element={<Navigate to={routes.career} replace />}/>
-                    <Route path="/contacts" element={<Navigate to={routes.career} replace />}/>
+                    <Route path={routes.contact} element={<Navigate to={routes.career} replace />} />
+                    <Route path="/contacts" element={<Navigate to={routes.career} replace />} />
 
                     <Route path='*' element={<NoPage/>}/>
                 </Route>

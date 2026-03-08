@@ -1,5 +1,6 @@
 import {theme} from "../themes/primaryTheme";
 import {Box, useMediaQuery} from "@mui/material";
+import { Outlet } from "react-router-dom";
 import TopNavBarDesktop from "../components/layout/TopNavBarDesktop";
 import Footer from "../components/layout/Footer";
 import TopNavBarMobile from "../components/layout/TopNavBarMobile";
@@ -10,7 +11,7 @@ import TopNavBarMobile from "../components/layout/TopNavBarMobile";
  * @param children children to be returned inside the wrapped
  * @constructor
  */
-function MainLayout({children}) {
+function MainLayout() {
     const mobileView = useMediaQuery(theme.breakpoints.down('md'));
 
     return (
@@ -18,14 +19,14 @@ function MainLayout({children}) {
             display: 'flex',
             flexDirection: 'column',
             minHeight: '100vh',
-            width: '100vw',
+            width: '100%',
             position: 'relative',
         }}>
             {mobileView ? <TopNavBarMobile/> : <TopNavBarDesktop/>}
             <Box sx={{
                 flex: 1,
             }}>
-                {children}
+                <Outlet />
             </Box>
             <Footer sx={{width: '100%'}}/>
         </Box>

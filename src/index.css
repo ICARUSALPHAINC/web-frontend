@@ -4,13 +4,16 @@ body,
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
-  
-  /* Allow scrolling */
-  overflow: auto;
+  min-height: 100vh;
+
   /* Hide scrollbar (Firefox) */
   scrollbar-width: none;
 
+  /*Keep your scrollbar hidden on Chrome/Safari/Webkit */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
   /* Hide scrollbar (IE / Edge legacy) */
   -ms-overflow-style: none;
 }
