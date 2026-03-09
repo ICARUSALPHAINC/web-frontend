@@ -19,6 +19,7 @@ import characterImage from "../assets/Assets/Blue Girl Cutoff.png";
 import pinkImage from "../assets/Assets/pink 1.png";
 import headerBarImage from "../assets/Assets/background-short.png";
 
+
 // Import job category icons
 import devIcon from "../assets/Icons/Dev Icon.png";
 import designIcon from "../assets/Icons/Design Icon.png";
@@ -606,8 +607,42 @@ function ContactUsPage() {
                         Apply Now!
                     </Button>
                 </Box>
-        </Container>
+            </Container>
+
+
+            {/* Partner Logos at Bottom */}
+            <Container
+                maxWidth="lg"
+                sx={{
+                    marginTop: '3rem',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    gap: { xs: '1.5rem', md: '3rem' },
+                    flexWrap: 'wrap',
+                }}
+            >
+                <Box
+                    component="img"
+                    src="/contant-images/CollegeofEngineeringLogoTransparent.png"
+                    alt="UC Davis College of Engineering"
+                    sx={{
+                        height: { xs: 40, md: 60 },
+                        width: 'auto',
+                    }}
+                />
+                <Box
+                    component="img"
+                    src="/contant-images/AveE_Chevron_Horizontal-Color.png"
+                    alt="AvenueE Chevron partnership"
+                    sx={{
+                        height: { xs: 40, md: 60 },
+                        width: 'auto',
+                    }}
+                />
+            </Container>
         </Box>
+
     );
 }
 
