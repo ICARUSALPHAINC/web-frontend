@@ -133,7 +133,7 @@ const AboutUs = () => {
             src={LearnMoreBtn}
             alt="Learn More"
             sx={{
-              height: { xs: "50px", md: "70px" }, // Responsive height
+              height: { xs: "100px", md: "120px" }, // Responsive height
               width: "auto",
             }}
           />

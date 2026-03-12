@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
-import {getTeamMemberData, teamMembers} from "../services/teamDataService";
+import {teamMembers} from "../services/teamDataService";
 import {
     Alert,
     Avatar,
