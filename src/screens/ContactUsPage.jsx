@@ -19,6 +19,7 @@ import characterImage from "../assets/Assets/Blue Girl Cutoff.png";
 import pinkImage from "../assets/Assets/pink 1.png";
 import headerBarImage from "../assets/Assets/background-short.png";
 
+
 // Import job category icons
 import devIcon from "../assets/Icons/Dev Icon.png";
 import designIcon from "../assets/Icons/Design Icon.png";
@@ -461,25 +462,9 @@ function ContactUsPage() {
             </Box>
 
             {/* Open Positions Section */}
-            <Container maxWidth="md" sx={{ marginBottom: '4rem' }}>
-                <Box sx={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem', paddingTop: '2rem' }}>
-                <Button
-                    variant="contained"
-                    sx={{
-                            backgroundColor: '#333',
-                            color: '#fff',
-                            padding: '1rem 3rem',
-                            fontSize: '1.2rem',
-                            fontWeight: 600,
-                            borderRadius: '8px',
-                            textTransform: 'none',
-                        '&:hover': {
-                                backgroundColor: '#444',
-                            },
-                        }}
-                    >
+            <Container maxWidth="md" sx={{ marginBottom: '4rem', paddingTop: '2rem' }}>
+                <Box sx={{ display: 'flex', justifyContent: 'center', marginBottom: '3rem', color: '#ff4081', fontSize: { xs: '1rem', md: '3rem' }, fontWeight: 700,}}>
                         Open Positions
-                    </Button>
                 </Box>
 
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
@@ -538,24 +523,8 @@ function ContactUsPage() {
 
             {/* Why Work With Us Section */}
             <Container maxWidth="lg" sx={{ marginBottom: '4rem' }}>
-                <Box sx={{ display: 'flex', justifyContent: 'center', marginBottom: '3rem' }}>
-                    <Button
-                        variant="contained"
-                        sx={{
-                            backgroundColor: '#333',
-                            color: '#fff',
-                            padding: '1rem 3rem',
-                            fontSize: '1.2rem',
-                            fontWeight: 600,
-                            borderRadius: '8px',
-                            textTransform: 'none',
-                            '&:hover': {
-                                backgroundColor: '#444',
-                            },
-                        }}
-                    >
+                <Box sx={{ display: 'flex', justifyContent: 'center', marginBottom: '3rem', color: '#ff4081', fontSize: { xs: '1rem', md: '3rem' }, fontWeight: 700,}}>
                         Why Work With Us?
-                    </Button>
                 </Box>
 
                 <Grid container spacing={3}>
@@ -638,8 +607,42 @@ function ContactUsPage() {
                         Apply Now!
                     </Button>
                 </Box>
-        </Container>
+            </Container>
+
+
+            {/* Partner Logos at Bottom */}
+            <Container
+                maxWidth="lg"
+                sx={{
+                    marginTop: '3rem',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    gap: { xs: '1.5rem', md: '3rem' },
+                    flexWrap: 'wrap',
+                }}
+            >
+                <Box
+                    component="img"
+                    src="/contant-images/CollegeofEngineeringLogoTransparent.png"
+                    alt="UC Davis College of Engineering"
+                    sx={{
+                        height: { xs: 40, md: 60 },
+                        width: 'auto',
+                    }}
+                />
+                <Box
+                    component="img"
+                    src="/contant-images/AveE_Chevron_Horizontal-Color.png"
+                    alt="AvenueE Chevron partnership"
+                    sx={{
+                        height: { xs: 40, md: 60 },
+                        width: 'auto',
+                    }}
+                />
+            </Container>
         </Box>
+
     );
 }
 
