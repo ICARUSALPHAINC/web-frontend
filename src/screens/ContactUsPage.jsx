@@ -15,31 +15,34 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { contactRoutes } from "../configs/routesConfig";
 import cloudImage from "../assets/clouds/2.png";
-import characterImage from "../assets/Assets/Blue Girl Cutoff.png";
-import pinkImage from "../assets/Assets/pink 1.png";
-import headerBarImage from "../assets/Assets/background-short.png";
+import characterImage from "../assets/careers-assets/Blue Girl Cutoff.png";
+import pinkImage from "../assets/careers-assets/pink 1.png";
+import headerBarImage from "../assets/careers-assets/background-short.png";
 
 
 // Import job category icons
-import devIcon from "../assets/Icons/Dev Icon.png";
-import designIcon from "../assets/Icons/Design Icon.png";
-import artistIcon from "../assets/Icons/Artist Icon.png";
-import animationIcon from "../assets/Icons/Animation Icon.png";
-import audioIcon from "../assets/Icons/Audio Icon.png";
-import narrativeIcon from "../assets/Icons/Writing_Narrative Icon.png";
-import mediaIcon from "../assets/Icons/Media Icon.png";
-import marketingIcon from "../assets/Icons/Marketing Icon.png";
-import productionIcon from "../assets/Icons/Production Icon.png";
-import financeIcon from "../assets/Icons/Finance Icon.png";
-import operationsIcon from "../assets/Icons/Operations Icon.png";
+import devIcon from "../assets/careers-icons/Dev Icon.png";
+import designIcon from "../assets/careers-icons/Design Icon.png";
+import artistIcon from "../assets/careers-icons/Artist Icon.png";
+import animationIcon from "../assets/careers-icons/Animation Icon.png";
+import audioIcon from "../assets/careers-icons/Audio Icon.png";
+import narrativeIcon from "../assets/careers-icons/Writing_Narrative Icon.png";
+import mediaIcon from "../assets/careers-icons/Media Icon.png";
+import marketingIcon from "../assets/careers-icons/Marketing Icon.png";
+import productionIcon from "../assets/careers-icons/Production Icon.png";
+import financeIcon from "../assets/careers-icons/Finance Icon.png";
+import operationsIcon from "../assets/careers-icons/Operations Icon.png";
 
 // Import feature icons
-import calendarIcon from "../assets/Icons/Calendar.png";
-import lightbulbIcon from "../assets/Icons/Light Bulb 1.png";
-import growthIcon from "../assets/Icons/Growth 1.png";
-import developmentIcon from "../assets/Icons/Development 1.png";
-import rocketIcon from "../assets/Icons/Rocket 1.png";
-import globalIcon from "../assets/Icons/Global.png";
+import calendarIcon from "../assets/careers-icons/Calendar.png";
+import lightbulbIcon from "../assets/careers-icons/Light Bulb 1.png";
+import growthIcon from "../assets/careers-icons/Growth 1.png";
+import developmentIcon from "../assets/careers-icons/Development 1.png";
+import rocketIcon from "../assets/careers-icons/Rocket 1.png";
+import globalIcon from "../assets/careers-icons/Global.png";
+
+import collegeOfEngineeringLogo from "../assets/contact-images/CollegeofEngineeringLogoTransparent.png";
+import avenueEChevronHorizontalColor from "../assets/contact-images/AveE_Chevron_Horizontal-Color.png";
 
 // Job categories data
 const jobCategories = [
@@ -624,7 +627,7 @@ function ContactUsPage() {
             >
                 <Box
                     component="img"
-                    src="/contant-images/CollegeofEngineeringLogoTransparent.png"
+                    src={collegeOfEngineeringLogo}
                     alt="UC Davis College of Engineering"
                     sx={{
                         height: { xs: 40, md: 60 },
@@ -633,7 +636,7 @@ function ContactUsPage() {
                 />
                 <Box
                     component="img"
-                    src="/contant-images/AveE_Chevron_Horizontal-Color.png"
+                    src={avenueEChevronHorizontalColor}
                     alt="AvenueE Chevron partnership"
                     sx={{
                         height: { xs: 40, md: 60 },

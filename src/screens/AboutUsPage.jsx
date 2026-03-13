@@ -1,12 +1,17 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+
+// Import images from assets folder
+import aboutIconsBackground from "../assets/about-us/about-icons-background.webp";
+import aboutUsBlock from "../assets/about-us/about-us-block.webp";
+
 function AboutUsPage() {
 
   return (
     <Box
       sx={{
         display: "flex",
-        backgroundImage: "url(/about-images/about-icons-background.webp)",
+        backgroundImage: `url(${aboutIconsBackground})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -24,7 +29,7 @@ function AboutUsPage() {
       >
         <Box
           component="img"
-          src="/about-images/about-us-block.webp"
+          src={aboutUsBlock}
           sx={{
             display: "block",
             width: "min(800px, 70vw)",
