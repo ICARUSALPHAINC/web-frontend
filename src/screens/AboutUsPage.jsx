@@ -2,8 +2,8 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 
 // Import images from assets folder
-import aboutIconsBackground from "../assets/about-us/about-icons-background.webp";
-import aboutUsBlock from "../assets/about-us/about-us-block.webp";
+import aboutIconsBackground from "../assets/about-page/about-icons-background.webp";
+import aboutUsBlock from "../assets/about-page/about-us-block.webp";
 
 function AboutUsPage() {
 

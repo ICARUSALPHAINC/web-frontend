@@ -4,17 +4,17 @@ import {Link} from "react-router-dom";
 import { keyframes } from "@mui/system";
 
 // --- Asset Imports ---
-import bgGraphic from "../../assets/join-us/background.png";
-import titleCyan from "../../assets/join-us/title.png";
-import btnGraphic from "../../assets/join-us/view_open_roles.png";
-import whiteDoor from "../../assets/join-us/white_door.png";
-import doorBase from "../../assets/join-us/color_door.png";
-import doorGlitch1 from "../../assets/join-us/glitch_door1.png";
-import doorGlitchRect1 from "../../assets/join-us/glitch_door_rect1.png";
-import doorGlitch2 from "../../assets/join-us/glitch_door2.png";
-import doorGlitchRect2 from "../../assets/join-us/glitch_door_rect2.png";
-import doorGlitch3 from "../../assets/join-us/glitch_door3.png";
-import doorGlitchRect3 from "../../assets/join-us/glitch_door_rect3.png";
+import bgGraphic from "../../assets/home-page/join-us/background.png";
+import titleCyan from "../../assets/home-page/join-us/title.png";
+import btnGraphic from "../../assets/home-page/join-us/view_open_roles.png";
+import whiteDoor from "../../assets/home-page/join-us/white_door.png";
+import doorBase from "../../assets/home-page/join-us/color_door.png";
+import doorGlitch1 from "../../assets/home-page/join-us/glitch_door1.png";
+import doorGlitchRect1 from "../../assets/home-page/join-us/glitch_door_rect1.png";
+import doorGlitch2 from "../../assets/home-page/join-us/glitch_door2.png";
+import doorGlitchRect2 from "../../assets/home-page/join-us/glitch_door_rect2.png";
+import doorGlitch3 from "../../assets/home-page/join-us/glitch_door3.png";
+import doorGlitchRect3 from "../../assets/home-page/join-us/glitch_door_rect3.png";
 
 // --- Glitch Animation Keyframes ---
 const glitchSequence = keyframes`

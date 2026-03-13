@@ -2,28 +2,28 @@ import React, { useState, useEffect } from 'react';
 import { Box, Typography, IconButton, useMediaQuery, useTheme } from '@mui/material';
 
 // --- ASSET IMPORTS ---
-const arrowAsset = require('../../assets/featured-projects/arrow.png');
+const arrowAsset = require('../../assets/home-page/featured-projects/arrow.png');
 
 const projectData = [
     {
         id: 1,
         title: "The Come-Up",
         // The large banner with logos (Active State)
-        imgLarge: require('../../assets/featured-projects/come-up-lg.png'), 
+        imgLarge: require('../../assets/home-page/featured-projects/come-up-lg.png'), 
         // The portrait character view (Inactive State)
-        imgSmall: require('../../assets/featured-projects/come-up-sm.png'), 
+        imgSmall: require('../../assets/home-page/featured-projects/come-up-sm.png'), 
     },
     {
         id: 2,
         title: "Aescension",
-        imgLarge: require('../../assets/featured-projects/aescension-lg.png'),
-        imgSmall: require('../../assets/featured-projects/aescension-sm.png'),
+        imgLarge: require('../../assets/home-page/featured-projects/aescension-lg.png'),
+        imgSmall: require('../../assets/home-page/featured-projects/aescension-sm.png'),
     },
     {
         id: 3,
         title: "Mimicry",
-        imgLarge: require('../../assets/featured-projects/mimicry-lg.png'),
-        imgSmall: require('../../assets/featured-projects/mimicry-sm.png'),
+        imgLarge: require('../../assets/home-page/featured-projects/mimicry-lg.png'),
+        imgSmall: require('../../assets/home-page/featured-projects/mimicry-sm.png'),
     },
 ];
 

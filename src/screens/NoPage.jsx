@@ -1,6 +1,6 @@
 import {Box, Button, Container, Typography} from "@mui/material";
 import {routes} from "../configs/routesConfig";
-import clouds from "../assets/clouds-compressed/20.webp";
+import clouds from "../assets/careers-page/clouds-compressed/20.webp";
 
 function NoPage(){
 
