@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
-import {teamMembers} from "../services/teamDataService";
+import {getTeamMembers} from "../services/teamDataService";
 import {
     Alert,
     Avatar,
@@ -129,7 +129,8 @@ function TeamPage() {
         const fetchTeamData = async () => {
             setLoading(true);
             try {
-                const data = teamMembers.sort((a, b) => a.name.localeCompare(b.name));
+                const rawData = await getTeamMembers();
+                const data = rawData.sort((a, b) => a.name.localeCompare(b.name));
                 setTeamData(data);
             } catch (e) {
                 setError("Failed to load team data");
@@ -138,7 +139,7 @@ function TeamPage() {
         };
 
         fetchTeamData();
-    }, [currentPage]); // Re-fetch data whenever currentPage changes
+    }, []);
 
 
     const handlePageChange = (event, value) => {
