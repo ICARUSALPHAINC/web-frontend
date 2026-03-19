@@ -8,6 +8,7 @@ export const routes = {
   career: "/careers",
   community: "/community",
   store: "/store",
+  admin: "/admin/",
   // Added specific game routes
   gameComeUp: "/games/the-come-up",
   gameAescension: "/games/aescension",

@@ -4,9 +4,9 @@ import { Box, Container, Grid, Typography, Divider } from '@mui/material';
 const HeroSection = () => {
     
     const assets = {
-        bg: require('../../assets/hero-section/background.png'),      
-        blue: require('../../assets/hero-section/blue.png'),
-        char: require('../../assets/hero-section/character.png'), 
+        bg: require('../../assets/home-page/hero-section/background.png'),      
+        blue: require('../../assets/home-page/hero-section/blue.png'),
+        char: require('../../assets/home-page/hero-section/character.png'), 
     };
 
     return (

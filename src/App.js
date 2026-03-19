@@ -10,6 +10,12 @@ import NoPage from "./screens/NoPage";
 import HomePage from "./screens/HomePage";
 import ScrollToTop from "./ScrollToTop";
 
+const AdminRedirect = () => {
+  // This forces the browser to refresh and look for the physical /admin/ folder
+  window.location.href = "/admin/";
+  return null;
+};
+
 /**
  * Main app, wrapped inside other JSX & React components in index.js.
  * @returns {JSX.Element}
@@ -29,6 +35,8 @@ function App() {
                 {/* Primary routes */}
                 <Route path="/" element={<MainLayout />}>
                     <Route index element={<HomePage />} />
+                    <Route path="admin" element={<AdminRedirect />} />
+
                     <Route path={routes.about} element={<AboutPage />} />
                     
                     {/* New Game Routes */}

@@ -14,32 +14,36 @@ import {
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { contactRoutes } from "../configs/routesConfig";
-import cloudImage from "../assets/clouds/2.png";
-import characterImage from "../assets/Assets/Blue Girl Cutoff.png";
-import pinkImage from "../assets/Assets/pink 1.png";
-import headerBarImage from "../assets/Assets/background-short.png";
+import cloudImage from "../assets/careers-page/clouds/2.png";
+import characterImage from "../assets/careers-page/careers-assets/Blue Girl Cutoff.png";
+import pinkImage from "../assets/careers-page/careers-assets/pink 1.png";
+import headerBarImage from "../assets/careers-page/careers-assets/background-short.png";
+
 
 
 // Import job category icons
-import devIcon from "../assets/Icons/Dev Icon.png";
-import designIcon from "../assets/Icons/Design Icon.png";
-import artistIcon from "../assets/Icons/Artist Icon.png";
-import animationIcon from "../assets/Icons/Animation Icon.png";
-import audioIcon from "../assets/Icons/Audio Icon.png";
-import narrativeIcon from "../assets/Icons/Writing_Narrative Icon.png";
-import mediaIcon from "../assets/Icons/Media Icon.png";
-import marketingIcon from "../assets/Icons/Marketing Icon.png";
-import productionIcon from "../assets/Icons/Production Icon.png";
-import financeIcon from "../assets/Icons/Finance Icon.png";
-import operationsIcon from "../assets/Icons/Operations Icon.png";
+import devIcon from "../assets/careers-page/careers-icons/Dev Icon.png";
+import designIcon from "../assets/careers-page/careers-icons/Design Icon.png";
+import artistIcon from "../assets/careers-page/careers-icons/Artist Icon.png";
+import animationIcon from "../assets/careers-page/careers-icons/Animation Icon.png";
+import audioIcon from "../assets/careers-page/careers-icons/Audio Icon.png";
+import narrativeIcon from "../assets/careers-page/careers-icons/Writing_Narrative Icon.png";
+import mediaIcon from "../assets/careers-page/careers-icons/Media Icon.png";
+import marketingIcon from "../assets/careers-page/careers-icons/Marketing Icon.png";
+import productionIcon from "../assets/careers-page/careers-icons/Production Icon.png";
+import financeIcon from "../assets/careers-page/careers-icons/Finance Icon.png";
+import operationsIcon from "../assets/careers-page/careers-icons/Operations Icon.png";
 
 // Import feature icons
-import calendarIcon from "../assets/Icons/Calendar.png";
-import lightbulbIcon from "../assets/Icons/Light Bulb 1.png";
-import growthIcon from "../assets/Icons/Growth 1.png";
-import developmentIcon from "../assets/Icons/Development 1.png";
-import rocketIcon from "../assets/Icons/Rocket 1.png";
-import globalIcon from "../assets/Icons/Global.png";
+import calendarIcon from "../assets/careers-page/careers-icons/Calendar.png";
+import lightbulbIcon from "../assets/careers-page/careers-icons/Light Bulb 1.png";
+import growthIcon from "../assets/careers-page/careers-icons/Growth 1.png";
+import developmentIcon from "../assets/careers-page/careers-icons/Development 1.png";
+import rocketIcon from "../assets/careers-page/careers-icons/Rocket 1.png";
+import globalIcon from "../assets/careers-page/careers-icons/Global.png";
+
+import collegeOfEngineeringLogo from "../assets/careers-page/contact-images/CollegeofEngineeringLogoTransparent.png";
+import avenueEChevronHorizontalColor from "../assets/careers-page/contact-images/AveE_Chevron_Horizontal-Color.png";
 
 // Job categories data
 const jobCategories = [
@@ -624,7 +628,7 @@ function ContactUsPage() {
             >
                 <Box
                     component="img"
-                    src="/contant-images/CollegeofEngineeringLogoTransparent.png"
+                    src={collegeOfEngineeringLogo}
                     alt="UC Davis College of Engineering"
                     sx={{
                         height: { xs: 40, md: 60 },
@@ -633,7 +637,7 @@ function ContactUsPage() {
                 />
                 <Box
                     component="img"
-                    src="/contant-images/AveE_Chevron_Horizontal-Color.png"
+                    src={avenueEChevronHorizontalColor}
                     alt="AvenueE Chevron partnership"
                     sx={{
                         height: { xs: 40, md: 60 },

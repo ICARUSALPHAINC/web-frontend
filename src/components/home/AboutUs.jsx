@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 // --- Assets ---
 // Make sure to move your uploaded images to your assets folder
-import Wallpaper from "../../assets/about-us/wallpaper.png";
-import Frame from "../../assets/about-us/frame.png";
-import TitleImage from "../../assets/about-us/title.png"; // or .png if you converted it
-import LearnMoreBtn from "../../assets/about-us/learn-more.png";
+import Wallpaper from "../../assets/home-page/about-us/wallpaper.png";
+import Frame from "../../assets/home-page/about-us/frame.png";
+import TitleImage from "../../assets/home-page/about-us/title.png"; // or .png if you converted it
+import LearnMoreBtn from "../../assets/home-page/about-us/learn-more.png";
 
 const AboutUs = () => {
   return (
@@ -133,7 +133,7 @@ const AboutUs = () => {
             src={LearnMoreBtn}
             alt="Learn More"
             sx={{
-              height: { xs: "50px", md: "70px" }, // Responsive height
+              height: { xs: "100px", md: "120px" }, // Responsive height
               width: "auto",
             }}
           />

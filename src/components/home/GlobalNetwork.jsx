@@ -3,9 +3,9 @@ import { Box, Typography, Grid } from "@mui/material";
 
 // --- Assets ---
 // Update these paths if your folder structure is different
-import mapBase from "../../assets/global-network/map-base.png";
-import lights1 from "../../assets/global-network/lights-1.png";
-import lights2 from "../../assets/global-network/lights-2.png";
+import mapBase from "../../assets/home-page/global-network/map-base.png";
+import lights1 from "../../assets/home-page/global-network/lights-1.png";
+import lights2 from "../../assets/home-page/global-network/lights-2.png";
 
 // --- SVG Icons ---
 // Set default size to 100% so the parent container dictates the scale
