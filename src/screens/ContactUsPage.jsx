@@ -20,6 +20,7 @@ import pinkImage from "../assets/careers-page/careers-assets/pink 1.png";
 import headerBarImage from "../assets/careers-page/careers-assets/background-short.png";
 
 
+
 // Import job category icons
 import devIcon from "../assets/careers-page/careers-icons/Dev Icon.png";
 import designIcon from "../assets/careers-page/careers-icons/Design Icon.png";
