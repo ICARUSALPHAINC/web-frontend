@@ -61,8 +61,7 @@ function TeamMember(memberData, index, backgroundColor = defaultTeamMemberBackgr
 
     return (
         <Grid item xs={6} sm={6} md={4} lg={3} key={index}>
-            <Card component={Link}
-                  href={memberData.profileLink} target={"_blank"} rel="noopener noreferrer"
+            <Card target={"_blank"} rel="noopener noreferrer"
                   sx={{
                       width: 'auto',
                       display: 'grid',
@@ -81,7 +80,7 @@ function TeamMember(memberData, index, backgroundColor = defaultTeamMemberBackgr
                   }}>
                 <Avatar alt={memberData.name} src={memberData.profilePicture} sx={{ width: '7rem', height: '7rem' }} />
 
-                <Typography variant='h5' component='body1'>
+                <Typography variant='h5' component='p'>
                     <b>{memberData.name}</b>
                 </Typography>
 
@@ -123,6 +122,7 @@ function TeamPage() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [currentPage, setCurrentPage] = useState(1);
+    const [isPaginating, setIsPaginating] = useState(false);
     const itemsPerPage = 12;  // Number of items to display per page
 
     useEffect(() => {
@@ -143,18 +143,19 @@ function TeamPage() {
 
 
     const handlePageChange = (event, value) => {
-        // Set the team data to an empty array to clear the current members
-        setTeamData(Array(itemsPerPage).fill(null));
+        setIsPaginating(true);
+        setCurrentPage(value);
 
         // Delay the loading of new data
         setTimeout(() => {
-            setCurrentPage(value);
+            setIsPaginating(false);
         }, 200); // Adjust the de lay time as needed
     };
 
 
     const startIndex = (currentPage - 1) * itemsPerPage;
-    const paginatedTeamData = teamData.slice(startIndex, startIndex + itemsPerPage);
+    const paginatedTeamData = isPaginating 
+        ? Array(itemsPerPage).fill(null) : teamData.slice(startIndex, startIndex + itemsPerPage);
 
     if (loading) return <CircularProgress />;
     if (error) return <Alert severity="error">{error}</Alert>;

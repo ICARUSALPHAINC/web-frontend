@@ -4,8 +4,6 @@ backend:
   branch: production
   base_url: https://cms-auth-dun.vercel.app 
   auth_endpoint: api/login
-  
-publish_mode: editorial_workflow
 
 media_folder: "public/profile-images" 
 public_folder: "/profile-images"
@@ -21,6 +19,7 @@ collections:
           - label: "Members"
             name: "members"
             widget: "list"
+            add_to_top: true
             fields:
               - {label: "Name", name: "name", widget: "string"}
               - {label: "Role", name: "role", widget: "string", required: false}
