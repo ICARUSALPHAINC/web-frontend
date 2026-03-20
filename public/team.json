@@ -1,6 +1,13 @@
 {
   "members": [
     {
+      "name": "Aryan Sarda",
+      "role": "SWE",
+      "profilePicture": "/profile-images/grad.jpg",
+      "linkedIn": "https://www.linkedin.com/in/aryansarda630/",
+      "website": "https://www.aryansarda.com/"
+    },
+    {
       "name": "Alberto Gazzato",
       "role": "3D Artist - Mobile Games Division",
       "profilePicture": "/profile-images/alberto-gazzato-1.jpg",
