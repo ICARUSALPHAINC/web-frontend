@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 // 3. Catch-all for React Router 
 // We use '(.*)' instead of '*' to work with Express 5
-app.get('(.*)', (req, res) => {
+app.get(/.*/, (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 

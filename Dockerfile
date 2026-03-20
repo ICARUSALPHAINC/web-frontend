@@ -6,9 +6,9 @@ COPY package*.json ./
 
 RUN npm install
 
-RUN npm install express
-
 COPY . ./
+
+RUN npm install express@4.19.2
 
 RUN npm run build
 
