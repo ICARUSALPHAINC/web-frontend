@@ -67,15 +67,9 @@ jobs:
           sudo docker run -d -p 5002:3000 --restart=always --name web-frontend-container web-frontend
         "
 
-    - name: Verify Express Server Routing
+    - name: Read Docker Crash Logs
       run: |
         sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "
-          echo '--- WAITING FOR EXPRESS SERVER TO BOOT ---'
-          sleep 5
-          
-          echo '--- TESTING MAIN REACT APP (/) ---'
-          curl -s http://localhost:5002 | head -n 15
-          
-          echo '--- TESTING SVELTIA CMS (/admin/) ---'
-          curl -s http://localhost:5002/admin/ | head -n 15
+          echo '--- FETCHING DOCKER LOGS ---'
+          sudo docker logs web-frontend-container
         "
