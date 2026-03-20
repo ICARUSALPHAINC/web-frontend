@@ -67,9 +67,18 @@ jobs:
           sudo docker run -d -p 5002:3000 --restart=always --name web-frontend-container web-frontend
         "
 
-    - name: Read Docker Crash Logs
+    - name: Final Routing Verification
       run: |
         sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "
-          echo '--- FETCHING DOCKER LOGS ---'
-          sudo docker logs web-frontend-container
+          echo '--- WAITING FOR EXPRESS SERVER ---'
+          sleep 5
+          
+          echo '--- CONTAINER STATUS ---'
+          sudo docker ps --filter name=web-frontend-container
+          
+          echo '--- TESTING REACT ROUTING (/) ---'
+          curl -s http://localhost:5002 | grep -i '<title>'
+          
+          echo '--- TESTING SVELTIA ROUTING (/admin/) ---'
+          curl -s http://localhost:5002/admin/ | grep -i '<title>'
         "
