@@ -67,12 +67,9 @@ jobs:
           sudo docker run -d -p 5002:3000 --restart=always --name web-frontend-container web-frontend
         "
 
-    - name: Debug Reverse Proxy Configurations
+    - name: Debug IcarusAlpha Nginx Config
       run: |
         sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }} "
-          echo '--- SEARCHING FOR PORT 5002 ---'
-          sudo grep -rn '5002' /etc/nginx /etc/apache2 /etc/caddy 2>/dev/null || true
-          
-          echo '--- CHECKING DEFAULT NGINX CONFIG ---'
-          sudo cat /etc/nginx/sites-enabled/default 2>/dev/null || true
+          echo '--- READING ICARUSALPHA.COM CONFIG ---'
+          sudo cat /etc/nginx/sites-available/icarusalpha.com
         "
