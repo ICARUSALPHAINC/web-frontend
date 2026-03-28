@@ -282,7 +282,7 @@
     },
     {
       "name": "Brian Kwon",
-      "role": "Developer - Web Development",
+      "role": "Web Development",
       "profilePicture": "/profile-images/brian-kwon-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/briankwon3702",
       "website": "https://https://github.com/kwon-23"
@@ -331,14 +331,14 @@
     },
     {
       "name": "Caleigh Gorcoff",
-      "role": "Concept Artist - Indie Games Division",
+      "role": "2D Concept Artist",
       "profilePicture": "/profile-images/caleigh-gorcoff-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/caleigh-gorcoff-295422238/",
       "website": "https://www.artstation.com/creneeart"
     },
     {
       "name": "Calvin Kim",
-      "role": "Concept Artist - Mobile Games Division",
+      "role": "2D Concept Artist",
       "profilePicture": "/profile-images/calvin-kim-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/calvinkim010896/",
       "website": "https://www.artstation.com/calvinkimart"
@@ -352,7 +352,7 @@
     },
     {
       "name": "Charles Howerton",
-      "role": "Concept Artist - Mobile Games Division",
+      "role": "2D Concept Artist",
       "profilePicture": "/profile-images/charles-howerton-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/charles-howerton-41545622a/",
       "website": "https://www.artstation.com/howertonconceptart"
@@ -527,14 +527,14 @@
     },
     {
       "name": "Hallee Martinez",
-      "role": "3D Artist - Mobile Games Division",
+      "role": "3D Environmental Artist",
       "profilePicture": "/profile-images/hallee-martinez-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/hallena-martinez-3317a1207/?utm_sou",
       "website": "https://www.artstation.com/fantasymyths"
     },
     {
       "name": "Hannah Perez",
-      "role": "2D Artist - Mobile Games Division",
+      "role": "2D Concept Artist",
       "profilePicture": "/profile-images/hannah-perez-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/hannah-perez-099547351/",
       "website": "https://hannahperezart.wixsite.com/my-site-1"
@@ -576,42 +576,35 @@
     },
     {
       "name": "Janelle Pereyda",
-      "role": "3D Artist - Mobile Games Division",
+      "role": "3D Environmental Artist",
       "profilePicture": "/profile-images/janelle-pereyda-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/janellep3191/",
       "website": "https://www.artstation.com/sweetlemonaaade"
     },
     {
       "name": "Jason Donohoo",
-      "role": "Developer - Mobile Games Division",
+      "role": "Developer",
       "profilePicture": "/profile-images/jason-donohoo-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/jason-donohoo-6ab3b7322",
       "website": "https://sites.google.com/view/jdonohoogamedesignportfolio/home"
     },
     {
-      "name": "Jeremy Layseca",
-      "role": "Developer - Indie Games Division",
-      "profilePicture": "/profile-images/jeremy-layseca-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/jeremy-layseca/",
-      "website": "https://jeremylayseca.wixsite.com/jeremylayseca"
-    },
-    {
       "name": "Jeremy Martinez",
-      "role": "3D Artist - Mobile Games Division",
+      "role": "Developer",
       "profilePicture": "/profile-images/jeremy-martinez-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/jemmavs/",
       "website": "https://www.artstation.com/jemmavs"
     },
     {
       "name": "Joanne Lee",
-      "role": "3D Artist - Mobile Games Division",
+      "role": "3D Character Artist",
       "profilePicture": "/profile-images/joanne-lee-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/joanne-lee-885a1721a/",
       "website": "https://www.artstation.com/joannelee"
     },
     {
       "name": "Jobeth Fondren",
-      "role": "3D Rigging - Mobile Games Division",
+      "role": "3D Rigging Artist",
       "profilePicture": "/profile-images/jobeth-fondren-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/jobeth-fondren202",
       "website": "https://www.Jobethfondren6.artstation.com"
@@ -625,77 +618,63 @@
     },
     {
       "name": "Johnathan Burnett",
-      "role": "Developer - Indie Games Division",
+      "role": "Project Lead - Developer",
       "profilePicture": "/profile-images/johnathan-burnett-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/johnathan-logan-burnett/",
-      "website": null
+      "website": ""
     },
     {
       "name": "Johnathan Rios",
-      "role": "3D Artist - Mobile Games Division",
+      "role": "3D Environmental Artist",
       "profilePicture": "/profile-images/johnathan-rios-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/johnathan-rios-4b232020b/",
       "website": "https://www.artstation.com/johnathan_rios"
     },
     {
       "name": "Jonah Hoem",
-      "role": "3D Artist - Mobile Games Division",
+      "role": "3D Environmental Artist",
       "profilePicture": "/profile-images/jonah-hoem-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/jonah-hoem-ab3a79172/",
       "website": "https://www.artstation.com/jonahhoem"
     },
     {
       "name": "Jordan Garcia",
-      "role": "2D Concept Artist - Mobile Games Division",
+      "role": "2D Concept Artist",
       "profilePicture": "/profile-images/jordan-garcia-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/jordan-garcia-587ab41b6/",
       "website": "https://www.artstation.com/jordan_garcia33"
     },
     {
       "name": "Jordan Reavis",
-      "role": "Project Lead - Mobile Games Division",
+      "role": "Project Lead - Developer",
       "profilePicture": "/profile-images/jordan-reavis-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/jordan-reavis-147992259/",
       "website": "https://reavisjordan.github.io/portfolio/"
     },
     {
       "name": "Joseph Kozubowski",
-      "role": "2D Artist - Mobile Games Division",
+      "role": "2D Concept Artist",
       "profilePicture": "/profile-images/joseph-kozubowski-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/joseph-kozubowski-8b031a1b4/",
       "website": "https://www.artstation.com/joseph_kozubowski"
     },
     {
       "name": "Josiah Jones",
-      "role": "Developer - Mobile Games Division",
+      "role": "Developer",
       "profilePicture": "/profile-images/josiah-jones-1.jpg",
       "linkedIn": "http://linkedin.com/in/josiah-jones-987b7a257",
       "website": "https://josiahjones65.wixsite.com/josiahjonesportfolio"
     },
     {
-      "name": "Joyel Joseph",
-      "role": "Project Lead - Davis Dot",
-      "profilePicture": "/profile-images/joyel-joseph-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/joyel-joseph-7772252b6/",
-      "website": "https://joejoseph6.wixsite.com/joyel"
-    },
-    {
       "name": "Jude Key",
-      "role": "Developer - Mobile Games Division",
+      "role": "Producer",
       "profilePicture": "/profile-images/jude-key-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/jude-key-20351a1b7/",
       "website": "https://www.judekey.com/"
     },
     {
-      "name": "Julian Lara",
-      "role": "Developer - Davis Dot",
-      "profilePicture": "/profile-images/julian-lara-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/julian-m-lara/",
-      "website": "https://github.com/JuiceBox7"
-    },
-    {
       "name": "Justin Gozal",
-      "role": "Project Lead - Mobile Games Division",
+      "role": "Project Lead - Assistant Art Director",
       "profilePicture": "/profile-images/justin-gozal-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/justin-gozal-10166519b/",
       "website": "https://www.artstation.com/jgozalart"
