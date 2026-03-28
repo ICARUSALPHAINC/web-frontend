@@ -1,6 +1,76 @@
 {
   "members": [
     {
+      "name": "Josh Silva",
+      "role": "Developer",
+      "profilePicture": "/profile-images/josh-silva.jpg",
+      "linkedIn": "https://www.linkedin.com/in/joshuasilva3276a211b/",
+      "website": "https://jsilvagd.github.io/GD-Portfolio/index.html"
+    },
+    {
+      "name": "Jorge Pons Asensio",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/jorge-pons-asensio.png",
+      "linkedIn": "https://www.linkedin.com/in/jorgeponsasensio/",
+      "website": "https://www.artstation.com/jorgep"
+    },
+    {
+      "name": "Jonathan Thomas Jones",
+      "role": "Writer",
+      "profilePicture": "/profile-images/jonathan-thomas-jones.png",
+      "linkedIn": "https://www.linkedin.com/in/jonathanthomasjones/",
+      "website": ""
+    },
+    {
+      "name": "Jonathan Porche",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/000nobody.png",
+      "linkedIn": "https://www.linkedin.com/in/jonathan-porche/",
+      "website": ""
+    },
+    {
+      "name": "Jonathan Aguillon",
+      "role": "Project Lead - Art Director",
+      "profilePicture": "/profile-images/000nobody.png",
+      "linkedIn": "https://www.linkedin.com/in/jonathan-aguillon-9a678158/",
+      "website": "https://www.artstation.com/jonathanaguillon"
+    },
+    {
+      "name": "Jenna Bresky",
+      "role": "3D Character Artist",
+      "profilePicture": "/profile-images/jenna-bresky.jpg",
+      "linkedIn": "https://www.linkedin.com/in/jenna-bresky/",
+      "website": "https://jennabresky.carrd.co/"
+    },
+    {
+      "name": "Jayson Estrada",
+      "role": "Game Designer",
+      "profilePicture": "/profile-images/Jayson_Estrada.png",
+      "linkedIn": "https://www.linkedin.com/in/jayson-estrada/",
+      "website": "https://jaysone2415.wixsite.com/jaysonestrada"
+    },
+    {
+      "name": "Jamar Muslar",
+      "role": "Writer",
+      "profilePicture": "/profile-images/000nobody.png",
+      "linkedIn": "https://www.linkedin.com/in/jamar-muslar/",
+      "website": "https://jamarmuslar.carrd.co/"
+    },
+    {
+      "name": "Jade Woo",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/Jade-Woo-1.png",
+      "linkedIn": "https://www.linkedin.com/in/chaewonwoo/",
+      "website": "https://jadewoo.artstation.com/"
+    },
+    {
+      "name": "Jacob Mola",
+      "role": "Developer",
+      "profilePicture": "/profile-images/jacob-mola.jpg",
+      "linkedIn": "https://www.linkedin.com/in/jacob-mola101/",
+      "website": "https://jmola-gh.itch.io/"
+    },
+    {
       "name": "Illia Avdieiev",
       "role": "3D Environmental Artist",
       "profilePicture": "/profile-images/Illia-Avdieiev.jpg",
