@@ -1,6 +1,83 @@
 {
   "members": [
     {
+      "name": "Sumin Joo",
+      "role": "2D Background Artist",
+      "profilePicture": "/profile-images/000nobody.png",
+      "linkedIn": "https://www.linkedin.com/in/sumin-joo-ab7b25208",
+      "website": "https://www.suminjoo.com/"
+    },
+    {
+      "name": "Sujana Battula",
+      "role": "Level Designer",
+      "profilePicture": "/profile-images/sujana-battula.png",
+      "linkedIn": "https://www.linkedin.com/in/sujana-b-41b684225",
+      "website": "https://sujanabattula10.myportfolio.com/"
+    },
+    {
+      "name": "Sharon Tahk",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/sharon-tahk.png",
+      "linkedIn": "http://linkedin.com/in/sharontahk",
+      "website": "https://sharontahk.squarespace.com/"
+    },
+    {
+      "name": "Sean Ross",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/sean-ross-1.jpg",
+      "linkedIn": "https://www.linkedin.com/in/sean-ross-627929198",
+      "website": "https://www.artstation.com/blazinggunrose"
+    },
+    {
+      "name": "Samantha Eryn Breid",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/Samantha Eryn Breid.png",
+      "linkedIn": "https://www.linkedin.com/in/samantha-breid-8229b82b8",
+      "website": "https://www.samanthaeryn.com/"
+    },
+    {
+      "name": "Roy Ng",
+      "role": "Composer",
+      "profilePicture": "/profile-images/roy-ng.png",
+      "linkedIn": "https://www.linkedin.com/in/ng-mau-hei-roy-772b75213/",
+      "website": "https://royroy7451.wixsite.com/musicallyroy"
+    },
+    {
+      "name": "Robert Forehand",
+      "role": "Project Lead - Developer",
+      "profilePicture": "/profile-images/000nobody.png",
+      "linkedIn": "https://www.linkedin.com/in/forehandrobert/",
+      "website": "https://raforehand.wix.com/robert-designs"
+    },
+    {
+      "name": "RJ Knaggs",
+      "role": "3D Animation",
+      "profilePicture": "/profile-images/rj-knaggs.jpg",
+      "linkedIn": "https://www.linkedin.com/in/rj-knaggs-941685288/",
+      "website": "https://rjknaggs88.wixsite.com/rj-knaggs"
+    },
+    {
+      "name": "Rikki Muser",
+      "role": "Project Lead - 3D Character Artist",
+      "profilePicture": "/profile-images/rikki-muser.jpg",
+      "linkedIn": "https://www.linkedin.com/in/rikki-albert/",
+      "website": "https://www.artstation.com/rikkilynn"
+    },
+    {
+      "name": "Rebecca Kelly",
+      "role": "Project Lead - Sound Designer",
+      "profilePicture": "/profile-images/rebecca-kelly.png",
+      "linkedIn": "https://www.linkedin.com/in/rebecca-kelly-5b923b224",
+      "website": "https://www.youtube.com/@rebeccakelly1917"
+    },
+    {
+      "name": "Rawan Mostafa",
+      "role": "Writer",
+      "profilePicture": "/profile-images/Rawan-Mostafa-1.JPG",
+      "linkedIn": "https://www.linkedin.com/in/rawanmostafa1",
+      "website": "https://www.artstation.com/rawanmostafa"
+    },
+    {
       "name": "Ricardo Quick Jr.",
       "role": "2D Technical Artist",
       "profilePicture": "/profile-images/ricardo-quick-jr.jpg",
