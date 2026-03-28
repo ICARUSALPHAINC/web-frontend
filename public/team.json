@@ -1,6 +1,55 @@
 {
   "members": [
     {
+      "name": "Yana Sedova",
+      "role": "3D Character Artist",
+      "profilePicture": "/profile-images/yana-sedova.jpg",
+      "linkedIn": "https://www.linkedin.com/in/sedovayana/",
+      "website": "https://www.artstation.com/yana_sedova"
+    },
+    {
+      "name": "Xavier Satberry",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/xavier-satberry.png",
+      "linkedIn": "https://www.linkedin.com/in/xavier-satberry-0a0596228",
+      "website": "https://oso-visuals.artstation.com/"
+    },
+    {
+      "name": "Wyatt Crocker",
+      "role": "Developer",
+      "profilePicture": "/profile-images/wyatt-crocker.png",
+      "linkedIn": "https://www.linkedin.com/in/wyattcrocker/",
+      "website": "https://croc-ker.github.io/portfolio/"
+    },
+    {
+      "name": "Wayne Kang",
+      "role": "3D Animation",
+      "profilePicture": "/profile-images/wayne-kang.png",
+      "linkedIn": "https://www.linkedin.com/in/wayne-kang-120216275/",
+      "website": "https://vimeo.com/1118048369"
+    },
+    {
+      "name": "Timophey Mihnuk",
+      "role": "3D Environmental Artist",
+      "profilePicture": "/profile-images/timophey-mihnuk.jpg",
+      "linkedIn": "https://www.linkedin.com/in/timophey-mihnuk-0664302a1/",
+      "website": "https://www.artstation.com/timophey3"
+    },
+    {
+      "name": "Shadeau Christensen",
+      "role": "Project Lead - Developer",
+      "profilePicture": "/profile-images/shadeau-christensen-1.png",
+      "linkedIn": "https://www.linkedin.com/in/shadeauchristensen",
+      "website": "https://www.shadeauchristensen.com/"
+    },
+    {
+      "name": "Sage Morrison",
+      "role": "Writer",
+      "profilePicture": "/profile-images/sage-morrison.jpg",
+      "linkedIn": "https://www.linkedin.com/in/sagemorrison",
+      "website": "https://sagemorrison.gamedesignskills.com/"
+    },
+    {
       "name": "Sumin Joo",
       "role": "2D Background Artist",
       "profilePicture": "/profile-images/000nobody.png",
