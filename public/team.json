@@ -1,6 +1,34 @@
 {
   "members": [
     {
+      "name": "Lilit Baghdasaryan",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/Lilit-Baghdasaryan.jpg",
+      "linkedIn": "https://www.linkedin.com/in/lilit-baghdasaryan-2b55a522a/",
+      "website": "https://www.artstation.com/water_girl"
+    },
+    {
+      "name": "Kish Yang",
+      "role": "Developer",
+      "profilePicture": "/profile-images/kish-yang.jpg",
+      "linkedIn": "https://www.linkedin.com/in/kootawsyang/",
+      "website": "https://github.com/TisKish"
+    },
+    {
+      "name": "Kalaya Luckey",
+      "role": "3D Environmentla Artist",
+      "profilePicture": "/profile-images/kalaya-luckey.jpg",
+      "linkedIn": "https://www.linkedin.com/in/kalaya-luckey-b45036363/",
+      "website": "https://kalayaluckey.wordpress.com/"
+    },
+    {
+      "name": "Kevin Romero",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/kevin-romero-2.jpg",
+      "linkedIn": "https://www.linkedin.com/in/kevin-romero-5a0523265/",
+      "website": "https://www.artstation.com/kevinromero26"
+    },
+    {
       "name": "Josh Silva",
       "role": "Developer",
       "profilePicture": "/profile-images/josh-silva.jpg",
