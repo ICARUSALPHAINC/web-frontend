@@ -1,6 +1,90 @@
 {
   "members": [
     {
+      "name": "Ricardo Quick Jr.",
+      "role": "2D Technical Artist",
+      "profilePicture": "/profile-images/ricardo-quick-jr.jpg",
+      "linkedIn": "https://www.linkedin.com/in/ricardo-quick-jr-481348117/",
+      "website": "https://rqjr.artstation.com/"
+    },
+    {
+      "name": "Peter Gremban",
+      "role": "3D Environmental Artsit",
+      "profilePicture": "/profile-images/Peter-Gremban.png",
+      "linkedIn": "https://www.linkedin.com/in/peter-gremban-6b6a56267/",
+      "website": "https://www.artstation.com/peter_gremban/albums/14700254"
+    },
+    {
+      "name": "Nathan Gumataotao",
+      "role": "Developer",
+      "profilePicture": "/profile-images/nathan-gumataotao.png",
+      "linkedIn": "https://www.linkedin.com/in/nathan-gumataotao",
+      "website": "https://github.com/NGumataotao23"
+    },
+    {
+      "name": "Natasha Velez",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/natasha-velez.jpg",
+      "linkedIn": "https://www.linkedin.com/in/natasha-velez-sheldon/",
+      "website": "https://natvelezsheldon.wixsite.com/mysite"
+    },
+    {
+      "name": "Natalie Poitevien",
+      "role": "3D Environmental Artist",
+      "profilePicture": "/profile-images/natalie-poitevien-1.png",
+      "linkedIn": "https://www.linkedin.com/in/natalie-poitevien",
+      "website": "https://npoitevien.weebly.com/"
+    },
+    {
+      "name": "Monica Bermejo",
+      "role": "2D Animation",
+      "profilePicture": "/profile-images/monica-bermejo.png",
+      "linkedIn": "https://www.linkedin.com/in/mónica-bermejo-montejo-42943825b",
+      "website": "https://vimeo.com/1115099889"
+    },
+    {
+      "name": "Max Matus",
+      "role": "Developer",
+      "profilePicture": "/profile-images/max-matus.jpg",
+      "linkedIn": "https://www.linkedin.com/in/maxmatus/",
+      "website": "https://maxmatusportfolio.my.canva.site/"
+    },
+    {
+      "name": "Mark Gants",
+      "role": "Mentor",
+      "profilePicture": "/profile-images/mark-gants.png",
+      "linkedIn": "https://www.linkedin.com/in/markgants/",
+      "website": "https://mgants4.substack.com/"
+    },
+    {
+      "name": "Marcus Liriano",
+      "role": "3D Environmental Artist",
+      "profilePicture": "/profile-images/marcus-liriano.jpg",
+      "linkedIn": "https://www.linkedin.com/in/marcus-liriano-603337367",
+      "website": "https://marcus_l_16.artstation.com/"
+    },
+    {
+      "name": "Marc Senteney",
+      "role": "3D Character Artist",
+      "profilePicture": "/profile-images/marc-senteney.jpg",
+      "linkedIn": "https://www.linkedin.com/in/marc-senteney/",
+      "website": "https://www.artstation.com/senteney"
+    },
+    {
+      "name": "Mackenzie Carney",
+      "role": "2D Animation",
+      "profilePicture": "/profile-images/mackenzie-carney.jpg",
+      "linkedIn": "https://www.linkedin.com/in/mackenzie-carney-464395332/",
+      "website": "https://inkiefox.myportfolio.com/home"
+    },
+    {
+      "name": "Max Geiringer",
+      "role": "Developer",
+      "profilePicture": "/profile-images/max-geiringer.jpg",
+      "linkedIn": "https://www.linkedin.com/in/max-geiringer/",
+      "website": "https://maxgeiringer.wixsite.com/maxgeiringer"
+    },
+    {
       "name": "Lilit Baghdasaryan",
       "role": "2D Concept Artist",
       "profilePicture": "/profile-images/Lilit-Baghdasaryan.jpg",
