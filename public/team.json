@@ -1,6 +1,27 @@
 {
   "members": [
     {
+      "name": "Illia Avdieiev",
+      "role": "3D Environmental Artist",
+      "profilePicture": "/profile-images/Illia-Avdieiev.jpg",
+      "linkedIn": "https://www.linkedin.com/in/illia-avdieiev-252a6b29b/",
+      "website": "https://www.artstation.com/kexida"
+    },
+    {
+      "name": "Ian Leung",
+      "role": "3D Environmental Artist",
+      "profilePicture": "/profile-images/ian-leung.jpg",
+      "linkedIn": "https://www.linkedin.com/in/ianleunghk/",
+      "website": "https://www.artstation.com/ian_leung"
+    },
+    {
+      "name": "Hugo Marqués",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/hugo-marques.jpg",
+      "linkedIn": "https://www.linkedin.com/in/mrksart/",
+      "website": "https://www.artstation.com/mrksart"
+    },
+    {
       "name": "Cole Gesler",
       "role": "2D Concept Artist",
       "profilePicture": "/profile-images/cole-gesler.png",
@@ -422,14 +443,14 @@
     },
     {
       "name": "Galo Domaica",
-      "role": "Project Manager - Mobile Games Division",
+      "role": "Project Lead - Assistant Art Director",
       "profilePicture": "/profile-images/galo-domaica-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/galo-domaica-6681ba14a/",
       "website": "https://watermelon-saxophone-zc2g.squarespace.com/"
     },
     {
       "name": "Guy Doratio Jr.",
-      "role": "3D Artist - Indie Games Division",
+      "role": "3D Environmental Artist",
       "profilePicture": "/profile-images/guy-doratio-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/guy-doratio/",
       "website": "https://guydoratio.artstation.com/projects"
@@ -449,37 +470,37 @@
       "website": "https://hannahperezart.wixsite.com/my-site-1"
     },
     {
-      "name": "Hari Prasad",
-      "role": "3D Artist - Mobile Games Division",
-      "profilePicture": "/profile-images/hari-peram-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/hari-chandra-prasad-9029a0127/",
-      "website": "https://www.artstation.com/artwork/1xe3kL"
+      "name": "Hannah Brohlin",
+      "role": "Production Manager",
+      "profilePicture": "/profile-images/hannah-brohlin.png",
+      "linkedIn": "https://www.linkedin.com/in/hannah-brohlin-09634a255/",
+      "website": "https://hbrohlin2001.wixsite.com/hbportfolio"
     },
     {
-      "name": "Hayden Krider",
-      "role": "UI/UX Designer - Mobile Games Division",
-      "profilePicture": "/profile-images/hayden-krider-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/hayden-krider-3092b826a/",
-      "website": "https://hkridr.wixstudio.com/h2k2"
+      "name": "Hayley Kim",
+      "role": "3D Lighting Artist",
+      "profilePicture": "/profile-images/haley-kim.jpg",
+      "linkedIn": "https://www.linkedin.com/in/hyunseohayleykim/",
+      "website": "https://www.hyunseokim.com/"
     },
     {
-      "name": "Honghui Henry Li",
-      "role": "Developer - Davis Dot",
-      "profilePicture": "/profile-images/honghui-henry-li-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/honghui-li-789b9a24a/",
-      "website": "https://github.com/Honghui-Li-8"
+      "name": "Helen Vigil",
+      "role": "3D Rigging Artist",
+      "profilePicture": "/profile-images/helena-vigil.jpg",
+      "linkedIn": "https://www.linkedin.com/in/helena-vigil/",
+      "website": "https://www.artstation.com/helena_vigil"
     },
     {
       "name": "Ian Pillai",
-      "role": "Audio - Mobile Games Division",
+      "role": "Composer",
       "profilePicture": "/profile-images/ian-pillai-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/ian-pillai-502899224",
       "website": "https://youtu.be/a-JhMiTPGSc"
     },
     {
       "name": "Jaden Corrado",
-      "role": "Developer - Indie Games Division",
-      "profilePicture": "/profile-images/jaden-corrado-1.jpg",
+      "role": "Developer",
+      "profilePicture": "/profile-images/jaden-corrado-(USE THIS ONE).jpeg",
       "linkedIn": "https://www.linkedin.com/in/jaden-corrado/",
       "website": "https://www.jadencorrado.com/"
     },
@@ -527,7 +548,7 @@
     },
     {
       "name": "John Overton",
-      "role": "Team Lead, Project Lead - Mobile Games Division",
+      "role": "Operational Manager",
       "profilePicture": "/profile-images/john-overton-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/johnovertonid/",
       "website": "https://github.com/4554551NX"
