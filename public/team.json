@@ -1,6 +1,20 @@
 {
   "members": [
     {
+      "name": "Cleve King",
+      "role": "Developer",
+      "profilePicture": "/profile-images/joseph-kozubowski-1.jpg",
+      "linkedIn": "https://www.linkedin.com/in/cleve-king-ab5163166/",
+      "website": "https://www.behance.net/gallery/236089679/Cleve"
+    },
+    {
+      "name": "Cameron Mason",
+      "role": "2D Splash Artist",
+      "profilePicture": "/profile-images/Cameron-Mason.jpg",
+      "linkedIn": "https://www.linkedin.com/in/cameron-mason-59b83728b/",
+      "website": "https://www.artstation.com/cameron_mason"
+    },
+    {
       "name": "Alexa Cotto",
       "role": "2D Concept Artist",
       "profilePicture": "/profile-images/alexa-cotto-1.png",
@@ -141,11 +155,11 @@
       "website": "https://www.artstation.com/autrygeorge4"
     },
     {
-      "name": "Blase Henry",
-      "role": "Writer - Mobile Games Division",
-      "profilePicture": "/profile-images/blase-henry-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/blase-henry-510935137/",
-      "website": "https://blasesportfolio.wordpress.com/"
+      "name": "Bryan Barragan",
+      "role": "Game Designer",
+      "profilePicture": "/profile-images/joseph-kozubowski-1.jpg",
+      "linkedIn": "https://www.linkedin.com/in/bbarragangamedesigner/",
+      "website": "https://barrgangamedesign.weebly.com/"
     },
     {
       "name": "Bray Chandler",
@@ -169,11 +183,11 @@
       "website": "https://brittanylamont.wixsite.com/brittanylamont"
     },
     {
-      "name": "Bryant Cachola",
-      "role": "3D Artist - Mobile Games Division",
-      "profilePicture": "/profile-images/bryant-cachola-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/bryant-cachola/",
-      "website": "https://www.artstation.com/bcachola"
+      "name": "Brandon Ramcharitar",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/bandon-ramcharitar.png",
+      "linkedIn": "https://www.linkedin.com/in/brandon-ramcharitar-2a31b8221/",
+      "website": "https://brandonramcharitar.artstation.com/"
     },
     {
       "name": "Bryce Kadash",
@@ -219,7 +233,7 @@
     },
     {
       "name": "Chaewoon Hyun",
-      "role": "Concept Artist - Mobile Games Division",
+      "role": "2D Concept Artist",
       "profilePicture": "/profile-images/chaewoon-hyun-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/chaewoon-hyun-art/",
       "website": "https://codns.artstation.com/"
@@ -233,36 +247,36 @@
     },
     {
       "name": "Chloe Nguyen",
-      "role": "Concept Artist - Mobile Games Division",
+      "role": "2D Concept Artist",
       "profilePicture": "/profile-images/chloe-nguyen-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/chloe-doanh-nguyen-008682161/",
       "website": "https://www.artstation.com/chloenguyen"
     },
     {
       "name": "Chris Freeman",
-      "role": "Level Designer - Mobile Games Division",
+      "role": "Level Designer",
       "profilePicture": "/profile-images/chris-freeman-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/chris-freeman-49b874221",
       "website": "https://odstudiocom.wixsite.com/obsidian-dawn-studio"
     },
     {
       "name": "Chris Ramos",
-      "role": "3D Artist - Mobile Games Division",
+      "role": "3D Environmental Artist",
       "profilePicture": "/profile-images/chris-ramos-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/chrisramosart/",
       "website": "https://www.artstation.com/chris_r64"
     },
     {
       "name": "Clay Bryner",
-      "role": "Developer - Indie Games Division",
+      "role": "Project Lead - Developer",
       "profilePicture": "/profile-images/clay-bryner-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/clay-bryner/",
       "website": "https://www.claybryner.com/portfolio"
     },
     {
-      "name": "Clay Tingue",
-      "role": "Developer - Mobile Games Division",
-      "profilePicture": "/profile-images/clay-tingue-1.jpg",
+      "name": "Chad Cloonan",
+      "role": "Project Lead - 3D Rigging Artist",
+      "profilePicture": "/profile-images/chad-cloonan.jpg",
       "linkedIn": "https://www.linkedin.com/in/clay-tingue-633911305/",
       "website": "https://tinguecd.myportfolio.com/"
     },
