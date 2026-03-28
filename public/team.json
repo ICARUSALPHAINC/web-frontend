@@ -1,9 +1,30 @@
 {
   "members": [
     {
+      "name": "Cole Gesler",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/cole-gesler.png",
+      "linkedIn": "https://www.linkedin.com/in/cole-gesler-a1588b1a8/",
+      "website": "https://www.colegesler.com/"
+    },
+    {
+      "name": "Christopher Viosca",
+      "role": "Developer",
+      "profilePicture": "/profile-images/christopher-viosca.png",
+      "linkedIn": "https://www.linkedin.com/in/christopher-viosca/",
+      "website": "https://github.com/Chris-Tromboss"
+    },
+    {
+      "name": "Chloe Worthy",
+      "role": "3D Character Artist",
+      "profilePicture": "/profile-images/chloe-worthy.png",
+      "linkedIn": "https://www.linkedin.com/in/chloe-worthy/",
+      "website": "https://www.artstation.com/chloeworthyart"
+    },
+    {
       "name": "Cleve King",
       "role": "Developer",
-      "profilePicture": "/profile-images/joseph-kozubowski-1.jpg",
+      "profilePicture": "/profile-images/000nobody.png",
       "linkedIn": "https://www.linkedin.com/in/cleve-king-ab5163166/",
       "website": "https://www.behance.net/gallery/236089679/Cleve"
     },
@@ -157,7 +178,7 @@
     {
       "name": "Bryan Barragan",
       "role": "Game Designer",
-      "profilePicture": "/profile-images/joseph-kozubowski-1.jpg",
+      "profilePicture": "/profile-images/000nobody.png",
       "linkedIn": "https://www.linkedin.com/in/bbarragangamedesigner/",
       "website": "https://barrgangamedesign.weebly.com/"
     },
@@ -295,46 +316,46 @@
       "website": "https://www.conniechau.com/"
     },
     {
-      "name": "Daniel Herranz",
-      "role": "3D Artist - Mobile Games Division",
-      "profilePicture": "/profile-images/daniel-herranz-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/daniel-herranz/",
-      "website": "https://www.artstation.com/danielheranz"
+      "name": "DeJuan Owens",
+      "role": "3D Environmental Artist",
+      "profilePicture": "/profile-images/dejuan-owens.png",
+      "linkedIn": "https://www.linkedin.com/in/dejuan-owens-425033218/",
+      "website": "https://dejuanowens.artstation.com/"
     },
     {
       "name": "Denny Siliezar",
-      "role": "3D Artist - Mobile Games Division",
-      "profilePicture": "/profile-images/denny-siliezar-1.jpg",
+      "role": "3D Environmental Artist - Mobile Games Division",
+      "profilePicture": "/profile-images/Denny-Siliezar-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/denny-siliezar-108ba5191/",
       "website": "https://marinesgalaxy.artstation.com/"
     },
     {
       "name": "Devin Sanchez",
-      "role": "2D Concept Artist - Mobile Games Division",
+      "role": "2D Concept Artist",
       "profilePicture": "/profile-images/devin-sanchez-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/devmatsan/",
       "website": "https://www.artstation.com/huntthepear"
     },
     {
-      "name": "Diego Lazo",
-      "role": "2D Concept Artist - Mobile Games Division",
-      "profilePicture": "/profile-images/diego-lazo-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/diego-lazo-b57796181/",
-      "website": "http://www.artstation.com/diego_lazo"
+      "name": "Derek Gutierrez",
+      "role": "3D Rigging Artist",
+      "profilePicture": "/profile-images/derek-gutierrez.png",
+      "linkedIn": "https://www.linkedin.com/in/derekgutierrez3d/",
+      "website": "https://www.artstation.com/derekgutierrez4/albums/13799135"
     },
     {
       "name": "Dillon Heeke",
-      "role": "3D Artist - Mobile Games Division",
+      "role": "3D Character Artist",
       "profilePicture": "/profile-images/dillon-heeke-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/dillon-heeke-361277158/",
       "website": "https://www.artstation.com/dillonheeke"
     },
     {
-      "name": "Dziana Vasilevich",
-      "role": "3D Artist - Mobile Games Division",
-      "profilePicture": "/profile-images/dziana-vasilevich-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/dziana-vasilevich-0ab65b284/",
-      "website": "https://www.artstation.com/diana_vasilevich"
+      "name": "Dylan Truong",
+      "role": "3D Environmental Artist",
+      "profilePicture": "/profile-images/dylan-truong2.png",
+      "linkedIn": "https://www.linkedin.com/in/dylan-truong-993697253/",
+      "website": "https://sites.google.com/view/dylantruongportfolio/home?authuser=0"
     },
     {
       "name": "Ekaterina Ponomarenko",
