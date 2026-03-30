@@ -1,6 +1,13 @@
 {
   "members": [
     {
+      "name": "Yury Taran",
+      "role": "Project Lead - 3D Character Artist",
+      "profilePicture": "/profile-images/yury-taran.jpg",
+      "linkedIn": "https://www.linkedin.com/in/yury-taran-58bb37274/",
+      "website": "https://www.artstation.com/yuriy_taran"
+    },
+    {
       "name": "Yana Sedova",
       "role": "3D Character Artist",
       "profilePicture": "/profile-images/yana-sedova.jpg",
@@ -115,7 +122,7 @@
     {
       "name": "Rebecca Kelly",
       "role": "Project Lead - Sound Designer",
-      "profilePicture": "/profile-images/rebecca-kelly.png",
+      "profilePicture": "/profile-images/rebecca-kelly-2.png",
       "linkedIn": "https://www.linkedin.com/in/rebecca-kelly-5b923b224",
       "website": "https://www.youtube.com/@rebeccakelly1917"
     },
@@ -135,7 +142,7 @@
     },
     {
       "name": "Peter Gremban",
-      "role": "3D Environmental Artsit",
+      "role": "3D Environmental Artist",
       "profilePicture": "/profile-images/Peter-Gremban.png",
       "linkedIn": "https://www.linkedin.com/in/peter-gremban-6b6a56267/",
       "website": "https://www.artstation.com/peter_gremban/albums/14700254"
@@ -269,7 +276,7 @@
     {
       "name": "Jonathan Aguillon",
       "role": "Project Lead - Art Director",
-      "profilePicture": "/profile-images/000nobody.png",
+      "profilePicture": "/profile-images/jonathan-aguillon2.png",
       "linkedIn": "https://www.linkedin.com/in/jonathan-aguillon-9a678158/",
       "website": "https://www.artstation.com/jonathanaguillon"
     },
@@ -1067,7 +1074,7 @@
     {
       "name": "Matthew Stecker",
       "role": "Game Designer",
-      "profilePicture": "/profile-images/matthew-stecker-1.jpg",
+      "profilePicture": "/profile-images/000nobody.png",
       "linkedIn": "https://linkedin.com/in/mdstecker/",
       "website": "https://www.mdsteckerportfolio.com/"
     },
@@ -1137,7 +1144,7 @@
     {
       "name": "Nicholas Stepp",
       "role": "3D Environmental Artist",
-      "profilePicture": "/profile-images/nicholas-stepp-1.jpg",
+      "profilePicture": "/profile-images/000nobody.png",
       "linkedIn": "https://www.linkedin.com/in/nicholasstepp",
       "website": "https://www.artstation.com/nstepp2001"
     },
@@ -1192,7 +1199,7 @@
     },
     {
       "name": "Rama Bit",
-      "role": "3D Environmental Artist - Mobile Games Division",
+      "role": "3D Environmental Artist",
       "profilePicture": "/profile-images/rama-bit-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/rama-bit-236126186/",
       "website": "https://www.artstation.com/sonicfanx1"
@@ -1375,7 +1382,7 @@
     {
       "name": "Yunmeng Lei",
       "role": "2D Concept Artist",
-      "profilePicture": "/profile-images/yunmeng-lei-1.jpg",
+      "profilePicture": "/profile-images/Yunmeng-Lei-1.png",
       "linkedIn": "https://www.linkedin.com/in/yunmeng-lei-6b5325255/",
       "website": "https://www.artstation.com/whitecake"
     },
