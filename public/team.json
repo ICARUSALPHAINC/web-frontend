@@ -1,389 +1,11 @@
 {
   "members": [
     {
-      "name": "Yury Taran",
-      "role": "Project Lead - 3D Character Artist",
-      "profilePicture": "/profile-images/yury-taran.jpg",
-      "linkedIn": "https://www.linkedin.com/in/yury-taran-58bb37274/",
-      "website": "https://www.artstation.com/yuriy_taran"
-    },
-    {
-      "name": "Yana Sedova",
-      "role": "3D Character Artist",
-      "profilePicture": "/profile-images/yana-sedova.jpg",
-      "linkedIn": "https://www.linkedin.com/in/sedovayana/",
-      "website": "https://www.artstation.com/yana_sedova"
-    },
-    {
-      "name": "Xavier Satberry",
-      "role": "2D Concept Artist",
-      "profilePicture": "/profile-images/xavier-satberry.png",
-      "linkedIn": "https://www.linkedin.com/in/xavier-satberry-0a0596228",
-      "website": "https://oso-visuals.artstation.com/"
-    },
-    {
-      "name": "Wyatt Crocker",
-      "role": "Developer",
-      "profilePicture": "/profile-images/wyatt-crocker.png",
-      "linkedIn": "https://www.linkedin.com/in/wyattcrocker/",
-      "website": "https://croc-ker.github.io/portfolio/"
-    },
-    {
-      "name": "Wayne Kang",
-      "role": "3D Animation",
-      "profilePicture": "/profile-images/wayne-kang.png",
-      "linkedIn": "https://www.linkedin.com/in/wayne-kang-120216275/",
-      "website": "https://vimeo.com/1118048369"
-    },
-    {
-      "name": "Timophey Mihnuk",
-      "role": "3D Environmental Artist",
-      "profilePicture": "/profile-images/timophey-mihnuk.jpg",
-      "linkedIn": "https://www.linkedin.com/in/timophey-mihnuk-0664302a1/",
-      "website": "https://www.artstation.com/timophey3"
-    },
-    {
-      "name": "Shadeau Christensen",
-      "role": "Project Lead - Developer",
-      "profilePicture": "/profile-images/shadeau-christensen-1.png",
-      "linkedIn": "https://www.linkedin.com/in/shadeauchristensen",
-      "website": "https://www.shadeauchristensen.com/"
-    },
-    {
-      "name": "Sage Morrison",
-      "role": "Writer",
-      "profilePicture": "/profile-images/sage-morrison.jpg",
-      "linkedIn": "https://www.linkedin.com/in/sagemorrison",
-      "website": "https://sagemorrison.gamedesignskills.com/"
-    },
-    {
-      "name": "Sumin Joo",
-      "role": "2D Background Artist",
-      "profilePicture": "/profile-images/000nobody.png",
-      "linkedIn": "https://www.linkedin.com/in/sumin-joo-ab7b25208",
-      "website": "https://www.suminjoo.com/"
-    },
-    {
-      "name": "Sujana Battula",
-      "role": "Level Designer",
-      "profilePicture": "/profile-images/sujana-battula.png",
-      "linkedIn": "https://www.linkedin.com/in/sujana-b-41b684225",
-      "website": "https://sujanabattula10.myportfolio.com/"
-    },
-    {
-      "name": "Sharon Tahk",
-      "role": "2D Concept Artist",
-      "profilePicture": "/profile-images/sharon-tahk.png",
-      "linkedIn": "http://linkedin.com/in/sharontahk",
-      "website": "https://sharontahk.squarespace.com/"
-    },
-    {
-      "name": "Sean Ross",
-      "role": "2D Concept Artist",
-      "profilePicture": "/profile-images/sean-ross-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/sean-ross-627929198",
-      "website": "https://www.artstation.com/blazinggunrose"
-    },
-    {
-      "name": "Samantha Eryn Breid",
-      "role": "2D Concept Artist",
-      "profilePicture": "/profile-images/Samantha Eryn Breid.png",
-      "linkedIn": "https://www.linkedin.com/in/samantha-breid-8229b82b8",
-      "website": "https://www.samanthaeryn.com/"
-    },
-    {
-      "name": "Roy Ng",
-      "role": "Composer",
-      "profilePicture": "/profile-images/roy-ng.png",
-      "linkedIn": "https://www.linkedin.com/in/ng-mau-hei-roy-772b75213/",
-      "website": "https://royroy7451.wixsite.com/musicallyroy"
-    },
-    {
-      "name": "Robert Forehand",
-      "role": "Project Lead - Developer",
-      "profilePicture": "/profile-images/robert-forehand.png",
-      "linkedIn": "https://www.linkedin.com/in/forehandrobert/",
-      "website": "https://raforehand.wix.com/robert-designs"
-    },
-    {
-      "name": "RJ Knaggs",
-      "role": "3D Animation",
-      "profilePicture": "/profile-images/rj-knaggs.jpg",
-      "linkedIn": "https://www.linkedin.com/in/rj-knaggs-941685288/",
-      "website": "https://rjknaggs88.wixsite.com/rj-knaggs"
-    },
-    {
-      "name": "Rikki Muser",
-      "role": "Project Lead - 3D Character Artist",
-      "profilePicture": "/profile-images/rikki-muser.jpg",
-      "linkedIn": "https://www.linkedin.com/in/rikki-albert/",
-      "website": "https://www.artstation.com/rikkilynn"
-    },
-    {
-      "name": "Rebecca Kelly",
-      "role": "Project Lead - Sound Designer",
-      "profilePicture": "/profile-images/rebecca-kelly.png",
-      "linkedIn": "https://www.linkedin.com/in/rebecca-kelly-5b923b224",
-      "website": "https://www.youtube.com/@rebeccakelly1917"
-    },
-    {
-      "name": "Rawan Mostafa",
-      "role": "Writer",
-      "profilePicture": "/profile-images/Rawan-Mostafa-1.JPG",
-      "linkedIn": "https://www.linkedin.com/in/rawanmostafa1",
-      "website": "https://www.artstation.com/rawanmostafa"
-    },
-    {
-      "name": "Ricardo Quick Jr.",
-      "role": "2D Technical Artist",
-      "profilePicture": "/profile-images/ricardo-quick-jr.jpg",
-      "linkedIn": "https://www.linkedin.com/in/ricardo-quick-jr-481348117/",
-      "website": "https://rqjr.artstation.com/"
-    },
-    {
-      "name": "Peter Gremban",
-      "role": "3D Environmental Artist",
-      "profilePicture": "/profile-images/Peter-Gremban.png",
-      "linkedIn": "https://www.linkedin.com/in/peter-gremban-6b6a56267/",
-      "website": "https://www.artstation.com/peter_gremban/albums/14700254"
-    },
-    {
-      "name": "Nathan Gumataotao",
-      "role": "Developer",
-      "profilePicture": "/profile-images/nathan-gumataotao.png",
-      "linkedIn": "https://www.linkedin.com/in/nathan-gumataotao",
-      "website": "https://github.com/NGumataotao23"
-    },
-    {
-      "name": "Natasha Velez",
-      "role": "2D Concept Artist",
-      "profilePicture": "/profile-images/natasha-velez.jpg",
-      "linkedIn": "https://www.linkedin.com/in/natasha-velez-sheldon/",
-      "website": "https://natvelezsheldon.wixsite.com/mysite"
-    },
-    {
-      "name": "Natalie Poitevien",
-      "role": "3D Environmental Artist",
-      "profilePicture": "/profile-images/natalie-poitevien-1.png",
-      "linkedIn": "https://www.linkedin.com/in/natalie-poitevien",
-      "website": "https://npoitevien.weebly.com/"
-    },
-    {
-      "name": "Monica Bermejo",
-      "role": "2D Animation",
-      "profilePicture": "/profile-images/monica-bermejo.png",
-      "linkedIn": "https://www.linkedin.com/in/mónica-bermejo-montejo-42943825b",
-      "website": "https://vimeo.com/1115099889"
-    },
-    {
-      "name": "Max Matus",
-      "role": "Developer",
-      "profilePicture": "/profile-images/max-matus.jpg",
-      "linkedIn": "https://www.linkedin.com/in/maxmatus/",
-      "website": "https://maxmatusportfolio.my.canva.site/"
-    },
-    {
-      "name": "Mark Gants",
-      "role": "Mentor",
-      "profilePicture": "/profile-images/mark-gants.png",
-      "linkedIn": "https://www.linkedin.com/in/markgants/",
-      "website": "https://mgants4.substack.com/"
-    },
-    {
-      "name": "Marcus Liriano",
-      "role": "3D Environmental Artist",
-      "profilePicture": "/profile-images/marcus-liriano.jpg",
-      "linkedIn": "https://www.linkedin.com/in/marcus-liriano-603337367",
-      "website": "https://marcus_l_16.artstation.com/"
-    },
-    {
-      "name": "Marc Senteney",
-      "role": "3D Character Artist",
-      "profilePicture": "/profile-images/marc-senteney.jpg",
-      "linkedIn": "https://www.linkedin.com/in/marc-senteney/",
-      "website": "https://www.artstation.com/senteney"
-    },
-    {
-      "name": "Mackenzie Carney",
-      "role": "2D Animation",
-      "profilePicture": "/profile-images/mackenzie-carney.jpg",
-      "linkedIn": "https://www.linkedin.com/in/mackenzie-carney-464395332/",
-      "website": "https://inkiefox.myportfolio.com/home"
-    },
-    {
-      "name": "Max Geiringer",
-      "role": "Developer",
-      "profilePicture": "/profile-images/max-geiringer.jpg",
-      "linkedIn": "https://www.linkedin.com/in/max-geiringer/",
-      "website": "https://maxgeiringer.wixsite.com/maxgeiringer"
-    },
-    {
-      "name": "Lilit Baghdasaryan",
-      "role": "2D Concept Artist",
-      "profilePicture": "/profile-images/Lilit-Baghdasaryan.jpg",
-      "linkedIn": "https://www.linkedin.com/in/lilit-baghdasaryan-2b55a522a/",
-      "website": "https://www.artstation.com/water_girl"
-    },
-    {
-      "name": "Kish Yang",
-      "role": "Developer",
-      "profilePicture": "/profile-images/kish-yang.jpg",
-      "linkedIn": "https://www.linkedin.com/in/kootawsyang/",
-      "website": "https://github.com/TisKish"
-    },
-    {
-      "name": "Kalaya Luckey",
-      "role": "3D Environmentla Artist",
-      "profilePicture": "/profile-images/kalaya-luckey.jpg",
-      "linkedIn": "https://www.linkedin.com/in/kalaya-luckey-b45036363/",
-      "website": "https://kalayaluckey.wordpress.com/"
-    },
-    {
-      "name": "Kevin Romero",
-      "role": "2D Concept Artist",
-      "profilePicture": "/profile-images/kevin-romero-2.jpg",
-      "linkedIn": "https://www.linkedin.com/in/kevin-romero-5a0523265/",
-      "website": "https://www.artstation.com/kevinromero26"
-    },
-    {
-      "name": "Josh Silva",
-      "role": "Developer",
-      "profilePicture": "/profile-images/josh-silva.jpg",
-      "linkedIn": "https://www.linkedin.com/in/joshuasilva3276a211b/",
-      "website": "https://jsilvagd.github.io/GD-Portfolio/index.html"
-    },
-    {
-      "name": "Jorge Pons Asensio",
-      "role": "2D Concept Artist",
-      "profilePicture": "/profile-images/jorge-pons-asensio.png",
-      "linkedIn": "https://www.linkedin.com/in/jorgeponsasensio/",
-      "website": "https://www.artstation.com/jorgep"
-    },
-    {
-      "name": "Jonathan Thomas Jones",
-      "role": "Writer",
-      "profilePicture": "/profile-images/jonathan-thomas-jones.png",
-      "linkedIn": "https://www.linkedin.com/in/jonathanthomasjones/",
-      "website": ""
-    },
-    {
-      "name": "Jonathan Porche",
-      "role": "2D Concept Artist",
-      "profilePicture": "/profile-images/jonathan-porche.png",
-      "linkedIn": "https://www.linkedin.com/in/jonathan-porche/",
-      "website": ""
-    },
-    {
-      "name": "Jonathan Aguillon",
-      "role": "Project Lead - Art Director",
-      "profilePicture": "/profile-images/jonathan-aguillon2.png",
-      "linkedIn": "https://www.linkedin.com/in/jonathan-aguillon-9a678158/",
-      "website": "https://www.artstation.com/jonathanaguillon"
-    },
-    {
-      "name": "Jenna Bresky",
-      "role": "3D Character Artist",
-      "profilePicture": "/profile-images/jenna-bresky.jpg",
-      "linkedIn": "https://www.linkedin.com/in/jenna-bresky/",
-      "website": "https://jennabresky.carrd.co/"
-    },
-    {
-      "name": "Jayson Estrada",
-      "role": "Game Designer",
-      "profilePicture": "/profile-images/Jayson_Estrada.png",
-      "linkedIn": "https://www.linkedin.com/in/jayson-estrada/",
-      "website": "https://jaysone2415.wixsite.com/jaysonestrada"
-    },
-    {
-      "name": "Jamar Muslar",
-      "role": "Writer",
-      "profilePicture": "/profile-images/000nobody.png",
-      "linkedIn": "https://www.linkedin.com/in/jamar-muslar/",
-      "website": "https://jamarmuslar.carrd.co/"
-    },
-    {
-      "name": "Jade Woo",
-      "role": "2D Concept Artist",
-      "profilePicture": "/profile-images/Jade-Woo-1.png",
-      "linkedIn": "https://www.linkedin.com/in/chaewonwoo/",
-      "website": "https://jadewoo.artstation.com/"
-    },
-    {
-      "name": "Jacob Mola",
-      "role": "Developer",
-      "profilePicture": "/profile-images/jacob-mola.jpg",
-      "linkedIn": "https://www.linkedin.com/in/jacob-mola101/",
-      "website": "https://jmola-gh.itch.io/"
-    },
-    {
-      "name": "Illia Avdieiev",
-      "role": "3D Environmental Artist",
-      "profilePicture": "/profile-images/Illia-Avdieiev.jpg",
-      "linkedIn": "https://www.linkedin.com/in/illia-avdieiev-252a6b29b/",
-      "website": "https://www.artstation.com/kexida"
-    },
-    {
-      "name": "Ian Leung",
-      "role": "3D Environmental Artist",
-      "profilePicture": "/profile-images/ian-leung.jpg",
-      "linkedIn": "https://www.linkedin.com/in/ianleunghk/",
-      "website": "https://www.artstation.com/ian_leung"
-    },
-    {
-      "name": "Hugo Marqués",
-      "role": "2D Concept Artist",
-      "profilePicture": "/profile-images/hugo-marques.jpg",
-      "linkedIn": "https://www.linkedin.com/in/mrksart/",
-      "website": "https://www.artstation.com/mrksart"
-    },
-    {
-      "name": "Cole Gesler",
-      "role": "2D Concept Artist",
-      "profilePicture": "/profile-images/cole-gesler.png",
-      "linkedIn": "https://www.linkedin.com/in/cole-gesler-a1588b1a8/",
-      "website": "https://www.colegesler.com/"
-    },
-    {
-      "name": "Christopher Viosca",
-      "role": "Developer",
-      "profilePicture": "/profile-images/christopher-viosca.png",
-      "linkedIn": "https://www.linkedin.com/in/christopher-viosca/",
-      "website": "https://github.com/Chris-Tromboss"
-    },
-    {
-      "name": "Chloe Worthy",
-      "role": "3D Character Artist",
-      "profilePicture": "/profile-images/chloe-worthy.png",
-      "linkedIn": "https://www.linkedin.com/in/chloe-worthy/",
-      "website": "https://www.artstation.com/chloeworthyart"
-    },
-    {
-      "name": "Cleve King",
-      "role": "Developer",
-      "profilePicture": "/profile-images/000nobody.png",
-      "linkedIn": "https://www.linkedin.com/in/cleve-king-ab5163166/",
-      "website": "https://www.behance.net/gallery/236089679/Cleve"
-    },
-    {
-      "name": "Cameron Mason",
-      "role": "2D Splash Artist",
-      "profilePicture": "/profile-images/Cameron-Mason.jpg",
-      "linkedIn": "https://www.linkedin.com/in/cameron-mason-59b83728b/",
-      "website": "https://www.artstation.com/cameron_mason"
-    },
-    {
       "name": "Alexa Cotto",
       "role": "2D Concept Artist",
       "profilePicture": "/profile-images/alexa-cotto-1.png",
       "linkedIn": "https://www.linkedin.com/in/alexa-cotto-613310243/",
       "website": "https://artoflexmon.portfoliobox.net/art-of-lexmon"
-    },
-    {
-      "name": "Alvaro Venegas",
-      "role": "3D Environmental Artist",
-      "profilePicture": "/profile-images/7831fc280f79faf10e7940769c54c520.jpg",
-      "linkedIn": "https://www.linkedin.com/in/alvaro-venegas/",
-      "website": "https://www.artstation.com/plisk"
     },
     {
       "name": "Alfredo Diaz",
@@ -398,6 +20,13 @@
       "profilePicture": "/profile-images/ally-chin.png",
       "linkedIn": "https://www.linkedin.com/in/ally-chin/",
       "website": "https://www.artstation.com/allyuri"
+    },
+    {
+      "name": "Alvaro Venegas",
+      "role": "3D Environmental Artist",
+      "profilePicture": "/profile-images/7831fc280f79faf10e7940769c54c520.jpg",
+      "linkedIn": "https://www.linkedin.com/in/alvaro-venegas/",
+      "website": "https://www.artstation.com/plisk"
     },
     {
       "name": "Alysia Peters",
@@ -484,18 +113,18 @@
       "website": "https://www.aryansarda.com/"
     },
     {
-      "name": "Aubrey Spencer",
-      "role": "2D Concept Artist",
-      "profilePicture": "/profile-images/aubrey-spencer-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/aubrey-spencer-430853249/",
-      "website": "https://aubreyspencerartis.wixsite.com/aubreyspencerart"
-    },
-    {
       "name": "Ashley Braden",
       "role": "3D Environmental Artist",
       "profilePicture": "/profile-images/ashley-braden.png",
       "linkedIn": "https://www.linkedin.com/in/ashley-braden/",
       "website": "https://www.artstation.com/ashleybraden/albums/8852006"
+    },
+    {
+      "name": "Aubrey Spencer",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/aubrey-spencer-1.jpg",
+      "linkedIn": "https://www.linkedin.com/in/aubrey-spencer-430853249/",
+      "website": "https://aubreyspencerartis.wixsite.com/aubreyspencerart"
     },
     {
       "name": "Aung Kyaw",
@@ -512,11 +141,11 @@
       "website": "https://www.artstation.com/autrygeorge4"
     },
     {
-      "name": "Bryan Barragan",
-      "role": "Game Designer",
-      "profilePicture": "/profile-images/000nobody.png",
-      "linkedIn": "https://www.linkedin.com/in/bbarragangamedesigner/",
-      "website": "https://barrgangamedesign.weebly.com/"
+      "name": "Brandon Ramcharitar",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/bandon-ramcharitar.png",
+      "linkedIn": "https://www.linkedin.com/in/brandon-ramcharitar-2a31b8221/",
+      "website": "https://brandonramcharitar.artstation.com/"
     },
     {
       "name": "Bray Chandler",
@@ -540,11 +169,11 @@
       "website": "https://brittanylamont.wixsite.com/brittanylamont"
     },
     {
-      "name": "Brandon Ramcharitar",
-      "role": "2D Concept Artist",
-      "profilePicture": "/profile-images/bandon-ramcharitar.png",
-      "linkedIn": "https://www.linkedin.com/in/brandon-ramcharitar-2a31b8221/",
-      "website": "https://brandonramcharitar.artstation.com/"
+      "name": "Bryan Barragan",
+      "role": "Game Designer",
+      "profilePicture": "/profile-images/000nobody.png",
+      "linkedIn": "https://www.linkedin.com/in/bbarragangamedesigner/",
+      "website": "https://barrgangamedesign.weebly.com/"
     },
     {
       "name": "Bryce Kadash",
@@ -589,6 +218,20 @@
       "website": "https://www.artstation.com/calvinkimart"
     },
     {
+      "name": "Cameron Mason",
+      "role": "2D Splash Artist",
+      "profilePicture": "/profile-images/Cameron-Mason.jpg",
+      "linkedIn": "https://www.linkedin.com/in/cameron-mason-59b83728b/",
+      "website": "https://www.artstation.com/cameron_mason"
+    },
+    {
+      "name": "Chad Cloonan",
+      "role": "Project Lead - 3D Rigging Artist",
+      "profilePicture": "/profile-images/chad-cloonan.jpg",
+      "linkedIn": "https://www.linkedin.com/in/clay-tingue-633911305/",
+      "website": "https://tinguecd.myportfolio.com/"
+    },
+    {
       "name": "Chaewoon Hyun",
       "role": "2D Concept Artist",
       "profilePicture": "/profile-images/chaewoon-hyun-1.jpg",
@@ -610,6 +253,13 @@
       "website": "https://www.artstation.com/chloenguyen"
     },
     {
+      "name": "Chloe Worthy",
+      "role": "3D Character Artist",
+      "profilePicture": "/profile-images/chloe-worthy.png",
+      "linkedIn": "https://www.linkedin.com/in/chloe-worthy/",
+      "website": "https://www.artstation.com/chloeworthyart"
+    },
+    {
       "name": "Chris Freeman",
       "role": "Level Designer",
       "profilePicture": "/profile-images/chris-freeman-1.jpg",
@@ -624,6 +274,13 @@
       "website": "https://www.artstation.com/chris_r64"
     },
     {
+      "name": "Christopher Viosca",
+      "role": "Developer",
+      "profilePicture": "/profile-images/christopher-viosca.png",
+      "linkedIn": "https://www.linkedin.com/in/christopher-viosca/",
+      "website": "https://github.com/Chris-Tromboss"
+    },
+    {
       "name": "Clay Bryner",
       "role": "Project Lead - Developer",
       "profilePicture": "/profile-images/clay-bryner-1.jpg",
@@ -631,11 +288,18 @@
       "website": "https://www.claybryner.com/portfolio"
     },
     {
-      "name": "Chad Cloonan",
-      "role": "Project Lead - 3D Rigging Artist",
-      "profilePicture": "/profile-images/chad-cloonan.jpg",
-      "linkedIn": "https://www.linkedin.com/in/clay-tingue-633911305/",
-      "website": "https://tinguecd.myportfolio.com/"
+      "name": "Cleve King",
+      "role": "Developer",
+      "profilePicture": "/profile-images/000nobody.png",
+      "linkedIn": "https://www.linkedin.com/in/cleve-king-ab5163166/",
+      "website": "https://www.behance.net/gallery/236089679/Cleve"
+    },
+    {
+      "name": "Cole Gesler",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/cole-gesler.png",
+      "linkedIn": "https://www.linkedin.com/in/cole-gesler-a1588b1a8/",
+      "website": "https://www.colegesler.com/"
     },
     {
       "name": "Colton Taylor",
@@ -666,18 +330,18 @@
       "website": "https://marinesgalaxy.artstation.com/"
     },
     {
-      "name": "Devin Sanchez",
-      "role": "2D Concept Artist",
-      "profilePicture": "/profile-images/devin-sanchez-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/devmatsan/",
-      "website": "https://www.artstation.com/huntthepear"
-    },
-    {
       "name": "Derek Gutierrez",
       "role": "3D Rigging Artist",
       "profilePicture": "/profile-images/derek-gutierrez.png",
       "linkedIn": "https://www.linkedin.com/in/derekgutierrez3d/",
       "website": "https://www.artstation.com/derekgutierrez4/albums/13799135"
+    },
+    {
+      "name": "Devin Sanchez",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/devin-sanchez-1.jpg",
+      "linkedIn": "https://www.linkedin.com/in/devmatsan/",
+      "website": "https://www.artstation.com/huntthepear"
     },
     {
       "name": "Dillon Heeke",
@@ -743,6 +407,13 @@
       "website": "https://gabrieljaluize.carrd.co/"
     },
     {
+      "name": "Galo Domaica",
+      "role": "Project Lead - Assistant Art Director",
+      "profilePicture": "/profile-images/galo-domaica-1.jpg",
+      "linkedIn": "https://www.linkedin.com/in/galo-domaica-6681ba14a/",
+      "website": "https://watermelon-saxophone-zc2g.squarespace.com/"
+    },
+    {
       "name": "Giorgio D'Aulerio",
       "role": "3D Rigging Artist",
       "profilePicture": "/profile-images/giorgio-d'aulerio.png",
@@ -755,13 +426,6 @@
       "profilePicture": "/profile-images/giulia-antognini.png",
       "linkedIn": "https://www.linkedin.com/in/giulia-a-1868a1268/",
       "website": "https://vimeo.com/1161187264?fl=pl&fe=sh"
-    },
-    {
-      "name": "Galo Domaica",
-      "role": "Project Lead - Assistant Art Director",
-      "profilePicture": "/profile-images/galo-domaica-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/galo-domaica-6681ba14a/",
-      "website": "https://watermelon-saxophone-zc2g.squarespace.com/"
     },
     {
       "name": "Guy Doratio Jr.",
@@ -778,18 +442,18 @@
       "website": "https://www.artstation.com/fantasymyths"
     },
     {
-      "name": "Hannah Perez",
-      "role": "2D Concept Artist",
-      "profilePicture": "/profile-images/hannah-perez-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/hannah-perez-099547351/",
-      "website": "https://hannahperezart.wixsite.com/my-site-1"
-    },
-    {
       "name": "Hannah Brohlin",
       "role": "Production Manager",
       "profilePicture": "/profile-images/hannah-brohlin.png",
       "linkedIn": "https://www.linkedin.com/in/hannah-brohlin-09634a255/",
       "website": "https://hbrohlin2001.wixsite.com/hbportfolio"
+    },
+    {
+      "name": "Hannah Perez",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/hannah-perez-1.jpg",
+      "linkedIn": "https://www.linkedin.com/in/hannah-perez-099547351/",
+      "website": "https://hannahperezart.wixsite.com/my-site-1"
     },
     {
       "name": "Hayley Kim",
@@ -806,6 +470,20 @@
       "website": "https://www.artstation.com/helena_vigil"
     },
     {
+      "name": "Hugo Marqués",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/hugo-marques.jpg",
+      "linkedIn": "https://www.linkedin.com/in/mrksart/",
+      "website": "https://www.artstation.com/mrksart"
+    },
+    {
+      "name": "Ian Leung",
+      "role": "3D Environmental Artist",
+      "profilePicture": "/profile-images/ian-leung.jpg",
+      "linkedIn": "https://www.linkedin.com/in/ianleunghk/",
+      "website": "https://www.artstation.com/ian_leung"
+    },
+    {
       "name": "Ian Pillai",
       "role": "Composer",
       "profilePicture": "/profile-images/ian-pillai-1.jpg",
@@ -813,11 +491,39 @@
       "website": "https://youtu.be/a-JhMiTPGSc"
     },
     {
+      "name": "Illia Avdieiev",
+      "role": "3D Environmental Artist",
+      "profilePicture": "/profile-images/Illia-Avdieiev.jpg",
+      "linkedIn": "https://www.linkedin.com/in/illia-avdieiev-252a6b29b/",
+      "website": "https://www.artstation.com/kexida"
+    },
+    {
+      "name": "Jacob Mola",
+      "role": "Developer",
+      "profilePicture": "/profile-images/jacob-mola.jpg",
+      "linkedIn": "https://www.linkedin.com/in/jacob-mola101/",
+      "website": "https://jmola-gh.itch.io/"
+    },
+    {
+      "name": "Jade Woo",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/Jade-Woo-1.png",
+      "linkedIn": "https://www.linkedin.com/in/chaewonwoo/",
+      "website": "https://jadewoo.artstation.com/"
+    },
+    {
       "name": "Jaden Corrado",
       "role": "Developer",
       "profilePicture": "/profile-images/jaden-corrado-(USE THIS ONE).jpeg",
       "linkedIn": "https://www.linkedin.com/in/jaden-corrado/",
       "website": "https://www.jadencorrado.com/"
+    },
+    {
+      "name": "Jamar Muslar",
+      "role": "Writer",
+      "profilePicture": "/profile-images/000nobody.png",
+      "linkedIn": "https://www.linkedin.com/in/jamar-muslar/",
+      "website": "https://jamarmuslar.carrd.co/"
     },
     {
       "name": "Janelle Pereyda",
@@ -832,6 +538,20 @@
       "profilePicture": "/profile-images/jason-donohoo-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/jason-donohoo-6ab3b7322",
       "website": "https://sites.google.com/view/jdonohoogamedesignportfolio/home"
+    },
+    {
+      "name": "Jayson Estrada",
+      "role": "Game Designer",
+      "profilePicture": "/profile-images/Jayson_Estrada.png",
+      "linkedIn": "https://www.linkedin.com/in/jayson-estrada/",
+      "website": "https://jaysone2415.wixsite.com/jaysonestrada"
+    },
+    {
+      "name": "Jenna Bresky",
+      "role": "3D Character Artist",
+      "profilePicture": "/profile-images/jenna-bresky.jpg",
+      "linkedIn": "https://www.linkedin.com/in/jenna-bresky/",
+      "website": "https://jennabresky.carrd.co/"
     },
     {
       "name": "Jeremy Martinez",
@@ -883,6 +603,27 @@
       "website": "https://www.artstation.com/jonahhoem"
     },
     {
+      "name": "Jonathan Aguillon",
+      "role": "Project Lead - Art Director",
+      "profilePicture": "/profile-images/jonathan-aguillon2.png",
+      "linkedIn": "https://www.linkedin.com/in/jonathan-aguillon-9a678158/",
+      "website": "https://www.artstation.com/jonathanaguillon"
+    },
+    {
+      "name": "Jonathan Porche",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/jonathan-porche.png",
+      "linkedIn": "https://www.linkedin.com/in/jonathan-porche/",
+      "website": ""
+    },
+    {
+      "name": "Jonathan Thomas Jones",
+      "role": "Writer",
+      "profilePicture": "/profile-images/jonathan-thomas-jones.png",
+      "linkedIn": "https://www.linkedin.com/in/jonathanthomasjones/",
+      "website": ""
+    },
+    {
       "name": "Jordan Garcia",
       "role": "2D Concept Artist",
       "profilePicture": "/profile-images/jordan-garcia-1.jpg",
@@ -897,11 +638,25 @@
       "website": "https://reavisjordan.github.io/portfolio/"
     },
     {
+      "name": "Jorge Pons Asensio",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/jorge-pons-asensio.png",
+      "linkedIn": "https://www.linkedin.com/in/jorgeponsasensio/",
+      "website": "https://www.artstation.com/jorgep"
+    },
+    {
       "name": "Joseph Kozubowski",
       "role": "2D Concept Artist",
       "profilePicture": "/profile-images/joseph-kozubowski-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/joseph-kozubowski-8b031a1b4/",
       "website": "https://www.artstation.com/joseph_kozubowski"
+    },
+    {
+      "name": "Josh Silva",
+      "role": "Developer",
+      "profilePicture": "/profile-images/josh-silva.jpg",
+      "linkedIn": "https://www.linkedin.com/in/joshuasilva3276a211b/",
+      "website": "https://jsilvagd.github.io/GD-Portfolio/index.html"
     },
     {
       "name": "Josiah Jones",
@@ -946,6 +701,13 @@
       "website": "https://www.artstation.com/kpislaan"
     },
     {
+      "name": "Kalaya Luckey",
+      "role": "3D Environmentla Artist",
+      "profilePicture": "/profile-images/kalaya-luckey.jpg",
+      "linkedIn": "https://www.linkedin.com/in/kalaya-luckey-b45036363/",
+      "website": "https://kalayaluckey.wordpress.com/"
+    },
+    {
       "name": "Keven Dixon",
       "role": "Videographer",
       "profilePicture": "/profile-images/keven-dixon-1.jpg",
@@ -953,11 +715,25 @@
       "website": "https://vimeo.com/760163383"
     },
     {
+      "name": "Kevin Romero",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/kevin-romero-2.jpg",
+      "linkedIn": "https://www.linkedin.com/in/kevin-romero-5a0523265/",
+      "website": "https://www.artstation.com/kevinromero26"
+    },
+    {
       "name": "Kirill Lavrukov",
       "role": "3D Environmental Artist",
       "profilePicture": "/profile-images/kirill-lavrukov-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/kirill-lavrukov/",
       "website": "https://www.artstation.com/fullmetalbeton"
+    },
+    {
+      "name": "Kish Yang",
+      "role": "Developer",
+      "profilePicture": "/profile-images/kish-yang.jpg",
+      "linkedIn": "https://www.linkedin.com/in/kootawsyang/",
+      "website": "https://github.com/TisKish"
     },
     {
       "name": "Kris Rogers",
@@ -1002,6 +778,13 @@
       "website": "https://cherryblossomcreat0.wixsite.com/my-site-2"
     },
     {
+      "name": "Lilit Baghdasaryan",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/Lilit-Baghdasaryan.jpg",
+      "linkedIn": "https://www.linkedin.com/in/lilit-baghdasaryan-2b55a522a/",
+      "website": "https://www.artstation.com/water_girl"
+    },
+    {
       "name": "Lily Inman",
       "role": "3D Artist",
       "profilePicture": "/profile-images/lily-inman-1.jpg",
@@ -1037,6 +820,13 @@
       "website": "https://macburkemper.wixsite.com/my-site"
     },
     {
+      "name": "Mackenzie Carney",
+      "role": "2D Animation",
+      "profilePicture": "/profile-images/mackenzie-carney.jpg",
+      "linkedIn": "https://www.linkedin.com/in/mackenzie-carney-464395332/",
+      "website": "https://inkiefox.myportfolio.com/home"
+    },
+    {
       "name": "Madison Trembley",
       "role": "Operational Manager",
       "profilePicture": "/profile-images/madison-trembley-1.jpg",
@@ -1049,6 +839,20 @@
       "profilePicture": "/profile-images/maggie-ma-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/maggiema209/",
       "website": "https://maggiema.com/"
+    },
+    {
+      "name": "Marc Senteney",
+      "role": "3D Character Artist",
+      "profilePicture": "/profile-images/marc-senteney.jpg",
+      "linkedIn": "https://www.linkedin.com/in/marc-senteney/",
+      "website": "https://www.artstation.com/senteney"
+    },
+    {
+      "name": "Marcus Liriano",
+      "role": "3D Environmental Artist",
+      "profilePicture": "/profile-images/marcus-liriano.jpg",
+      "linkedIn": "https://www.linkedin.com/in/marcus-liriano-603337367",
+      "website": "https://marcus_l_16.artstation.com/"
     },
     {
       "name": "Mariana Homsy",
@@ -1065,6 +869,13 @@
       "website": "https://maritzellm.carrd.co/"
     },
     {
+      "name": "Mark Gants",
+      "role": "Mentor",
+      "profilePicture": "/profile-images/mark-gants.png",
+      "linkedIn": "https://www.linkedin.com/in/markgants/",
+      "website": "https://mgants4.substack.com/"
+    },
+    {
       "name": "Maryana Bartkiv",
       "role": "Graphic Designer",
       "profilePicture": "/profile-images/maryana-bartkiv-1.jpg",
@@ -1077,6 +888,20 @@
       "profilePicture": "/profile-images/000nobody.png",
       "linkedIn": "https://linkedin.com/in/mdstecker/",
       "website": "https://www.mdsteckerportfolio.com/"
+    },
+    {
+      "name": "Max Geiringer",
+      "role": "Developer",
+      "profilePicture": "/profile-images/max-geiringer.jpg",
+      "linkedIn": "https://www.linkedin.com/in/max-geiringer/",
+      "website": "https://maxgeiringer.wixsite.com/maxgeiringer"
+    },
+    {
+      "name": "Max Matus",
+      "role": "Developer",
+      "profilePicture": "/profile-images/max-matus.jpg",
+      "linkedIn": "https://www.linkedin.com/in/maxmatus/",
+      "website": "https://maxmatusportfolio.my.canva.site/"
     },
     {
       "name": "Maxim Shirkov",
@@ -1128,6 +953,13 @@
       "website": ""
     },
     {
+      "name": "Monica Bermejo",
+      "role": "2D Animation",
+      "profilePicture": "/profile-images/monica-bermejo.png",
+      "linkedIn": "https://www.linkedin.com/in/mónica-bermejo-montejo-42943825b",
+      "website": "https://vimeo.com/1115099889"
+    },
+    {
       "name": "Nadine Nakamura",
       "role": "2D Concept Artist",
       "profilePicture": "/profile-images/nadine-nakamura-1.jpg",
@@ -1140,6 +972,27 @@
       "profilePicture": "/profile-images/natalia-wozniakowska-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/natalia-wozniakowska-816411252/",
       "website": "https://www.artstation.com/natwska"
+    },
+    {
+      "name": "Natalie Poitevien",
+      "role": "3D Environmental Artist",
+      "profilePicture": "/profile-images/natalie-poitevien-1.png",
+      "linkedIn": "https://www.linkedin.com/in/natalie-poitevien",
+      "website": "https://npoitevien.weebly.com/"
+    },
+    {
+      "name": "Natasha Velez",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/natasha-velez.jpg",
+      "linkedIn": "https://www.linkedin.com/in/natasha-velez-sheldon/",
+      "website": "https://natvelezsheldon.wixsite.com/mysite"
+    },
+    {
+      "name": "Nathan Gumataotao",
+      "role": "Developer",
+      "profilePicture": "/profile-images/nathan-gumataotao.png",
+      "linkedIn": "https://www.linkedin.com/in/nathan-gumataotao",
+      "website": "https://github.com/NGumataotao23"
     },
     {
       "name": "Nicholas Stepp",
@@ -1191,6 +1044,13 @@
       "website": "https://www.artstation.com/pedrocosme/albums/7952732"
     },
     {
+      "name": "Peter Gremban",
+      "role": "3D Environmental Artist",
+      "profilePicture": "/profile-images/Peter-Gremban.png",
+      "linkedIn": "https://www.linkedin.com/in/peter-gremban-6b6a56267/",
+      "website": "https://www.artstation.com/peter_gremban/albums/14700254"
+    },
+    {
       "name": "Platte Clark",
       "role": "Developer",
       "profilePicture": "/profile-images/platte-clark-1.jpg",
@@ -1205,11 +1065,46 @@
       "website": "https://www.artstation.com/sonicfanx1"
     },
     {
+      "name": "Rawan Mostafa",
+      "role": "Writer",
+      "profilePicture": "/profile-images/Rawan-Mostafa-1.JPG",
+      "linkedIn": "https://www.linkedin.com/in/rawanmostafa1",
+      "website": "https://www.artstation.com/rawanmostafa"
+    },
+    {
+      "name": "Rebecca Kelly",
+      "role": "Project Lead - Sound Designer",
+      "profilePicture": "/profile-images/rebecca-kelly.png",
+      "linkedIn": "https://www.linkedin.com/in/rebecca-kelly-5b923b224",
+      "website": "https://www.youtube.com/@rebeccakelly1917"
+    },
+    {
       "name": "Reed Miller",
       "role": "Developer",
       "profilePicture": "/profile-images/reed-miller-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/reed-thomas-miller/",
       "website": "https://github.com/ItsTruckMonth"
+    },
+    {
+      "name": "Ricardo Quick Jr.",
+      "role": "2D Technical Artist",
+      "profilePicture": "/profile-images/ricardo-quick-jr.jpg",
+      "linkedIn": "https://www.linkedin.com/in/ricardo-quick-jr-481348117/",
+      "website": "https://rqjr.artstation.com/"
+    },
+    {
+      "name": "Rikki Muser",
+      "role": "Project Lead - 3D Character Artist",
+      "profilePicture": "/profile-images/rikki-muser.jpg",
+      "linkedIn": "https://www.linkedin.com/in/rikki-albert/",
+      "website": "https://www.artstation.com/rikkilynn"
+    },
+    {
+      "name": "RJ Knaggs",
+      "role": "3D Animation",
+      "profilePicture": "/profile-images/rj-knaggs.jpg",
+      "linkedIn": "https://www.linkedin.com/in/rj-knaggs-941685288/",
+      "website": "https://rjknaggs88.wixsite.com/rj-knaggs"
     },
     {
       "name": "Robert Ehteshamzadeh",
@@ -1219,6 +1114,13 @@
       "website": "https://github.com/rje4242"
     },
     {
+      "name": "Robert Forehand",
+      "role": "Project Lead - Developer",
+      "profilePicture": "/profile-images/robert-forehand.png",
+      "linkedIn": "https://www.linkedin.com/in/forehandrobert/",
+      "website": "https://raforehand.wix.com/robert-designs"
+    },
+    {
       "name": "Romeo Mills",
       "role": "Writer",
       "profilePicture": "/profile-images/romeo-mills-1.jpg",
@@ -1226,11 +1128,32 @@
       "website": "https://omeon47.wixsite.com/mysite"
     },
     {
+      "name": "Roy Ng",
+      "role": "Composer",
+      "profilePicture": "/profile-images/roy-ng.png",
+      "linkedIn": "https://www.linkedin.com/in/ng-mau-hei-roy-772b75213/",
+      "website": "https://royroy7451.wixsite.com/musicallyroy"
+    },
+    {
       "name": "Sabin Overton",
       "role": "Finance",
       "profilePicture": "/profile-images/sabin-overton-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/sabinoverton/",
       "website": ""
+    },
+    {
+      "name": "Sage Morrison",
+      "role": "Writer",
+      "profilePicture": "/profile-images/sage-morrison.jpg",
+      "linkedIn": "https://www.linkedin.com/in/sagemorrison",
+      "website": "https://sagemorrison.gamedesignskills.com/"
+    },
+    {
+      "name": "Samantha Eryn Breid",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/Samantha Eryn Breid.png",
+      "linkedIn": "https://www.linkedin.com/in/samantha-breid-8229b82b8",
+      "website": "https://www.samanthaeryn.com/"
     },
     {
       "name": "Sasha Tsirin",
@@ -1247,6 +1170,13 @@
       "website": "https://savannah0402.wixsite.com/website"
     },
     {
+      "name": "Sean Ross",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/sean-ross-1.jpg",
+      "linkedIn": "https://www.linkedin.com/in/sean-ross-627929198",
+      "website": "https://www.artstation.com/blazinggunrose"
+    },
+    {
       "name": "Sena Sarwari",
       "role": "Project Lead - 3D Environmental Artist",
       "profilePicture": "/profile-images/sena-sarwari-1.jpg",
@@ -1259,6 +1189,20 @@
       "profilePicture": "/profile-images/shad-wilde-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/shad-wilde-bba31482/",
       "website": "https://www.linkedin.com/in/shad-wilde-bba31482/"
+    },
+    {
+      "name": "Shadeau Christensen",
+      "role": "Project Lead - Developer",
+      "profilePicture": "/profile-images/shadeau-christensen-1.png",
+      "linkedIn": "https://www.linkedin.com/in/shadeauchristensen",
+      "website": "https://www.shadeauchristensen.com/"
+    },
+    {
+      "name": "Sharon Tahk",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/sharon-tahk.png",
+      "linkedIn": "http://linkedin.com/in/sharontahk",
+      "website": "https://sharontahk.squarespace.com/"
     },
     {
       "name": "Shreyas Nisal",
@@ -1294,6 +1238,27 @@
       "profilePicture": "/profile-images/steven-chang-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/steven-chang47/",
       "website": "https://github.com/stdChang"
+    },
+    {
+      "name": "Sujana Battula",
+      "role": "Level Designer",
+      "profilePicture": "/profile-images/sujana-battula.png",
+      "linkedIn": "https://www.linkedin.com/in/sujana-b-41b684225",
+      "website": "https://sujanabattula10.myportfolio.com/"
+    },
+    {
+      "name": "Sumin Joo",
+      "role": "2D Background Artist",
+      "profilePicture": "/profile-images/000nobody.png",
+      "linkedIn": "https://www.linkedin.com/in/sumin-joo-ab7b25208",
+      "website": "https://www.suminjoo.com/"
+    },
+    {
+      "name": "Timophey Mihnuk",
+      "role": "3D Environmental Artist",
+      "profilePicture": "/profile-images/timophey-mihnuk.jpg",
+      "linkedIn": "https://www.linkedin.com/in/timophey-mihnuk-0664302a1/",
+      "website": "https://www.artstation.com/timophey3"
     },
     {
       "name": "Trevor Bates",
@@ -1345,6 +1310,13 @@
       "website": "https://violadisilvestre.myportfolio.com/"
     },
     {
+      "name": "Wayne Kang",
+      "role": "3D Animation",
+      "profilePicture": "/profile-images/wayne-kang.png",
+      "linkedIn": "https://www.linkedin.com/in/wayne-kang-120216275/",
+      "website": "https://vimeo.com/1118048369"
+    },
+    {
       "name": "Weena Young Oh",
       "role": "Writer",
       "profilePicture": "/profile-images/weena-oh-1.jpg",
@@ -1357,6 +1329,27 @@
       "profilePicture": "/profile-images/william-trang-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/williamtrang/",
       "website": "https://github.com/williamtrang"
+    },
+    {
+      "name": "Wyatt Crocker",
+      "role": "Developer",
+      "profilePicture": "/profile-images/wyatt-crocker.png",
+      "linkedIn": "https://www.linkedin.com/in/wyattcrocker/",
+      "website": "https://croc-ker.github.io/portfolio/"
+    },
+    {
+      "name": "Xavier Satberry",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/xavier-satberry.png",
+      "linkedIn": "https://www.linkedin.com/in/xavier-satberry-0a0596228",
+      "website": "https://oso-visuals.artstation.com/"
+    },
+    {
+      "name": "Yana Sedova",
+      "role": "3D Character Artist",
+      "profilePicture": "/profile-images/yana-sedova.jpg",
+      "linkedIn": "https://www.linkedin.com/in/sedovayana/",
+      "website": "https://www.artstation.com/yana_sedova"
     },
     {
       "name": "Yihong Li",
@@ -1387,6 +1380,13 @@
       "website": "https://www.artstation.com/whitecake"
     },
     {
+      "name": "Yury Taran",
+      "role": "Project Lead - 3D Character Artist",
+      "profilePicture": "/profile-images/yury-taran.jpg",
+      "linkedIn": "https://www.linkedin.com/in/yury-taran-58bb37274/",
+      "website": "https://www.artstation.com/yuriy_taran"
+    },
+    {
       "name": "Yusaku Kimura",
       "role": "3D Animation",
       "profilePicture": "/profile-images/yusaku-kimura-1.jpg",
@@ -1415,20 +1415,6 @@
       "website": "https://fifthmoffat.wixsite.com/zan-moffat"
     },
     {
-      "name": "Zoe Benn",
-      "role": "3D Character Artist",
-      "profilePicture": "/profile-images/zoe-benn-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/zoe-benn-ba15941b8/",
-      "website": "https://www.artstation.com/ghostlyzenn"
-    },
-    {
-      "name": "Zofia Paez",
-      "role": "2D Concept Artist",
-      "profilePicture": "/profile-images/zofia-paez-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/zofia-paez-3b08a7297/",
-      "website": "https://www.artstation.com/zofiapz"
-    },
-    {
       "name": "Zion Jefferson",
       "role": "Project Lead - 3D Animation",
       "profilePicture": "/profile-images/zion-jefferson-1.jpg",
@@ -1436,11 +1422,25 @@
       "website": "https://zarmandjefferson.wixsite.com/znexus"
     },
     {
+      "name": "Zoe Benn",
+      "role": "3D Character Artist",
+      "profilePicture": "/profile-images/zoe-benn-1.jpg",
+      "linkedIn": "https://www.linkedin.com/in/zoe-benn-ba15941b8/",
+      "website": "https://www.artstation.com/ghostlyzenn"
+    },
+    {
       "name": "Zoey Vo",
       "role": "Developer",
       "profilePicture": "/profile-images/zoey-vo-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/zoeyvo",
       "website": "https://zoeyvo.net/"
+    },
+    {
+      "name": "Zofia Paez",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/zofia-paez-1.jpg",
+      "linkedIn": "https://www.linkedin.com/in/zofia-paez-3b08a7297/",
+      "website": "https://www.artstation.com/zofiapz"
     }
   ]
 }
