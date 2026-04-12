@@ -13,10 +13,18 @@ jobs:
       contents: write
       
     steps:
+    - name: Get GitHub App Token
+      uses: actions/create-github-app-token@v1
+      id: app-token
+      with:
+        app-id: ${{ secrets.APP_ID }}
+        private-key: ${{ secrets.APP_PRIVATE_KEY }}
+    
     - name: Checkout code
       uses: actions/checkout@v4
       with:
-        # Fetch everything so we can push back
+        # Use the secret you created instead of the default GITHUB_TOKEN
+        token: ${{ secrets.app-token.outputs.token }}
         fetch-depth: 0
 
     - name: Set up Node.js
@@ -33,6 +41,8 @@ jobs:
       with:
         commit_message: "chore: alphabetize team members [skip ci]"
         file_pattern: 'public/team.json'
+        commit_user_name: github-actions[bot]
+        commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com
 
     - name: EMERGENCY CLEANUP - Free disk space
       run: |
