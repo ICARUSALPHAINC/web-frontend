@@ -24,8 +24,8 @@ export const topMenuItems = [
       },
       { 
         text: "Mimicry", 
-        route: null,
-        subMenu: [{ text: "Coming Soon", disabled: true }] 
+        route: routes.gameMimicry,
+        //subMenu: [{ text: "Coming Soon", disabled: true }] 
       }
     ] 
   },
