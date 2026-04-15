@@ -9,7 +9,8 @@ import {
     AccordionDetails,
     Grid,
     Card,
-    CardContent
+    CardContent,
+    Divider
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
@@ -411,6 +412,18 @@ function ContactUsPage() {
                             </Box>
                             FOR A CHANGE IN PACE?
                         </Typography>
+
+                        <Divider 
+                            sx={{ 
+                                borderRadius: 1,
+                                backgroundColor: '#fff', 
+                                height: '6px', 
+                                width: '100%', 
+                                maxWidth: '600px',
+                                marginBottom: '2rem' 
+                            }} 
+                        />
+
                         <Typography
                             variant="h6"
                             sx={{
