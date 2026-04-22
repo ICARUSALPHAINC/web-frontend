@@ -12,7 +12,7 @@ export const routes = {
   // Added specific game routes
   gameComeUp: "/games/the-come-up",
   gameAescension: "/games/aescension",
-  gameMimicry: "/games/mimicry",
+  gameMymicry: "/games/mymicry",
 };
 
 // URLs to all contact information

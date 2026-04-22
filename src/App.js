@@ -9,7 +9,7 @@ import ContactUsPage from "./screens/ContactUsPage";
 import NoPage from "./screens/NoPage";
 import HomePage from "./screens/HomePage";
 import ScrollToTop from "./ScrollToTop";
-import MimicryPage from "./screens/MimicryPage";
+import MymicryPage from "./screens/MymicryPage";
 
 /**
  * Main app, wrapped inside other JSX & React components in index.js.
@@ -36,7 +36,7 @@ function App() {
                     {/* New Game Routes */}
                     {/* <Route path="games/the-come-up" element={<TheComeUpPage />} /> */}
                     {/* <Route path="games/aescension" element={<AescensionPage />} /> */}
-                    <Route path={routes.gameMimicry} element={<MimicryPage/>} />
+                    <Route path={routes.gameMymicry} element={<MymicryPage/>} />
 
                     <Route path={routes.team} element={<TeamPage />} />
 

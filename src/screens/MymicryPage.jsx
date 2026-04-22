@@ -21,7 +21,7 @@ import flores5 from '../assets/games/mimicry/flores5.png';
 import textAsset from '../assets/games/mimicry/text.png';
 import actionButton from '../assets/games/mimicry/button.png';
 
-function MimicryPage() {
+function MymicryPage() {
     return (
         <Box 
             sx={{ 
@@ -187,4 +187,4 @@ function MimicryPage() {
     );
 }
 
-export default MimicryPage;
+export default MymicryPage;
