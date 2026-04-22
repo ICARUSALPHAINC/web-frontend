@@ -7,6 +7,7 @@ import FeaturedProjects from '../components/home/FeaturedProjects';
 import GlobalNetwork from '../components/home/GlobalNetwork';
 import AboutUs from '../components/home/AboutUs';
 import JoinUs from '../components/home/JoinUs';
+import MeetTheTeam from '../components/home/MeetTheTeam';
 
 function HomePage() {
     return (
@@ -45,6 +46,11 @@ function HomePage() {
                 PART 5: Join Us (CAREERS)
                ========================================= */}
             <JoinUs/>
+
+            {/* =========================================
+                PART 5: Featured Members (TEAM)
+               ========================================= */}
+            <MeetTheTeam/>
 
         </Box>
     );
