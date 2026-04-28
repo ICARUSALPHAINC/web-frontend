@@ -1,31 +1,25 @@
 import React from 'react';
-import { Box, Container, Grid } from '@mui/material';
+import { Box, Container, Grid, Typography, Button } from '@mui/material';
+import { keyframes } from '@mui/system';
 
 // --- Import Assets ---
-import background1 from '../assets/games/mimicry/background1.jpg';
-import background2 from '../assets/games/mimicry/background2.png';
+import Background from '../assets/home-page/hero-section/background.png';
+import char1 from '../assets/games/mimicry/mym.png';
+import Title from '../assets/games/mimicry/title.png';
 
-import char1 from '../assets/games/mimicry/char1.png';
-import char2 from '../assets/games/mimicry/char2.png';
-import char3 from '../assets/games/mimicry/char3.png';
-import char4 from '../assets/games/mimicry/char4.png';
-import char5 from '../assets/games/mimicry/char5.png';
-import char6 from '../assets/games/mimicry/char6.png';
-
-import flores1 from '../assets/games/mimicry/flores1.png';
-import flores2 from '../assets/games/mimicry/flores2.png';
-import flores3 from '../assets/games/mimicry/flores3.png';
-import flores4 from '../assets/games/mimicry/flores4.png';
-import flores5 from '../assets/games/mimicry/flores5.png';
-
-import textAsset from '../assets/games/mimicry/text.png';
-import actionButton from '../assets/games/mimicry/button.png';
+// --- Animations ---
+// Creates a smooth up-and-down floating effect with a dynamic shadow
+const floatAnimation = keyframes`
+  0% { transform: translateY(0px); filter: drop-shadow(0px 10px 15px rgba(0, 180, 150, 0.2)); }
+  50% { transform: translateY(-20px); filter: drop-shadow(0px 25px 25px rgba(0, 180, 150, 0.4)); }
+  100% { transform: translateY(0px); filter: drop-shadow(0px 10px 15px rgba(0, 180, 150, 0.2)); }
+`;
 
 function MymicryPage() {
     return (
         <Box 
             sx={{ 
-                backgroundColor: '#0a0a0a', 
+                backgroundColor: '#060606', 
                 minHeight: '100vh',
                 display: 'flex',
                 flexDirection: 'column',
@@ -35,148 +29,123 @@ function MymicryPage() {
             }}
         >
             {/* =========================================
-                SECTION 1: TOP (Background 1)
-                Characters on the RIGHT (1 on top, 2 on bottom)
+                HERO SECTION
                ========================================= */}
             <Box
                 sx={{
                     position: 'relative',
                     width: '100%',
-                    minHeight: { xs: 'auto', md: '100vh' },
+                    minHeight: '100vh',
                     display: 'flex',
                     alignItems: 'center',
-                    backgroundImage: `url(${background1})`,
+                    backgroundImage: `url(${Background})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
-                    pt: { xs: '6rem', md: 0 },
-                    pb: { xs: '4rem', md: 0 },
                 }}
             >
-                <Box sx={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(0,0,0,0.3)', zIndex: 0 }} />
 
                 <Container maxWidth="xl" sx={{ position: 'relative', zIndex: 1 }}>
                     <Grid container spacing={4} alignItems="center" sx={{ minHeight: '80vh' }}>
                         
-                        {/* LEFT COLUMN: Flores Logo Group, Text, Button */}
-                        <Grid item xs={12} md={5} sx={{ display: 'flex', flexDirection: 'column', gap: 4, zIndex: 5 }}>
-                            
-                            {/* Flores Images Row */}
-                            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, alignItems: 'center' }}>
-                                <Box component="img" src={flores1} alt="F" sx={{ height: { xs: '40px', md: '60px' }, width: 'auto', objectFit: 'contain' }} />
-                                <Box component="img" src={flores2} alt="l" sx={{ height: { xs: '40px', md: '60px' }, width: 'auto', objectFit: 'contain' }} />
-                                <Box component="img" src={flores3} alt="o" sx={{ height: { xs: '40px', md: '60px' }, width: 'auto', objectFit: 'contain' }} />
-                                <Box component="img" src={flores4} alt="r" sx={{ height: { xs: '40px', md: '60px' }, width: 'auto', objectFit: 'contain' }} />
-                                <Box component="img" src={flores5} alt="es" sx={{ height: { xs: '40px', md: '60px' }, width: 'auto', objectFit: 'contain' }} />
-                            </Box>
-
-                            <Box component="img" src={textAsset} alt="Descriptive Text" sx={{ maxWidth: '100%', height: 'auto', objectFit: 'contain' }} />
+                        {/* LEFT COLUMN: Title & CTA */}
+                        <Grid 
+                            item xs={12} md={6} 
+                            sx={{ 
+                                display: 'flex', 
+                                flexDirection: 'column', 
+                                alignItems: { xs: 'center', md: 'flex-start' }, 
+                                textAlign: { xs: 'center', md: 'left' }, 
+                                gap: 4, // Increased from 3 for better breathing room
+                                pl: { xs: 0, md: 4, lg: 8 }, // Pulls the content slightly inward from the edge
+                                zIndex: 5 
+                            }}
+                        >
                             <Box 
                                 component="img" 
-                                src={actionButton} 
-                                alt="Action Button" 
+                                src={Title} 
+                                alt="Mymicry Title" 
                                 sx={{ 
-                                    maxWidth: '200px', 
-                                    cursor: 'pointer',
-                                    transition: 'transform 0.2s ease-in-out',
-                                    '&:hover': { transform: 'scale(1.05)' } 
+                                    width: '100%',
+                                    // Significantly increased size for better visual hierarchy
+                                    maxWidth: { xs: '300px', md: '500px', lg: '650px' },
+                                    filter: 'drop-shadow(0px 4px 8px rgba(0,0,0,0.6))',
                                 }} 
                             />
+                            
+                            <Typography 
+                                variant="h5" // Bumped up from h6 to balance the larger title
+                                sx={{ 
+                                    color: '#e0e0e0', // Brightened text slightly
+                                    maxWidth: '500px', 
+                                    fontWeight: 300, 
+                                    lineHeight: 1.6,
+                                    letterSpacing: '0.02em'
+                                }}
+                            >
+                                Placeholder Text
+                            </Typography>
+
+                            <Button
+                                sx={{ 
+                                    mt: 1,
+                                    backgroundColor: '#075b5a', // Matches the character's thematic color
+                                    color: '#fff',
+                                    px: 6, // Wider padding
+                                    py: 1.8, // Taller padding
+                                    fontSize: '1.1rem', // Larger font
+                                    fontWeight: 'bold',
+                                    borderRadius: '50px', // Smoother, pill-shaped button
+                                    textTransform: 'none',
+                                    boxShadow: '0px 8px 20px rgba(7, 91, 90, 0.4)',
+                                    transition: 'all 0.3s ease',
+                                    '&:hover': {
+                                        backgroundColor: '#097a78',
+                                        transform: 'translateY(-3px)',
+                                        boxShadow: '0px 12px 25px rgba(7, 91, 90, 0.6)',
+                                    }
+                                }}
+                            >
+                                Placeholder Button
+                            </Button>
                         </Grid>
 
-                        {/* RIGHT COLUMN: Characters 1, 2, 3 (Triangle: 1 Top, 2 Bottom) */}
-                        <Grid item xs={12} md={7} 
+                        {/* RIGHT COLUMN: Character (Mym) */}
+                        <Grid item xs={12} md={6} 
                             sx={{ 
                                 position: 'relative', 
-                                height: { xs: '60vh', md: '80vh' },
+                                height: { xs: '50vh', md: '80vh' },
                                 display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center'
                             }}
                         >
-                            {/* Top Character */}
-                            <Box component="img" src={char1} 
-                                sx={{ 
-                                    position: 'absolute', top: '0%', left: '50%', transform: 'translateX(-50%)', 
-                                    height: '55%', zIndex: 3, filter: 'drop-shadow(0px 10px 20px rgba(0,0,0,0.5))' 
-                                }} 
+                            {/* Ambient glow behind the character */}
+                            <Box 
+                                sx={{
+                                    position: 'absolute',
+                                    width: '300px',
+                                    height: '300px',
+                                    background: 'radial-gradient(circle, rgba(7, 91, 90, 0.3) 0%, rgba(0,0,0,0) 70%)',
+                                    borderRadius: '50%',
+                                    zIndex: 1,
+                                }}
                             />
-                            {/* Bottom Left Character */}
-                            <Box component="img" src={char2} 
-                                sx={{ 
-                                    position: 'absolute', bottom: '5%', left: '15%', 
-                                    height: '55%', zIndex: 2, filter: 'drop-shadow(0px 10px 20px rgba(0,0,0,0.5))' 
-                                }} 
-                            />
-                            {/* Bottom Right Character */}
-                            <Box component="img" src={char3} 
-                                sx={{ 
-                                    position: 'absolute', bottom: '5%', right: '15%', 
-                                    height: '55%', zIndex: 2, filter: 'drop-shadow(0px 10px 20px rgba(0,0,0,0.5))' 
-                                }} 
-                            />
-                        </Grid>
 
-                    </Grid>
-                </Container>
-            </Box>
-
-            {/* =========================================
-                SECTION 2: BOTTOM (Background 2)
-                Characters on the LEFT (2 on top, 1 on bottom)
-               ========================================= */}
-            <Box
-                sx={{
-                    position: 'relative',
-                    width: '100%',
-                    minHeight: { xs: 'auto', md: '100vh' },
-                    display: 'flex',
-                    alignItems: 'center',
-                    backgroundImage: `url(${background2})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-                    pt: { xs: '4rem', md: 0 },
-                    pb: { xs: '4rem', md: 0 },
-                }}
-            >
-                <Box sx={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(0,0,0,0.4)', zIndex: 0 }} />
-
-                <Container maxWidth="xl" sx={{ position: 'relative', zIndex: 1 }}>
-                    <Grid container spacing={4} alignItems="center" sx={{ minHeight: '80vh' }} flexDirection={{ xs: 'column-reverse', md: 'row' }}>
-                        
-                        {/* LEFT COLUMN: Characters 4, 5, 6 (Inverted Triangle: 2 Top, 1 Bottom) */}
-                        <Grid item xs={12} md={7} 
-                            sx={{ 
-                                position: 'relative', 
-                                height: { xs: '60vh', md: '80vh' },
-                                display: 'flex',
-                            }}
-                        >
-                            {/* Top Left Character */}
-                            <Box component="img" src={char4} 
+                            {/* Character Image with Floating Animation */}
+                            <Box 
+                                component="img" 
+                                src={char1} 
+                                alt="Mym Character"
                                 sx={{ 
-                                    position: 'absolute', top: '5%', left: '15%', 
-                                    height: '55%', zIndex: 2, filter: 'drop-shadow(0px 10px 20px rgba(0,0,0,0.5))' 
+                                    position: 'relative',
+                                    maxWidth: '100%',
+                                    maxHeight: { xs: '100%', md: '85%' },
+                                    objectFit: 'contain',
+                                    zIndex: 3, 
+                                    animation: `${floatAnimation} 4s ease-in-out infinite`,
                                 }} 
                             />
-                            {/* Top Right Character */}
-                            <Box component="img" src={char5} 
-                                sx={{ 
-                                    position: 'absolute', top: '5%', right: '15%', 
-                                    height: '55%', zIndex: 2, filter: 'drop-shadow(0px 10px 20px rgba(0,0,0,0.5))' 
-                                }} 
-                            />
-                            {/* Bottom Character */}
-                            <Box component="img" src={char6} 
-                                sx={{ 
-                                    position: 'absolute', bottom: '0%', left: '50%', transform: 'translateX(-50%)', 
-                                    height: '55%', zIndex: 3, filter: 'drop-shadow(0px 10px 20px rgba(0,0,0,0.5))'
-                                }} 
-                            />
-                        </Grid>
-
-                        {/* RIGHT COLUMN: Filler / Context Text */}
-                        <Grid item xs={12} md={5} sx={{ display: 'flex', flexDirection: 'column', alignItems: {xs: 'flex-start', md: 'flex-end'}, gap: 3, zIndex: 5 }}>
-                             {/* <Box component="img" src={textAsset} alt="Descriptive Text" sx={{ maxWidth: '100%', height: 'auto', objectFit: 'contain' }} /> */}
                         </Grid>
 
                     </Grid>
