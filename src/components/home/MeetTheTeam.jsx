@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Typography, IconButton } from "@mui/material";
+import { Box, Typography, IconButton, Button } from "@mui/material";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
@@ -35,7 +35,6 @@ const teamData = [
         company: "Web Dev",
         img: require('../../assets/home-page/team/jonathan.png'),
     },
-    // Adding duplicates as per your provided code
     {
         id: 5,
         name: "Neil",
@@ -53,16 +52,15 @@ const teamData = [
 ];
 
 const teamHeaderStyle = {
-    color: '#ED6C02',
     fontWeight: 'bold',
     fontFamily: '"bebas-neue", sans-serif',
     textTransform: 'uppercase',
-    fontSize: { xs: '2rem', sm: '3rem', md: '5rem' },
+    fontSize: { xs: '2.5rem', sm: '4rem', md: '5.5rem' },
     lineHeight: 1,
+    whiteSpace: 'nowrap',
 };
 
 function MeetTheTeam() {
-    // We use state to hold the swiper instance so our custom buttons can talk to it
     const [swiperRef, setSwiperRef] = useState(null);
 
     return (
@@ -70,7 +68,7 @@ function MeetTheTeam() {
             sx={{
                 backgroundColor: '#0a0a0a',
                 color: 'white',
-                paddingY: { xs: 2, md: 4 },
+                paddingY: { xs: 4, md: 8 },
                 position: 'relative',
                 overflow: 'hidden',
             }}
@@ -79,33 +77,25 @@ function MeetTheTeam() {
             <Box
                 sx={{
                     display: 'flex',
-                    flexDirection: { xs: 'column', md: 'row' },
-                    alignItems: { xs: 'flex-start', md: 'center' },
-                    justifyContent: 'space-between',
-                    paddingX: { xs: 2, md: 4 },
+                    alignItems: 'center',
+                    justifyContent: 'center', 
                     marginBottom: { xs: 4, md: 6 },
                 }}
             >
-                <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                    <Box sx={{ width: '4px', height: { xs: '60px', md: '100px' }, backgroundColor: '#ED6C02' }} />
-                    <Box>
-                        <Typography sx={{ ...teamHeaderStyle, color: 'white' }}>Meet the</Typography>
-                        <Typography sx={teamHeaderStyle}>Team</Typography>
-                    </Box>
-                </Box>
-                
-                <Typography
-                    variant="body1"
-                    sx={{
-                        maxWidth: { xs: '100%', md: '450px' },
-                        marginTop: { xs: 2, md: 0 },
-                        opacity: 0.9,
-                        fontSize: { xs: '1rem', md: '1.2rem' },
-                        lineHeight: 1.5,
+                {/* L-Shape Border Wrapper */}
+                <Box 
+                    sx={{ 
+                        display: 'inline-block',
+                        borderLeft: '6px solid #ED6C02', 
+                        borderBottom: '6px solid #ED6C02', 
+                        padding: { xs: 1, md: 2 }, 
                     }}
                 >
-                    Learn more about the leaders behind the Icarus Team.
-                </Typography>
+                    {/* Single Line Title */}
+                    <Typography sx={{ ...teamHeaderStyle, color: 'white' }}>
+                        Meet the <span style={{ color: '#ED6C02' }}>Team</span>
+                    </Typography>
+                </Box>
             </Box>
 
             {/* Carousel Section with Arrows */}
@@ -120,10 +110,10 @@ function MeetTheTeam() {
                         top: '50%',
                         transform: 'translateY(-50%)',
                         zIndex: 10,
-                        backgroundColor: 'rgba(0,0,0,0.6)', // Darker translucent background
-                        width: { xs: '50px', md: '70px' },   // Fixed uniform width
-                        height: { xs: '50px', md: '70px' },  // Fixed uniform height
-                        borderRadius: '50%',                 // Perfect circle
+                        backgroundColor: 'rgba(0,0,0,0.6)', 
+                        width: { xs: '50px', md: '70px' },   
+                        height: { xs: '50px', md: '70px' },  
+                        borderRadius: '50%',                 
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
@@ -133,7 +123,6 @@ function MeetTheTeam() {
                     <Box 
                         component="img" 
                         src={arrowAsset} 
-                        // Make the arrow image slightly smaller than its container so it fits inside perfectly
                         sx={{ width: { xs: '25px', md: '35px' }, height: 'auto', objectFit: 'contain' }} 
                     />
                 </IconButton>
@@ -160,7 +149,6 @@ function MeetTheTeam() {
                     <Box 
                         component="img" 
                         src={arrowAsset} 
-                        // Added rotate(180deg) directly to the image since rotating the container messes with transform/translateY
                         sx={{ 
                             width: { xs: '25px', md: '35px' }, 
                             height: 'auto', 
@@ -176,10 +164,10 @@ function MeetTheTeam() {
                         paddingRight: { xs: 2, md: 4 },
                         cursor: 'grab',
                         '&:active': { cursor: 'grabbing' },
+                        paddingY: 2, 
                     }}
                 >
                     <Swiper
-                        // Removed Mousewheel module to fix vertical scroll issue
                         onSwiper={setSwiperRef}
                         grabCursor={true}
                         spaceBetween={20}
@@ -201,6 +189,10 @@ function MeetTheTeam() {
                                         background: `linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%), url(${member.img})`,
                                         backgroundSize: 'cover',
                                         backgroundPosition: 'center',
+                                        transition: 'transform 0.4s ease-in-out', 
+                                        '&:hover': {
+                                            transform: 'scale(1.04)', 
+                                        }
                                     }}
                                 >
                                     <Box
@@ -253,6 +245,34 @@ function MeetTheTeam() {
                         ))}
                     </Swiper>
                 </Box>
+            </Box>
+
+            {/* Bottom Button Section */}
+            <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: { xs: 6, md: 8 } }}>
+                <Button
+                    href="/team"
+                    sx={{
+                        backgroundColor: '#ED6C02', 
+                        filter: 'brightness(0.9)',
+                        color: 'white',
+                        paddingX: 6,
+                        paddingY: 2,
+                        fontFamily: '"bebas-neue", sans-serif',
+                        fontSize: '1.4rem',
+                        letterSpacing: '2px',
+                        borderRadius: '4px',
+                        boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.3)',
+                        transition: 'all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)', 
+                        '&:hover': {
+                            backgroundColor: '#ED6C02', // Color stays exactly the same
+                            filter: 'brightness(1.1)', // Makes the orange artificially brighter
+                            transform: 'scale(1.1)',    // Keeps the pop/zoom effect
+                            boxShadow: '0px 8px 16px rgba(237, 108, 2, 0.6)', // Adds a matching glowing orange drop shadow
+                        }
+                    }}
+                >
+                    View All Team Members
+                </Button>
             </Box>
         </Box>
     );
