@@ -68,7 +68,7 @@ function MeetTheTeam() {
             sx={{
                 backgroundColor: '#0a0a0a',
                 color: 'white',
-                paddingY: { xs: 4, md: 8 },
+                paddingY: 4,
                 position: 'relative',
                 overflow: 'hidden',
             }}
@@ -79,7 +79,7 @@ function MeetTheTeam() {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center', 
-                    marginBottom: { xs: 4, md: 6 },
+                    marginBottom: 2,
                 }}
             >
                 {/* L-Shape Border Wrapper */}
@@ -248,7 +248,7 @@ function MeetTheTeam() {
             </Box>
 
             {/* Bottom Button Section */}
-            <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: { xs: 6, md: 8 } }}>
+            <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: 4 }}>
                 <Button
                     href="/team"
                     sx={{
