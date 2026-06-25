@@ -6,6 +6,22 @@ import 'swiper/css';
 // Asset Imports
 const arrowAsset = require('../../assets/home-page/featured-projects/arrow.png');
 
+const tombRaiderUnderworld = require('../../assets/home-page/team/logos/tomb_raider_underworld.png');
+const smite = require('../../assets/home-page/team/logos/smite.png');
+const smite2 = require('../../assets/home-page/team/logos/smite2.png');
+const keeper = require('../../assets/home-page/team/logos/keeper.png');
+const starWarsCommander = require('../../assets/home-page/team/logos/star_wars_commander.png');
+const rad = require('../../assets/home-page/team/logos/rad.png');
+const kiln = require('../../assets/home-page/team/logos/kiln.png');
+const brutalLegend = require('../../assets/home-page/team/logos/brutal_legend.png');
+
+const mobileStrike = require('../../assets/home-page/team/logos/mobile_strike.png');
+const gameOfWar = require('../../assets/home-page/team/logos/game_of_war.png');
+const vainglory = require('../../assets/home-page/team/logos/vainglory.png');
+const crystalBorne = require('../../assets/home-page/team/logos/crystal_borne.png');
+const pubg = require('../../assets/home-page/team/logos/pubg.png');
+const fortnite = require('../../assets/home-page/team/logos/fortnite.png');
+const newWorld = require('../../assets/home-page/team/logos/new_world.png');
 
 const teamData = [
     {
@@ -14,7 +30,7 @@ const teamData = [
         role: '3D Character Artist',
         img: require('../../assets/home-page/team/members/Marc_Senteney_1.png'),
         hover_img: require('../../assets/home-page/team/members/Marc_Senteney_1_COLOR.png'),
-        logos: [require('../../assets/home-page/team/logos/tomb_raider_underworld.png'), require('../../assets/home-page/team/logos/smite_2.png')]
+        logos: [tombRaiderUnderworld, smite, smite2, keeper, starWarsCommander, rad, kiln, brutalLegend]
     },
     {
         id: 2,
@@ -30,7 +46,7 @@ const teamData = [
         role: 'Project Lead - Art Director',
         img: require('../../assets/home-page/team/members/Jonathan_Aguillon_1.png'),
         hover_img: require('../../assets/home-page/team/members/Jonathan_Aguillon_1_COLOR.png'),
-        logos: [],
+        logos: [mobileStrike, gameOfWar, vainglory, crystalBorne, pubg, fortnite, newWorld],
     },
     {
         id: 4,
@@ -46,7 +62,7 @@ const teamData = [
         role: '',
         img: require('../../assets/home-page/team/members/Charles_Cloonan_1.png'),
         hover_img: require('../../assets/home-page/team/members/Charles_Cloonan_1_COLOR.png'),
-        logos: [],
+        logos: [newWorld],
     },
     {
         id: 6,
@@ -84,8 +100,6 @@ function MeetTheTeam() {
     const handleMemberClick = (id) => {
         setSelectedId(prev => prev === id ? null : id);
         
-        // Wait for the 400ms CSS width transition to finish before 
-        // telling Swiper to recalculate its drag boundaries
         setTimeout(() => {
             swiperRef?.update();
         }, 400);
@@ -161,7 +175,6 @@ function MeetTheTeam() {
                                             ? { xs: '560px', md: '760px' }
                                             : { xs: '280px', md: '380px' },
                                         position: 'relative',
-                                        // THIS IS THE FIX: Smoothly animate the expansion of the container
                                         transition: 'width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)', 
                                     }}>
 
@@ -174,7 +187,7 @@ function MeetTheTeam() {
                                                 borderRadius: '16px',
                                                 overflow: 'hidden',
                                                 position: 'relative',
-                                                zIndex: 2, // Keeps image floating above the sliding box
+                                                zIndex: 2, 
                                                 cursor: 'pointer',
                                                 transition: 'transform 0.4s ease-in-out',
                                                 '&:hover': {
@@ -212,7 +225,7 @@ function MeetTheTeam() {
                                             sx={{
                                                 flexShrink: 0,
                                                 width: { xs: '280px', md: '380px' },
-                                                height: { xs: '85%', md: '80%' },
+                                                height: { xs: '93%', md: '92%' },
                                                 position: 'relative',
                                                 zIndex: 1, 
                                                 backgroundColor: '#16161F', 
@@ -229,43 +242,82 @@ function MeetTheTeam() {
                                                 boxShadow: 'inset 15px 0 15px -15px rgba(0,0,0,0.8)', 
                                             }}
                                         >
-                                            <Typography sx={{
-                                                fontFamily: '"bebas-neue", sans-serif',
-                                                fontSize: { xs: '1.8rem', md: '2.2rem' },
-                                                letterSpacing: '1px',
-                                                color: 'white',
-                                                lineHeight: 1.1,
-                                                mb: 0.5,
+                                            {/* Name & Title Wrapper */}
+                                            <Box sx={{
+                                                opacity: isSelected ? 0 : 1,
+                                                transition: 'opacity 0.3s ease-in-out',
+                                                transitionDelay: isSelected ? '0.4s' : '0s',
+                                                mb: isSelected ? 0 : 2,
+                                                height: isSelected ? 0 : 'auto',
+                                                overflow: 'hidden',
                                             }}>
-                                                {member.name}
-                                            </Typography>
-                                            
-                                            {member.role && (
                                                 <Typography sx={{
-                                                    fontFamily: '"myriad-pro", sans-serif',
-                                                    fontSize: { xs: '0.85rem', md: '1rem' },
-                                                    color: '#ED6C02',
-                                                    fontWeight: 'bold',
-                                                    textTransform: 'uppercase',
-                                                    mb: 3,
-                                                    lineHeight: 1.3,
+                                                    fontFamily: '"bebas-neue", sans-serif',
+                                                    fontSize: { xs: '1.8rem', md: '2.2rem' },
+                                                    letterSpacing: '1px',
+                                                    color: 'white',
+                                                    lineHeight: 1.1,
+                                                    mb: 0.5,
                                                 }}>
-                                                    {member.role}
+                                                    {member.name}
                                                 </Typography>
-                                            )}
-
-                                            {/* Company logos */}
-                                            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, alignItems: 'center' }}>
-                                                {member.logos.map((logo, i) => (
-                                                    <Box
-                                                        key={i}
-                                                        component="img"
-                                                        src={logo}
-                                                        alt={`company-logo-${i}`}
-                                                        sx={{ height: '32px', width: 'auto' }}
-                                                    />
-                                                ))}
+                                                
+                                                {member.role && (
+                                                    <Typography sx={{
+                                                        fontFamily: '"myriad-pro", sans-serif',
+                                                        fontSize: { xs: '0.85rem', md: '1rem' },
+                                                        color: '#ED6C02',
+                                                        fontWeight: 'bold',
+                                                        textTransform: 'uppercase',
+                                                        lineHeight: 1.3,
+                                                    }}>
+                                                        {member.role}
+                                                    </Typography>
+                                                )}
                                             </Box>
+
+                                            {/* Scrollable Container for Logos Grid */}
+                                            {member.logos.length > 0 && (
+                                                <Box sx={{
+                                                    overflowY: 'auto',
+                                                    maxHeight: { xs: '160px', md: '240px' },
+                                                    paddingRight: '6px',
+                                                    marginTop: 1,
+                                                    '&::-webkit-scrollbar': {
+                                                        width: '5px',
+                                                    },
+                                                    '&::-webkit-scrollbar-track': {
+                                                        background: 'transparent',
+                                                    },
+                                                    '&::-webkit-scrollbar-thumb': {
+                                                        backgroundColor: '#ED6C02',
+                                                        borderRadius: '10px',
+                                                    },
+                                                }}>
+                                                    <Box sx={{ 
+                                                        display: 'grid', 
+                                                        gridTemplateColumns: 'repeat(2, 1fr)', 
+                                                        gridAutoRows: { xs: '50px', md: '65px' }, 
+                                                        gap: { xs: 1.5, md: 2 }, 
+                                                        alignItems: 'center',
+                                                        justifyItems: 'center'
+                                                    }}>
+                                                        {member.logos.map((logo, i) => (
+                                                            <Box
+                                                                key={i}
+                                                                component="img"
+                                                                src={logo}
+                                                                alt={`company-logo-${i}`}
+                                                                sx={{ 
+                                                                    width: '100%',
+                                                                    height: '100%',
+                                                                    objectFit: 'contain' 
+                                                                }}
+                                                            />
+                                                        ))}
+                                                    </Box>
+                                                </Box>
+                                            )}
                                         </Box>
 
                                     </Box>
