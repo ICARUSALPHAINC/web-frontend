@@ -1289,76 +1289,6 @@
       "website": "https://www.yoonahwang.com/"
     },
     {
-      "name": "Yulia Kodlubai",
-      "role": "3D Environmental Artist",
-      "profilePicture": "/profile-images/yulia-kodlubai-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/yuliakodlubai/",
-      "website": "https://www.artstation.com/yulia_kodlubai"
-    },
-    {
-      "name": "Yunmeng Lei",
-      "role": "2D Concept Artist",
-      "profilePicture": "/profile-images/Yunmeng-Lei-1.png",
-      "linkedIn": "https://www.linkedin.com/in/yunmeng-lei-6b5325255/",
-      "website": "https://www.artstation.com/whitecake"
-    },
-    {
-      "name": "Yusaku Kimura",
-      "role": "3D Animation",
-      "profilePicture": "/profile-images/yusaku-kimura-1.jpg",
-      "linkedIn": "http://linkedin.com/in/yusaku-k-35a352291",
-      "website": "https://vimeo.com/1086619782?share=copy"
-    },
-    {
-      "name": "Zachary Rudewicz-Nepokroeff",
-      "role": "Game Designer",
-      "profilePicture": "/profile-images/zachary-rudewicz-nepokroeff-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/zachrudynep/",
-      "website": "https://zachrudynep.myportfolio.com/"
-    },
-    {
-      "name": "Zachary Selsley",
-      "role": "Developer",
-      "profilePicture": "/profile-images/zachary-selsley-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/zachary-selsley/",
-      "website": "https://github.com/Tanuki3017"
-    },
-    {
-      "name": "Zan Moffat",
-      "role": "Technical Designer",
-      "profilePicture": "/profile-images/zan-moffat-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/zanmoffat",
-      "website": "https://fifthmoffat.wixsite.com/zan-moffat"
-    },
-    {
-      "name": "Zion Jefferson",
-      "role": "Project Lead - 3D Animation",
-      "profilePicture": "/profile-images/zion-jefferson-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/zion-jefferson-036784237/",
-      "website": "https://zarmandjefferson.wixsite.com/znexus"
-    },
-    {
-      "name": "Zoe Benn",
-      "role": "3D Character Artist",
-      "profilePicture": "/profile-images/zoe-benn-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/zoe-benn-ba15941b8/",
-      "website": "https://www.artstation.com/ghostlyzenn"
-    },
-    {
-      "name": "Zoey Vo",
-      "role": "Developer",
-      "profilePicture": "/profile-images/zoey-vo-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/zoeyvo",
-      "website": "https://zoeyvo.net/"
-    },
-    {
-      "name": "Zofia Paez",
-      "role": "2D Concept Artist",
-      "profilePicture": "/profile-images/zofia-paez-1.jpg",
-      "linkedIn": "https://www.linkedin.com/in/zofia-paez-3b08a7297/",
-      "website": "https://www.artstation.com/zofiapz"
-    },
-    {
       "name": "Yoona Hwang",
       "role": "3D Environmental Artist",
       "profilePicture": "/profile-images/yoona-hwang-1.jpg",
@@ -1371,6 +1301,20 @@
       "profilePicture": "/profile-images/yulia-kodlubai-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/yuliakodlubai/",
       "website": "https://www.artstation.com/yulia_kodlubai"
+    },
+    {
+      "name": "Yulia Kodlubai",
+      "role": "3D Environmental Artist",
+      "profilePicture": "/profile-images/yulia-kodlubai-1.jpg",
+      "linkedIn": "https://www.linkedin.com/in/yuliakodlubai/",
+      "website": "https://www.artstation.com/yulia_kodlubai"
+    },
+    {
+      "name": "Yunmeng Lei",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/Yunmeng-Lei-1.png",
+      "linkedIn": "https://www.linkedin.com/in/yunmeng-lei-6b5325255/",
+      "website": "https://www.artstation.com/whitecake"
     },
     {
       "name": "Yunmeng Lei",
@@ -1394,11 +1338,32 @@
       "website": "https://vimeo.com/1086619782?share=copy"
     },
     {
+      "name": "Yusaku Kimura",
+      "role": "3D Animation",
+      "profilePicture": "/profile-images/yusaku-kimura-1.jpg",
+      "linkedIn": "http://linkedin.com/in/yusaku-k-35a352291",
+      "website": "https://vimeo.com/1086619782?share=copy"
+    },
+    {
       "name": "Zachary Rudewicz-Nepokroeff",
       "role": "Game Designer",
       "profilePicture": "/profile-images/zachary-rudewicz-nepokroeff-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/zachrudynep/",
       "website": "https://zachrudynep.myportfolio.com/"
+    },
+    {
+      "name": "Zachary Rudewicz-Nepokroeff",
+      "role": "Game Designer",
+      "profilePicture": "/profile-images/zachary-rudewicz-nepokroeff-1.jpg",
+      "linkedIn": "https://www.linkedin.com/in/zachrudynep/",
+      "website": "https://zachrudynep.myportfolio.com/"
+    },
+    {
+      "name": "Zachary Selsley",
+      "role": "Developer",
+      "profilePicture": "/profile-images/zachary-selsley-1.jpg",
+      "linkedIn": "https://www.linkedin.com/in/zachary-selsley/",
+      "website": "https://github.com/Tanuki3017"
     },
     {
       "name": "Zachary Selsley",
@@ -1415,6 +1380,20 @@
       "website": "https://fifthmoffat.wixsite.com/zan-moffat"
     },
     {
+      "name": "Zan Moffat",
+      "role": "Technical Designer",
+      "profilePicture": "/profile-images/zan-moffat-1.jpg",
+      "linkedIn": "https://www.linkedin.com/in/zanmoffat",
+      "website": "https://fifthmoffat.wixsite.com/zan-moffat"
+    },
+    {
+      "name": "Zion Jefferson",
+      "role": "Project Lead - 3D Animation",
+      "profilePicture": "/profile-images/zion-jefferson-1.jpg",
+      "linkedIn": "https://www.linkedin.com/in/zion-jefferson-036784237/",
+      "website": "https://zarmandjefferson.wixsite.com/znexus"
+    },
+    {
       "name": "Zion Jefferson",
       "role": "Project Lead - 3D Animation",
       "profilePicture": "/profile-images/zion-jefferson-1.jpg",
@@ -1429,11 +1408,32 @@
       "website": "https://www.artstation.com/ghostlyzenn"
     },
     {
+      "name": "Zoe Benn",
+      "role": "3D Character Artist",
+      "profilePicture": "/profile-images/zoe-benn-1.jpg",
+      "linkedIn": "https://www.linkedin.com/in/zoe-benn-ba15941b8/",
+      "website": "https://www.artstation.com/ghostlyzenn"
+    },
+    {
       "name": "Zoey Vo",
       "role": "Developer",
       "profilePicture": "/profile-images/zoey-vo-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/zoeyvo",
       "website": "https://zoeyvo.net/"
+    },
+    {
+      "name": "Zoey Vo",
+      "role": "Developer",
+      "profilePicture": "/profile-images/zoey-vo-1.jpg",
+      "linkedIn": "https://www.linkedin.com/in/zoeyvo",
+      "website": "https://zoeyvo.net/"
+    },
+    {
+      "name": "Zofia Paez",
+      "role": "2D Concept Artist",
+      "profilePicture": "/profile-images/zofia-paez-1.jpg",
+      "linkedIn": "https://www.linkedin.com/in/zofia-paez-3b08a7297/",
+      "website": "https://www.artstation.com/zofiapz"
     },
     {
       "name": "Zofia Paez",
