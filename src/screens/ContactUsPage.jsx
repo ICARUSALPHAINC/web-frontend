@@ -29,8 +29,6 @@ import developmentIcon from "../assets/careers-page/careers-icons/Development 1.
 import rocketIcon from "../assets/careers-page/careers-icons/Rocket 1.png";
 import globalIcon from "../assets/careers-page/careers-icons/Global.png";
 
-import avenueEChevronHorizontalColor from "../assets/careers-page/contact-images/AveE_Chevron_Horizontal-Color.png";
-
 // Job categories data
 const jobCategories = [
   { name: "Developers", icon: devIcon, expanded: false },
@@ -496,29 +494,6 @@ function ContactUsPage() {
             Apply Now!
           </Button>
         </Box>
-      </Container>
-
-      {/* Partner Logos at Bottom */}
-      <Container
-        maxWidth="lg"
-        sx={{
-          marginTop: "3rem",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          gap: { xs: "1.5rem", md: "3rem" },
-          flexWrap: "wrap",
-        }}
-      >
-        <Box
-          component="img"
-          src={avenueEChevronHorizontalColor}
-          alt="AvenueE Chevron partnership"
-          sx={{
-            height: { xs: 40, md: 60 },
-            width: "auto",
-          }}
-        />
       </Container>
     </Box>
   );
