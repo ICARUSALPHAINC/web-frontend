@@ -1,6 +1,69 @@
 {
   "members": [
     {
+      "name": "Marta Dóniga",
+      "role": "3D Character Artist",
+      "profilePicture": "/profile-images/1760719377036.jpg",
+      "linkedIn": "https://www.linkedin.com/in/marta-doniga/",
+      "website": "https://www.artstation.com/martadoniiga"
+    },
+    {
+      "name": "Michael Fahrny",
+      "role": "Project Lead - Production",
+      "profilePicture": "/profile-images/1728494752027.jpg",
+      "linkedIn": "https://www.linkedin.com/in/michaelfahrny/",
+      "website": ""
+    },
+    {
+      "name": "Sam Bradley",
+      "role": "Project Lead - Production",
+      "profilePicture": "/profile-images/sam bradley.png",
+      "linkedIn": "https://www.linkedin.com/in/sambradley2/",
+      "website": ""
+    },
+    {
+      "name": "John Lungaro",
+      "role": "Project Lead - Game Designer",
+      "profilePicture": "/profile-images/1762925430761.png",
+      "linkedIn": "https://www.linkedin.com/in/jlungaro/",
+      "website": ""
+    },
+    {
+      "name": "Chang Lin Toh",
+      "role": "Project Lead - 2D Animation (SPINE)",
+      "profilePicture": "/profile-images/chang lin toh.png",
+      "linkedIn": "https://www.linkedin.com/in/chang-lin-toh/",
+      "website": "tohcl.artstation.com"
+    },
+    {
+      "name": "Ivan Mattos",
+      "role": "2D Animation (SPINE)",
+      "profilePicture": "/profile-images/1776704519664.png",
+      "linkedIn": "https://www.linkedin.com/in/ivan-mattos-5056416/",
+      "website": "piworkroom.com"
+    },
+    {
+      "name": "Ross Nicholas",
+      "role": "Project Lead - Level Designer",
+      "profilePicture": "/profile-images/pic12.avif",
+      "linkedIn": "https://www.linkedin.com/in/ross-nicholas-b53370ba/",
+      "website": "https://rossnicholas9.wixsite.com/portfolio"
+    },
+    {
+      "name": "Scott Elson",
+      "role": "Project Lead - Developer",
+      "profilePicture": "/profile-images/Screenshot 2026-09-17 221109.png",
+      "linkedIn": "https://www.linkedin.com/in/scott-elson-10486b3/",
+      "website": ""
+    },
+    {
+      "name": "Nicholai Wojtowycz",
+      "role": "Project Lead - Developer",
+      "profilePicture": "/profile-images/4257484.jpg",
+      "linkedIn": "https://www.linkedin.com/in/nicholai-wojtowycz/",
+      "website": ""
+    },
+    {
       "name": "Alfredo Diaz",
       "role": "3D Rigging Artist",
       "profilePicture": "/profile-images/1611897766167 (1).png",
