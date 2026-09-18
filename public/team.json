@@ -1,69 +1,6 @@
 {
   "members": [
     {
-      "name": "Marta Dóniga",
-      "role": "3D Character Artist",
-      "profilePicture": "/profile-images/1760719377036.jpg",
-      "linkedIn": "https://www.linkedin.com/in/marta-doniga/",
-      "website": "https://www.artstation.com/martadoniiga"
-    },
-    {
-      "name": "Michael Fahrny",
-      "role": "Project Lead - Production",
-      "profilePicture": "/profile-images/1728494752027.jpg",
-      "linkedIn": "https://www.linkedin.com/in/michaelfahrny/",
-      "website": ""
-    },
-    {
-      "name": "Sam Bradley",
-      "role": "Project Lead - Production",
-      "profilePicture": "/profile-images/sam bradley.png",
-      "linkedIn": "https://www.linkedin.com/in/sambradley2/",
-      "website": ""
-    },
-    {
-      "name": "John Lungaro",
-      "role": "Project Lead - Game Designer",
-      "profilePicture": "/profile-images/1762925430761.png",
-      "linkedIn": "https://www.linkedin.com/in/jlungaro/",
-      "website": ""
-    },
-    {
-      "name": "Chang Lin Toh",
-      "role": "Project Lead - 2D Animation (SPINE)",
-      "profilePicture": "/profile-images/chang lin toh.png",
-      "linkedIn": "https://www.linkedin.com/in/chang-lin-toh/",
-      "website": "tohcl.artstation.com"
-    },
-    {
-      "name": "Ivan Mattos",
-      "role": "2D Animation (SPINE)",
-      "profilePicture": "/profile-images/1776704519664.png",
-      "linkedIn": "https://www.linkedin.com/in/ivan-mattos-5056416/",
-      "website": "piworkroom.com"
-    },
-    {
-      "name": "Ross Nicholas",
-      "role": "Project Lead - Level Designer",
-      "profilePicture": "/profile-images/pic12.avif",
-      "linkedIn": "https://www.linkedin.com/in/ross-nicholas-b53370ba/",
-      "website": "https://rossnicholas9.wixsite.com/portfolio"
-    },
-    {
-      "name": "Scott Elson",
-      "role": "Project Lead - Developer",
-      "profilePicture": "/profile-images/Screenshot 2026-09-17 221109.png",
-      "linkedIn": "https://www.linkedin.com/in/scott-elson-10486b3/",
-      "website": ""
-    },
-    {
-      "name": "Nicholai Wojtowycz",
-      "role": "Project Lead - Developer",
-      "profilePicture": "/profile-images/4257484.jpg",
-      "linkedIn": "https://www.linkedin.com/in/nicholai-wojtowycz/",
-      "website": ""
-    },
-    {
       "name": "Alfredo Diaz",
       "role": "3D Rigging Artist",
       "profilePicture": "/profile-images/1611897766167 (1).png",
@@ -195,6 +132,13 @@
       "profilePicture": "/profile-images/chaewoon-hyun-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/chaewoon-hyun-art/",
       "website": "https://codns.artstation.com/"
+    },
+    {
+      "name": "Chang Lin Toh",
+      "role": "Project Lead - 2D Animation (SPINE)",
+      "profilePicture": "/profile-images/chang lin toh.png",
+      "linkedIn": "https://www.linkedin.com/in/chang-lin-toh/",
+      "website": "tohcl.artstation.com"
     },
     {
       "name": "Charles Howerton",
@@ -393,6 +337,13 @@
       "website": "https://www.artstation.com/kexida"
     },
     {
+      "name": "Ivan Mattos",
+      "role": "2D Animation (SPINE)",
+      "profilePicture": "/profile-images/1776704519664.png",
+      "linkedIn": "https://www.linkedin.com/in/ivan-mattos-5056416/",
+      "website": "piworkroom.com"
+    },
+    {
       "name": "Jacob Mola",
       "role": "Developer",
       "profilePicture": "/profile-images/jacob-mola.jpg",
@@ -447,6 +398,13 @@
       "profilePicture": "/profile-images/jobeth-fondren-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/jobeth-fondren202",
       "website": "https://www.Jobethfondren6.artstation.com"
+    },
+    {
+      "name": "John Lungaro",
+      "role": "Project Lead - Game Designer",
+      "profilePicture": "/profile-images/1762925430761.png",
+      "linkedIn": "https://www.linkedin.com/in/jlungaro/",
+      "website": ""
     },
     {
       "name": "John Overton",
@@ -617,6 +575,13 @@
       "website": "https://marcus_l_16.artstation.com/"
     },
     {
+      "name": "Marta Dóniga",
+      "role": "3D Character Artist",
+      "profilePicture": "/profile-images/1760719377036.jpg",
+      "linkedIn": "https://www.linkedin.com/in/marta-doniga/",
+      "website": "https://www.artstation.com/martadoniiga"
+    },
+    {
       "name": "Maxim Shirkov",
       "role": "2D Concept Artist",
       "profilePicture": "/profile-images/maxim-shirkov-1.jpg",
@@ -629,6 +594,13 @@
       "profilePicture": "/profile-images/megan-melberg-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/meganmelberg/",
       "website": "https://www.artstation.com/meganmelberg14/albums/4678043"
+    },
+    {
+      "name": "Michael Fahrny",
+      "role": "Project Lead - Production",
+      "profilePicture": "/profile-images/1728494752027.jpg",
+      "linkedIn": "https://www.linkedin.com/in/michaelfahrny/",
+      "website": ""
     },
     {
       "name": "Michelle Vu",
@@ -685,6 +657,13 @@
       "profilePicture": "/profile-images/nathan-gumataotao.png",
       "linkedIn": "https://www.linkedin.com/in/nathan-gumataotao",
       "website": "https://github.com/NGumataotao23"
+    },
+    {
+      "name": "Nicholai Wojtowycz",
+      "role": "Project Lead - Developer",
+      "profilePicture": "/profile-images/4257484.jpg",
+      "linkedIn": "https://www.linkedin.com/in/nicholai-wojtowycz/",
+      "website": ""
     },
     {
       "name": "Noah King",
@@ -771,6 +750,13 @@
       "website": "https://raforehand.wix.com/robert-designs"
     },
     {
+      "name": "Ross Nicholas",
+      "role": "Project Lead - Level Designer",
+      "profilePicture": "/profile-images/pic12.avif",
+      "linkedIn": "https://www.linkedin.com/in/ross-nicholas-b53370ba/",
+      "website": "https://rossnicholas9.wixsite.com/portfolio"
+    },
+    {
       "name": "Sabin Overton",
       "role": "Finance",
       "profilePicture": "/profile-images/sabin-overton-1.jpg",
@@ -785,6 +771,13 @@
       "website": "https://sagemorrison.gamedesignskills.com/"
     },
     {
+      "name": "Sam Bradley",
+      "role": "Project Lead - Production",
+      "profilePicture": "/profile-images/sam bradley.png",
+      "linkedIn": "https://www.linkedin.com/in/sambradley2/",
+      "website": ""
+    },
+    {
       "name": "Samantha Eryn Breid",
       "role": "2D Concept Artist",
       "profilePicture": "/profile-images/Samantha Eryn Breid.png",
@@ -797,6 +790,13 @@
       "profilePicture": "/profile-images/savannah-davis-1.jpg",
       "linkedIn": "https://www.linkedin.com/in/savannah-davis-99b0aa1b8/",
       "website": "https://savannah0402.wixsite.com/website"
+    },
+    {
+      "name": "Scott Elson",
+      "role": "Project Lead - Developer",
+      "profilePicture": "/profile-images/Screenshot 2026-09-17 221109.png",
+      "linkedIn": "https://www.linkedin.com/in/scott-elson-10486b3/",
+      "website": ""
     },
     {
       "name": "Sean Ross",
